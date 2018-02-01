@@ -1,0 +1,73 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{MDDM16}
+
+\bibitem[A{\etalchar{+}}12]{astin2012assessment}
+Alexander~W Astin et~al.
+\newblock {\em Assessment for excellence: The philosophy and practice of
+  assessment and evaluation in higher education}.
+\newblock Rowman \& Littlefield Publishers, 2012.
+
+\bibitem[AC17]{adejo2017}
+Olugbenga Adejo and Thomas Connolly.
+\newblock An integrated system framework for predicting students?academic
+  performance in higher educational institutions.
+\newblock {\em International Journal o f Computer Science and Information
+  Technology (IJCSIT)}, 9(3):149--157, 2017.
+
+\bibitem[AMBS99]{Murtaugh}
+Paul A.~Murtaugh, Leslie Burns, and Jill Schuster.
+\newblock Predicting the retention of university students.
+\newblock 40:355--371, 06 1999.
+
+\bibitem[Bra02]{braxton2002introduction}
+John~M Braxton.
+\newblock Introduction to special issue: Using theory and research to improve
+  college student retention.
+\newblock {\em Journal of College Student Retention: Research, Theory \&
+  Practice}, 3(1):1--2, 2002.
+
+\bibitem[BS16]{bingham2016}
+Melissa~A Bingham and Natalie~Walleser Solverson.
+\newblock Using enrollment data to predict retention rate.
+\newblock {\em Journal of Student Affairs Research and Practice}, 53(1):51--64,
+  2016.
+
+\bibitem[LAS{\etalchar{+}}15]{lakkaraju2015machine}
+Himabindu Lakkaraju, Everaldo Aguiar, Carl Shan, David Miller, Nasir Bhanpuri,
+  Rayid Ghani, and Kecia~L Addison.
+\newblock A machine learning framework to identify students at risk of adverse
+  academic outcomes.
+\newblock In {\em Proceedings of the 21th ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining}, pages 1909--1918. ACM, 2015.
+
+\bibitem[Lau03]{lau2003institutional}
+Linda~K Lau.
+\newblock Institutional factors affecting student retention.
+\newblock {\em Education-Indianapolis then Chula Vista-}, 124(1):126--136,
+  2003.
+
+\bibitem[MDDM16]{marbouti2016models}
+Farshid Marbouti, Heidi~A Diefes-Dux, and Krishna Madhavan.
+\newblock Models for early prediction of at-risk students in a course using
+  standards-based grading.
+\newblock {\em Computers \& Education}, 103:1--15, 2016.
+
+\bibitem[Pla13]{plagge2013using}
+Mark Plagge.
+\newblock Using artificial neural networks to predict first-year traditional
+  students second year retention rates.
+\newblock In {\em Proceedings of the 51st ACM Southeast Conference}, page~17.
+  ACM, 2013.
+
+\bibitem[Tin99]{tinto1999taking}
+Vincent Tinto.
+\newblock Taking retention seriously: Rethinking the first year of college.
+\newblock {\em NACADA journal}, 19(2):5--9, 1999.
+
+\bibitem[Tin06]{tinto2006}
+Vincent Tinto.
+\newblock Research and practice of student retention: What next?
+\newblock {\em Journal of College Student Retention: Research, Theory \&
+  Practice}, 8(1):1--19, 2006.
+
+\end{thebibliography}

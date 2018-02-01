@@ -1,0 +1,83 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: unlv-thesis.aux
+The style file: alpha.bst
+Database file #1: thesis.bib
+Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "Chen1996"
+Warning--I didn't find a database entry for "Barber2003"
+Warning--I didn't find a database entry for "Li2005"
+Warning--I didn't find a database entry for "Han2000"
+Warning--I didn't find a database entry for "Agrawal1994"
+Warning--I didn't find a database entry for "Yun2013"
+Warning--I didn't find a database entry for "Yun2014"
+Warning--I didn't find a database entry for "Ahmed2009"
+Warning--I didn't find a database entry for "Yao2006"
+Warning--I didn't find a database entry for "Erwin2007"
+Warning--I didn't find a database entry for "Yen2007"
+Warning--I didn't find a database entry for "Lin2011"
+Warning--I didn't find a database entry for "Wu2012"
+Warning--I didn't find a database entry for "Yao2004"
+Warning--I didn't find a database entry for "Tseng2013"
+Warning--I didn't find a database entry for "Liu2005"
+Warning--I didn't find a database entry for "Chu2009"
+Warning--I didn't find a database entry for "Liu2012"
+Warning--I didn't find a database entry for "Lan2014"
+Warning--I didn't find a database entry for "Krishnamoorthy2015"
+Warning--I didn't find a database entry for "Zida2015"
+Warning--I didn't find a database entry for "Fournier-Viger2014"
+Warning--I didn't find a database entry for "Song2014"
+Warning--I didn't find a database entry for "Fournier-Viger2016"
+Warning--I didn't find a database entry for "Yang2010"
+Warning--I didn't find a database entry for "Cryans2010"
+Warning--I didn't find a database entry for "Li2008"
+Warning--I didn't find a database entry for "Lin2015"
+Warning--I didn't find a database entry for "Dean2008"
+Warning--I didn't find a database entry for "Chen2016"
+Warning--I didn't find a database entry for "Zaharia2010"
+Warning--I didn't find a database entry for "ApacheHadoop"
+Warning--I didn't find a database entry for "miningdataset2012"
+Warning--I didn't find a database entry for "SPMFDatasets"
+Warning--empty journal in Murtaugh
+You've used 11 entries,
+            2543 wiz_defined-function locations,
+            702 strings with 7228 characters,
+and the built_in function-call counts, 4466 in all, are:
+= -- 457
+> -- 192
+< -- 7
++ -- 64
+- -- 63
+* -- 326
+:= -- 733
+add.period$ -- 35
+call.type$ -- 11
+change.case$ -- 66
+chr.to.int$ -- 11
+cite$ -- 12
+duplicate$ -- 182
+empty$ -- 329
+format.name$ -- 77
+if$ -- 912
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 12
+newline$ -- 59
+num.names$ -- 33
+pop$ -- 58
+preamble$ -- 1
+purify$ -- 78
+quote$ -- 0
+skip$ -- 146
+stack$ -- 0
+substring$ -- 270
+swap$ -- 28
+text.length$ -- 7
+text.prefix$ -- 5
+top$ -- 0
+type$ -- 84
+warning$ -- 1
+while$ -- 47
+width$ -- 13
+write$ -- 146
+(There were 36 warnings)
