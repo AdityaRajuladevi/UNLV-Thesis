@@ -1,40 +1,60 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: unlv-thesis.aux
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: unlv-thesis.aux
 The style file: alpha.bst
 Database file #1: thesis.bib
-Warning--I didn't find a database entry for ""
-Warning--I didn't find a database entry for "Chen1996"
-Warning--I didn't find a database entry for "Barber2003"
-Warning--I didn't find a database entry for "Li2005"
-Warning--I didn't find a database entry for "Han2000"
-Warning--I didn't find a database entry for "Agrawal1994"
-Warning--I didn't find a database entry for "Yun2013"
-Warning--I didn't find a database entry for "Yun2014"
-Warning--I didn't find a database entry for "Ahmed2009"
-Warning--I didn't find a database entry for "Yao2006"
-Warning--I didn't find a database entry for "Erwin2007"
-Warning--I didn't find a database entry for "Yen2007"
-Warning--I didn't find a database entry for "Lin2011"
-Warning--I didn't find a database entry for "Wu2012"
-Warning--I didn't find a database entry for "Yao2004"
-Warning--I didn't find a database entry for "Tseng2013"
-Warning--I didn't find a database entry for "Liu2005"
-Warning--I didn't find a database entry for "Chu2009"
-Warning--I didn't find a database entry for "Liu2012"
-Warning--I didn't find a database entry for "Lan2014"
-Warning--I didn't find a database entry for "Krishnamoorthy2015"
-Warning--I didn't find a database entry for "Zida2015"
-Warning--I didn't find a database entry for "Fournier-Viger2014"
-Warning--I didn't find a database entry for "Song2014"
-Warning--I didn't find a database entry for "Fournier-Viger2016"
-Warning--I didn't find a database entry for "Yang2010"
-Warning--I didn't find a database entry for "Cryans2010"
-Warning--I didn't find a database entry for "Li2008"
-Warning--I didn't find a database entry for "Lin2015"
 Warning--I didn't find a database entry for "Dean2008"
-Warning--I didn't find a database entry for "Chen2016"
-Warning--I didn't find a database entry for "Zaharia2010"
 Warning--I didn't find a database entry for "ApacheHadoop"
+Warning--I didn't find a database entry for "Zaharia2010"
+Warning--I didn't find a database entry for "Liu2005"
+Warning--I didn't find a database entry for "Zida2015"
+Warning--I didn't find a database entry for "Chen2016"
 Warning--I didn't find a database entry for "miningdataset2012"
 Warning--I didn't find a database entry for "SPMFDatasets"
+Warning--I didn't find a database entry for "Liu2012"
+Warning--I didn't find a database entry for "Krishnamoorthy2015"
+Warning--I didn't find a database entry for "Fournier-Viger2014"
+Warning--I didn't find a database entry for "Fournier-Viger2016"
 Warning--empty journal in Murtaugh
-(There were 36 warnings)
+You've used 14 entries,
+            2543 wiz_defined-function locations,
+            679 strings with 7697 characters,
+and the built_in function-call counts, 5796 in all, are:
+= -- 592
+> -- 259
+< -- 9
++ -- 87
+- -- 86
+* -- 427
+:= -- 950
+add.period$ -- 44
+call.type$ -- 14
+change.case$ -- 87
+chr.to.int$ -- 14
+cite$ -- 15
+duplicate$ -- 234
+empty$ -- 417
+format.name$ -- 103
+if$ -- 1183
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 15
+newline$ -- 74
+num.names$ -- 42
+pop$ -- 73
+preamble$ -- 1
+purify$ -- 102
+quote$ -- 0
+skip$ -- 193
+stack$ -- 0
+substring$ -- 348
+swap$ -- 40
+text.length$ -- 9
+text.prefix$ -- 6
+top$ -- 0
+type$ -- 108
+warning$ -- 1
+while$ -- 61
+width$ -- 16
+write$ -- 185
+(There were 13 warnings)

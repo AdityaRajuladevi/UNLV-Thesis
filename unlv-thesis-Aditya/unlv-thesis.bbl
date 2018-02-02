@@ -14,10 +14,24 @@ Olugbenga Adejo and Thomas Connolly.
 \newblock {\em International Journal o f Computer Science and Information
   Technology (IJCSIT)}, 9(3):149--157, 2017.
 
+\bibitem[AH14]{alkhasawneh2014developing}
+Ruba Alkhasawneh and Rosalyn~Hobson Hargraves.
+\newblock Developing a hybrid model to predict student first year retention in
+  stem disciplines using machine learning techniques.
+\newblock {\em Journal of STEM Education: Innovations and Research}, 15(3):35,
+  2014.
+
 \bibitem[AMBS99]{Murtaugh}
 Paul A.~Murtaugh, Leslie Burns, and Jill Schuster.
 \newblock Predicting the retention of university students.
 \newblock 40:355--371, 06 1999.
+
+\bibitem[BMZ{\etalchar{+}}15]{bainbridge2015}
+Jay Bainbridge, James Melitski, Anne Zahradnik, Eitel~JM Laur{\'\i}a, Sandeep
+  Jayaprakash, and Josh Baron.
+\newblock Using learning analytics to predict at-risk students in online
+  graduate public affairs and administration education.
+\newblock {\em Journal of Public Affairs Education}, pages 247--262, 2015.
 
 \bibitem[Bra02]{braxton2002introduction}
 John~M Braxton.
@@ -31,6 +45,13 @@ Melissa~A Bingham and Natalie~Walleser Solverson.
 \newblock Using enrollment data to predict retention rate.
 \newblock {\em Journal of Student Affairs Research and Practice}, 53(1):51--64,
   2016.
+
+\bibitem[Her06]{herzog2006estimating}
+Serge Herzog.
+\newblock Estimating student retention and degree-completion time: Decision
+  trees and neural networks vis-{\`a}-vis regression.
+\newblock {\em New directions for institutional research}, 2006(131):17--33,
+  2006.
 
 \bibitem[LAS{\etalchar{+}}15]{lakkaraju2015machine}
 Himabindu Lakkaraju, Everaldo Aguiar, Carl Shan, David Miller, Nasir Bhanpuri,
