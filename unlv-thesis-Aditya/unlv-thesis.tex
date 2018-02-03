@@ -17,6 +17,10 @@
 	linktoc=all,     %set to all if you want both sections and subsections linked
 	linkcolor=blue,  %choose some color if you want links to stand out
 }
+
+\setcounter{tocdepth}{3}% Include \subsubsection in ToC
+\setcounter{secnumdepth}{3}% Number \subsubsection
+
 %%%
 %%% Choose either \phdthesis or \mastersthesis
 \mastersthesis
@@ -220,19 +224,63 @@ Although predictive analysis using machine learning models have proved to be ver
 
 \noindent P = the probability that the program will win the next game.\newline 
 
-\noindent In general machine learning tries to learn patterns inherent in the underlying data and remembers it as experience, which it uses for predictions. It was conceptualized from the notion of learning process adapted by a human brain. Just as the human brain gets better at a specific task by repeated learning and previous experiences, a computer will also learn more patterns hidden in the data based on its previous experiences. Additionaly the huge processing power of computers enable them to perform such a learning process in identifying patterns from complex data which can be very difficult for a human to understand.
-
-
-
+\noindent In general machine learning tries to learn patterns inherent in the underlying data and remembers it as experience, which it uses for predictions. It was conceptualized from the notion of learning process adopted by a human brain. Just as the human brain gets better at a specific task by repeated learning and previous experiences, a computer will also learn more patterns hidden in the data based on its previous experiences. Additionally the huge processing power of computers enables them to perform such a learning process in identifying patterns from complex data which can be very difficult for a human to understand.
 
 \subsection{Predictive Analytics}
-Predictive analytics primarily deals with extracting patterns using machine learning models from existing datasets. the extracted patterns are used to predict future events and behaviours in previously unseen data. Predictive analytics is being used in wide range of fields such as education, finance, automobile and healthcare. The analytics is performed by running different machine learning algorithms on previously collected data. The algorithms try to learn patterns between different properties of the data and preserve the knowledge in model parameters. The resulting model is able to predict unknown property of a future unseen data.
- 
+Predictive analytics primarily deals with extracting patterns using machine learning models from existing datasets. the extracted patterns are used to predict future events and behaviors in previously unseen data. Predictive analytics is being used in wide range of fields such as education, finance, automobile, and healthcare. The analytics is performed by running different machine learning algorithms on previously collected data. The algorithms try to learn patterns between different properties of the data and preserve the knowledge in model parameters. The resulting model is able to predict the unknown property of a future unseen data.
 
+ \begin{table}[!t]
+	\renewcommand{\arraystretch}{1.3}
+	\caption{Admissions data at a University}
+	\label{table:example_db}
+	\centering
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\bfseries Age & \bfseries Gender & \bfseries HSGPA & \bfseries ACT & \bfseries Accepted\\
+		\hline
+		$20$ & Male & 3.89 & 25.6 & 1\\ \hline
+		$21$ & Female & 3.20 & 22.6 & 1\\ \hline
+		$20$ & Female & 2.50 & 18.3 & 0\\ \hline
+		$22$ & Male & 3.10 &  19.2 & 0\\ \hline
+		$19$ & Female & 3.60 & 23.5 & 1\\ \hline
+	\end{tabular}
+\end{table}
+
+An illustrative example is shown in Table \ref{table:example_db} which shows student data captured during admissions at a university. The aim is to predict if the student will be accepted or not by looking at the other variables in the data. The column "Accepted" is said to be a dependent variable, and all the other variables are called independent variables. A "1" in the "Accepted" column represents the outcome of the student being accepted into the university and a "0" means he was rejected. To this data we apply a machine learning algorithm, that will learn a prediction model based on the relations between the input independent variables and the output dependent variable. The learned model is then able to predict the output variable by taking other variables as input.
+ 
+The process of creating a prediction model from the available data is called training. The data used for training is known as training set or training data. To test the effectiveness of the created model, it is tested on another set of previously unseen data known as testing data. We use two different data sets to check the generalization capacity of the model in predicting previously unseen data. If we use all the available data for training, the model may learn too much from the inputs giving rise to the problem of overfitting. Overfitting occurs when a model is performing well on its training data, but not on the other unseen data. A common approach to handle the problem of overfitting is to divide the input data into training and testing sets. The model is then evaluated for performance using test data. The metrics used to evaluate a model are explained in detail in coming chapters.
+
+\subsection{Selected Models}
+
+In this section we discuss various models that were used in this thesis to analyze the student data from UNLV. The models selected for comparison were Logistic Regression, Decision Trees, Random Forest, and SVM's.
+
+\subsubsection {Logistic Regression Model}
+
+\subsubsection {Decision Trees}
+
+\subsubsection {Random Forest Classifiers}
+
+\subsubsection {Support Vector Machines }
+
+\subsection {Evaluation Methods}
 
 \chapter{Methodology} \label{chapter:methodology}
 
-\chapter{Exeperimental Results} \label{chapter:experiment_results}
+\section{Data Collection}
+
+
+\section {Data Pre-Processing}
+\subsection {Computation of Not Retained variable}
+How did you generate the output variable
+\subsection {Handling Missing Values}
+Explain your approach of missing values
+\subsection {Data Selection and Transformations}
+What important data did you select for your analysis
+\subsection {Correlation of Features}
+check the correlation of factors
+
+
+\chapter{Experimental Results} \label{chapter:experiment_results}
 
 \chapter{Conclusion} \label{chapter:conclusion}
 %%%
