@@ -12,7 +12,7 @@
 \contentsline {section}{\numberline {2.2}Preliminaries}{6}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Machine Learning Concepts}{6}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Predictive Analytics}{6}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Selected Models}{7}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.3}Selected Models}{8}{subsection.2.2.3}
 \contentsline {subsubsection}{\numberline {2.2.3.1}Logistic Regression Model}{8}{subsubsection.2.2.3.1}
 \contentsline {subsubsection}{\numberline {2.2.3.2}Decision Trees}{8}{subsubsection.2.2.3.2}
 \contentsline {subsubsection}{\numberline {2.2.3.3}Random Forest Classifiers}{8}{subsubsection.2.2.3.3}
@@ -23,12 +23,13 @@
 \contentsline {section}{\numberline {3.2}Data Pre-Processing}{9}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Computation of Not Retained variable}{9}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Handling Outliers in Data}{9}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Handling Missing Values}{9}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Data Selection and Transformations}{9}{subsection.3.2.4}
+\contentsline {subsubsection}{\numberline {3.2.2.1}UnwHSGPA scores}{10}{subsubsection.3.2.2.1}
+\contentsline {subsection}{\numberline {3.2.3}Handling Missing Values}{10}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Data Selection and Transformations}{10}{subsection.3.2.4}
 \contentsline {subsection}{\numberline {3.2.5}Correlation of Features}{10}{subsection.3.2.5}
 \contentsline {chapter}{Chapter{} \numberline {4}Experimental Results}{11}{chapter.4}
 \contentsline {section}{\numberline {4.1}Analysis of Predictive Models}{11}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Evaluation using Traditional Metrics}{11}{subsection.4.1.1}
 \contentsline {chapter}{Chapter{} \numberline {5}Conclusion}{12}{chapter.5}
-\contentsline {chapter}{Bibliography}{13}{chapter*.10}
+\contentsline {chapter}{Bibliography}{13}{chapter*.12}
 \contentsline {chapter}{Curriculum Vitae{} \numberline {}}{15}{chapter.1}

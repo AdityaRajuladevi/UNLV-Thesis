@@ -130,7 +130,7 @@ I would also like to extend my thanks to Dr. Laxmi Gewali, Dr. Justin Zhan, and 
 
 I am gratefully indebted to Kivanc Oner, Carrie Trentham and Becky Lorig from the Enterprises Application Services department at UNLV for their continuous support and valuable comments on this thesis. They answered my many questions about student enrollments and retention problems at UNLV and played a major role in helping me find the student data I was looking for from the UNLV data warehouse.
 
-My deep sense of gratitude to my parents Venkat Rao Rajuladevi, Mallika Rajuladevi and my sister Arthi Rajuladevi who are my moral strength and motivation. I would like to thank Sai Phani Krishna Parsa for his constant support and guidance throughout my Master's program.
+My deep sense of gratitude to my parents Venkat Rao Rajuladevi, Mallika Rajuladevi and my sister Arthi Rajuladevi who are my moral strength and motivation. I would like to thank Sai Phani Krishna Parsa and Paritosh Parmar for their constant support and guidance throughout my Master's program.
 
 Finally, I would like to thank all my friends, seniors and juniors who made my time here at UNLV very memorable. 
 \end{thesisacknowledgments}
@@ -246,9 +246,19 @@ Predictive analytics primarily deals with extracting patterns using machine lear
 	\end{tabular}
 \end{table}
 
+
+
 An illustrative example is shown in Table \ref{table:example_db} which shows student data captured during admissions at a university. The aim is to predict if the student will be accepted or not by looking at the other variables in the data. The column "Accepted" is said to be a dependent variable, and all the other variables are called independent variables. A "1" in the "Accepted" column represents the outcome of the student being accepted into the university and a "0" means he was rejected. To this data we apply a machine learning algorithm, that will learn a prediction model based on the relations between the input independent variables and the output dependent variable. The learned model is then able to predict the output variable by taking other variables as input.
+  \begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{MLApproachFinal}
+	\caption{Machine Learning Approach}
+	\label{fig:predictive_analysis-approach}
+\end{figure}
  
-The process of creating a prediction model from the available data is called training. The data used for training is known as training set or training data. To test the effectiveness of the created model, it is tested on another set of previously unseen data known as testing data. We use two different data sets to check the generalization capacity of the model in predicting previously unseen data. If we use all the available data for training, the model may learn too much from the inputs giving rise to the problem of overfitting. Overfitting occurs when a model is performing well on its training data, but not on the other unseen data. A common approach to handle the problem of overfitting is to divide the input data into training and testing sets. The model is then evaluated for performance using test data. The metrics used to evaluate a model are explained in detail in coming chapters.
+
+The general approach for applying predictive analysis on a data can be divided into 2 phases as shown in figure \ref{fig:predictive_analysis-approach}. Build phase deals with the process of creating a prediction model and testing its performance. The process of creating the prediction model is known as training and the data used is known as training data. To test the effectiveness of the created model, it is tested on another set of previously unseen data known as testing data. We use two different data sets to check the generalization capacity of the model in predicting previously unseen data. If we use all the available data for training, the model may learn too much from the inputs giving rise to the problem of overfitting. Overfitting occurs when a model is performing well on its training data, but not on the other unseen data. A common approach to handle the problem of overfitting is to divide the input data into training and testing sets. The model is then evaluated for performance using test data.  The evaluated model is then used in the operational phase to perform predictions given a new data. The metrics used to evaluate a model are explained in detail in coming chapters.
+
 
 \subsection{Selected Models}
 
@@ -273,10 +283,34 @@ The Operations Support and Reporting Office at UNLV is responsible for extractin
 \section {Data Pre-Processing}
 \subsection {Computation of Not Retained variable}
 How did you generate the output variable
-
 \subsection {Handling Outliers in Data}
-Write about outliers in data and how u handled it
 
+Generally the process of collecting data from different sources can introduce outliers into the dataset. This may be due to a faulty data extraction program or a human error. In predictive data analysis outliers can have significant effect on the predictive power of the models as they can introduce huge bias into the model. Hence it is almost always essential to check for outliers in the dataset before performing any analysis. Outliers were identified in our dataset. Data plots with index on x-axis and values on y-axis was used to demonstrate the presence of outlier in a feature.
+\subsubsection{UnwHSGPA scores}
+
+
+
+
+
+\begin{figure}
+\centering
+    \begin{subfigure}[b]{0.55\textwidth}            
+            \includegraphics[width=\textwidth]{UnwHSGPAScores}
+            \caption{UnwHSGPA with Outliers}
+            \label{fig:UnwHSGPA-with-outliers}
+    \end{subfigure}%
+     %add desired spacing between images, e. g. ~, \quad, \qquad etc.
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.55\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{UnwHSGPAWithoutScores}
+            \caption{UnwHSGPA without Outliers}
+            \label{fig:UnwHSGPA-No-outliers}
+    \end{subfigure}
+    \caption{Removing Outliers from UnwHSGPA}\label{fig:unwHSGPA}
+\end{figure}
+
+ There were a few outliers identified for variable UnwHSGPA, as shown in figure \ref{fig:UnwHSGPA-with-outliers}. The outliers of the UnwHSGPA were replaced by mean value of the said dataset excluding all the outliers. Data plot of the variable UnwHSGPA after removing outliers is shown in figure \ref{fig:UnwHSGPA-No-outliers}
 \subsection {Handling Missing Values}
 Explain your approach of missing values
 \subsection {Data Selection and Transformations}
