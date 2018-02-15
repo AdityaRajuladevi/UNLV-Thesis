@@ -30,12 +30,13 @@
 \BOOKMARK [3][-]{subsubsection.3.3.1.1}{UnwHSGPA scores}{subsection.3.3.1}% 30
 \BOOKMARK [2][-]{subsection.3.3.2}{Handling Missing Values}{section.3.3}% 31
 \BOOKMARK [3][-]{subsubsection.3.3.2.1}{Imputing SAT\137ACT\137Score}{subsection.3.3.2}% 32
-\BOOKMARK [2][-]{subsection.3.3.3}{Data Selection and Transformations}{section.3.3}% 33
-\BOOKMARK [2][-]{subsection.3.3.4}{Correlation of Features}{section.3.3}% 34
-\BOOKMARK [1][-]{section.3.4}{Exploratory Data Analysis}{chapter.3}% 35
-\BOOKMARK [0][-]{chapter.4}{Chapter Experimental Results}{}% 36
-\BOOKMARK [1][-]{section.4.1}{Analysis of Predictive Models}{chapter.4}% 37
-\BOOKMARK [2][-]{subsection.4.1.1}{Evaluation using Traditional Metrics}{section.4.1}% 38
-\BOOKMARK [0][-]{chapter.5}{Chapter Conclusion}{}% 39
-\BOOKMARK [0][-]{chapter*.15}{Bibliography}{}% 40
-\BOOKMARK [0][-]{chapter.1}{Curriculum Vitae }{}% 41
+\BOOKMARK [3][-]{subsubsection.3.3.2.2}{Imputing CoreHSGPA and UnwHSGPA}{subsection.3.3.2}% 33
+\BOOKMARK [2][-]{subsection.3.3.3}{Data Selection and Transformations}{section.3.3}% 34
+\BOOKMARK [2][-]{subsection.3.3.4}{Correlation of Features}{section.3.3}% 35
+\BOOKMARK [1][-]{section.3.4}{Exploratory Data Analysis}{chapter.3}% 36
+\BOOKMARK [0][-]{chapter.4}{Chapter Experimental Results}{}% 37
+\BOOKMARK [1][-]{section.4.1}{Analysis of Predictive Models}{chapter.4}% 38
+\BOOKMARK [2][-]{subsection.4.1.1}{Evaluation using Traditional Metrics}{section.4.1}% 39
+\BOOKMARK [0][-]{chapter.5}{Chapter Conclusion}{}% 40
+\BOOKMARK [0][-]{chapter*.16}{Bibliography}{}% 41
+\BOOKMARK [0][-]{chapter.1}{Curriculum Vitae }{}% 42
