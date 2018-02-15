@@ -266,6 +266,8 @@ In this section we discuss various models that were used in this thesis to analy
 
 \subsubsection {Logistic Regression Model}
 
+Logistic Regression is a Machine Learning classification algorithm that is used to predict the probability of a categorical dependent variable. In logistic regression, the dependent variable is a binary variable that contains data coded as 1 (yes, success, etc.) or 0 (no, failure, etc.). In other words, the logistic regression model predicts P(Y=1) as a function of X.
+
 \subsubsection {Decision Trees}
 
 \subsubsection {Random Forest Classifiers}
@@ -280,17 +282,31 @@ In this section we discuss various models that were used in this thesis to analy
 
 The Operations Support and Reporting Office at UNLV is responsible for extracting information regarding student enrollment and performance from the UNLV Data Warehouse and reporting the census to Integrated Postsecondary Education Data System (IPEDS). The data used in this thesis were obtained from the census data submitted to IPEDS every year. The following subsections will describe more information about the data.
 
-\section {Data Pre-Processing}
-\subsection {Computation of Not Retained variable}
-How did you generate the output variable
+\section {Data Preparation}
+\subsection{Data Description}
+The census data from the Operations Support and Reporting Office was exported into a .csv file to be used by the analysis. The raw data consisted of a total of 17,709 freshmen student records captured cohort-wise from the academic year 2012 to 2016. The data consisted of a variety of information about each student, such as pre-college academics, standardized test scores, the social and economic status of the student, freshmen year academics and finally if the student was retained in the sophomore year. Additionally, the data had variables which were not related to the first year student retention rates. After some research and insights from experts of the domain, the raw data was cleaned to only include data that would be associated with the analysis. The following subsections describe in detail about the dataset. 
+ 
+\subsection{Feature Extraction}
+Feature extraction involves creating important useful features from the available raw data. Based on the problem statement and the data collection techniques at UNLV. The raw data was used to generate the following important features.
+
+\subsubsection {Computation of SAT\_ACT\_Score Variable}
+The admissions office at UNLV requires the students to report scores of standardized exams such as ACT and SAT during their admission process. From the raw dataset, we noticed that the ACT and SAT scores were missing for many students. Especially 56\% of students did not have ACT scores while only 28\% did not have SAT scores. Hence to capture the importance of the standardized scores into our analysis, we converted the available ACT composite scores to equivalent 
+SAT composite scores based on the conversion table from \cite{ACTSAT}. The term SAT\_ACT\_Score was used to refer to this converted scores variable.
+
+\subsubsection {Computation of F2\_Not\_Retained Variable}
+The main focus of this thesis is to identify the students who are at the risk of not being retained after their freshmen year. In the raw dataset the flag F2\_Retain captures the aspect of student being retained and hence can serve as the outcome variable. We then compute the complement of this flag to obtain the feature F2\_Not\_Retained which takes 0 if the student was retained and 1 if the student was not retained. The problem of identifying students who are at the risk of not being retained after first year is then a binary classification task with F2\_Not\_Retained as the outcome variable.
+
+\section {Data Preprocessing}
+Data Preprocessing is a technique that is used to convert the raw data into a clean data set. In other words, whenever the data is gathered from different sources it is collected in raw format which is not feasible for the analysis.
+Therefore, certain steps are executed to convert the data into a tiny clean dataset. This technique is performed before the execution of any predictive Analysis. 
+
+
 \subsection {Handling Outliers in Data}
 
 Generally the process of collecting data from different sources can introduce outliers into the dataset. This may be due to a faulty data extraction program or a human error. In predictive data analysis outliers can have significant effect on the predictive power of the models as they can introduce huge bias into the model. Hence it is almost always essential to check for outliers in the dataset before performing any analysis. Outliers were identified in our dataset. Data plots with index on x-axis and values on y-axis was used to demonstrate the presence of outlier in a feature.
+
+
 \subsubsection{UnwHSGPA scores}
-
-
-
-
 
 \begin{figure}
 \centering
@@ -311,13 +327,64 @@ Generally the process of collecting data from different sources can introduce ou
 \end{figure}
 
  There were a few outliers identified for variable UnwHSGPA, as shown in figure \ref{fig:UnwHSGPA-with-outliers}. The outliers of the UnwHSGPA were replaced by mean value of the said dataset excluding all the outliers. Data plot of the variable UnwHSGPA after removing outliers is shown in figure \ref{fig:UnwHSGPA-No-outliers}
+
+
 \subsection {Handling Missing Values}
-Explain your approach of missing values
+In this subsection we will discuss how we handled missing values in the dataset. The table \ref{table:missing_db} shows variables along with the count of missing values. Machine learning deals with the usage of mathematical models on the data and hence it cannot be applied to datasets that have missing values. The general approach is to fill the missing value with a suitable value. The process of filling missing values in the data is known as Imputation. Researchers frequently use the mean, mode or median of the observed given values to substitute in the missing field.
+ \begin{table}[!t]
+	\renewcommand{\arraystretch}{1.3}
+	\caption{Variables with missing values and their count}
+	\label{table:missing_db}
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\bfseries Variable & \bfseries Number of missing values \\
+		\hline
+		SAT\_ACT\_Score & 830\\ \hline
+		UnwHSGPA & 1933\\ \hline
+		CoreHSGPA & 3463\\ \hline
+		F1\_MidtermGPA & 286\\ \hline
+	\end{tabular}
+\end{table}
+
+\subsubsection {Imputing SAT\_ACT\_Score}
+The SAT\_ACT\_Score variable had 830 missing values. By looking at the table, it can be inferred that presence of missing values in SAT\_ACT\_Score variable had very little impact on the percentage of students not being retained. A total of 24.1\% students were not retained when a value was present in the variable and 25.6\% were not retained when the variable had a missing value.
+
+ \begin{table}[!t]
+	\renewcommand{\arraystretch}{1.3}
+	\caption{Not Retained probabilities for SAT\_ACT\_Score variable with respect to the availability of data points}
+	\label{table:missing_db}
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\bfseries Variable & \bfseries Number of missing values \\
+		\hline
+		SAT\_ACT\_Score & 830\\ \hline
+		UnwHSGPA & 1933\\ \hline
+		CoreHSGPA & 3463\\ \hline
+		F1\_MidtermGPA & 286\\ \hline
+	\end{tabular}
+\end{table}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.7]{SATBoxPlot}
+	\caption{Boxplot of the SAT\_ACT\_Score vs F2\_NotRetained}
+	\label{fig:Sat_F2NotRetained_plot}
+\end{figure}
+
+Moreover, the boxplot of the SAT\_ACT\_Score vs F2\_NotRetained (Figure \ref{fig:Sat_F2NotRetained_plot}) also shows that SAT\_ACT\_Score has very low impact on the student dropout. Based on the above facts, the missing values in this variable were replaced by the mean value. 
 \subsection {Data Selection and Transformations}
 What important data did you select for your analysis
 \subsection {Correlation of Features}
 check the correlation of factors
 
+\section{Exploratory Data Analysis}
+Explain about the plots for each academic years.
+Explain about ipeds race and not retained
+Explain about mom and dad's education level and its influence on students retention
+
+find out more about GPA's, SAT and their dependence on not retained.
 
 \chapter{Experimental Results} \label{chapter:experiment_results}
 \section {Analysis of Predictive Models}

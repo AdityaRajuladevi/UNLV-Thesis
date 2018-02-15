@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  6 FEB 2018 18:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  14 FEB 2018 20:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -318,7 +318,11 @@ Writing index file unlv-thesis.idx
 
 (./my_macros.tex
 \c@theorem=\count117
-) (./unlv-thesis.aux)
+) (./unlv-thesis.aux
+
+LaTeX Warning: Label `table:missing_db' multiply defined.
+
+)
 \openout1 = `unlv-thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
@@ -335,8 +339,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 97.
 LaTeX Font Info:    ... okay on input line 97.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 97.
 LaTeX Font Info:    ... okay on input line 97.
-
-(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count118
 \scratchdimen=\dimen124
@@ -400,7 +403,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<./images/logo.pdf, id=154, 184.69pt x 65.24374pt>
+<./images/logo.pdf, id=178, 184.69pt x 65.24374pt>
 File: ./images/logo.pdf Graphic file (type pdf)
  <use ./images/logo.pdf>
 Package pdftex.def Info: ./images/logo.pdf used on input line 110.
@@ -517,7 +520,7 @@ Chapter 1.
 [1
 
 
-] <./images/unlv-retentiontrend.png, id=301, 604.2575pt x 322.20375pt>
+] <./images/unlv-retentiontrend.png, id=347, 604.2575pt x 322.20375pt>
 File: ./images/unlv-retentiontrend.png Graphic file (type png)
 
 <use ./images/unlv-retentiontrend.png>
@@ -551,10 +554,6 @@ Missing character: There is no ­ in font cmr10!
 [4
 
 ]
-
-LaTeX Warning: Citation `Mitchell1997' on page 5 undefined on input line 215.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 215--218
 
  []
@@ -569,7 +568,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
 
-<./images/MLApproachFinal.png, id=352, 788.9475pt x 456.70625pt>
+<./images/MLApproachFinal.png, id=399, 788.9475pt x 456.70625pt>
 File: ./images/MLApproachFinal.png Graphic file (type png)
 
 <use ./images/MLApproachFinal.png>
@@ -578,34 +577,41 @@ Package pdftex.def Info: ./images/MLApproachFinal.png used on input line 254.
  [6] [7 <./images/MLApproachFinal.png>]
 [8]
 Chapter 3.
-<./images/UnwHSGPAScores.png, id=367, 578.16pt x 433.62pt>
+[9
+
+] [10] <./images/UnwHSGPAScores.png, id=427, 578.16pt x 433.62pt>
 File: ./images/UnwHSGPAScores.png Graphic file (type png)
 
 <use ./images/UnwHSGPAScores.png>
-Package pdftex.def Info: ./images/UnwHSGPAScores.png used on input line 298.
+Package pdftex.def Info: ./images/UnwHSGPAScores.png used on input line 314.
 (pdftex.def)             Requested size: 258.36667pt x 193.77081pt.
 
-<./images/UnwHSGPAWithoutScores.png, id=368, 578.16pt x 433.62pt>
+<./images/UnwHSGPAWithoutScores.png, id=428, 578.16pt x 433.62pt>
 File: ./images/UnwHSGPAWithoutScores.png Graphic file (type png)
 
 <use ./images/UnwHSGPAWithoutScores.png>
 Package pdftex.def Info: ./images/UnwHSGPAWithoutScores.png used on input line 
-306.
+322.
 (pdftex.def)             Requested size: 258.36667pt x 193.77081pt.
 
-Overfull \hbox (46.97835pt too wide) in paragraph at lines 297--310
+Overfull \hbox (46.97835pt too wide) in paragraph at lines 313--326
  [][][] 
  []
 
-[9
+[11 <./images/UnwHSGPAScores.png> <./images/UnwHSGPAWithoutScores.png>]
+<./images/SATBoxPlot.png, id=438, 578.16pt x 289.08pt>
+File: ./images/SATBoxPlot.png Graphic file (type png)
 
-] [10 <./images/UnwHSGPAScores.png> <./images/UnwHSGPAWithoutScores.png>]
+<use ./images/SATBoxPlot.png>
+Package pdftex.def Info: ./images/SATBoxPlot.png used on input line 371.
+(pdftex.def)             Requested size: 404.70924pt x 202.35461pt.
+ [12] [13 <./images/SATBoxPlot.png>]
 Chapter 4.
-[11
+[14
 
 ]
 Chapter 5.
-(./unlv-thesis.bbl [12
+(./unlv-thesis.bbl [15
 
 ]
 Underfull \hbox (badness 1584) in paragraph at lines 30--35
@@ -613,58 +619,58 @@ Underfull \hbox (badness 1584) in paragraph at lines 30--35
 JM Laur^^S^^Pa, Sandeep
  []
 
-[13
+[16
 
-]) [14]pdfTeX warning (ext4): destination with the same identifier (name{chapte
+]) [17]pdfTeX warning (ext4): destination with the same identifier (name{chapte
 r.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.336 \chapter{}
+l.403 \chapter{}
                  %% please leave this one blank - the vita stuff is sort of ...
 Curriculum Vitae .
 
-Underfull \hbox (badness 10000) in paragraph at lines 344--347
+Underfull \hbox (badness 10000) in paragraph at lines 411--414
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--349
+Underfull \hbox (badness 10000) in paragraph at lines 415--416
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--355
+Underfull \hbox (badness 10000) in paragraph at lines 417--422
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 356.
-[15
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 423.
+[18
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 356.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 423.
  (./unlv-thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 356.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 356.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 423.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 423.
 Package rerunfilecheck Info: File `unlv-thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 9E50B41180E70C7C1D538322E77D4215;2356.
+(rerunfilecheck)             Checksum: 6FBC674E84D9E524FF6A2A22EFD05323;2850.
 
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 356.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 423.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 8146 strings out of 492995
- 123298 string characters out of 6132704
- 231276 words of memory out of 5000000
- 11531 multiletter control sequences out of 15000+600000
+ 8175 strings out of 492995
+ 123807 string characters out of 6132704
+ 232599 words of memory out of 5000000
+ 11545 multiletter control sequences out of 15000+600000
  9153 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,11n,48p,1739b,6795s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,12n,48p,1739b,6795s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
@@ -673,10 +679,10 @@ m/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 10.pfb>
-Output written on unlv-thesis.pdf (25 pages, 260477 bytes).
+Output written on unlv-thesis.pdf (28 pages, 277528 bytes).
 PDF statistics:
- 447 PDF objects out of 1000 (max. 8388607)
- 398 compressed objects within 4 object streams
- 78 named destinations out of 1000 (max. 500000)
- 306 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 517 PDF objects out of 1000 (max. 8388607)
+ 462 compressed objects within 5 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 359 words of extra memory for PDF output out of 10000 (max. 10000000)
 

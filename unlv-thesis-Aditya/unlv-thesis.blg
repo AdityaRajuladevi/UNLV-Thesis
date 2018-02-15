@@ -3,58 +3,46 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: unlv-thesis.aux
 The style file: alpha.bst
 Database file #1: thesis.bib
-Warning--I didn't find a database entry for "Dean2008"
-Warning--I didn't find a database entry for "ApacheHadoop"
-Warning--I didn't find a database entry for "Zaharia2010"
-Warning--I didn't find a database entry for "Liu2005"
-Warning--I didn't find a database entry for "Zida2015"
-Warning--I didn't find a database entry for "Chen2016"
-Warning--I didn't find a database entry for "miningdataset2012"
-Warning--I didn't find a database entry for "SPMFDatasets"
-Warning--I didn't find a database entry for "Liu2012"
-Warning--I didn't find a database entry for "Krishnamoorthy2015"
-Warning--I didn't find a database entry for "Fournier-Viger2014"
-Warning--I didn't find a database entry for "Fournier-Viger2016"
 Warning--empty journal in Murtaugh
-You've used 14 entries,
+You've used 16 entries,
             2543 wiz_defined-function locations,
-            679 strings with 7697 characters,
-and the built_in function-call counts, 5796 in all, are:
-= -- 592
-> -- 259
-< -- 9
-+ -- 87
-- -- 86
-* -- 427
-:= -- 950
-add.period$ -- 44
-call.type$ -- 14
-change.case$ -- 87
-chr.to.int$ -- 14
-cite$ -- 15
-duplicate$ -- 234
-empty$ -- 417
-format.name$ -- 103
-if$ -- 1183
+            667 strings with 7588 characters,
+and the built_in function-call counts, 6330 in all, are:
+= -- 640
+> -- 275
+< -- 11
++ -- 91
+- -- 90
+* -- 453
+:= -- 1037
+add.period$ -- 49
+call.type$ -- 16
+change.case$ -- 97
+chr.to.int$ -- 16
+cite$ -- 17
+duplicate$ -- 261
+empty$ -- 467
+format.name$ -- 111
+if$ -- 1294
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 15
-newline$ -- 74
-num.names$ -- 42
-pop$ -- 73
+missing$ -- 17
+newline$ -- 83
+num.names$ -- 48
+pop$ -- 91
 preamble$ -- 1
-purify$ -- 102
+purify$ -- 114
 quote$ -- 0
-skip$ -- 193
+skip$ -- 214
 stack$ -- 0
-substring$ -- 348
-swap$ -- 40
-text.length$ -- 9
-text.prefix$ -- 6
+substring$ -- 362
+swap$ -- 42
+text.length$ -- 11
+text.prefix$ -- 8
 top$ -- 0
-type$ -- 108
+type$ -- 120
 warning$ -- 1
-while$ -- 61
-width$ -- 16
-write$ -- 185
-(There were 13 warnings)
+while$ -- 65
+width$ -- 19
+write$ -- 208
+(There was 1 warning)

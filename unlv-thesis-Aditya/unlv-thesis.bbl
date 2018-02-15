@@ -46,6 +46,10 @@ Melissa~A Bingham and Natalie~Walleser Solverson.
 \newblock {\em Journal of Student Affairs Research and Practice}, 53(1):51--64,
   2016.
 
+\bibitem[Hal]{ACTSAT}
+Edwards Halle.
+\newblock {SAT / ACT Prep Online Guides and Tips}.
+
 \bibitem[Her06]{herzog2006estimating}
 Serge Herzog.
 \newblock Estimating student retention and degree-completion time: Decision
@@ -72,6 +76,11 @@ Farshid Marbouti, Heidi~A Diefes-Dux, and Krishna Madhavan.
 \newblock Models for early prediction of at-risk students in a course using
   standards-based grading.
 \newblock {\em Computers \& Education}, 103:1--15, 2016.
+
+\bibitem[Mit97]{Mitchell1997}
+Thomas~M. Mitchell.
+\newblock {\em Machine Learning}.
+\newblock McGraw-Hill, Inc., New York, NY, USA, 1 edition, 1997.
 
 \bibitem[Pla13]{plagge2013using}
 Mark Plagge.
