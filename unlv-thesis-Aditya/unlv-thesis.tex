@@ -344,29 +344,14 @@ In this subsection we will discuss how we handled missing values in the dataset.
 		UnwHSGPA & 1933\\ \hline
 		CoreHSGPA & 3463\\ \hline
 		F1\_MidtermGPA & 286\\ \hline
+		F1\_MathGradePass & 4989\\ \hline
 	\end{tabular}
 \end{table}
 
 \subsubsection {Imputing SAT\_ACT\_Score}
 The SAT\_ACT\_Score variable had 830 missing values. By looking at the table, it can be inferred that presence of missing values in SAT\_ACT\_Score variable had very little impact on the percentage of students not being retained. A total of 24.1\% students were not retained when a value was present in the variable and 25.6\% were not retained when the variable had a missing value.
 
- \begin{table}[!t]
-	\renewcommand{\arraystretch}{1.3}
-	\caption{Not Retained probabilities for SAT\_ACT\_Score variable with respect to the availability of data points}
-	\label{table:missing_db}
-	\centering
-	\begin{tabular}{|c|c|}
-		\hline
-		\bfseries Variable & \bfseries Number of missing values \\
-		\hline
-		SAT\_ACT\_Score & 830\\ \hline
-		UnwHSGPA & 1933\\ \hline
-		CoreHSGPA & 3463\\ \hline
-		F1\_MidtermGPA & 286\\ \hline
-	\end{tabular}
-\end{table}
-
-\begin{figure}
+\begin{figure}[!htbp]
 	\centering
 	\includegraphics[scale=0.7]{SATBoxPlot}
 	\caption{Boxplot of the SAT\_ACT\_Score vs F2\_NotRetained}
@@ -379,7 +364,7 @@ Moreover, the boxplot of the SAT\_ACT\_Score vs F2\_NotRetained (Figure \ref{fig
 The CoreHSGPA variable had 3463 missing values, whereas the UnwHSGPA had 1943 missing values. Before imputing, we tried to analyze the relation between both the variables (Figure \ref{fig:diffHSGPA}). For this we calculated the difference between CoreHSGPA and UnwHSGPA of available records and plotted them as shown in figure \ref{fig:Core_Unw_diff}. We can clearly observe that majority of the differences were lying in the range of [-1,1], which indicates that the two variables had very close relation. Similar pattern was revealed from the distribution plot of the variable differences as shown in figure( \ref{fig:Core_Unw_dist}), which revealed that the differences followed a gaussian distribution with a mean of 0.23. Based on the above facts, we replaced the missing values with the available variable scores. The remaining missing values were replaced by the mean value of the respective variable.
 
 
-\begin{figure}
+\begin{figure}[!htbp]
 \centering
     \begin{subfigure}[b]{0.55\textwidth}            
             \includegraphics[width=\textwidth]{Core-Unw-GPA-diff}
@@ -396,6 +381,22 @@ The CoreHSGPA variable had 3463 missing values, whereas the UnwHSGPA had 1943 mi
     \end{subfigure}
     \caption{Analyzing difference between CoreHSGPA and UnwHSGPA }\label{fig:diffHSGPA}
 \end{figure}
+
+\subsubsection {Imputing F1\_MidtermGPA}
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[scale=0.7]{F1-MidTermGPA-distribution}
+	\caption{Distribution plot of the F1\_MidtermGPA}
+	\label{fig:F1_MidtermGPA_plot}
+\end{figure}
+
+The F1\_MidtermGPA variable had 286 missing values which adds up to a very small percentage in the overall data. We analyzed the distribution plot of F1\_MidtermGPA (figure \ref{fig:F1_MidtermGPA_plot}) and noticed that it also follows a gaussian distribution with mean value of 2.5272 and a standard deviation of 0.851. Considering the above information we imputed the missing value of the variable with its mean as it would not shift the centrality of the variable.
+
+\subsubsection {Imputing F1\_MathGradePass}
+F1\_MathGradePass is a categorical variable with values 'Y' or 'N', where a 'Y' represents if a student got a passing grade in math taken during his first fall term and 'N' if he got a failing grade. It had a total of 4989 missing values in the variable. Such a large number of missing values for this variable is attributed to the fact that a student who did not take any math course will not have a value in this variable. Hence the missing value was replaced with a 'N'.
+
+
 
 
 
