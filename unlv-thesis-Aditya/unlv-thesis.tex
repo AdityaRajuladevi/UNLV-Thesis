@@ -286,6 +286,21 @@ The Operations Support and Reporting Office at UNLV is responsible for extractin
 \subsection{Data Description}
 The census data from the Operations Support and Reporting Office was exported into a .csv file to be used by the analysis. The raw data consisted of a total of 17,709 freshmen student records captured cohort-wise from the academic year 2012 to 2016. The data consisted of a variety of information about each student, such as pre-college academics, standardized test scores, the social and economic status of the student, freshmen year academics and finally if the student was retained in the sophomore year. Additionally, the data had variables which were not related to the first year student retention rates. After some research and insights from experts of the domain, the raw data was cleaned to only include data that would be associated with the analysis. The following subsections describe in detail about the dataset. 
  
+  \begin{table}[!t]
+	\renewcommand{\arraystretch}{1.3}
+	\caption{Description of data fields for first-year student data}
+	\label{table:data_description_db}
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\bfseries No. & \bfseries Feature & \bfseries Type  \\
+		\hline
+
+	\end{tabular}
+\end{table}
+
+ 
+ 
 \subsection{Feature Extraction}
 Feature extraction involves creating important useful features from the available raw data. Based on the problem statement and the data collection techniques at UNLV. The raw data was used to generate the following important features.
 
@@ -403,9 +418,9 @@ What important data did you select for your analysis
 check the correlation of factors
 
 \section{Exploratory Data Analysis}
-Exploratory data analysis (EDA) is an approach employed to analyze data sets and summarize their main characteristics, often with visual methods, without making any assumptions about its contents. It is a crucial step to take before diving into machine learning or statistical modeling because it provides the context needed to develop an appropriate model for the problem at hand and to correctly interpret its results. In this section we try to uncover some important patterns inherent in our data with appropriate plots.
+Exploratory data analysis (EDA) is an approach employed to analyze data sets and summarize their main characteristics, often with visual methods, without making any assumptions about its contents. It is an important step to take before diving into statistical modeling or predictive analysis because it provides the important information and context needed to develop an appropriate model for the problem. In this section we try to uncover some important patterns inherent in our data with appropriate plots.
 
-\subsection {Academic years Vs F2\_Not\_Retained}
+\subsection {Academic year's Vs F2\_Not\_Retained}
 As a first step, the proportion of students retained and not retained in an academic year was plotted in the figure \ref{fig:AcadYear_F2NotRetained_plot}, to understand the distribution of students dropping out at the end of each year. Each cohort includes data about students who were in their F1 semester in that specific year. From the plot, we can infer that the number of students who drop out after their first-year varies  very slightly for each year. This observation informs us that the retention rates at UNLV are almost similar even though efforts are being made to improve them.
 
 \begin{figure}[!htbp]
@@ -416,8 +431,7 @@ As a first step, the proportion of students retained and not retained in an acad
 \end{figure}
 
 \subsection {IPEDS Race Vs F2\_Not\_Retained}
-In this section, we tried to analyze the patterns observed by different categories of the IPEDS Race with respect to student retention. For this, we plotted the different IPEDS Race categories on x-axis and the number of students who retained and who did not on y-axis as shown in figure \ref{fig:ipeds_F2NotRetained_plot}. We observed that the student population of different races was very different at UNLV with higher populations of Asian, Hispanic and White. Moreover, we also observe that the number of students retained in each race category varies quite distinctively owing to the differences in the population, however we observe that the Asian category has the best retention rates followed by Hispanic and White categories. On the whole, the figure clearly displays that the student's race is useful in predicting if he/she will be retained after the first year.
-
+In this section, we tried to analyze the patterns observed by different categories of the IPEDS Race with respect to student retention. For this, we first plotted the different IPEDS Race categories on x-axis and the number of students who retained and who did not on y-axis as shown in figure \ref{fig:ipeds_F2NotRetained_plot}. We observed that the student population of different races was very different at UNLV with higher populations belonging to Asian, Hispanic and White races.
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[scale=0.65]{ipeds_vs_notretained_stack}
@@ -425,8 +439,59 @@ In this section, we tried to analyze the patterns observed by different categori
 	\label{fig:ipeds_F2NotRetained_plot}
 \end{figure}
 
+Although fig \ref{fig:ipeds_F2NotRetained_plot} gives us a good idea about the type of students at UNLV, it is not sufficient to help us understand the retention patterns among the different categories. For this, we calculated the retention rates of each race category and tabulated them in table \ref{table:ipeds_race_retentions}. Considering the student distributions in each race category and their retention rates from table, we conclude that the Asian race category had the highest student retention followed by Hispanic and White categories. On the whole we observe that the student's race is useful in predicting if he/she will be retained after the first year.
+
+ \begin{table}[!t]
+	\renewcommand{\arraystretch}{1.3}
+	\caption{Retention Rates of each IPEDS Race Category}
+	\label{table:ipeds_race_retentions}
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\bfseries IPEDS Race & \bfseries F2\_Retained & \bfseries F2\_Not\_Retained\\
+		\hline
+		Asian & 85.75\% & 14.25\% \\ \hline
+		American Indian or Alaska Native & 53.48\% & 46.51\% \\ \hline
+		Black or African American & 66.83\% & 33.17\% \\ \hline
+		Hispanic & 74.34\% & 25.66\% \\ \hline
+		Native Hawaiian or Other Pacific Islander & 68.65\% & 31.35\% \\ \hline
+		Nonresident Alien & 86.14\% & 13.86\% \\ \hline
+		Two or more races &  74.23\% &  25.76\% \\ \hline
+		Unknown race and ethnicity & 75.26 \% & 24.74\% \\ \hline
+		White & 74.38\% & 25.61\% \\ \hline
+	\end{tabular}
+\end{table}
+
+
+
 \subsection {Mom\_Education\_Level Vs F2\_Not\_Retained}
-In this section, we tried to analyze the patterns observed by different categories of the Mom's Education Level with respect to not retention after first year. For this, we plotted the different categories of Mom\_Education\_Level variable on x-axis and the proportion of students who retained and who did not on y-axis as shown in figure \ref{fig:mom_edu_F2NotRetained_plot}. We observed that the proportion of students who were not retained was different for different categories. We noticed that the Asian race had lowest proportion, whereas American Indian or Alaska Native had highest proportion of student dropout. On the whole, the figure clearly displays that the student's race is useful in predicting if he/she will be retained after the first year.
+In this section, we tried to analyze the patterns observed by different categories of the Mom's Education Level with respect to student retention. For this, we plotted the different categories of Mom\_Education\_Level variable on x-axis and the number of students who retained and who did not on y-axis as shown in figure \ref{fig:mom_edu_F2NotRetained_plot}. We observed that the level of Mom's education of students at UNLV was highly distributed. It especially gives us the information that most of the student's Mom's had a minimum education of High School or more.
+
+To get a better understanding of the effect of Mom's Education on students retention, we calculated the retention rates of students from each category of the variable and tabulated them in table  \ref{table:mom_edu_retentions}. Considering the student distributions in each category and the retention rates of the variable from table, we notice many expected patterns such as more students were retained if their Mom had an Education level higher than bachelors'. But strangely we also noticed that the retention rate of students with their Mom's education level as Less than HS Graduate was also good at UNLV. This gives us a hint of the variability of patterns inherent in the students data from UNLV.
+
+\begin{table}[!t]
+	\renewcommand{\arraystretch}{1.3}
+	\caption{Retention Rates of Mom's Education Level's}
+	\label{table:mom_edu_retentions}
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\bfseries Mom's Education Level & \bfseries F2\_Retained & \bfseries F2\_Not\_Retained\\
+		\hline
+		Post-Doctorate  & 100.00\%  & 00.00\% \\ \hline
+		Doctorate (Professional) & 84.37\% &  15.62\% \\ \hline
+		Doctorate (Academic) & 77.78\% & 22.22\% \\ \hline
+		Masters Level Degree    &   76.14\% &  23.86\% \\ \hline
+		Bachelor Level Degree &  78.76\%  & 21.24\% \\ \hline
+		Some College & 74.76\% & 25.24\% \\ \hline
+		Some Graduate School  & 78.82\% &  21.17\% \\ \hline
+		2-Year College Degree    &  74.82\%  & 25.18\% \\ \hline
+		HS Graduate or Equivalent  & 74.20\% &  25.79\% \\ \hline
+		Less Than HS Graduate     & 74.52\% &  25.47\% \\ \hline
+		Technical School  &         69.64\% &  30.36\% \\ \hline
+		Not Indicated         &    77.46\% & 22.53\% \\ \hline
+	\end{tabular}
+\end{table}
 
 \begin{figure}[!ht]
 	\centering
@@ -434,6 +499,44 @@ In this section, we tried to analyze the patterns observed by different categori
 	\caption{Mom's Education Level vs F2\_NotRetained}
 	\label{fig:mom_edu_F2NotRetained_plot}
 \end{figure}
+
+
+\subsection {Dad\_Education\_Level Vs F2\_Not\_Retained}
+In this section, we tried to analyze the patterns observed by different categories of the Dad's Education Level with respect to student retention. For this, we plotted the different categories of Dad\_Education\_Level variable on x-axis and the number of students who retained and who did not on y-axis as shown in figure \ref{fig:dad_edu_F2NotRetained_plot}. We observed that the level of Dad's education of students at UNLV was highly distributed. It especially gives us the information that most of the student's Dad's had a minimum education of High School or more.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.65]{NotRetained_fre_dad_edu}
+	\caption{Dad's Education Level vs F2\_NotRetained}
+	\label{fig:dad_edu_F2NotRetained_plot}
+\end{figure}
+
+To get a better understanding of the effect of Dad's Education on students retention, we calculated the retention rates of students from each category of the variable and tabulated them in table  \ref{table:dad_edu_retentions}. Considering the student distributions in each category and the retention rates of the variable from table, we notice many expected patterns such as more students were retained if their Dad had an Education level higher than bachelors'. But strangely we also noticed that the retention rate of students with their Dad's education level as Less than HS Graduate was also good at UNLV. This gives us a hint of the variability of patterns inherent in the students data from UNLV.
+
+\begin{table}[!t]
+	\renewcommand{\arraystretch}{1.3}
+	\caption{Retention Rates of Dad's Education Level's}
+	\label{table:dad_edu_retentions}
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\bfseries Dad's Education Level & \bfseries F2\_Retained & \bfseries F2\_Not\_Retained\\
+		\hline
+		Post-Doctorate  & 86.66\%  & 13.34\% \\ \hline
+		Doctorate (Professional) & 77.86\% &  22.14\% \\ \hline
+		Doctorate (Academic) & 86.84\% & 13.16\% \\ \hline
+		Masters Level Degree    &   75.80\% &  24.20\% \\ \hline
+		Bachelor Level Degree &  80.34\%  & 19.66\% \\ \hline
+		Some College & 76.30\% & 23.70\% \\ \hline
+		Some Graduate School  & 76.62\% &  23.38\% \\ \hline
+		2-Year College Degree    &  81.15\%  & 19.75\% \\ \hline
+		HS Graduate or Equivalent  & 73.36\% &  26.64\% \\ \hline
+		Less Than HS Graduate     & 73.86\% &  26.14\% \\ \hline
+		Technical School  &         69.50\% &  30.50\% \\ \hline
+		Not Indicated         &    71.78\% & 28.22\% \\ \hline
+	\end{tabular}
+\end{table}
+
 
 Explain about the plots for each academic years.
 Explain about ipeds race and not retained

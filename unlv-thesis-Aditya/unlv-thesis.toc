@@ -36,12 +36,13 @@
 \contentsline {subsection}{\numberline {3.3.3}Data Selection and Transformations}{14}{subsection.3.3.3}
 \contentsline {subsection}{\numberline {3.3.4}Correlation of Features}{14}{subsection.3.3.4}
 \contentsline {section}{\numberline {3.4}Exploratory Data Analysis}{15}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Academic years Vs F2\_Not\_Retained}{15}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.1}Academic year's Vs F2\_Not\_Retained}{15}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}IPEDS Race Vs F2\_Not\_Retained}{16}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}Mom\_Education\_Level Vs F2\_Not\_Retained}{17}{subsection.3.4.3}
-\contentsline {chapter}{Chapter{} \numberline {4}Experimental Results}{19}{chapter.4}
-\contentsline {section}{\numberline {4.1}Analysis of Predictive Models}{19}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Evaluation using Traditional Metrics}{19}{subsection.4.1.1}
-\contentsline {chapter}{Chapter{} \numberline {5}Conclusion}{20}{chapter.5}
-\contentsline {chapter}{Bibliography}{21}{chapter*.19}
-\contentsline {chapter}{Curriculum Vitae{} \numberline {}}{23}{chapter.1}
+\contentsline {subsection}{\numberline {3.4.4}Dad\_Education\_Level Vs F2\_Not\_Retained}{19}{subsection.3.4.4}
+\contentsline {chapter}{Chapter{} \numberline {4}Experimental Results}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Analysis of Predictive Models}{21}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Evaluation using Traditional Metrics}{21}{subsection.4.1.1}
+\contentsline {chapter}{Chapter{} \numberline {5}Conclusion}{22}{chapter.5}
+\contentsline {chapter}{Bibliography}{23}{chapter*.23}
+\contentsline {chapter}{Curriculum Vitae{} \numberline {}}{25}{chapter.1}
