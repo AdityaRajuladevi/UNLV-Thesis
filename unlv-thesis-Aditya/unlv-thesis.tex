@@ -291,10 +291,38 @@ The census data from the Operations Support and Reporting Office was exported in
 	\caption{Description of data fields for first-year student data}
 	\label{table:data_description_db}
 	\centering
-	\begin{tabular}{|c|c|c|}
+	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\bfseries No. & \bfseries Feature & \bfseries Type  \\
+		\bfseries No. & \bfseries Feature & \bfseries Type & \bfseries Description\\ 
 		\hline
+		
+		1 	& Cohort\_Year 		&	Multi Nominal 	&	 First Fall Academic year of the student\\ \hline   
+		2 	& SummerAdmit 		& 	Binary Nominal 	& 	If Student was admitted in prior summer \\ \hline
+		3 	& AltAdmit 			& 	Binary Nominal	& 	If Student was Transferred or admitted differently \\ \hline
+		4 	& F1\_EnrollCredits		&	Numerical		&	Count of semester credits enrolled for admit term \\ \hline
+		5 	& F1\_GPA 			&	Numerical		&	Term GPA for first fall term (admit term) 	\\ \hline
+		6 	&F1\_GPA\_units		&	Numerical		&	Units completed in first fall (for GPA)		\\ \hline
+		7 	&F1\_Complete		&	Binary	Nominal	&	Completed first fall term (final census)		\\ \hline
+		8 	&S1\_Retain			&	Binary	Nominal	&	Enrolled in 1st spring (S1) - yes or no			\\ \hline
+		9 	&S1\_EnrollCredits		&	Numerical		&	Count of career semester credits enrolled for S1 term \\ \hline
+		10	&S1\_GPA\_units		&	Numerical		&	Units completed in S1 (for GPA)			  \\ \hline
+		11	&S1\_GPA			&	Numerical		&	Term GPA for S1 term				\\ \hline
+		12 	&S1\_Complete		&	Binary	Nominal	&	If student completed S1 term			\\ \hline
+		13 	&Mom\_Edu\_Level		&	Multi Nominal		&	Highest education level of Mother		\\ \hline
+		14 	&Dad\_Edu\_Level		&	Multi Nominal		&	Highest education level of Father			\\ \hline
+		15 	&First\_Gen			&	Binary Nominal	&	If the kid is the first to attend college		\\ \hline
+		16 	&Gender			&	Binary Nominal	&	Student Gender					\\ \hline
+		17 	&Housing			&	Multi Nominal		&	on or off-campus housing				\\ \hline
+		18 	&IPEDS\_Race		&	Multi Nominal		&	IPEDS race/ethnicity data				\\ \hline
+		19 	&Marital\_Status		&	Multi Nominal		&	Marital status of the student in admit term	\\ \hline
+		20 	&CoreHSGPA			&	Multi Nominal		&	Core high school GPA of the student		\\ \hline
+		21 	&UnwHSGPA			&	Multi Nominal		&	Unweighted high school GPA of the student	\\ \hline
+		22 	&SAT\_ACT\_Score		&	Numerical		&	ACT scores scaled to SAT scores			\\ \hline
+		23 	&ACT\_SAT			&	Binary Nominal	&	If the student has taken ACT or SAT		\\ \hline
+		24 	&F1\_Residency		&	Binary Nominal	&	In state or Out of State				\\ \hline
+		25 	&F1\_TuitionRes		&	Multi Nominal		&	Tuition status of the student			\\ \hline
+		
+
 
 	\end{tabular}
 \end{table}
