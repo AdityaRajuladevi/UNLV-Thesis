@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  15 FEB 2018 16:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  23 FEB 2018 06:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -400,7 +400,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<./images/logo.pdf, id=190, 184.69pt x 65.24374pt>
+<./images/logo.pdf, id=203, 184.69pt x 65.24374pt>
 File: ./images/logo.pdf Graphic file (type pdf)
  <use ./images/logo.pdf>
 Package pdftex.def Info: ./images/logo.pdf used on input line 110.
@@ -517,7 +517,7 @@ Chapter 1.
 [1
 
 
-] <./images/unlv-retentiontrend.png, id=367, 604.2575pt x 322.20375pt>
+] <./images/unlv-retentiontrend.png, id=394, 604.2575pt x 322.20375pt>
 File: ./images/unlv-retentiontrend.png Graphic file (type png)
 
 <use ./images/unlv-retentiontrend.png>
@@ -565,7 +565,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
 
-<./images/MLApproachFinal.png, id=419, 788.9475pt x 456.70625pt>
+<./images/MLApproachFinal.png, id=447, 788.9475pt x 456.70625pt>
 File: ./images/MLApproachFinal.png Graphic file (type png)
 
 <use ./images/MLApproachFinal.png>
@@ -576,14 +576,14 @@ Package pdftex.def Info: ./images/MLApproachFinal.png used on input line 254.
 Chapter 3.
 [9
 
-] [10] <./images/UnwHSGPAScores.png, id=447, 578.16pt x 433.62pt>
+] [10] <./images/UnwHSGPAScores.png, id=474, 578.16pt x 433.62pt>
 File: ./images/UnwHSGPAScores.png Graphic file (type png)
 
 <use ./images/UnwHSGPAScores.png>
 Package pdftex.def Info: ./images/UnwHSGPAScores.png used on input line 314.
 (pdftex.def)             Requested size: 258.36667pt x 193.77081pt.
 
-<./images/UnwHSGPAWithoutScores.png, id=448, 578.16pt x 433.62pt>
+<./images/UnwHSGPAWithoutScores.png, id=475, 578.16pt x 433.62pt>
 File: ./images/UnwHSGPAWithoutScores.png Graphic file (type png)
 
 <use ./images/UnwHSGPAWithoutScores.png>
@@ -596,14 +596,14 @@ Overfull \hbox (46.97835pt too wide) in paragraph at lines 313--326
  []
 
 [11 <./images/UnwHSGPAScores.png> <./images/UnwHSGPAWithoutScores.png>]
-<./images/SATBoxPlot.png, id=458, 578.16pt x 289.08pt>
+<./images/SATBoxPlot.png, id=485, 578.16pt x 289.08pt>
 File: ./images/SATBoxPlot.png Graphic file (type png)
 
 <use ./images/SATBoxPlot.png>
 Package pdftex.def Info: ./images/SATBoxPlot.png used on input line 356.
 (pdftex.def)             Requested size: 404.70924pt x 202.35461pt.
  [12 <./images/SATBoxPlot.png>]
-<./images/Core-Unw-GPA-diff.png, id=468, 578.16pt x 433.62pt>
+<./images/Core-Unw-GPA-diff.png, id=495, 578.16pt x 433.62pt>
 File: ./images/Core-Unw-GPA-diff.png Graphic file (type png)
 
 <use ./images/Core-Unw-GPA-diff.png>
@@ -611,7 +611,7 @@ Package pdftex.def Info: ./images/Core-Unw-GPA-diff.png used on input line 370.
 
 (pdftex.def)             Requested size: 258.36667pt x 193.77081pt.
 
-<./images/Core-Unw-GPA-distribution.png, id=469, 578.16pt x 433.62pt>
+<./images/Core-Unw-GPA-distribution.png, id=496, 578.16pt x 433.62pt>
 File: ./images/Core-Unw-GPA-distribution.png Graphic file (type png)
 
 <use ./images/Core-Unw-GPA-distribution.png>
@@ -623,7 +623,7 @@ Overfull \hbox (46.97835pt too wide) in paragraph at lines 369--382
  [][][] 
  []
 
-<./images/F1-MidTermGPA-distribution.png, id=470, 578.16pt x 433.62pt>
+<./images/F1-MidTermGPA-distribution.png, id=497, 578.16pt x 433.62pt>
 File: ./images/F1-MidTermGPA-distribution.png Graphic file (type png)
 
 <use ./images/F1-MidTermGPA-distribution.png>
@@ -631,13 +631,37 @@ Package pdftex.def Info: ./images/F1-MidTermGPA-distribution.png used on input
 line 389.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
  [13 <./images/Core-Unw-GPA-diff.png> <./images/Core-Unw-GPA-distribution.png>]
- [14 <./images/F1-MidTermGPA-distribution.png>] [15]
+ [14 <./images/F1-MidTermGPA-distribution.png>]
+<./images/NotRetained_fre_acadyear.png, id=511, 500.1084pt x 390.9807pt>
+File: ./images/NotRetained_fre_acadyear.png Graphic file (type png)
+
+<use ./images/NotRetained_fre_acadyear.png>
+Package pdftex.def Info: ./images/NotRetained_fre_acadyear.png used on input li
+ne 413.
+(pdftex.def)             Requested size: 300.06735pt x 234.59023pt.
+ [15 <./images/NotRetained_fre_acadyear.png>]
+<./images/ipeds_vs_notretained_stack.png, id=519, 620.7993pt x 603.4545pt>
+File: ./images/ipeds_vs_notretained_stack.png Graphic file (type png)
+
+<use ./images/ipeds_vs_notretained_stack.png>
+Package pdftex.def Info: ./images/ipeds_vs_notretained_stack.png used on input 
+line 423.
+(pdftex.def)             Requested size: 403.51477pt x 392.24077pt.
+ [16 <./images/ipeds_vs_notretained_stack.png>]
+<./images/NotRetained_fre_mom_edu.png, id=526, 609.2361pt x 595.5048pt>
+File: ./images/NotRetained_fre_mom_edu.png Graphic file (type png)
+
+<use ./images/NotRetained_fre_mom_edu.png>
+Package pdftex.def Info: ./images/NotRetained_fre_mom_edu.png used on input lin
+e 433.
+(pdftex.def)             Requested size: 395.99878pt x 387.07353pt.
+ [17 <./images/NotRetained_fre_mom_edu.png>] [18]
 Chapter 4.
-[16
+[19
 
 ]
 Chapter 5.
-(./unlv-thesis.bbl [17
+(./unlv-thesis.bbl [20
 
 ]
 Underfull \hbox (badness 1584) in paragraph at lines 30--35
@@ -645,51 +669,51 @@ Underfull \hbox (badness 1584) in paragraph at lines 30--35
 JM Laur^^S^^Pa, Sandeep
  []
 
-[18
+[21
 
-]) [19]pdfTeX warning (ext4): destination with the same identifier (name{chapte
+]) [22]pdfTeX warning (ext4): destination with the same identifier (name{chapte
 r.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.429 \chapter{}
+l.458 \chapter{}
                  %% please leave this one blank - the vita stuff is sort of ...
 Curriculum Vitae .
 
-Underfull \hbox (badness 10000) in paragraph at lines 437--440
+Underfull \hbox (badness 10000) in paragraph at lines 466--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 441--442
+Underfull \hbox (badness 10000) in paragraph at lines 470--471
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 443--448
+Underfull \hbox (badness 10000) in paragraph at lines 472--477
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 449.
-[20
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 478.
+[23
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 449.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 478.
  (./unlv-thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 449.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 449.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 478.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 478.
 Package rerunfilecheck Info: File `unlv-thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 3AEC8D843392EBEB10C3FCC79BD8C9C2;3126.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 449.
+(rerunfilecheck)             Checksum: 19BB259F642A86677AD885679749DA9A;3412.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 478.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 8205 strings out of 492995
- 124659 string characters out of 6132704
- 232910 words of memory out of 5000000
- 11566 multiletter control sequences out of 15000+600000
+ 8235 strings out of 492995
+ 125518 string characters out of 6132704
+ 233113 words of memory out of 5000000
+ 11584 multiletter control sequences out of 15000+600000
  9153 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,12n,48p,1739b,6795s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -701,10 +725,10 @@ m/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 10.pfb>
-Output written on unlv-thesis.pdf (30 pages, 330159 bytes).
+Output written on unlv-thesis.pdf (33 pages, 425597 bytes).
 PDF statistics:
- 556 PDF objects out of 1000 (max. 8388607)
- 493 compressed objects within 5 object streams
- 98 named destinations out of 1000 (max. 500000)
- 398 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 607 PDF objects out of 1000 (max. 8388607)
+ 534 compressed objects within 6 object streams
+ 107 named destinations out of 1000 (max. 500000)
+ 437 words of extra memory for PDF output out of 10000 (max. 10000000)
 

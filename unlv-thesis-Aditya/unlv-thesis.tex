@@ -397,15 +397,44 @@ The F1\_MidtermGPA variable had 286 missing values which adds up to a very small
 F1\_MathGradePass is a categorical variable with values 'Y' or 'N', where a 'Y' represents if a student got a passing grade in math taken during his first fall term and 'N' if he got a failing grade. It had a total of 4989 missing values in the variable. Such a large number of missing values for this variable is attributed to the fact that a student who did not take any math course will not have a value in this variable. Hence the missing value was replaced with a 'N'.
 
 
-
-
-
 \subsection {Data Selection and Transformations}
 What important data did you select for your analysis
 \subsection {Correlation of Features}
 check the correlation of factors
 
 \section{Exploratory Data Analysis}
+Exploratory data analysis (EDA) is an approach employed to analyze data sets and summarize their main characteristics, often with visual methods, without making any assumptions about its contents. It is a crucial step to take before diving into machine learning or statistical modeling because it provides the context needed to develop an appropriate model for the problem at hand and to correctly interpret its results. In this section we try to uncover some important patterns inherent in our data with appropriate plots.
+
+\subsection {Academic years Vs F2\_Not\_Retained}
+As a first step, the proportion of students retained and not retained in an academic year was plotted in the figure \ref{fig:AcadYear_F2NotRetained_plot}, to understand the distribution of students dropping out at the end of each year. Each cohort includes data about students who were in their F1 semester in that specific year. From the plot, we can infer that the number of students who drop out after their first-year varies  very slightly for each year. This observation informs us that the retention rates at UNLV are almost similar even though efforts are being made to improve them.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.6]{NotRetained_fre_acadyear}
+	\caption{Academic Year vs F2\_NotRetained}
+	\label{fig:AcadYear_F2NotRetained_plot}
+\end{figure}
+
+\subsection {IPEDS Race Vs F2\_Not\_Retained}
+In this section, we tried to analyze the patterns observed by different categories of the IPEDS Race with respect to student retention. For this, we plotted the different IPEDS Race categories on x-axis and the number of students who retained and who did not on y-axis as shown in figure \ref{fig:ipeds_F2NotRetained_plot}. We observed that the student population of different races was very different at UNLV with higher populations of Asian, Hispanic and White. Moreover, we also observe that the number of students retained in each race category varies quite distinctively owing to the differences in the population, however we observe that the Asian category has the best retention rates followed by Hispanic and White categories. On the whole, the figure clearly displays that the student's race is useful in predicting if he/she will be retained after the first year.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[scale=0.65]{ipeds_vs_notretained_stack}
+	\caption{IPEDS Race vs F2\_NotRetained}
+	\label{fig:ipeds_F2NotRetained_plot}
+\end{figure}
+
+\subsection {Mom\_Education\_Level Vs F2\_Not\_Retained}
+In this section, we tried to analyze the patterns observed by different categories of the Mom's Education Level with respect to not retention after first year. For this, we plotted the different categories of Mom\_Education\_Level variable on x-axis and the proportion of students who retained and who did not on y-axis as shown in figure \ref{fig:mom_edu_F2NotRetained_plot}. We observed that the proportion of students who were not retained was different for different categories. We noticed that the Asian race had lowest proportion, whereas American Indian or Alaska Native had highest proportion of student dropout. On the whole, the figure clearly displays that the student's race is useful in predicting if he/she will be retained after the first year.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[scale=0.65]{NotRetained_fre_mom_edu}
+	\caption{Mom's Education Level vs F2\_NotRetained}
+	\label{fig:mom_edu_F2NotRetained_plot}
+\end{figure}
+
 Explain about the plots for each academic years.
 Explain about ipeds race and not retained
 Explain about mom and dad's education level and its influence on students retention
