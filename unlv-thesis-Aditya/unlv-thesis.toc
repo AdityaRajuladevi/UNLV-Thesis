@@ -14,35 +14,36 @@
 \contentsline {subsection}{\numberline {2.2.2}Predictive Analytics}{6}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Selected Models}{8}{subsection.2.2.3}
 \contentsline {subsubsection}{\numberline {2.2.3.1}Logistic Regression Model}{8}{subsubsection.2.2.3.1}
-\contentsline {subsubsection}{\numberline {2.2.3.2}Decision Trees}{8}{subsubsection.2.2.3.2}
-\contentsline {subsubsection}{\numberline {2.2.3.3}Random Forest Classifiers}{8}{subsubsection.2.2.3.3}
-\contentsline {subsubsection}{\numberline {2.2.3.4}Support Vector Machines }{8}{subsubsection.2.2.3.4}
-\contentsline {subsection}{\numberline {2.2.4}Evaluation Methods}{8}{subsection.2.2.4}
-\contentsline {chapter}{Chapter{} \numberline {3}Methodology}{9}{chapter.3}
-\contentsline {section}{\numberline {3.1}Data Collection}{9}{section.3.1}
-\contentsline {section}{\numberline {3.2}Data Preparation}{9}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Data Description}{9}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Feature Extraction}{10}{subsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.2.1}Computation of SAT\_ACT\_Score Variable}{10}{subsubsection.3.2.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2.2}Computation of F2\_Not\_Retained Variable}{10}{subsubsection.3.2.2.2}
-\contentsline {section}{\numberline {3.3}Data Preprocessing}{10}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Handling Outliers in Data}{11}{subsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.1.1}UnwHSGPA scores}{11}{subsubsection.3.3.1.1}
-\contentsline {subsection}{\numberline {3.3.2}Handling Missing Values}{11}{subsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.2.1}Imputing SAT\_ACT\_Score}{12}{subsubsection.3.3.2.1}
-\contentsline {subsubsection}{\numberline {3.3.2.2}Imputing CoreHSGPA and UnwHSGPA}{13}{subsubsection.3.3.2.2}
-\contentsline {subsubsection}{\numberline {3.3.2.3}Imputing F1\_MidtermGPA}{13}{subsubsection.3.3.2.3}
-\contentsline {subsubsection}{\numberline {3.3.2.4}Imputing F1\_MathGradePass}{14}{subsubsection.3.3.2.4}
-\contentsline {subsection}{\numberline {3.3.3}Data Selection and Transformations}{14}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Correlation of Features}{14}{subsection.3.3.4}
-\contentsline {section}{\numberline {3.4}Exploratory Data Analysis}{15}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Academic year's Vs F2\_Not\_Retained}{15}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}IPEDS Race Vs F2\_Not\_Retained}{16}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Mom\_Education\_Level Vs F2\_Not\_Retained}{17}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Dad\_Education\_Level Vs F2\_Not\_Retained}{19}{subsection.3.4.4}
-\contentsline {chapter}{Chapter{} \numberline {4}Experimental Results}{21}{chapter.4}
-\contentsline {section}{\numberline {4.1}Analysis of Predictive Models}{21}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Evaluation using Traditional Metrics}{21}{subsection.4.1.1}
-\contentsline {chapter}{Chapter{} \numberline {5}Conclusion}{22}{chapter.5}
-\contentsline {chapter}{Bibliography}{23}{chapter*.23}
-\contentsline {chapter}{Curriculum Vitae{} \numberline {}}{25}{chapter.1}
+\contentsline {subsubsection}{\numberline {2.2.3.2}Decision Trees}{9}{subsubsection.2.2.3.2}
+\contentsline {subsubsection}{\numberline {2.2.3.3}Random Forest Classifiers}{9}{subsubsection.2.2.3.3}
+\contentsline {subsubsection}{\numberline {2.2.3.4}Support Vector Machines }{9}{subsubsection.2.2.3.4}
+\contentsline {subsection}{\numberline {2.2.4}Evaluation Methods}{9}{subsection.2.2.4}
+\contentsline {chapter}{Chapter{} \numberline {3}Methodology}{10}{chapter.3}
+\contentsline {section}{\numberline {3.1}Data Collection}{10}{section.3.1}
+\contentsline {section}{\numberline {3.2}Data Preparation}{10}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Data Description}{10}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Feature Extraction}{12}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Computation of SAT\_ACT\_Score Variable}{12}{subsubsection.3.2.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2.2}Computation of F2\_Not\_Retained Variable}{13}{subsubsection.3.2.2.2}
+\contentsline {section}{\numberline {3.3}Data Preprocessing}{13}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Handling Outliers in Data}{13}{subsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.1.1}UnwHSGPA scores}{13}{subsubsection.3.3.1.1}
+\contentsline {subsection}{\numberline {3.3.2}Handling Missing Values}{13}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Imputing SAT\_ACT\_Score}{14}{subsubsection.3.3.2.1}
+\contentsline {subsubsection}{\numberline {3.3.2.2}Imputing CoreHSGPA and UnwHSGPA}{15}{subsubsection.3.3.2.2}
+\contentsline {subsubsection}{\numberline {3.3.2.3}Imputing F1\_MidtermGPA}{15}{subsubsection.3.3.2.3}
+\contentsline {subsubsection}{\numberline {3.3.2.4}Imputing F1\_MathGradePass}{17}{subsubsection.3.3.2.4}
+\contentsline {subsection}{\numberline {3.3.3}Data Transformations}{17}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Feature Selection}{17}{subsection.3.3.4}
+\contentsline {section}{\numberline {3.4}Exploratory Data Analysis}{18}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Academic year Vs F2\_Not\_Retained}{19}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}IPEDS Race Vs F2\_Not\_Retained}{19}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Mom\_Education\_Level Vs F2\_Not\_Retained}{21}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Dad\_Education\_Level Vs F2\_Not\_Retained}{21}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.5}College1 Vs F2\_Not\_Retained}{24}{subsection.3.4.5}
+\contentsline {chapter}{Chapter{} \numberline {4}Experimental Results}{26}{chapter.4}
+\contentsline {section}{\numberline {4.1}Analysis of Predictive Models}{26}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Evaluation using Traditional Metrics}{26}{subsection.4.1.1}
+\contentsline {chapter}{Chapter{} \numberline {5}Conclusion}{27}{chapter.5}
+\contentsline {chapter}{Bibliography}{28}{chapter*.26}
+\contentsline {chapter}{Curriculum Vitae{} \numberline {}}{30}{chapter.1}

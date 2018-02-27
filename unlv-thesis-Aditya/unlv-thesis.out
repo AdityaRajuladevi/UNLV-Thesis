@@ -33,16 +33,17 @@
 \BOOKMARK [3][-]{subsubsection.3.3.2.2}{Imputing CoreHSGPA and UnwHSGPA}{subsection.3.3.2}% 33
 \BOOKMARK [3][-]{subsubsection.3.3.2.3}{Imputing F1\137MidtermGPA}{subsection.3.3.2}% 34
 \BOOKMARK [3][-]{subsubsection.3.3.2.4}{Imputing F1\137MathGradePass}{subsection.3.3.2}% 35
-\BOOKMARK [2][-]{subsection.3.3.3}{Data Selection and Transformations}{section.3.3}% 36
-\BOOKMARK [2][-]{subsection.3.3.4}{Correlation of Features}{section.3.3}% 37
+\BOOKMARK [2][-]{subsection.3.3.3}{Data Transformations}{section.3.3}% 36
+\BOOKMARK [2][-]{subsection.3.3.4}{Feature Selection}{section.3.3}% 37
 \BOOKMARK [1][-]{section.3.4}{Exploratory Data Analysis}{chapter.3}% 38
-\BOOKMARK [2][-]{subsection.3.4.1}{Academic year's Vs F2\137Not\137Retained}{section.3.4}% 39
+\BOOKMARK [2][-]{subsection.3.4.1}{Academic year Vs F2\137Not\137Retained}{section.3.4}% 39
 \BOOKMARK [2][-]{subsection.3.4.2}{IPEDS Race Vs F2\137Not\137Retained}{section.3.4}% 40
 \BOOKMARK [2][-]{subsection.3.4.3}{Mom\137Education\137Level Vs F2\137Not\137Retained}{section.3.4}% 41
 \BOOKMARK [2][-]{subsection.3.4.4}{Dad\137Education\137Level Vs F2\137Not\137Retained}{section.3.4}% 42
-\BOOKMARK [0][-]{chapter.4}{Chapter Experimental Results}{}% 43
-\BOOKMARK [1][-]{section.4.1}{Analysis of Predictive Models}{chapter.4}% 44
-\BOOKMARK [2][-]{subsection.4.1.1}{Evaluation using Traditional Metrics}{section.4.1}% 45
-\BOOKMARK [0][-]{chapter.5}{Chapter Conclusion}{}% 46
-\BOOKMARK [0][-]{chapter*.23}{Bibliography}{}% 47
-\BOOKMARK [0][-]{chapter.1}{Curriculum Vitae }{}% 48
+\BOOKMARK [2][-]{subsection.3.4.5}{College1 Vs F2\137Not\137Retained}{section.3.4}% 43
+\BOOKMARK [0][-]{chapter.4}{Chapter Experimental Results}{}% 44
+\BOOKMARK [1][-]{section.4.1}{Analysis of Predictive Models}{chapter.4}% 45
+\BOOKMARK [2][-]{subsection.4.1.1}{Evaluation using Traditional Metrics}{section.4.1}% 46
+\BOOKMARK [0][-]{chapter.5}{Chapter Conclusion}{}% 47
+\BOOKMARK [0][-]{chapter*.26}{Bibliography}{}% 48
+\BOOKMARK [0][-]{chapter.1}{Curriculum Vitae }{}% 49
