@@ -266,22 +266,48 @@ In our case, since we have data about students along with the labels of the outc
 
 \subsubsection {Logistic Regression Model}
 
-Logistic Regression is a supervised machine learning classification algorithm that is used to predict the probability of a categorical dependent variable. In logistic regression, the dependent variable is a binary variable that contains data coded as 1 (yes, success, etc.) or 0 (no, failure, etc.). It is a variation of linear regression, where a model is constructed in supervision of the available input data 'X' to calculate the unknown outcome variable y. It takes as input the available independent variables, generally as 'X' and calculates the probability of getting the outcome dependent variable Y. The general equation for this learning approach is as shown in the Equation\ref{eq:logistic} where the unknown coefficients 'm' and 'c' are learned from the available input data during training process. 
+Logistic Regression is a supervised machine learning classification algorithm that is used to predict the probability of a categorical dependent variable. In logistic regression, the dependent variable is a binary variable that contains data coded as 1 (yes, success, etc.) or 0 (no, failure, etc.). It is a variation of linear regression, where a model is constructed in supervision of the available data to calculate the unknown outcome variable. In linear regression input values (x) are combined linearly using weights or coefficient values to predict an output value (y), whereas logistic regression calculates the probability of getting the outcome dependent variable (y). The general equation for this learning approach with one independent variable and a dependent output variable 'y' is as shown in the Equation\ref{eq:logistic} 
 \begin{equation}
- P(Y=1)= h( m*X + c)  \label{eq:logistic} 
+ P(y=1)= g(\beta0+\beta1 *x )  \label{eq:logistic} 
  \end{equation}
- where 'h' is a mathematical function known as Sigmoid function, that maps the linear combination of inputs into the range of [0,1], thus giving us probabilities and is defined as shown in the Equation\ref{eq:sigmoid}.
+ where the coefficient '$\beta$0' is the bias and '$\beta$1'  is the coefficient for the single input value (x) which are learned from the available input data during training and 'g' is a mathematical function known as Sigmoid function, that maps the linear combination of inputs into the range of [0,1], thus giving us probabilities and is defined as shown in the Equation\ref{eq:sigmoid}. For the case of multiple independent input variables, the input values (x) are represented as a vector X along with equal number of coefficients to be learned.
+ 
 \begin{equation}
- h (z) =  \frac{\mathrm{1} }{\mathrm{1} + e^- z }  \label{eq:sigmoid} 
+ g(z) =  \frac{\mathrm{1} }{\mathrm{1} + e^- z }  \label{eq:sigmoid} 
  \end{equation}
 
+As an illustrative example, consider the problem of identifying if a student will pass an exam based on the number of hours he studies before the exam. In this case, we can define the input independent variable as the number\_of\_hours\_studied which takes a numerical value and the output variable as Student\_Passed which takes values { 0 or 1 }. Hence our logistic regression problem then represents the probability of the student passing an exam given the number of hours he studied before the exam. A rule of thumb in logistic regression is if the probability is $>$ 0.5 then the decision is true. Hence you end up with a model that finds the probability of a student passing the exam  as shown in Equation\ref{eq:logisticExample}
 
-For example, if a child has a temperature of 104F (40C) and they have a rash and nausea then the probability that they have chickenpox might be 80\%. A rule of thumb in logistic regression, if the probability is $>$ 0.5 then the decision is true. So in this case, the determination is made that the child has chickenpox. So you end up with some model like the probability of a child having chickenpox could be something like:
-
+\begin{equation}
+ P(y=1) = P(Student\_Passed= True) = 0.82 * (number\_of\_hours\_studied) -0.32.  \label{eq:logisticExample} 
+ \end{equation}
 
 
 \subsubsection {Decision Trees}
 
+A decision tree is a supervised machine learning algorithm which is mostly useful for classification problems and works for both continuous and categorical input and output variables. In simple terms, a decision tree uses the tree representation to solve the problem, in which each branch represents a choice between a number of alternatives of an attribute in the internal nodes leading to a final decision in the leaf node. Decision trees where the output variable is categorical are known as Classification trees.
+
+The general approach of constructing a decision tree from the training data involves splitting the entire data at the root node into a subset based on a requirement (generally, a decision on an attribute). The process of splitting based on decisions of different internal node attributes continues until a subset at a node has all the same value of the target variable, or when splitting no longer adds value to the predictions. The main goal of decision trees is to find the best split of each node of the tree. But measuring the "goodness" of a given split is a subjective question so, in practice, different metrics are used for evaluating splits. Two main metrics used to evaluate the splits are :
+\begin{description}
+    \item[Gini impurity] : It is a measure of how often a randomly chosen element from the set would be incorrectly labeled if it was randomly labeled according to the distribution of labels in the subset. It reaches its minimum (zero) when all cases in the node fall into a single target category. 
+
+    \item[Information gain] : For each node of the tree, the information gain value represents the expected amount of information that would be needed to specify whether a new instance should be classified yes or no, given that the example reached that node. The node with highest information gain value yields the best split. 
+     
+ \end{description}
+ 
+For illustration purpose, consider the classification tree showing survival of passengers on the Titanic ship when it sinked in Figure \ref{fig:classification_tree_titanic}. The figures under the leaf nodes show the probability of survival and the percentage of observations in the leaf. The tree was constructed using gini impurity as the goodness evaluation metric. From the tree we can make the following inferences: 
+\begin{enumerate}
+  \item If the passenger is a male and has an age greater than 9.5 then he did not survive the titanic sink.
+  \item All the female passengers had a survival probability of 0.73.
+  \item If the passenger was male, had an age less than 9.5 and had lesser than 2.5 family members aboard survived the sink with a probability of 0.89.
+\end{enumerate}
+
+  \begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{titanic-decision}
+	\caption{Classification tree of passenger survival in Titanic}
+	\label{fig:classification_tree_titanic}
+\end{figure} 
 \subsubsection {Random Forest Classifiers}
 
 \subsubsection {Support Vector Machines }
