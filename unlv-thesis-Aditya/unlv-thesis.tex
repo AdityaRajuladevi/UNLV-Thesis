@@ -309,6 +309,20 @@ For illustration purpose, consider the classification tree showing survival of p
 	\label{fig:classification_tree_titanic}
 \end{figure} 
 \subsubsection {Random Forest Classifiers}
+Random forest classifier is another supervised machine learning algorithm that can be used for both classification and regression problems. It is generally classified into a special type of machine learning method known as an Ensemble method in which a combination of weak classifiers is used to form a strong classifier which can be used to perform better predictive analysis. In case of the random forests, decision trees are the weak learners.  Although decision trees perform really well on some datasets, they are generally called weak learners as they tend to have high variance when they are trained on different subsections of the same data. Here, variance refers to the spread of the predictions and occurs when a model is sensitive to small changes in the training data which is the case of overfitting. This happens due to the greedy approach employed by decision tree algorithm along with information gain or gini index metrics, to learn rules from the training data.
+  \begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.6]{randomforests}
+	\caption{Random forest trees}
+	\label{fig:random_forest_trees}
+\end{figure} 
+
+
+Random forests on the other hand create a number of decision trees during training by using different subsections of the training data.  Moreover the process of finding the root node and splitting the feature nodes occurs randomly in random forests. Once we have a forest of trees, decisions from different trees are combined to make a final decision regarding the data. This way the random forests will generalize the predictions better as the combination of decisions will not be sensitive to the trained data. The more the number of trees in the random forest the better generalized are the predictions.
+
+The figure \ref{fig:random_forest_trees} explains the construction of random forests from the available input data. The initial training data is split into random subsets using which individual decision trees are constructed.
+
+
 
 \subsubsection {Support Vector Machines }
 

@@ -3,16 +3,17 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Machine Learning Approach\relax }}{7}{figure.caption.10}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Classification tree of passenger survival in Titanic\relax }}{10}{figure.caption.11}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Random forest trees\relax }}{11}{figure.caption.12}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Removing Outliers from UnwHSGPA\relax }}{16}{figure.caption.12}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Boxplot of the SAT\_ACT\_Score vs F2\_NotRetained\relax }}{17}{figure.caption.14}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Analyzing difference between CoreHSGPA and UnwHSGPA \relax }}{18}{figure.caption.15}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Distribution plot of the F1\_MidtermGPA\relax }}{18}{figure.caption.16}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Academic Year vs F2\_NotRetained\relax }}{21}{figure.caption.18}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces IPEDS Race vs F2\_NotRetained\relax }}{22}{figure.caption.19}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Count plot of Mom's Education Level\relax }}{24}{figure.caption.21}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Count plot of Dad's Education Level \relax }}{25}{figure.caption.23}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Count plot of College1 variable\relax }}{27}{figure.caption.25}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Removing Outliers from UnwHSGPA\relax }}{17}{figure.caption.13}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Boxplot of the SAT\_ACT\_Score vs F2\_NotRetained\relax }}{18}{figure.caption.15}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Analyzing difference between CoreHSGPA and UnwHSGPA \relax }}{19}{figure.caption.16}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Distribution plot of the F1\_MidtermGPA\relax }}{19}{figure.caption.17}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Academic Year vs F2\_NotRetained\relax }}{22}{figure.caption.19}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces IPEDS Race vs F2\_NotRetained\relax }}{23}{figure.caption.20}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Count plot of Mom's Education Level\relax }}{25}{figure.caption.22}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Count plot of Dad's Education Level \relax }}{26}{figure.caption.24}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Count plot of College1 variable\relax }}{28}{figure.caption.26}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
