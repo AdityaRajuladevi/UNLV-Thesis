@@ -18,32 +18,39 @@
 \BOOKMARK [3][-]{subsubsection.2.2.3.3}{Random Forest Classifiers}{subsection.2.2.3}% 18
 \BOOKMARK [3][-]{subsubsection.2.2.3.4}{Support Vector Machines }{subsection.2.2.3}% 19
 \BOOKMARK [2][-]{subsection.2.2.4}{Evaluation Methods}{section.2.2}% 20
-\BOOKMARK [0][-]{chapter.3}{Chapter Methodology}{}% 21
-\BOOKMARK [1][-]{section.3.1}{Data Collection}{chapter.3}% 22
-\BOOKMARK [1][-]{section.3.2}{Data Preparation}{chapter.3}% 23
-\BOOKMARK [2][-]{subsection.3.2.1}{Data Description}{section.3.2}% 24
-\BOOKMARK [2][-]{subsection.3.2.2}{Feature Extraction}{section.3.2}% 25
-\BOOKMARK [3][-]{subsubsection.3.2.2.1}{Computation of SAT\137ACT\137Score Variable}{subsection.3.2.2}% 26
-\BOOKMARK [3][-]{subsubsection.3.2.2.2}{Computation of F2\137Not\137Retained Variable}{subsection.3.2.2}% 27
-\BOOKMARK [1][-]{section.3.3}{Data Preprocessing}{chapter.3}% 28
-\BOOKMARK [2][-]{subsection.3.3.1}{Handling Outliers in Data}{section.3.3}% 29
-\BOOKMARK [3][-]{subsubsection.3.3.1.1}{UnwHSGPA scores}{subsection.3.3.1}% 30
-\BOOKMARK [2][-]{subsection.3.3.2}{Handling Missing Values}{section.3.3}% 31
-\BOOKMARK [3][-]{subsubsection.3.3.2.1}{Imputing SAT\137ACT\137Score}{subsection.3.3.2}% 32
-\BOOKMARK [3][-]{subsubsection.3.3.2.2}{Imputing CoreHSGPA and UnwHSGPA}{subsection.3.3.2}% 33
-\BOOKMARK [3][-]{subsubsection.3.3.2.3}{Imputing F1\137MidtermGPA}{subsection.3.3.2}% 34
-\BOOKMARK [3][-]{subsubsection.3.3.2.4}{Imputing F1\137MathGradePass}{subsection.3.3.2}% 35
-\BOOKMARK [2][-]{subsection.3.3.3}{Data Transformations}{section.3.3}% 36
-\BOOKMARK [2][-]{subsection.3.3.4}{Feature Selection}{section.3.3}% 37
-\BOOKMARK [1][-]{section.3.4}{Exploratory Data Analysis}{chapter.3}% 38
-\BOOKMARK [2][-]{subsection.3.4.1}{Academic year Vs F2\137Not\137Retained}{section.3.4}% 39
-\BOOKMARK [2][-]{subsection.3.4.2}{IPEDS Race Vs F2\137Not\137Retained}{section.3.4}% 40
-\BOOKMARK [2][-]{subsection.3.4.3}{Mom\137Education\137Level Vs F2\137Not\137Retained}{section.3.4}% 41
-\BOOKMARK [2][-]{subsection.3.4.4}{Dad\137Education\137Level Vs F2\137Not\137Retained}{section.3.4}% 42
-\BOOKMARK [2][-]{subsection.3.4.5}{College1 Vs F2\137Not\137Retained}{section.3.4}% 43
-\BOOKMARK [0][-]{chapter.4}{Chapter Experimental Results}{}% 44
-\BOOKMARK [1][-]{section.4.1}{Analysis of Predictive Models}{chapter.4}% 45
-\BOOKMARK [2][-]{subsection.4.1.1}{Evaluation using Traditional Metrics}{section.4.1}% 46
-\BOOKMARK [0][-]{chapter.5}{Chapter Conclusion}{}% 47
-\BOOKMARK [0][-]{chapter*.28}{Bibliography}{}% 48
-\BOOKMARK [0][-]{chapter.1}{Curriculum Vitae }{}% 49
+\BOOKMARK [3][-]{subsubsection.2.2.4.1}{Confusion Matrix}{subsection.2.2.4}% 21
+\BOOKMARK [3][-]{subsubsection.2.2.4.2}{Classification Accuracy}{subsection.2.2.4}% 22
+\BOOKMARK [3][-]{subsubsection.2.2.4.3}{Sensitivity}{subsection.2.2.4}% 23
+\BOOKMARK [3][-]{subsubsection.2.2.4.4}{Specificity}{subsection.2.2.4}% 24
+\BOOKMARK [3][-]{subsubsection.2.2.4.5}{Precision}{subsection.2.2.4}% 25
+\BOOKMARK [3][-]{subsubsection.2.2.4.6}{F1 Score}{subsection.2.2.4}% 26
+\BOOKMARK [3][-]{subsubsection.2.2.4.7}{Area Under Curve \(AUC\)}{subsection.2.2.4}% 27
+\BOOKMARK [0][-]{chapter.3}{Chapter Methodology}{}% 28
+\BOOKMARK [1][-]{section.3.1}{Data Collection}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.2}{Data Preparation}{chapter.3}% 30
+\BOOKMARK [2][-]{subsection.3.2.1}{Data Description}{section.3.2}% 31
+\BOOKMARK [2][-]{subsection.3.2.2}{Feature Extraction}{section.3.2}% 32
+\BOOKMARK [3][-]{subsubsection.3.2.2.1}{Computation of SAT\137ACT\137Score Variable}{subsection.3.2.2}% 33
+\BOOKMARK [3][-]{subsubsection.3.2.2.2}{Computation of F2\137Not\137Retained Variable}{subsection.3.2.2}% 34
+\BOOKMARK [1][-]{section.3.3}{Data Preprocessing}{chapter.3}% 35
+\BOOKMARK [2][-]{subsection.3.3.1}{Handling Outliers in Data}{section.3.3}% 36
+\BOOKMARK [3][-]{subsubsection.3.3.1.1}{UnwHSGPA scores}{subsection.3.3.1}% 37
+\BOOKMARK [2][-]{subsection.3.3.2}{Handling Missing Values}{section.3.3}% 38
+\BOOKMARK [3][-]{subsubsection.3.3.2.1}{Imputing SAT\137ACT\137Score}{subsection.3.3.2}% 39
+\BOOKMARK [3][-]{subsubsection.3.3.2.2}{Imputing CoreHSGPA and UnwHSGPA}{subsection.3.3.2}% 40
+\BOOKMARK [3][-]{subsubsection.3.3.2.3}{Imputing F1\137MidtermGPA}{subsection.3.3.2}% 41
+\BOOKMARK [3][-]{subsubsection.3.3.2.4}{Imputing F1\137MathGradePass}{subsection.3.3.2}% 42
+\BOOKMARK [2][-]{subsection.3.3.3}{Data Transformations}{section.3.3}% 43
+\BOOKMARK [2][-]{subsection.3.3.4}{Feature Selection}{section.3.3}% 44
+\BOOKMARK [1][-]{section.3.4}{Exploratory Data Analysis}{chapter.3}% 45
+\BOOKMARK [2][-]{subsection.3.4.1}{Academic year Vs F2\137Not\137Retained}{section.3.4}% 46
+\BOOKMARK [2][-]{subsection.3.4.2}{IPEDS Race Vs F2\137Not\137Retained}{section.3.4}% 47
+\BOOKMARK [2][-]{subsection.3.4.3}{Mom\137Education\137Level Vs F2\137Not\137Retained}{section.3.4}% 48
+\BOOKMARK [2][-]{subsection.3.4.4}{Dad\137Education\137Level Vs F2\137Not\137Retained}{section.3.4}% 49
+\BOOKMARK [2][-]{subsection.3.4.5}{College1 Vs F2\137Not\137Retained}{section.3.4}% 50
+\BOOKMARK [0][-]{chapter.4}{Chapter Experimental Results}{}% 51
+\BOOKMARK [1][-]{section.4.1}{Analysis of Predictive Models}{chapter.4}% 52
+\BOOKMARK [2][-]{subsection.4.1.1}{Evaluation using Traditional Metrics}{section.4.1}% 53
+\BOOKMARK [0][-]{chapter.5}{Chapter Conclusion}{}% 54
+\BOOKMARK [0][-]{chapter*.30}{Bibliography}{}% 55
+\BOOKMARK [0][-]{chapter.1}{Curriculum Vitae }{}% 56

@@ -19,9 +19,9 @@
 \@writefile{toc}{\contentsline {chapter}{Abstract}{iii}{chapter*.2}}
 \@writefile{toc}{\contentsline {chapter}{Acknowledgements}{iv}{chapter*.3}}
 \@writefile{toc}{\contentsline {chapter}{Table of Contents}{v}{chapter*.4}}
-\@writefile{toc}{\contentsline {chapter}{List of Tables}{vii}{chapter*.5}}
-\@writefile{toc}{\contentsline {chapter}{List of Figures}{viii}{chapter*.6}}
-\@writefile{toc}{\contentsline {chapter}{List of Algorithms}{ix}{chapter*.7}}
+\@writefile{toc}{\contentsline {chapter}{List of Tables}{viii}{chapter*.5}}
+\@writefile{toc}{\contentsline {chapter}{List of Figures}{ix}{chapter*.6}}
+\@writefile{toc}{\contentsline {chapter}{List of Algorithms}{x}{chapter*.7}}
 \citation{lau2003institutional}
 \citation{tinto1999taking}
 \citation{lau2003institutional}
@@ -60,6 +60,7 @@
 \newlabel{section:relatedwork}{{2.1}{4}{Related Work}{section.2.1}{}}
 \citation{herzog2006estimating}
 \citation{marbouti2016models}
+\citation{thammasiri2014critical}
 \citation{lakkaraju2015machine}
 \citation{Mitchell1997}
 \@writefile{toc}{\contentsline {section}{\numberline {2.2}Preliminaries}{6}{section.2.2}}
@@ -72,101 +73,117 @@
 \newlabel{fig:predictive_analysis-approach}{{2.1}{7}{Machine Learning Approach\relax }{figure.caption.10}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Selected Models}{8}{subsection.2.2.3}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.3.1}Logistic Regression Model}{8}{subsubsection.2.2.3.1}}
-\newlabel{eq:logistic}{{2.1}{8}{Logistic Regression Model}{equation.2.2.1}{}}
+\newlabel{eq:logistic}{{2.1}{9}{Logistic Regression Model}{equation.2.2.1}{}}
 \newlabel{eq:sigmoid}{{2.2}{9}{Logistic Regression Model}{equation.2.2.2}{}}
 \newlabel{eq:logisticExample}{{2.3}{9}{Logistic Regression Model}{equation.2.2.3}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.3.2}Decision Trees}{9}{subsubsection.2.2.3.2}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Classification tree of passenger survival in Titanic\relax }}{10}{figure.caption.11}}
 \newlabel{fig:classification_tree_titanic}{{2.2}{10}{Classification tree of passenger survival in Titanic\relax }{figure.caption.11}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.3.3}Random Forest Classifiers}{11}{subsubsection.2.2.3.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Random forest trees\relax }}{11}{figure.caption.12}}
-\newlabel{fig:random_forest_trees}{{2.3}{11}{Random forest trees\relax }{figure.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Random forest trees\relax }}{12}{figure.caption.12}}
+\newlabel{fig:random_forest_trees}{{2.3}{12}{Random forest trees\relax }{figure.caption.12}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.3.4}Support Vector Machines }{12}{subsubsection.2.2.3.4}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.4}Evaluation Methods}{12}{subsection.2.2.4}}
-\@writefile{toc}{\contentsline {chapter}{Chapter{} \numberline {3}Methodology}{13}{chapter.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.4.1}Confusion Matrix}{13}{subsubsection.2.2.4.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Example Confusion Matrix\relax }}{13}{figure.caption.13}}
+\newlabel{fig:example_confusion_matrix}{{2.4}{13}{Example Confusion Matrix\relax }{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.4.2}Classification Accuracy}{14}{subsubsection.2.2.4.2}}
+\newlabel{eq:classificationAccuracy}{{2.4}{14}{Classification Accuracy}{equation.2.2.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.4.3}Sensitivity}{14}{subsubsection.2.2.4.3}}
+\newlabel{eq:Sensitivity}{{2.5}{15}{Sensitivity}{equation.2.2.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.4.4}Specificity}{15}{subsubsection.2.2.4.4}}
+\newlabel{eq:Specificity}{{2.6}{15}{Specificity}{equation.2.2.6}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.4.5}Precision}{15}{subsubsection.2.2.4.5}}
+\newlabel{eq:Precision}{{2.7}{15}{Precision}{equation.2.2.7}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.4.6}F\textsubscript  1 Score}{16}{subsubsection.2.2.4.6}}
+\newlabel{eq:Precision}{{2.8}{16}{F\textsubscript 1 Score}{equation.2.2.8}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.4.7}Area Under Curve (AUC)}{16}{subsubsection.2.2.4.7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces Example ROC curve\relax }}{16}{figure.caption.14}}
+\newlabel{fig:example_roc}{{2.5}{16}{Example ROC curve\relax }{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {chapter}{Chapter{} \numberline {3}Methodology}{18}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chapter:methodology}{{3}{13}{Methodology}{chapter.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Data Collection}{13}{section.3.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Data Preparation}{13}{section.3.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Data Description}{13}{subsection.3.2.1}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Description of data fields for first-year student data\relax }}{14}{table.3.1}}
-\newlabel{table:long_data_description_db}{{3.1}{14}{Data Description}{table.3.1}{}}
+\newlabel{chapter:methodology}{{3}{18}{Methodology}{chapter.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Data Collection}{18}{section.3.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Data Preparation}{18}{section.3.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Data Description}{18}{subsection.3.2.1}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Description of data fields for first-year student data\relax }}{19}{table.3.1}}
+\newlabel{table:long_data_description_db}{{3.1}{19}{Data Description}{table.3.1}{}}
 \gdef \LT@i {\LT@entry 
     {1}{31.64905pt}\LT@entry 
     {5}{122.4613pt}\LT@entry 
     {5}{88.52847pt}\LT@entry 
     {6}{254.11694pt}}
 \citation{ACTSAT}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Feature Extraction}{15}{subsection.3.2.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2.1}Computation of SAT\_ACT\_Score Variable}{15}{subsubsection.3.2.2.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2.2}Computation of F2\_Not\_Retained Variable}{16}{subsubsection.3.2.2.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Data Preprocessing}{16}{section.3.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Handling Outliers in Data}{16}{subsection.3.3.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.1}UnwHSGPA scores}{16}{subsubsection.3.3.1.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Handling Missing Values}{16}{subsection.3.3.2}}
-\newlabel{fig:UnwHSGPA-with-outliers}{{3.1a}{17}{UnwHSGPA with Outliers\relax }{figure.caption.13}{}}
-\newlabel{sub@fig:UnwHSGPA-with-outliers}{{a}{17}{UnwHSGPA with Outliers\relax }{figure.caption.13}{}}
-\newlabel{fig:UnwHSGPA-No-outliers}{{3.1b}{17}{UnwHSGPA without Outliers\relax }{figure.caption.13}{}}
-\newlabel{sub@fig:UnwHSGPA-No-outliers}{{b}{17}{UnwHSGPA without Outliers\relax }{figure.caption.13}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Removing Outliers from UnwHSGPA\relax }}{17}{figure.caption.13}}
-\newlabel{fig:unwHSGPA}{{3.1}{17}{Removing Outliers from UnwHSGPA\relax }{figure.caption.13}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Variables with missing values and their count\relax }}{17}{table.caption.14}}
-\newlabel{table:missing_db}{{3.2}{17}{Variables with missing values and their count\relax }{table.caption.14}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2.1}Imputing SAT\_ACT\_Score}{17}{subsubsection.3.3.2.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Boxplot of the SAT\_ACT\_Score vs F2\_NotRetained\relax }}{18}{figure.caption.15}}
-\newlabel{fig:Sat_F2NotRetained_plot}{{3.2}{18}{Boxplot of the SAT\_ACT\_Score vs F2\_NotRetained\relax }{figure.caption.15}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2.2}Imputing CoreHSGPA and UnwHSGPA}{18}{subsubsection.3.3.2.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2.3}Imputing F1\_MidtermGPA}{18}{subsubsection.3.3.2.3}}
-\newlabel{fig:Core_Unw_diff}{{3.3a}{19}{Difference between CoreHSGPA and UnwHSGPA\relax }{figure.caption.16}{}}
-\newlabel{sub@fig:Core_Unw_diff}{{a}{19}{Difference between CoreHSGPA and UnwHSGPA\relax }{figure.caption.16}{}}
-\newlabel{fig:Core_Unw_dist}{{3.3b}{19}{Distribution \relax }{figure.caption.16}{}}
-\newlabel{sub@fig:Core_Unw_dist}{{b}{19}{Distribution \relax }{figure.caption.16}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Analyzing difference between CoreHSGPA and UnwHSGPA \relax }}{19}{figure.caption.16}}
-\newlabel{fig:diffHSGPA}{{3.3}{19}{Analyzing difference between CoreHSGPA and UnwHSGPA \relax }{figure.caption.16}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Distribution plot of the F1\_MidtermGPA\relax }}{19}{figure.caption.17}}
-\newlabel{fig:F1_MidtermGPA_plot}{{3.4}{19}{Distribution plot of the F1\_MidtermGPA\relax }{figure.caption.17}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2.4}Imputing F1\_MathGradePass}{20}{subsubsection.3.3.2.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Data Transformations}{20}{subsection.3.3.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.4}Feature Selection}{20}{subsection.3.3.4}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces Tests based on type of input and output variables\relax }}{21}{table.caption.18}}
-\newlabel{table:statistical_db}{{3.3}{21}{Tests based on type of input and output variables\relax }{table.caption.18}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Exploratory Data Analysis}{21}{section.3.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Academic year Vs F2\_Not\_Retained}{22}{subsection.3.4.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Academic Year vs F2\_NotRetained\relax }}{22}{figure.caption.19}}
-\newlabel{fig:AcadYear_F2NotRetained_plot}{{3.5}{22}{Academic Year vs F2\_NotRetained\relax }{figure.caption.19}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}IPEDS Race Vs F2\_Not\_Retained}{22}{subsection.3.4.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces IPEDS Race vs F2\_NotRetained\relax }}{23}{figure.caption.20}}
-\newlabel{fig:ipeds_F2NotRetained_plot}{{3.6}{23}{IPEDS Race vs F2\_NotRetained\relax }{figure.caption.20}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.4}{\ignorespaces Retention Rates of each IPEDS Race Category\relax }}{24}{table.caption.21}}
-\newlabel{table:ipeds_race_retentions}{{3.4}{24}{Retention Rates of each IPEDS Race Category\relax }{table.caption.21}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}Mom\_Education\_Level Vs F2\_Not\_Retained}{24}{subsection.3.4.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.4}Dad\_Education\_Level Vs F2\_Not\_Retained}{24}{subsection.3.4.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Count plot of Mom's Education Level\relax }}{25}{figure.caption.22}}
-\newlabel{fig:mom_edu_F2NotRetained_plot}{{3.7}{25}{Count plot of Mom's Education Level\relax }{figure.caption.22}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.5}{\ignorespaces Retention Rates w.r.t Mom's Education Level's\relax }}{25}{table.caption.23}}
-\newlabel{table:mom_edu_retentions}{{3.5}{25}{Retention Rates w.r.t Mom's Education Level's\relax }{table.caption.23}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Count plot of Dad's Education Level \relax }}{26}{figure.caption.24}}
-\newlabel{fig:dad_edu_F2NotRetained_plot}{{3.8}{26}{Count plot of Dad's Education Level \relax }{figure.caption.24}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.6}{\ignorespaces Retention Rates w.r.t. Dad's Education Level's\relax }}{27}{table.caption.25}}
-\newlabel{table:dad_edu_retentions}{{3.6}{27}{Retention Rates w.r.t. Dad's Education Level's\relax }{table.caption.25}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.5}College1 Vs F2\_Not\_Retained}{27}{subsection.3.4.5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Count plot of College1 variable\relax }}{28}{figure.caption.26}}
-\newlabel{fig:college_F2NotRetained_plot}{{3.9}{28}{Count plot of College1 variable\relax }{figure.caption.26}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.7}{\ignorespaces Retention Rates w.r.t. student's College\relax }}{28}{table.caption.27}}
-\newlabel{table:college_retentions}{{3.7}{28}{Retention Rates w.r.t. student's College\relax }{table.caption.27}{}}
-\@writefile{toc}{\contentsline {chapter}{Chapter{} \numberline {4}Experimental Results}{29}{chapter.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Feature Extraction}{20}{subsection.3.2.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2.1}Computation of SAT\_ACT\_Score Variable}{20}{subsubsection.3.2.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2.2}Computation of F2\_Not\_Retained Variable}{21}{subsubsection.3.2.2.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Data Preprocessing}{21}{section.3.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Handling Outliers in Data}{21}{subsection.3.3.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.1}UnwHSGPA scores}{21}{subsubsection.3.3.1.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Handling Missing Values}{21}{subsection.3.3.2}}
+\newlabel{fig:UnwHSGPA-with-outliers}{{3.1a}{22}{UnwHSGPA with Outliers\relax }{figure.caption.15}{}}
+\newlabel{sub@fig:UnwHSGPA-with-outliers}{{a}{22}{UnwHSGPA with Outliers\relax }{figure.caption.15}{}}
+\newlabel{fig:UnwHSGPA-No-outliers}{{3.1b}{22}{UnwHSGPA without Outliers\relax }{figure.caption.15}{}}
+\newlabel{sub@fig:UnwHSGPA-No-outliers}{{b}{22}{UnwHSGPA without Outliers\relax }{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Removing Outliers from UnwHSGPA\relax }}{22}{figure.caption.15}}
+\newlabel{fig:unwHSGPA}{{3.1}{22}{Removing Outliers from UnwHSGPA\relax }{figure.caption.15}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Variables with missing values and their count\relax }}{22}{table.caption.16}}
+\newlabel{table:missing_db}{{3.2}{22}{Variables with missing values and their count\relax }{table.caption.16}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2.1}Imputing SAT\_ACT\_Score}{22}{subsubsection.3.3.2.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Boxplot of the SAT\_ACT\_Score vs F2\_NotRetained\relax }}{23}{figure.caption.17}}
+\newlabel{fig:Sat_F2NotRetained_plot}{{3.2}{23}{Boxplot of the SAT\_ACT\_Score vs F2\_NotRetained\relax }{figure.caption.17}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2.2}Imputing CoreHSGPA and UnwHSGPA}{23}{subsubsection.3.3.2.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2.3}Imputing F1\_MidtermGPA}{23}{subsubsection.3.3.2.3}}
+\newlabel{fig:Core_Unw_diff}{{3.3a}{24}{Difference between CoreHSGPA and UnwHSGPA\relax }{figure.caption.18}{}}
+\newlabel{sub@fig:Core_Unw_diff}{{a}{24}{Difference between CoreHSGPA and UnwHSGPA\relax }{figure.caption.18}{}}
+\newlabel{fig:Core_Unw_dist}{{3.3b}{24}{Distribution \relax }{figure.caption.18}{}}
+\newlabel{sub@fig:Core_Unw_dist}{{b}{24}{Distribution \relax }{figure.caption.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Analyzing difference between CoreHSGPA and UnwHSGPA \relax }}{24}{figure.caption.18}}
+\newlabel{fig:diffHSGPA}{{3.3}{24}{Analyzing difference between CoreHSGPA and UnwHSGPA \relax }{figure.caption.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Distribution plot of the F1\_MidtermGPA\relax }}{24}{figure.caption.19}}
+\newlabel{fig:F1_MidtermGPA_plot}{{3.4}{24}{Distribution plot of the F1\_MidtermGPA\relax }{figure.caption.19}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2.4}Imputing F1\_MathGradePass}{25}{subsubsection.3.3.2.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Data Transformations}{25}{subsection.3.3.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.4}Feature Selection}{25}{subsection.3.3.4}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces Tests based on type of input and output variables\relax }}{26}{table.caption.20}}
+\newlabel{table:statistical_db}{{3.3}{26}{Tests based on type of input and output variables\relax }{table.caption.20}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Exploratory Data Analysis}{26}{section.3.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Academic year Vs F2\_Not\_Retained}{27}{subsection.3.4.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Academic Year vs F2\_NotRetained\relax }}{27}{figure.caption.21}}
+\newlabel{fig:AcadYear_F2NotRetained_plot}{{3.5}{27}{Academic Year vs F2\_NotRetained\relax }{figure.caption.21}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}IPEDS Race Vs F2\_Not\_Retained}{27}{subsection.3.4.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces IPEDS Race vs F2\_NotRetained\relax }}{28}{figure.caption.22}}
+\newlabel{fig:ipeds_F2NotRetained_plot}{{3.6}{28}{IPEDS Race vs F2\_NotRetained\relax }{figure.caption.22}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.4}{\ignorespaces Retention Rates of each IPEDS Race Category\relax }}{29}{table.caption.23}}
+\newlabel{table:ipeds_race_retentions}{{3.4}{29}{Retention Rates of each IPEDS Race Category\relax }{table.caption.23}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}Mom\_Education\_Level Vs F2\_Not\_Retained}{29}{subsection.3.4.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.4}Dad\_Education\_Level Vs F2\_Not\_Retained}{29}{subsection.3.4.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Count plot of Mom's Education Level\relax }}{30}{figure.caption.24}}
+\newlabel{fig:mom_edu_F2NotRetained_plot}{{3.7}{30}{Count plot of Mom's Education Level\relax }{figure.caption.24}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.5}{\ignorespaces Retention Rates w.r.t Mom's Education Level's\relax }}{30}{table.caption.25}}
+\newlabel{table:mom_edu_retentions}{{3.5}{30}{Retention Rates w.r.t Mom's Education Level's\relax }{table.caption.25}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Count plot of Dad's Education Level \relax }}{31}{figure.caption.26}}
+\newlabel{fig:dad_edu_F2NotRetained_plot}{{3.8}{31}{Count plot of Dad's Education Level \relax }{figure.caption.26}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.6}{\ignorespaces Retention Rates w.r.t. Dad's Education Level's\relax }}{32}{table.caption.27}}
+\newlabel{table:dad_edu_retentions}{{3.6}{32}{Retention Rates w.r.t. Dad's Education Level's\relax }{table.caption.27}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.5}College1 Vs F2\_Not\_Retained}{32}{subsection.3.4.5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Count plot of College1 variable\relax }}{33}{figure.caption.28}}
+\newlabel{fig:college_F2NotRetained_plot}{{3.9}{33}{Count plot of College1 variable\relax }{figure.caption.28}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.7}{\ignorespaces Retention Rates w.r.t. student's College\relax }}{33}{table.caption.29}}
+\newlabel{table:college_retentions}{{3.7}{33}{Retention Rates w.r.t. student's College\relax }{table.caption.29}{}}
+\@writefile{toc}{\contentsline {chapter}{Chapter{} \numberline {4}Experimental Results}{34}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chapter:experiment_results}{{4}{29}{Experimental Results}{chapter.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Analysis of Predictive Models}{29}{section.4.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Evaluation using Traditional Metrics}{29}{subsection.4.1.1}}
+\newlabel{chapter:experiment_results}{{4}{34}{Experimental Results}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Analysis of Predictive Models}{34}{section.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Evaluation using Traditional Metrics}{34}{subsection.4.1.1}}
 \bibstyle{alpha}
 \bibdata{thesis}
-\@writefile{toc}{\contentsline {chapter}{Chapter{} \numberline {5}Conclusion}{30}{chapter.5}}
+\@writefile{toc}{\contentsline {chapter}{Chapter{} \numberline {5}Conclusion}{35}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chapter:conclusion}{{5}{30}{Conclusion}{chapter.5}{}}
+\newlabel{chapter:conclusion}{{5}{35}{Conclusion}{chapter.5}{}}
 \bibcite{astin2012assessment}{A{$^{+}$}12}
 \bibcite{adejo2017}{AC17}
 \bibcite{alkhasawneh2014developing}{AH14}
@@ -178,12 +195,13 @@
 \bibcite{herzog2006estimating}{Her06}
 \bibcite{lakkaraju2015machine}{LAS{$^{+}$}15}
 \bibcite{lau2003institutional}{Lau03}
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{31}{chapter*.28}}
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{36}{chapter*.30}}
 \bibcite{marbouti2016models}{MDDM16}
 \bibcite{Mitchell1997}{Mit97}
 \bibcite{plagge2013using}{Pla13}
+\bibcite{thammasiri2014critical}{TDMK14}
 \bibcite{tinto1999taking}{Tin99}
 \bibcite{tinto2006}{Tin06}
-\@writefile{toc}{\contentsline {chapter}{Curriculum Vitae{} \numberline {}}{33}{chapter.1}}
+\@writefile{toc}{\contentsline {chapter}{Curriculum Vitae{} \numberline {}}{38}{chapter.1}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}

@@ -14,6 +14,7 @@
 \usepackage{hyperref}
 \usepackage{multirow}
 \usepackage{longtable}
+\usepackage{amsmath}
 \hypersetup{
 	colorlinks=false, %set true if you want colored links
 	linktoc=all,     %set to all if you want both sections and subsections linked
@@ -205,7 +206,7 @@ The prediction of first-year student retention rates and identification of stude
 
 In addition to understanding the factors responsible for student dropout, the researchers were interested in identifying students at risk of not being retained in order to intervene and prevent them from dropping out. Early research included usage of statistical and analytical methods such as logistic regression and discriminant analysis for predicting student retention rates \cite{lakkaraju2015machine,marbouti2016models,adejo2017}. The results from these models showed that the learning algorithms were in fact better than many existing rule based models in learning patterns from the existing student data. Educational data mining has emerged into an important field of research in studying student retention, because of its high accuracy and robustness in working with missing data \cite{alkhasawneh2014developing}. In another study, Jay Bainbridge, James Melitski, Anne Zahradnik, Eitel J. M. Lauría, Sandeep Jayaprakash and Josh Baron used fall 2010 undergraduate students data from four different sources and applied classifiers such as logistic regression, support vector machines and c4.5 decision trees for prediction and comparison purposes\cite{bainbridge2015}. The results showed that logistic regression and SVM trees provided higher classification accuracies compared to the decision trees to predict students at risk. 
 
-Serge Herzog a researcher from University of Nevada, Reno(UNR) campus has done some extensive research on student retention and graduate prediction. He used Decision trees and Neural networks to predict student retention of data from UNR\cite{herzog2006estimating}. FarshidMarbouti, Heidi A.Diefes-Dux, KrishnaMadhavan \cite{marbouti2016models} have compared seven different prediction models for identifying at-risk students using in-semester performance factors (i.e., grades) and based on standards-based grading.Another similar research focused on the problem of imbalanced output class distribution in the field of student retention in which the researchers tested three balancing techniques such as over-sampling, under-sampling and synthetic minority over-sampling (SMOTE) along with machine learning algorithms.
+Serge Herzog a researcher from University of Nevada, Reno(UNR) campus has done some extensive research on student retention and graduate prediction. He used Decision trees and Neural networks to predict student retention of data from UNR\cite{herzog2006estimating}. FarshidMarbouti, Heidi A.Diefes-Dux, KrishnaMadhavan \cite{marbouti2016models} have compared seven different prediction models for identifying at-risk students using in-semester performance factors (i.e., grades) and based on standards-based grading.Another similar research focused on the problem of imbalanced output class distribution in the field of student retention in which the researchers tested three balancing techniques such as over-sampling, under-sampling and synthetic minority over-sampling (SMOTE) along with machine learning algorithms \cite{thammasiri2014critical}.
 
 Although predictive analysis using machine learning models have proved to be very effective in identifying at-risk students, they were still not efficient and useful to educators who wanted to develop academic support programs and resources to support the identified students. The primary reason being the lack of understanding of the metrics from the predictive models by the educators. A few researchers analyzed this issue at the high school level and came up with a framework to convert model accuracies to risk scores that could be used by the educators in the efficient allocation of the resources \cite{lakkaraju2015machine}. Though the above-mentioned framework was giving good results, it was restricted to school level data and thus cannot yield accurate results in the university level as both are very different environments with different set of factors. Hence, in this thesis we try to include such an analysis into college level studies of UNLV and compare our results to the existing approaches.
 
@@ -229,7 +230,7 @@ Although predictive analysis using machine learning models have proved to be ver
 \noindent In general, machine learning tries to learn patterns inherent in the underlying data and remembers it as experience, which it uses for predictions. It was conceptualized from the notion of learning process adopted by a human brain. Just as the human brain gets better at a specific task by repeated learning and previous experiences, a computer will also learn more patterns hidden in the data based on its previous experiences. Additionally the huge processing power of computers enables them to perform such a learning process in identifying patterns from complex data which can be very difficult for a human to understand. 
 
 \subsection{Predictive Analytics}
-Predictive analytics primarily deals with extracting patterns using machine learning models from existing datasets. the extracted patterns are used to predict future events and behaviors in previously unseen data. Predictive analytics is being used in wide range of fields such as education, finance, automobile, and healthcare. The analytics is performed by running different machine learning algorithms on previously collected data. The algorithms try to learn patterns between different properties of the data and preserve the knowledge in model parameters. The resulting model is able to predict the unknown property of a future unseen data.
+Predictive analytics primarily deals with extracting patterns using machine learning models from existing datasets. the extracted patterns are used to predict future events and behaviors in previously unseen data. Predictive analytics is being used in wide range of fields such as education, finance, automobile, and healthcare. The analytics is performed by running different machine learning algorithms on previously collected data. The algorithms try to learn patterns between different properties of the data and preserve the knowledge in model parameters. The resulting model is able to predict the unknown property of a future unseen data. 
 
  \begin{table}[!t]
 	\renewcommand{\arraystretch}{1.3}
@@ -249,7 +250,7 @@ Predictive analytics primarily deals with extracting patterns using machine lear
 \end{table}
 
 
-An illustrative example is shown in Table \ref{table:example_db} which shows student data captured during admissions at a university. The aim is to predict if the student will be accepted or not by looking at the other variables in the data. The column "Accepted" is said to be a dependent variable, and all the other variables are called independent variables. A "1" in the "Accepted" column represents the outcome of the student being accepted into the university and a "0" means he was rejected. To this data we apply a machine learning algorithm, that will learn a prediction model based on the relations between the input independent variables and the output dependent variable. The learned model is then able to predict the output variable by taking other variables as input. 
+An illustrative example is shown in Table \ref{table:example_db} which shows student data captured during admissions at a university. The aim is to predict if the student will be accepted or not by looking at the other variables in the data. The column "Accepted" is said to be a dependent variable, and all the other variables are called independent variables. A "1" in the "Accepted" column represents the outcome of the student being accepted into the university and a "0" means he was rejected. To this data we apply a machine learning algorithm, that will learn a prediction model based on the relations between the input independent variables and the output dependent variable. The learned model is then able to predict the output variable by taking other variables as input. The output variable can be of any data type. If it is a continuous numerical value, then the machine learning problem is known as regression and if it is categorical value, then the machine learning problem is known as classification.
   \begin{figure}
 	\centering
 	\includegraphics[scale=0.5]{MLApproachFinal}
@@ -261,16 +262,17 @@ The general approach for applying predictive analysis on a data can be divided i
 
 
 \subsection{Selected Models}
-Based on the way machine learning algorithms "learn" patterns from data, they can be classified into two groups: supervised and unsupervised learning. In supervised learning, we train the machine learning model using data whose possible outcomes are already known whereas, Unsupervised learning is the training of machine learning models using information that is neither classified nor labeled and allowing the algorithm to learn by itself. 
-In our case, since we have data about students along with the labels of the outcome variable, we will do supervised learning. In this section we discuss various models that were used in this thesis to analyze the student data from UNLV. The models selected for comparison were Logistic Regression, Decision Trees, Random Forest, and SVM's.
+Based on the way machine learning algorithms "learn" patterns from data, they can be classified into two groups: supervised and unsupervised learning. In supervised learning, we train the machine learning model using data whose possible outcomes are already known, whereas unsupervised learning is the training of machine learning models using information that is neither classified nor labeled and allowing the algorithm to learn by itself. 
+
+In our case, since we have data about students along with the labels of the outcome variable, we will do supervised learning. Additionally, the outcome variable in our analysis is a categorial variable, indicating if the student was retained in their second year or not and thus our problem is of classification. In this section we discuss various classification models that were used in this thesis to analyze the student data from UNLV. The models selected for comparison were Logistic Regression, Decision Trees, Random Forest, and SVM's.
 
 \subsubsection {Logistic Regression Model}
 
-Logistic Regression is a supervised machine learning classification algorithm that is used to predict the probability of a categorical dependent variable. In logistic regression, the dependent variable is a binary variable that contains data coded as 1 (yes, success, etc.) or 0 (no, failure, etc.). It is a variation of linear regression, where a model is constructed in supervision of the available data to calculate the unknown outcome variable. In linear regression input values (x) are combined linearly using weights or coefficient values to predict an output value (y), whereas logistic regression calculates the probability of getting the outcome dependent variable (y). The general equation for this learning approach with one independent variable and a dependent output variable 'y' is as shown in the Equation\ref{eq:logistic} 
+Logistic Regression is a supervised machine learning classification algorithm that is used to predict the probability of a categorical dependent variable. In logistic regression, the dependent variable is a binary variable that contains data coded as 1 (yes, success, etc.) or 0 (no, failure, etc.). It is a variation of linear regression, where a model is constructed in supervision of the available data to calculate the unknown outcome variable. In linear regression, input values (x) are combined linearly using weights or coefficient values to predict an output value (y), whereas logistic regression calculates the probability of getting the outcome dependent variable (y). The general equation for this learning approach with one independent variable and a dependent output variable 'y' is as shown in the Equation\ref{eq:logistic} 
 \begin{equation}
  P(y=1)= g(\beta0+\beta1 *x )  \label{eq:logistic} 
  \end{equation}
- where the coefficient '$\beta$0' is the bias and '$\beta$1'  is the coefficient for the single input value (x) which are learned from the available input data during training and 'g' is a mathematical function known as Sigmoid function, that maps the linear combination of inputs into the range of [0,1], thus giving us probabilities and is defined as shown in the Equation\ref{eq:sigmoid}. For the case of multiple independent input variables, the input values (x) are represented as a vector X along with equal number of coefficients to be learned.
+ where the coefficient '$\beta$0' is the bias and \lq$\beta$1\rq  is the coefficient for the single input value (x) which are learned from the available input data during training and 'g' is a mathematical function known as Sigmoid function, that maps the linear combination of inputs into the range of [0,1], thus giving us probabilities and is defined as shown in the Equation\ref{eq:sigmoid}. For the case of multiple independent input variables, the input values (x) are represented as a vector X along with equal number of coefficients to be learned.
  
 \begin{equation}
  g(z) =  \frac{\mathrm{1} }{\mathrm{1} + e^- z }  \label{eq:sigmoid} 
@@ -287,6 +289,13 @@ As an illustrative example, consider the problem of identifying if a student wil
 
 A decision tree is a supervised machine learning algorithm which is mostly useful for classification problems and works for both continuous and categorical input and output variables. In simple terms, a decision tree uses the tree representation to solve the problem, in which each branch represents a choice between a number of alternatives of an attribute in the internal nodes leading to a final decision in the leaf node. Decision trees where the output variable is categorical are known as Classification trees.
 
+  \begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{titanic-decision}
+	\caption{Classification tree of passenger survival in Titanic}
+	\label{fig:classification_tree_titanic}
+\end{figure} 
+
 The general approach of constructing a decision tree from the training data involves splitting the entire data at the root node into a subset based on a requirement (generally, a decision on an attribute). The process of splitting based on decisions of different internal node attributes continues until a subset at a node has all the same value of the target variable, or when splitting no longer adds value to the predictions. The main goal of decision trees is to find the best split of each node of the tree. But measuring the "goodness" of a given split is a subjective question so, in practice, different metrics are used for evaluating splits. Two main metrics used to evaluate the splits are :
 \begin{description}
     \item[Gini impurity] : It is a measure of how often a randomly chosen element from the set would be incorrectly labeled if it was randomly labeled according to the distribution of labels in the subset. It reaches its minimum (zero) when all cases in the node fall into a single target category. 
@@ -302,34 +311,120 @@ For illustration purpose, consider the classification tree showing survival of p
   \item If the passenger was male, had an age less than 9.5 and had lesser than 2.5 family members aboard survived the sink with a probability of 0.89.
 \end{enumerate}
 
-  \begin{figure}
-	\centering
-	\includegraphics[scale=0.5]{titanic-decision}
-	\caption{Classification tree of passenger survival in Titanic}
-	\label{fig:classification_tree_titanic}
-\end{figure} 
+
 \subsubsection {Random Forest Classifiers}
 Random forest classifier is another supervised machine learning algorithm that can be used for both classification and regression problems. It is generally classified into a special type of machine learning method known as an Ensemble method in which a combination of weak classifiers is used to form a strong classifier which can be used to perform better predictive analysis. In case of the random forests, decision trees are the weak learners.  Although decision trees perform really well on some datasets, they are generally called weak learners as they tend to have high variance when they are trained on different subsections of the same data. Here, variance refers to the spread of the predictions and occurs when a model is sensitive to small changes in the training data which is the case of overfitting. This happens due to the greedy approach employed by decision tree algorithm along with information gain or gini index metrics, to learn rules from the training data.
-  \begin{figure}[!htbp]
+
+
+Random forests on the other hand create a number of decision trees during training by using different subsections of the training data.  Moreover the process of finding the root node and splitting the feature nodes occurs randomly in random forests. Once we have a forest of trees, decisions from different trees are combined to make a final decision regarding the data. This way the random forests will generalize the predictions better as the combination of decisions will not be sensitive to the trained data as each tree learns from different subsections of data. The more the number of trees in the random forest the better generalized are the predictions.
+
+  \begin{figure}
 	\centering
 	\includegraphics[scale=0.6]{randomforests}
 	\caption{Random forest trees}
 	\label{fig:random_forest_trees}
 \end{figure} 
 
-
-Random forests on the other hand create a number of decision trees during training by using different subsections of the training data.  Moreover the process of finding the root node and splitting the feature nodes occurs randomly in random forests. Once we have a forest of trees, decisions from different trees are combined to make a final decision regarding the data. This way the random forests will generalize the predictions better as the combination of decisions will not be sensitive to the trained data. The more the number of trees in the random forest the better generalized are the predictions.
-
-The figure \ref{fig:random_forest_trees} explains the construction of random forests from the available input data. The initial training data is split into random subsets using which individual decision trees are constructed.
-
-
+The figure \ref{fig:random_forest_trees} explains the construction of random forests from the available input data. The initial training data is split into random subsets using which individual decision trees are constructed. The trees constructed from different subsets can have a different structure. Once we have the random forest, when a new input is given, it makes a prediction by using a voting of results from all the trees as shown in the figure.
 
 \subsubsection {Support Vector Machines }
 
 \subsection {Evaluation Methods}
+In this subsection, we will explain the various evaluation methods that are used in this thesis to assess and compare the performance of different models.
+
+In machine learning, the problem at hand is of making good predictions on unknown and unseen data by the learned models. In simple terms, we want to know for sure how well the model is able to generalize new unseen data and ensure that it is not just memorizing patterns in the training data. To do this, we need to define the performance measure strategies we will use to evaluate our models. Having a performance measure defined for the machine learning problem also gives us the advantage of focusing our time effectively on improving our model predictions. We generally use the term 'metric' to refer to a performance measure in machine learning. Various metrics are available depending on whether the problem is of  classification or regression. Since we are dealing with a classification problem in this thesis, we will concentrate more on the metrics for a classification problem.
+
+\subsubsection {Confusion Matrix}
+Confusion matrix is a representation of the predictions made by the classification model. It is a very important and useful metric in classification problems as it can not only be used to represent the models performance by itself but can also compute other metrics. A confusion matrix is composed of statistics such as true positives, true negatives, false positives, and false negatives, which are calculated using actual and predicted values. The idea of such a representation was to understand how many times the model was right in predicting a true or false value and how many times it failed to do so.
+
+  \begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.6]{Confusion_matrix}
+	\caption{Example Confusion Matrix}
+	\label{fig:example_confusion_matrix}
+\end{figure} 
+
+To help understand the concepts of the confusion matrix representation, an example confusion matrix is shown in Figure \ref{fig:example_confusion_matrix}. The matrix was generated from a total population of 231 students, where the predictions represent if the student passed a certain exam or not. 
+\begin{description}
+    \item[True Positive] : The case where the actual value was true and the model also predicted it as true is known as a True Positive. The total number of such true positives from the population are represented on the top left corner of the confusion matrix. In Figure \ref{fig:example_confusion_matrix}, the total number of true positives is 54 out of the total population of 231.
+
+    \item[False Negative] : The case where the actual value was true and the model predicted it as false is known as a False Negative. The total number of such false negatives from the population are represented on the top right corner of the confusion matrix. In Figure \ref{fig:example_confusion_matrix}, the total number of false negatives is 20 out of the total population of 231.
+
+     \item[False Positive] : The case where the actual value was false and the model predicted it as true is known as a False Positive. The total number of such false positives from the population are represented on the bottom left corner of the confusion matrix. In Figure \ref{fig:example_confusion_matrix}, the total number of false positives is 66 out of the total population of 231.
+     
+      \item[True Negative] : The case where the actual value was false and the model also predicted it as false is known as a True Negative. The total number of such true negatives from the population are represented on the bottom right corner of the confusion matrix. In Figure \ref{fig:example_confusion_matrix}, the total number of true negatives is 91 out of the total population of 231.
+     
+ \end{description}
+ The confusion matrix in Figure \ref{fig:example_confusion_matrix} is for a binary classification problem with 2 classes \{'Passed', and 'Failed'\}. For a multi-class classification problem, each class has a row and a column in the confusion matrix and the problem is generally analyzed as a one-vs-all problem.
+
+
+\subsubsection{Classification Accuracy}
+Classification accuracy is the proportion of number of correct predictions to all the predictions made by the model. This is the most common evaluation metric for classification problems. It can be calculated by using the values in the confusion matrix as the ratio of the sum of true positives and true negatives to the total size of the predicted population. The Equation \ref{eq:classificationAccuracy}  represents the calculation of classification accuracy.
+
+\begin{equation}
+Classification\, Accuracy = \dfrac{True\, Positives + True\, Negatives}{size\, of\, predicted\, population} \label{eq:classificationAccuracy} 
+ \end{equation}
+
+The classification accuracy calculated from the confusion matrix shown in Figure \ref{fig:example_confusion_matrix} would be (54+91)/231, which is 0.63.
+
+\subsubsection{Sensitivity}
+
+Sensitivity describes the probability of the prediction being true when the actual class is true. In simple terms, it describes how sensitive the model is when predicting positive instances. It is also known as "True Positive Rate" or "Recall" and is calculated as the ratio of true positives to the actual true cases. It can be calculated by using the values in the confusion matrix as the ratio of true positives to the sum of true positives and false negatives. The Equation \ref{eq:Sensitivity}  represents the calculation of sensitivity.
+
+\begin{equation}
+Sensitivity = \dfrac{True\, Positives }{True\, Positives\, + False\, Negatives} \label{eq:Sensitivity} 
+ \end{equation}
+
+The sensitivity calculated from the confusion matrix shown in Figure \ref{fig:example_confusion_matrix} would be 54/(54+20), which is 0.73.
+
+
+\subsubsection{Specificity}
+
+Specificity describes the probability of the prediction being false when the actual class is false. In simple terms, it describes how specific the model is when predicting negative instances. It is calculated as the ratio of true negatives to the actual false cases. It can be calculated by using the values in the confusion matrix as the ratio of true negatives to the sum of true negatives and false positives. The Equation \ref{eq:Specificity}  represents the calculation of specificity.
+
+\begin{equation}
+Specificity = \dfrac{True\, Negatives }{True\, Negatives\, + False\, Positives} \label{eq:Specificity} 
+ \end{equation}
+
+The specificity calculated from the confusion matrix shown in Figure \ref{fig:example_confusion_matrix} would be 91/(91+66), which is 0.58.
+
+\subsubsection{Precision}
+Precision defines the probability of the prediction being correct when the model identified it as true. In simple terms, it describes how precise the model is when predicting positive instances. It is calculated as the ratio of true positives to the predicted true cases. It can be calculated by using the values in the confusion matrix as the ratio of true positives to the sum of true positives and false positives. The Equation \ref{eq:Precision}  represents the calculation of precision.
+
+\begin{equation}
+Precision = \dfrac{True\, Positives }{True\, Positives\, + False\, Positives} \label{eq:Precision} 
+ \end{equation}
+
+The precision calculated from the confusion matrix shown in Figure \ref{fig:example_confusion_matrix} would be 54/(54+66), which is 0.45.
+
+\subsubsection{F\textsubscript1 Score}
+
+F\textsubscript{1} score is calculated by taking a harmonic mean of the precision and recall of the model's predictions. It is also known as F-measure or balanced F-score. The Equation \ref{eq:Precision}  represents the calculation of precision.
+
+\begin{equation}
+F_{1} = \dfrac{True\, Positives }{True\, Positives\, + False\, Positives} \label{eq:Precision} 
+ \end{equation}
+
+The precision calculated from the confusion matrix shown in Figure \ref{fig:example_confusion_matrix} would be 54/(54+66), which is 0.45.
+
+
+\subsubsection{Area Under Curve (AUC)}
+
+In binary classification problems, the general rule of thumb is to use a probability threshold of 0.5 to make classification predictions. But for few scenarios, this threshold might not hold good and using a different threshold would be more appropriate. An Receiver Operating Curve (ROC) is the most commonly used way to visualize the performance of a binary classifier for different thresholds. and AUC is (arguably) the best way to summarize its performance in a single number.
+
+  \begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.6]{ExampleROC}
+	\caption{Example ROC curve}
+	\label{fig:example_roc}
+\end{figure} 
+
+So far we have discussed about classification accuracy, sensitivity, specificity and recall. Among these classification accuracy can be a bad indicator of the model evaluation as it requires the output classes distribution in the original set to be not balanced which is rarely true for real world datasets. As for other metrics, it becomes hard to compare three values to identify the model that performs best. Hence, in these cases F\textsubscript1 score can be used as a single value comparator of the models performances.
+
+
+
 
 \chapter{Methodology} \label{chapter:methodology}
-
 \section{Data Collection}
 
 The Operations Support and Reporting Office at UNLV is responsible for extracting information regarding student enrollment and performance from the UNLV Data Warehouse and reporting the census to Integrated Postsecondary Education Data System (IPEDS). The data used in this thesis were obtained from the census data submitted to IPEDS every year. The following subsections will describe more information about the data.

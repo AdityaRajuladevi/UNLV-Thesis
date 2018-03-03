@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  2 MAR 2018 07:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  3 MAR 2018 11:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -332,7 +332,65 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count122
 \LT@p@ftn=\toks15
 )
-Package hyperref Info: Option `colorlinks' set `false' on input line 21.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/11/05 v2.16a AMS math features
+\@mathmargin=\skip80
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen126
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen127
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count123
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count124
+\leftroot@=\count125
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count126
+\DOTSCASE@=\count127
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box38
+\strutbox@=\box39
+\big@size=\dimen128
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count128
+\c@MaxMatrixCols=\count129
+\dotsspace@=\muskip11
+\c@parentequation=\count130
+\dspbrk@lvl=\count131
+\tag@help=\toks17
+\row@=\count132
+\column@=\count133
+\maxfields@=\count134
+\andhelp@=\toks18
+\eqnshift@=\dimen129
+\alignsep@=\dimen130
+\tagshift@=\dimen131
+\tagwidth@=\dimen132
+\totwidth@=\dimen133
+\lineht@=\dimen134
+\@envbody=\toks19
+\multlinegap=\skip81
+\multlinetaggap=\skip82
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+Package hyperref Info: Option `colorlinks' set `false' on input line 22.
 \@indexfile=\write3
 \openout3 = `unlv-thesis.idx'.
 
@@ -342,38 +400,41 @@ Writing index file unlv-thesis.idx
 \openout2 = `my_macros.aux'.
 
 (./my_macros.tex
-\c@theorem=\count123
-) (./unlv-thesis.aux)
+\c@theorem=\count135
+) (./unlv-thesis.aux
+
+LaTeX Warning: Label `eq:Precision' multiply defined.
+
+)
 \openout1 = `unlv-thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-
-(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+ (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count124
-\scratchdimen=\dimen126
-\scratchbox=\box38
-\nofMPsegments=\count125
-\nofMParguments=\count126
-\everyMPshowfont=\toks16
-\MPscratchCnt=\count127
-\MPscratchDim=\dimen127
-\MPnumerator=\count128
-\makeMPintoPDFobject=\count129
-\everyMPtoPDFconversion=\toks17
+\scratchcounter=\count136
+\scratchdimen=\dimen135
+\scratchbox=\box40
+\nofMPsegments=\count137
+\nofMParguments=\count138
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count139
+\MPscratchDim=\dimen136
+\MPnumerator=\count140
+\makeMPintoPDFobject=\count141
+\everyMPtoPDFconversion=\toks22
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -399,8 +460,8 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box39
-Package hyperref Info: Link coloring OFF on input line 99.
+\AtBeginShipoutBox=\box41
+Package hyperref Info: Link coloring OFF on input line 100.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -408,91 +469,91 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count130
+\c@section@level=\count142
 )
-LaTeX Info: Redefining \ref on input line 99.
-LaTeX Info: Redefining \pageref on input line 99.
-LaTeX Info: Redefining \nameref on input line 99.
+LaTeX Info: Redefining \ref on input line 100.
+LaTeX Info: Redefining \pageref on input line 100.
+LaTeX Info: Redefining \nameref on input line 100.
 
 (./unlv-thesis.out) (./unlv-thesis.out)
 \@outlinefile=\write4
 \openout4 = `unlv-thesis.out'.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 101.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 102.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 101.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 102.
  [1
 
 
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<./images/logo.pdf, id=211, 184.69pt x 65.24374pt>
+<./images/logo.pdf, id=239, 184.69pt x 65.24374pt>
 File: ./images/logo.pdf Graphic file (type pdf)
  <use ./images/logo.pdf>
-Package pdftex.def Info: ./images/logo.pdf used on input line 112.
+Package pdftex.def Info: ./images/logo.pdf used on input line 113.
 (pdftex.def)             Requested size: 136.9249pt x 48.36958pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
+Underfull \hbox (badness 10000) in paragraph at lines 113--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
+Underfull \hbox (badness 10000) in paragraph at lines 113--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
+Underfull \hbox (badness 10000) in paragraph at lines 113--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
+Underfull \hbox (badness 10000) in paragraph at lines 113--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
+Underfull \hbox (badness 10000) in paragraph at lines 113--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
+Underfull \hbox (badness 10000) in paragraph at lines 113--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
+Underfull \hbox (badness 10000) in paragraph at lines 113--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
+Underfull \hbox (badness 10000) in paragraph at lines 113--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
+Underfull \hbox (badness 10000) in paragraph at lines 113--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
+Underfull \hbox (badness 10000) in paragraph at lines 113--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
+Underfull \hbox (badness 10000) in paragraph at lines 113--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
+Underfull \hbox (badness 10000) in paragraph at lines 113--113
 
  []
 
@@ -500,7 +561,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.112 \electronicapprovalpage
+l.113 \electronicapprovalpage
                               [2
 
  <./images/logo.pdf>] [3
@@ -508,24 +569,17 @@ l.112 \electronicapprovalpage
 ] [4
 
 ]
-(./unlv-thesis.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 8.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 8.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 8.
- [5
+(./unlv-thesis.toc [5
 
-])
+] [6])
 \tf@toc=\write5
 \openout5 = `unlv-thesis.toc'.
 
- [6] (./unlv-thesis.lot)
+ [7] (./unlv-thesis.lot)
 \tf@lot=\write6
 \openout6 = `unlv-thesis.lot'.
 
- [7
+ [8
 
 
 ] (./unlv-thesis.lof)
@@ -533,14 +587,14 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout7 = `unlv-thesis.lof'.
 
 
-[8
+[9
 
 
 ] (./unlv-thesis.loa)
 \tf@loa=\write8
 \openout8 = `unlv-thesis.loa'.
 
- [9
+ [10
 
 
 ]
@@ -548,30 +602,30 @@ Chapter 1.
 [1
 
 
-] <./images/unlv-retentiontrend.png, id=436, 604.2575pt x 322.20375pt>
+] <./images/unlv-retentiontrend.png, id=490, 604.2575pt x 322.20375pt>
 File: ./images/unlv-retentiontrend.png Graphic file (type png)
 
 <use ./images/unlv-retentiontrend.png>
 Package pdftex.def Info: ./images/unlv-retentiontrend.png used on input line 17
-8.
+9.
 (pdftex.def)             Requested size: 422.97737pt x 225.54108pt.
  [2 <./images/unlv-retentiontrend.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--192
+Underfull \hbox (badness 10000) in paragraph at lines 191--193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--195
+Underfull \hbox (badness 10000) in paragraph at lines 194--196
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--198
+Underfull \hbox (badness 10000) in paragraph at lines 197--199
 
  []
 
@@ -582,186 +636,213 @@ Missing character: There is no ­ in font cmr10!
 [4
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 217--220
+Underfull \hbox (badness 10000) in paragraph at lines 218--221
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--220
+Underfull \hbox (badness 10000) in paragraph at lines 218--221
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
-<./images/MLApproachFinal.png, id=489, 788.9475pt x 456.70625pt>
+<./images/MLApproachFinal.png, id=543, 788.9475pt x 456.70625pt>
 File: ./images/MLApproachFinal.png Graphic file (type png)
 
 <use ./images/MLApproachFinal.png>
-Package pdftex.def Info: ./images/MLApproachFinal.png used on input line 255.
+Package pdftex.def Info: ./images/MLApproachFinal.png used on input line 256.
 (pdftex.def)             Requested size: 394.47278pt x 228.35255pt.
  [6] [7 <./images/MLApproachFinal.png>]
-[8] [9] <./images/titanic-decision.png, id=519, 675.52374pt x 413.545pt>
+[8] <./images/titanic-decision.png, id=563, 675.52374pt x 413.545pt>
 File: ./images/titanic-decision.png Graphic file (type png)
 
 <use ./images/titanic-decision.png>
-Package pdftex.def Info: ./images/titanic-decision.png used on input line 307.
+Package pdftex.def Info: ./images/titanic-decision.png used on input line 294.
 (pdftex.def)             Requested size: 337.76105pt x 206.77199pt.
-
-<./images/randomforests.png, id=520, 769.87625pt x 403.5075pt>
+ [9] [10 <./images/titanic-decision.png>]
+<./images/randomforests.png, id=581, 769.87625pt x 403.5075pt>
 File: ./images/randomforests.png Graphic file (type png)
 
 <use ./images/randomforests.png>
-Package pdftex.def Info: ./images/randomforests.png used on input line 315.
+Package pdftex.def Info: ./images/randomforests.png used on input line 323.
 (pdftex.def)             Requested size: 461.92932pt x 242.10637pt.
- [10 <./images/titanic-decision.png>] [11 <./images/randomforests.png>] [12]
+ [11] [12 <./images/randomforests.png>]
+<./images/Confusion_matrix.png, id=594, 578.16pt x 433.62pt>
+File: ./images/Confusion_matrix.png Graphic file (type png)
+
+<use ./images/Confusion_matrix.png>
+Package pdftex.def Info: ./images/Confusion_matrix.png used on input line 342.
+(pdftex.def)             Requested size: 346.89867pt x 260.17401pt.
+ [13 <./images/Confusion_matrix.png>]
+[14]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mathsurround' on input line 400.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\z@' on input line 400.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 400.
+
+[15] <./images/ExampleROC.png, id=630, 504.4446pt x 385.9218pt>
+File: ./images/ExampleROC.png Graphic file (type png)
+
+<use ./images/ExampleROC.png>
+Package pdftex.def Info: ./images/ExampleROC.png used on input line 417.
+(pdftex.def)             Requested size: 302.66908pt x 231.55486pt.
+ [16 <./images/ExampleROC.png>] [17]
 Chapter 3.
 
-Overfull \hbox (27.00078pt too wide) in alignment at lines 341--347
+Overfull \hbox (27.00078pt too wide) in alignment at lines 436--442
  [] [] [] [] 
  []
 
 
-Overfull \hbox (27.00078pt too wide) in alignment at lines 347--353
+Overfull \hbox (27.00078pt too wide) in alignment at lines 442--448
  [] [] [] [] 
  []
 
 
-Overfull \hbox (27.00078pt too wide) in alignment at lines 353--355
+Overfull \hbox (27.00078pt too wide) in alignment at lines 448--450
  [] [] [] [] 
  []
 
 
-Overfull \hbox (27.00078pt too wide) in alignment at lines 355--357
+Overfull \hbox (27.00078pt too wide) in alignment at lines 450--452
  [] [] [] [] 
  []
 
 
-Overfull \hbox (27.00078pt too wide) in alignment at lines 357--378
+Overfull \hbox (27.00078pt too wide) in alignment at lines 452--473
  [] [] [] [] 
  []
 
-[13
+[18
 
 ]
-Overfull \hbox (27.00078pt too wide) in alignment at lines 378--398
+Overfull \hbox (27.00078pt too wide) in alignment at lines 473--493
  [] [] [] [] 
  []
 
 
-Overfull \hbox (27.00078pt too wide) in alignment at lines 398--401
+Overfull \hbox (27.00078pt too wide) in alignment at lines 493--496
  [] [] [] [] 
  []
 
-[14] [15] <./images/UnwHSGPAScores.png, id=555, 578.16pt x 433.62pt>
+[19] [20] <./images/UnwHSGPAScores.png, id=657, 578.16pt x 433.62pt>
 File: ./images/UnwHSGPAScores.png Graphic file (type png)
 
 <use ./images/UnwHSGPAScores.png>
-Package pdftex.def Info: ./images/UnwHSGPAScores.png used on input line 428.
+Package pdftex.def Info: ./images/UnwHSGPAScores.png used on input line 523.
 (pdftex.def)             Requested size: 258.36667pt x 193.77081pt.
 
-<./images/UnwHSGPAWithoutScores.png, id=556, 578.16pt x 433.62pt>
+<./images/UnwHSGPAWithoutScores.png, id=658, 578.16pt x 433.62pt>
 File: ./images/UnwHSGPAWithoutScores.png Graphic file (type png)
 
 <use ./images/UnwHSGPAWithoutScores.png>
 Package pdftex.def Info: ./images/UnwHSGPAWithoutScores.png used on input line 
-436.
+531.
 (pdftex.def)             Requested size: 258.36667pt x 193.77081pt.
 
-Overfull \hbox (46.97835pt too wide) in paragraph at lines 427--440
+Overfull \hbox (46.97835pt too wide) in paragraph at lines 522--535
  [][][] 
  []
 
-[16] <./images/SATBoxPlot.png, id=565, 578.16pt x 289.08pt>
+[21] <./images/SATBoxPlot.png, id=666, 578.16pt x 289.08pt>
 File: ./images/SATBoxPlot.png Graphic file (type png)
 
 <use ./images/SATBoxPlot.png>
-Package pdftex.def Info: ./images/SATBoxPlot.png used on input line 470.
+Package pdftex.def Info: ./images/SATBoxPlot.png used on input line 565.
 (pdftex.def)             Requested size: 404.70924pt x 202.35461pt.
- [17 <./images/UnwHSGPAScores.png> <./images/UnwHSGPAWithoutScores.png>]
-<./images/Core-Unw-GPA-diff.png, id=576, 578.16pt x 433.62pt>
+ [22 <./images/UnwHSGPAScores.png> <./images/UnwHSGPAWithoutScores.png>]
+<./images/Core-Unw-GPA-diff.png, id=677, 578.16pt x 433.62pt>
 File: ./images/Core-Unw-GPA-diff.png Graphic file (type png)
 
 <use ./images/Core-Unw-GPA-diff.png>
-Package pdftex.def Info: ./images/Core-Unw-GPA-diff.png used on input line 484.
+Package pdftex.def Info: ./images/Core-Unw-GPA-diff.png used on input line 579.
 
 (pdftex.def)             Requested size: 258.36667pt x 193.77081pt.
 
-<./images/Core-Unw-GPA-distribution.png, id=577, 578.16pt x 433.62pt>
+<./images/Core-Unw-GPA-distribution.png, id=678, 578.16pt x 433.62pt>
 File: ./images/Core-Unw-GPA-distribution.png Graphic file (type png)
 
 <use ./images/Core-Unw-GPA-distribution.png>
 Package pdftex.def Info: ./images/Core-Unw-GPA-distribution.png used on input l
-ine 492.
+ine 587.
 (pdftex.def)             Requested size: 258.36667pt x 193.77081pt.
 
-Overfull \hbox (46.97835pt too wide) in paragraph at lines 483--496
+Overfull \hbox (46.97835pt too wide) in paragraph at lines 578--591
  [][][] 
  []
 
-<./images/F1-MidTermGPA-distribution.png, id=578, 578.16pt x 433.62pt>
+<./images/F1-MidTermGPA-distribution.png, id=679, 578.16pt x 433.62pt>
 File: ./images/F1-MidTermGPA-distribution.png Graphic file (type png)
 
 <use ./images/F1-MidTermGPA-distribution.png>
 Package pdftex.def Info: ./images/F1-MidTermGPA-distribution.png used on input 
-line 503.
+line 598.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
- [18 <./images/SATBoxPlot.png>]
-[19 <./images/Core-Unw-GPA-diff.png> <./images/Core-Unw-GPA-distribution.png> <
-./images/F1-MidTermGPA-distribution.png>] [20] [21]
-<./images/NotRetained_fre_acadyear.png, id=603, 500.1084pt x 390.9807pt>
+ [23 <./images/SATBoxPlot.png>]
+[24 <./images/Core-Unw-GPA-diff.png> <./images/Core-Unw-GPA-distribution.png> <
+./images/F1-MidTermGPA-distribution.png>] [25] [26]
+<./images/NotRetained_fre_acadyear.png, id=705, 500.1084pt x 390.9807pt>
 File: ./images/NotRetained_fre_acadyear.png Graphic file (type png)
 
 <use ./images/NotRetained_fre_acadyear.png>
 Package pdftex.def Info: ./images/NotRetained_fre_acadyear.png used on input li
-ne 562.
+ne 657.
 (pdftex.def)             Requested size: 300.06735pt x 234.59023pt.
 
-<./images/NotRetained_ipeds.png, id=605, 617.9085pt x 546.3612pt>
+<./images/NotRetained_ipeds.png, id=707, 617.9085pt x 546.3612pt>
 File: ./images/NotRetained_ipeds.png Graphic file (type png)
 
 <use ./images/NotRetained_ipeds.png>
-Package pdftex.def Info: ./images/NotRetained_ipeds.png used on input line 571.
+Package pdftex.def Info: ./images/NotRetained_ipeds.png used on input line 666.
 
 (pdftex.def)             Requested size: 432.53299pt x 382.45023pt.
- [22 <./images/NotRetained_fre_acadyear.png>] [23 <./images/NotRetained_ipeds.p
+ [27 <./images/NotRetained_fre_acadyear.png>] [28 <./images/NotRetained_ipeds.p
 ng>]
-<./images/mom_edu_countplot.png, id=619, 622.9674pt x 499.3857pt>
+<./images/mom_edu_countplot.png, id=721, 622.9674pt x 499.3857pt>
 File: ./images/mom_edu_countplot.png Graphic file (type png)
 
 <use ./images/mom_edu_countplot.png>
-Package pdftex.def Info: ./images/mom_edu_countplot.png used on input line 606.
+Package pdftex.def Info: ./images/mom_edu_countplot.png used on input line 701.
 
 (pdftex.def)             Requested size: 404.92401pt x 324.59685pt.
- [24]
+ [29]
 
-LaTeX Warning: Text page 25 contains only floats.
+LaTeX Warning: Text page 30 contains only floats.
 
-[25 <./images/mom_edu_countplot.png>]
-<./images/dad_edu_countplot.png, id=631, 622.9674pt x 499.3857pt>
+[30 <./images/mom_edu_countplot.png>]
+<./images/dad_edu_countplot.png, id=733, 622.9674pt x 499.3857pt>
 File: ./images/dad_edu_countplot.png Graphic file (type png)
 
 <use ./images/dad_edu_countplot.png>
-Package pdftex.def Info: ./images/dad_edu_countplot.png used on input line 646.
+Package pdftex.def Info: ./images/dad_edu_countplot.png used on input line 741.
 
 (pdftex.def)             Requested size: 404.92401pt x 324.59685pt.
- [26 <./images/dad_edu_countplot.png>]
-<./images/college_countplot.png, id=639, 623.6901pt x 524.6802pt>
+ [31 <./images/dad_edu_countplot.png>]
+<./images/college_countplot.png, id=741, 623.6901pt x 524.6802pt>
 File: ./images/college_countplot.png Graphic file (type png)
 
 <use ./images/college_countplot.png>
-Package pdftex.def Info: ./images/college_countplot.png used on input line 683.
+Package pdftex.def Info: ./images/college_countplot.png used on input line 778.
 
 (pdftex.def)             Requested size: 405.39375pt x 341.03809pt.
- [27] [28 <./images/college_countplot.png>]
+ [32] [33 <./images/college_countplot.png>]
 Chapter 4.
-[29
+[34
 
 ]
 Chapter 5.
-(./unlv-thesis.bbl [30
+(./unlv-thesis.bbl [35
 
 ]
 Underfull \hbox (badness 1584) in paragraph at lines 30--35
@@ -769,68 +850,73 @@ Underfull \hbox (badness 1584) in paragraph at lines 30--35
 JM Laur^^S^^Pa, Sandeep
  []
 
-[31
+[36
 
-]) [32]pdfTeX warning (ext4): destination with the same identifier (name{chapte
+]) [37]pdfTeX warning (ext4): destination with the same identifier (name{chapte
 r.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.729 \chapter{}
+l.824 \chapter{}
                  %% please leave this one blank - the vita stuff is sort of ...
 Curriculum Vitae .
 
-Underfull \hbox (badness 10000) in paragraph at lines 737--740
+Underfull \hbox (badness 10000) in paragraph at lines 832--835
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--742
+Underfull \hbox (badness 10000) in paragraph at lines 836--837
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 743--748
+Underfull \hbox (badness 10000) in paragraph at lines 838--843
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 749.
-[33
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 844.
+[38
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 749.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 844.
  (./unlv-thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 749.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 749.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 844.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 844.
 Package rerunfilecheck Info: File `unlv-thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 5D2A564A4908C05F675266DFB2699D9D;3582.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 749.
+(rerunfilecheck)             Checksum: C4AEB24ACB0B635A67CC8F2A9577B2C0;4132.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 844.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 8474 strings out of 492995
- 129280 string characters out of 6132704
- 254027 words of memory out of 5000000
- 11781 multiletter control sequences out of 15000+600000
- 9153 words of font info for 32 fonts, out of 8000000 for 9000
+ 9112 strings out of 492995
+ 136990 string characters out of 6132704
+ 265980 words of memory out of 5000000
+ 12376 multiletter control sequences out of 15000+600000
+ 10975 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,12n,49p,1739b,6931s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,12n,51p,1739b,7651s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8
-.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.
-pfb>
-Output written on unlv-thesis.pdf (43 pages, 593911 bytes).
+m/cmbx8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
+fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
+b>
+Output written on unlv-thesis.pdf (49 pages, 657984 bytes).
 PDF statistics:
- 736 PDF objects out of 1000 (max. 8388607)
- 642 compressed objects within 7 object streams
- 135 named destinations out of 1000 (max. 500000)
- 473 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 845 PDF objects out of 1000 (max. 8388607)
+ 739 compressed objects within 8 object streams
+ 156 named destinations out of 1000 (max. 500000)
+ 539 words of extra memory for PDF output out of 10000 (max. 10000000)
 
