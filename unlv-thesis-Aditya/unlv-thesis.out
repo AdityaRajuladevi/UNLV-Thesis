@@ -53,7 +53,8 @@
 \BOOKMARK [1][-]{section.4.2}{Experiments on Models}{chapter.4}% 53
 \BOOKMARK [2][-]{subsection.4.2.1}{Logistic Regression}{section.4.2}% 54
 \BOOKMARK [2][-]{subsection.4.2.2}{Decision Trees}{section.4.2}% 55
-\BOOKMARK [2][-]{subsection.4.2.3}{Evaluation using Traditional Metrics}{section.4.2}% 56
-\BOOKMARK [0][-]{chapter.5}{Chapter Conclusion}{}% 57
-\BOOKMARK [0][-]{chapter*.40}{Bibliography}{}% 58
-\BOOKMARK [0][-]{chapter.1}{Curriculum Vitae }{}% 59
+\BOOKMARK [2][-]{subsection.4.2.3}{Random Forest}{section.4.2}% 56
+\BOOKMARK [2][-]{subsection.4.2.4}{Comparison of the models}{section.4.2}% 57
+\BOOKMARK [0][-]{chapter.5}{Chapter Conclusion}{}% 58
+\BOOKMARK [0][-]{chapter*.45}{Bibliography}{}% 59
+\BOOKMARK [0][-]{chapter.1}{Curriculum Vitae }{}% 60

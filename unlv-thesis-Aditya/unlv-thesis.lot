@@ -14,6 +14,8 @@
 \contentsline {table}{\numberline {4.2}{\ignorespaces Computed metrics based on actual and predicted test data values using LR model\relax }}{37}{table.caption.31}
 \contentsline {table}{\numberline {4.3}{\ignorespaces Computed metrics based on actual and predicted unseen data values using LR model\relax }}{38}{table.caption.34}
 \contentsline {table}{\numberline {4.4}{\ignorespaces Computed metrics based on actual and predicted test data values using DTree model\relax }}{39}{table.caption.36}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Computed metrics based on actual and predicted unseen data values using LR model\relax }}{41}{table.caption.39}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Computed metrics based on actual and predicted unseen data values using DTree model\relax }}{41}{table.caption.39}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Computed metrics based on actual and predicted test data values using RF model\relax }}{42}{table.caption.41}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Computed metrics based on actual and predicted unseen data values using RF model\relax }}{42}{table.caption.44}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

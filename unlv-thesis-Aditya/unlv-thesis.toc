@@ -53,7 +53,8 @@
 \contentsline {section}{\numberline {4.2}Experiments on Models}{36}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Logistic Regression}{36}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Decision Trees}{39}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Evaluation using Traditional Metrics}{41}{subsection.4.2.3}
-\contentsline {chapter}{Chapter{} \numberline {5}Conclusion}{42}{chapter.5}
-\contentsline {chapter}{Bibliography}{43}{chapter*.40}
-\contentsline {chapter}{Curriculum Vitae{} \numberline {}}{45}{chapter.1}
+\contentsline {subsection}{\numberline {4.2.3}Random Forest}{41}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Comparison of the models}{42}{subsection.4.2.4}
+\contentsline {chapter}{Chapter{} \numberline {5}Conclusion}{44}{chapter.5}
+\contentsline {chapter}{Bibliography}{45}{chapter*.45}
+\contentsline {chapter}{Curriculum Vitae{} \numberline {}}{47}{chapter.1}

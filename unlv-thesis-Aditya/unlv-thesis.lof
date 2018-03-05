@@ -21,7 +21,10 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces ROC curve for Logistic Regression on test data\relax }}{37}{figure.caption.32}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Confusion Matrix of Logistic Regression on unseen data viz 2016 academic year data\relax }}{38}{figure.caption.33}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Confusion Matrix of Decision Tree on test data\relax }}{39}{figure.caption.35}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces ROC curve for Logistic Regression on test data\relax }}{40}{figure.caption.37}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Confusion Matrix of Logistic Regression on unseen data viz 2016 academic year data\relax }}{40}{figure.caption.38}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces ROC curve for Decision Tree on test data\relax }}{40}{figure.caption.37}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Confusion Matrix of Decision Tree on unseen data viz 2016 academic year data\relax }}{40}{figure.caption.38}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Confusion Matrix of Random Forest on test data\relax }}{41}{figure.caption.40}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces ROC curve for Random Forest on test data\relax }}{42}{figure.caption.42}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Confusion Matrix of Random Forest on unseen data viz 2016 academic year data\relax }}{43}{figure.caption.43}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
