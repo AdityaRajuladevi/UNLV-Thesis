@@ -3,28 +3,28 @@
 \BOOKMARK [0][-]{chapter*.4}{Table of Contents}{}% 3
 \BOOKMARK [0][-]{chapter*.5}{List of Tables}{}% 4
 \BOOKMARK [0][-]{chapter*.6}{List of Figures}{}% 5
-\BOOKMARK [0][-]{chapter*.7}{List of Algorithms}{}% 6
-\BOOKMARK [0][-]{chapter.1}{Chapter Introduction}{}% 7
-\BOOKMARK [1][-]{section.1.1}{Objective}{chapter.1}% 8
-\BOOKMARK [1][-]{section.1.2}{Outline}{chapter.1}% 9
-\BOOKMARK [0][-]{chapter.2}{Chapter Background and Preliminaries}{}% 10
-\BOOKMARK [1][-]{section.2.1}{Related Work}{chapter.2}% 11
-\BOOKMARK [1][-]{section.2.2}{Preliminaries}{chapter.2}% 12
-\BOOKMARK [2][-]{subsection.2.2.1}{Machine Learning Concepts}{section.2.2}% 13
-\BOOKMARK [2][-]{subsection.2.2.2}{Predictive Analytics}{section.2.2}% 14
-\BOOKMARK [2][-]{subsection.2.2.3}{Selected Models}{section.2.2}% 15
-\BOOKMARK [3][-]{subsubsection.2.2.3.1}{Logistic Regression Model}{subsection.2.2.3}% 16
-\BOOKMARK [3][-]{subsubsection.2.2.3.2}{Decision Trees}{subsection.2.2.3}% 17
-\BOOKMARK [3][-]{subsubsection.2.2.3.3}{Random Forest Classifiers}{subsection.2.2.3}% 18
-\BOOKMARK [3][-]{subsubsection.2.2.3.4}{Support Vector Machines }{subsection.2.2.3}% 19
-\BOOKMARK [2][-]{subsection.2.2.4}{Evaluation Methods}{section.2.2}% 20
-\BOOKMARK [3][-]{subsubsection.2.2.4.1}{Confusion Matrix}{subsection.2.2.4}% 21
-\BOOKMARK [3][-]{subsubsection.2.2.4.2}{Classification Accuracy}{subsection.2.2.4}% 22
-\BOOKMARK [3][-]{subsubsection.2.2.4.3}{Sensitivity}{subsection.2.2.4}% 23
-\BOOKMARK [3][-]{subsubsection.2.2.4.4}{Specificity}{subsection.2.2.4}% 24
-\BOOKMARK [3][-]{subsubsection.2.2.4.5}{Precision}{subsection.2.2.4}% 25
-\BOOKMARK [3][-]{subsubsection.2.2.4.6}{F1 Score}{subsection.2.2.4}% 26
-\BOOKMARK [3][-]{subsubsection.2.2.4.7}{Area Under Curve \(AUC\)}{subsection.2.2.4}% 27
+\BOOKMARK [0][-]{chapter.1}{Chapter Introduction}{}% 6
+\BOOKMARK [1][-]{section.1.1}{Objective}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.2}{Outline}{chapter.1}% 8
+\BOOKMARK [0][-]{chapter.2}{Chapter Background and Preliminaries}{}% 9
+\BOOKMARK [1][-]{section.2.1}{Related Work}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.2}{Preliminaries}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.1}{Machine Learning Concepts}{section.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.2}{Predictive Analytics}{section.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.3}{Selected Models}{section.2.2}% 14
+\BOOKMARK [3][-]{subsubsection.2.2.3.1}{Logistic Regression Model}{subsection.2.2.3}% 15
+\BOOKMARK [3][-]{subsubsection.2.2.3.2}{Decision Trees}{subsection.2.2.3}% 16
+\BOOKMARK [3][-]{subsubsection.2.2.3.3}{Random Forest Classifiers}{subsection.2.2.3}% 17
+\BOOKMARK [3][-]{subsubsection.2.2.3.4}{Support Vector Machines }{subsection.2.2.3}% 18
+\BOOKMARK [2][-]{subsection.2.2.4}{Evaluation Methods}{section.2.2}% 19
+\BOOKMARK [3][-]{subsubsection.2.2.4.1}{Confusion Matrix}{subsection.2.2.4}% 20
+\BOOKMARK [3][-]{subsubsection.2.2.4.2}{Classification Accuracy}{subsection.2.2.4}% 21
+\BOOKMARK [3][-]{subsubsection.2.2.4.3}{Sensitivity}{subsection.2.2.4}% 22
+\BOOKMARK [3][-]{subsubsection.2.2.4.4}{Specificity}{subsection.2.2.4}% 23
+\BOOKMARK [3][-]{subsubsection.2.2.4.5}{Precision}{subsection.2.2.4}% 24
+\BOOKMARK [3][-]{subsubsection.2.2.4.6}{F1 Score}{subsection.2.2.4}% 25
+\BOOKMARK [3][-]{subsubsection.2.2.4.7}{Area Under Curve \(AUC\)}{subsection.2.2.4}% 26
+\BOOKMARK [3][-]{subsubsection.2.2.4.8}{Cross Validation}{subsection.2.2.4}% 27
 \BOOKMARK [0][-]{chapter.3}{Chapter Methodology}{}% 28
 \BOOKMARK [1][-]{section.3.1}{Data Collection}{chapter.3}% 29
 \BOOKMARK [1][-]{section.3.2}{Data Preparation}{chapter.3}% 30
@@ -48,9 +48,12 @@
 \BOOKMARK [2][-]{subsection.3.4.3}{Mom\137Education\137Level Vs F2\137Not\137Retained}{section.3.4}% 48
 \BOOKMARK [2][-]{subsection.3.4.4}{Dad\137Education\137Level Vs F2\137Not\137Retained}{section.3.4}% 49
 \BOOKMARK [2][-]{subsection.3.4.5}{College1 Vs F2\137Not\137Retained}{section.3.4}% 50
-\BOOKMARK [0][-]{chapter.4}{Chapter Experimental Results}{}% 51
-\BOOKMARK [1][-]{section.4.1}{Analysis of Predictive Models}{chapter.4}% 52
-\BOOKMARK [2][-]{subsection.4.1.1}{Evaluation using Traditional Metrics}{section.4.1}% 53
-\BOOKMARK [0][-]{chapter.5}{Chapter Conclusion}{}% 54
-\BOOKMARK [0][-]{chapter*.30}{Bibliography}{}% 55
-\BOOKMARK [0][-]{chapter.1}{Curriculum Vitae }{}% 56
+\BOOKMARK [0][-]{chapter.4}{Chapter Building Models}{}% 51
+\BOOKMARK [1][-]{section.4.1}{Data Splitting }{chapter.4}% 52
+\BOOKMARK [1][-]{section.4.2}{Experiments on Models}{chapter.4}% 53
+\BOOKMARK [2][-]{subsection.4.2.1}{Logistic Regression}{section.4.2}% 54
+\BOOKMARK [2][-]{subsection.4.2.2}{Decision Trees}{section.4.2}% 55
+\BOOKMARK [2][-]{subsection.4.2.3}{Evaluation using Traditional Metrics}{section.4.2}% 56
+\BOOKMARK [0][-]{chapter.5}{Chapter Conclusion}{}% 57
+\BOOKMARK [0][-]{chapter*.40}{Bibliography}{}% 58
+\BOOKMARK [0][-]{chapter.1}{Curriculum Vitae }{}% 59

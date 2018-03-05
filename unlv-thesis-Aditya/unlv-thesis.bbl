@@ -11,7 +11,7 @@ Alexander~W Astin et~al.
 Olugbenga Adejo and Thomas Connolly.
 \newblock An integrated system framework for predicting students? academic
   performance in higher educational institutions.
-\newblock {\em International Journal o f Computer Science and Information
+\newblock {\em International Journal of Computer Science and Information
   Technology (IJCSIT)}, 9(3):149--157, 2017.
 
 \bibitem[AH14]{alkhasawneh2014developing}
@@ -45,6 +45,11 @@ Melissa~A Bingham and Natalie~Walleser Solverson.
 \newblock Using enrollment data to predict retention rate.
 \newblock {\em Journal of Student Affairs Research and Practice}, 53(1):51--64,
   2016.
+
+\bibitem[Faw06]{fawcett2006introduction}
+Tom Fawcett.
+\newblock An introduction to roc analysis.
+\newblock {\em Pattern recognition letters}, 27(8):861--874, 2006.
 
 \bibitem[Hal]{ACTSAT}
 Edwards Halle.

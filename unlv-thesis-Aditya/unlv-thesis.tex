@@ -161,7 +161,7 @@ Finally, I would like to thank all my friends, seniors and juniors who made my t
 \listoffigures
 \clearpage
 % if you want a list of algorithms, make sure to use the Makefile-loa instead of Makefile.
-\listofalgorithmes
+% \listofalgorithmes
 \clearpage
 
 %%%
@@ -332,7 +332,7 @@ The figure \ref{fig:random_forest_trees} explains the construction of random for
 \subsection {Evaluation Methods}
 In this subsection, we will explain the various evaluation methods that are used in this thesis to assess and compare the performance of different models.
 
-In machine learning, the problem at hand is of making good predictions on unknown and unseen data by the learned models. In simple terms, we want to know for sure how well the model is able to generalize new unseen data and ensure that it is not just memorizing patterns in the training data. To do this, we need to define the performance measure strategies we will use to evaluate our models. Having a performance measure defined for the machine learning problem also gives us the advantage of focusing our time effectively on improving our model predictions. We generally use the term 'metric' to refer to a performance measure in machine learning. Various metrics are available depending on whether the problem is of  classification or regression. Since we are dealing with a classification problem in this thesis, we will concentrate more on the metrics for a classification problem.
+In machine learning, the problem at hand is of making good predictions on unknown and unseen data by the learned models. In simple terms, we want to know for sure how well the model is able to generalize new unseen data and ensure that it is not just memorizing patterns in the data. To make a better analysis of the generalizing power of the model, the data is generally split into training and testing sets, where training data is used to create the model while testing set to evaluate the model. To do this, we need to define the performance measure strategies we will use to evaluate our models. Having a performance measure defined for the machine learning problem also gives us the advantage of focusing our time effectively on improving our model predictions. We generally use the term 'metric' to refer to a performance measure in machine learning. Various metrics are available depending on whether the problem is of  classification or regression. Since we are dealing with a classification problem in this thesis, we will concentrate more on the metrics for a classification problem.
 
 \subsubsection {Confusion Matrix}
 Confusion matrix is a representation of the predictions made by the classification model. It is a very important and useful metric in classification problems as it can not only be used to represent the models performance by itself but can also compute other metrics. A confusion matrix is composed of statistics such as true positives, true negatives, false positives, and false negatives, which are calculated using actual and predicted values. The idea of such a representation was to understand how many times the model was right in predicting a true or false value and how many times it failed to do so.
@@ -405,12 +405,13 @@ F\textsubscript{1} score is calculated by taking a harmonic mean of the precisio
 F_{1} = \dfrac{True\, Positives }{True\, Positives\, + False\, Positives} \label{eq:Precision} 
  \end{equation}
 
-The precision calculated from the confusion matrix shown in Figure \ref{fig:example_confusion_matrix} would be 54/(54+66), which is 0.45.
+The F\textsubscript{1} score calculated from the confusion matrix shown in Figure \ref{fig:example_confusion_matrix} would be 0.56.
 
 
 \subsubsection{Area Under Curve (AUC)}
 
-In binary classification problems, the general rule of thumb is to use a probability threshold of 0.5 to make classification predictions. But for few scenarios, this threshold might not hold good and using a different threshold would be more appropriate. An Receiver Operating Curve (ROC) is the most commonly used way to visualize the performance of a binary classifier for different thresholds. and AUC is (arguably) the best way to summarize its performance in a single number.
+In binary classification problems, the general rule of thumb is to use a probability threshold of 0.5 to make classification predictions. But for few scenarios, this threshold might not hold good and using a different threshold would be more appropriate. An Receiver Operating Curve (ROC) is the most commonly used way to visualize the performance of a binary classifier for different thresholds. It is obtained by plotting the True Positive Rate against the False Positive Rate. False positive rate is calculated as (1 - Specificity). From the ROC plot, we can calculate the Area under the curve (often referred to as simply the AUC) which is the probability that a classifier will rank a randomly chosen positive instance higher than a randomly chosen negative one \cite{fawcett2006introduction}.
+
 
   \begin{figure}[!htbp]
 	\centering
@@ -419,8 +420,18 @@ In binary classification problems, the general rule of thumb is to use a probabi
 	\label{fig:example_roc}
 \end{figure} 
 
-So far we have discussed about classification accuracy, sensitivity, specificity and recall. Among these classification accuracy can be a bad indicator of the model evaluation as it requires the output classes distribution in the original set to be not balanced which is rarely true for real world datasets. As for other metrics, it becomes hard to compare three values to identify the model that performs best. Hence, in these cases F\textsubscript1 score can be used as a single value comparator of the models performances.
+The Figure \ref{fig:example_roc} shows the roc curve constructed from our example data captured by confusion matrix in the Figure \ref{fig:example_confusion_matrix}. In the plot, the area under the blue line refers to the AUC of the classifier, which in this case is (0.72). The dashed line in the diagonal represents the ROC curve of a random predictor.
 
+\subsubsection{Cross Validation}
+So far, we discussed the calculation of various metrics based on the predictions obtained from a single test data which was split from the original data. The approach of dividing the input data into training and testing data is known as holdout method. The typical split rate is about 70\% of input data into training and remaining 30\% into testing data. These splits are generally created by random sampling. One problem with the holdout strategy to evaluate the models performance is that the random splits might not be fair and lets say a specific combination of input data might always end up in testing data about which the model will have little information since it did not see them during training. As a result the model cannot make good predictions on them. To tackle with such scenarios, we use a method known as Cross Validation. 
+
+In Cross validation, the machine learning models are trained on several subsets of the available input data and evaluated on the complementary subset of the data. There are several available strategies based on the way the subsets are split. K-Fold cross validation and Stratified K-Fold cross validation are among the most popular and frequently used strategies.
+
+In K-Fold cross validation, the data is divided into k subsets. In simple terms, the holdout method is repeated k times, such that each time, one of the k subsets is used as the test set/ validation set and the other k-1 subsets are put together to form a training set. The error estimation is averaged over all k trials to get total effectiveness of our model. As can be seen, every data point gets to be in a validation set exactly once, and gets to be in a training set k-1 times. This significantly reduces bias as we are using most of the data for fitting, and also significantly reduces variance as most of the data is also being used in validation set. Interchanging the training and test sets also adds to the effectiveness of this method. The typical value of K suggested by many researchers is 10.
+
+Stratified K-Fold cross validation is actually a variation of the K-fold cross validation which works better when applied on data that has huge imbalance in the response variable. In this approach, each fold contains approximately the same percentage of samples of each target class as the complete set.\newline
+
+\noindent In this subsection, we discussed about classification accuracy, sensitivity, specificity, recall, AUC and cross validation. Among the evaluation metrics, sometimes the classification accuracy can be a bad indicator of the model performance as it requires the output classes distribution in the original set to be balanced which is rarely true for real world datasets. As for other metrics, it becomes hard to compare three to four values to identify the model that performs best. Hence, in these cases F\textsubscript1 score and AUC can be used as a single value comparators of the models performances. Moreover, applying cross validation strategies to calculate the metrics would give evaluation measures that describe the model performance with higher confidence.
 
 
 
@@ -807,8 +818,164 @@ To get a better understanding of the effect of student's college on retention, w
 \end{table}
 
 
-\chapter{Experimental Results} \label{chapter:experiment_results}
-\section {Analysis of Predictive Models}
+\chapter{Building Models} \label{chapter:building_models}
+
+\section {Data Splitting }
+
+Once the dataset was cleaned and feature selection was performed on it, there were 51 variables excluding the F2\_Not\_Retained variable. Hence, we have a total of 51 independent variables which act as predictors and are inputted into the model to predict the value of F2\_Not\_Retained the output variable. 
+
+The data was split based on the academic year, so that it will be easy to analyze and test the retention rates on individual students as well as the whole academic year. The count of students in each academic year is shown in the Table \ref{table:acad_db}.
+
+\begin{table}[!htbp]
+	\renewcommand{\arraystretch}{1.3}
+	\caption{Count of students in each academic year}
+	\label{table:acad_db}
+	\centering
+	\begin{tabular}{|c|c|}
+    \hline
+    \bfseries Academic Year & \bfseries Count of Students \\ 
+    \hline
+  	2012 &  2996 \\ \hline
+	2013 & 3585 \\ \hline
+	2014 & 3656 \\ \hline
+	2015 & 3715 \\ \hline
+	2016 & 3756 \\ \hline
+\end{tabular} 
+\end{table}
+
+From the entire dataset, the student records from the academic years 2012, 2013 ,2014 and 2015 were combined to form the train\_test dataset. The remaining student records from the year 2016 were used to form test\_unseen dataset. The idea was to use the 4 years of data to train, test and evaluate the model. Once the model is trained, it will be used to make predictions on student records from the test\_unseen dataset. This way, by not using any data from the 2016 academic year in training and testing processes, the model will treat it as totally unseen data and makes predictions which will not be based on any assumptions of that year. There were a total of 13,192 student records in the train\_test dataset and 3756 student records in test\_unseen dataset.
+
+Seventy percent (70\%) of the test\_train dataset were used to train the selected models. The remaining thirty percent (30\%) was used to test, evaluate and compare the performances of the final trained models. 
+
+\section {Experiments on Models}
+Once the training, testing and unseen data were created from the original dataset, each of the selected models were trained using the training data and evaluated against the test data. The models which were trained were Logistic Regression, Decision Tree and Random Forest. 
+
+Once each model was trained, we used it to make predictions and generate a confusion matrix on the test data. The confusion matrix was used to calculate the classification accuracy, sensitivity, specificity, precision, F\textsubscript{1} scores and plot the ROC curve for the model. We also applied K-fold cross validation on the train data to get the cross validated AUC value, that was used to verify if the model results are not biased. If the cross validated AUC score was similar to the one we get from the predictions on test data, it means that the model is actually learning from the train data. Furthermore, we use the trained model to make predictions on unseen data and generate confusion matrix to compute the performance metrics which give us a better idea on the models generalizing power on unseen data.
+
+All the above mentioned performance metrics and conclusions were then used to compare the models to find the best among them that is suitable for the UNLV students data.
+
+\subsection {Logistic Regression}
+A Logistic Regression (LR) model was created using the sklearn package in python and it was fitted with the training data. The trained model was then used to perform predictions on the test data. The confusion matrix generated from the predictions of the test data is as shown in the Figure \ref{fig:lr_confusion_matrix}
+
+  \begin{figure}
+	\centering
+	\includegraphics[scale=0.6]{LR-Confusion_matrix}
+	\caption{Confusion Matrix of Logistic Regression on test data}
+	\label{fig:lr_confusion_matrix}
+\end{figure} 
+
+The logistic regression model built on the training data had a classification accuracy of 0.843. The following table (see Table ) shows the other metrics calculated from the confusion matrix in Figure \ref{fig:lr_confusion_matrix}. 
+\begin{table}
+	\renewcommand{\arraystretch}{1.3}
+	\caption{Computed metrics based on actual and predicted test data values using LR model}
+	\label{table:lr-metrics_db}
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+    \hline
+  	 & \bfseries Accuracy & \bfseries Sensitivity & \bfseries Specificity & \bfseries Precision & \bfseries F\textsubscript{1} Score  & \bfseries AUC\\  
+    \hline
+	LR model & 0.843 & 0.774 & 0.864 & 0.635 & 0.70 & 0.882 \\ \hline
+	\end{tabular} 
+\end{table}
+
+
+ \begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.6]{LR-roc}
+	\caption{ROC curve for Logistic Regression on test data}
+	\label{fig:lr_roc}
+\end{figure} 
+
+ROC curve for the LR model on test data was also plotted  and is as shown in the figure \ref{fig:lr_roc} . K-Fold cross validation with the k value of 10 was applied on the training data to get a cross validated AUC score of 0.88. This clearly confirms that the model is actually learning from the training data and is in fact generalizing the unseen data well.
+
+The trained LR model was used to perform predictions on the unseen dataset that was created from the original dataset. The predictions on the unseen data define the generalizing power of the LR model on the academic year level data as well as individual student level. The confusion matrix generated from the predictions on unseen data is shown in the figure \ref{fig:lr_unseen_confusion_matrix}.
+
+  \begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.6]{LR-unseen-Confusion_matrix}
+	\caption{Confusion Matrix of Logistic Regression on unseen data viz 2016 academic year data}
+	\label{fig:lr_unseen_confusion_matrix}
+\end{figure} 
+
+
+The logistic regression model built on the training data had a classification accuracy of 0.843. The following table (see Table \ref{table:lr-unseen_metrics_db}) shows the other metrics calculated from the confusion matrix in Figure \ref{fig:lr_unseen_confusion_matrix}.
+
+\begin{table}[!htbp]
+	\renewcommand{\arraystretch}{1.3}
+	\caption{Computed metrics based on actual and predicted unseen data values using LR model}
+	\label{table:lr-unseen_metrics_db}
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+    \hline
+  	 & \bfseries Accuracy & \bfseries Sensitivity & \bfseries Specificity & \bfseries Precision & \bfseries F\textsubscript{1} Score  & \bfseries AUC\\  
+    \hline
+	LR model & 0.837 & 0.766 & 0.862 & 0.657 & 0.71 & 0.883 \\ \hline
+	\end{tabular} 
+\end{table}
+Write about your insights on the metrics from unseen data.
+
+
+
+\subsection {Decision Trees}
+A Decision tree (DTree) model was created using the sklearn package in python and it was fitted with the training data. The trained model was then used to perform predictions on the test data. The confusion matrix generated from the predictions of the test data is as shown in the Figure \ref{fig:Dtree_confusion_matrix}
+
+  \begin{figure}
+	\centering
+	\includegraphics[scale=0.6]{DTree-Confusion_matrix}
+	\caption{Confusion Matrix of Decision Tree on test data}
+	\label{fig:Dtree_confusion_matrix}
+\end{figure} 
+
+The decision tree model built on the training data had a classification accuracy of 0.843. The following table (see Table ) shows the other metrics calculated from the confusion matrix in Figure \ref{fig:lr_confusion_matrix}. 
+\begin{table}
+	\renewcommand{\arraystretch}{1.3}
+	\caption{Computed metrics based on actual and predicted test data values using DTree model}
+	\label{table:lr-metrics_db}
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+    \hline
+  	 & \bfseries Accuracy & \bfseries Sensitivity & \bfseries Specificity & \bfseries Precision & \bfseries F\textsubscript{1} Score  & \bfseries AUC\\  
+    \hline
+	LR model & 0.843 & 0.774 & 0.864 & 0.635 & 0.70 & 0.882 \\ \hline
+	\end{tabular} 
+\end{table}
+
+
+ \begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.6]{LR-roc}
+	\caption{ROC curve for Logistic Regression on test data}
+	\label{fig:lr_roc}
+\end{figure} 
+
+ROC curve for the LR model on test data was also plotted  and is as shown in the figure \ref{fig:lr_roc} . K-Fold cross validation with the k value of 10 was applied on the training data to get a cross validated AUC score of 0.88. This clearly confirms that the model is actually learning from the training data and is in fact generalizing the unseen data well.
+
+The trained LR model was used to perform predictions on the unseen dataset that was created from the original dataset. The predictions on the unseen data define the generalizing power of the LR model on the academic year level data as well as individual student level. The confusion matrix generated from the predictions on unseen data is shown in the figure \ref{fig:lr_unseen_confusion_matrix}.
+
+  \begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.6]{LR-unseen-Confusion_matrix}
+	\caption{Confusion Matrix of Logistic Regression on unseen data viz 2016 academic year data}
+	\label{fig:lr_unseen_confusion_matrix}
+\end{figure} 
+
+
+The logistic regression model built on the training data had a classification accuracy of 0.843. The following table (see Table \ref{table:lr-unseen_metrics_db}) shows the other metrics calculated from the confusion matrix in Figure \ref{fig:lr_unseen_confusion_matrix}.
+
+\begin{table}[!htbp]
+	\renewcommand{\arraystretch}{1.3}
+	\caption{Computed metrics based on actual and predicted unseen data values using LR model}
+	\label{table:lr-unseen_metrics_db}
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+    \hline
+  	 & \bfseries Accuracy & \bfseries Sensitivity & \bfseries Specificity & \bfseries Precision & \bfseries F\textsubscript{1} Score  & \bfseries AUC\\  
+    \hline
+	LR model & 0.837 & 0.766 & 0.862 & 0.657 & 0.71 & 0.883 \\ \hline
+	\end{tabular} 
+\end{table}
+Write about your insights on the metrics from unseen data.
+
 \subsection {Evaluation using Traditional Metrics}
 \chapter{Conclusion} \label{chapter:conclusion}
 %%%
