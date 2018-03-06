@@ -52,7 +52,7 @@
 %%%
 %%% Add your previous degrees here
 \thesisauthorpreviousdegrees{
-Bachelor Degree in Computer Engineering\\ \vspace*{-0.12in}
+Bachelor of Technology (B-Tech) \\ \vspace*{-0.12in}
 Jawahar Lal Nehru Technological University, Hyderabad, India\\ \vspace*{-0.12in}
 2014}
 
@@ -133,7 +133,7 @@ I would also like to extend my thanks to Dr. Laxmi Gewali, Dr. Justin Zhan, and 
 
 I am gratefully indebted to Kivanc Oner, Carrie Trentham and Becky Lorig from the Enterprises Application Services department at UNLV for their continuous support and valuable comments on this thesis. They answered my many questions about student enrollments and retention problems at UNLV and played a major role in helping me find the student data I was looking for from the UNLV data warehouse.
 
-My deep sense of gratitude to my parents Venkat Rao Rajuladevi, Mallika Rajuladevi and my sister Arthi Rajuladevi who are my moral strength and motivation. I would like to thank Sai Phani Krishna Parsa and Paritosh Parmar for their constant support and guidance throughout my Master's program.
+My deep sense of gratitude to my parents Venkat Rao Rajuladevi, Mallika Rajuladevi and my sister Arthi Rajuladevi who are my moral strength and motivation. I would like to thank Sai Phani Krishna Parsa, Paritosh Parmar and Ashish Tamarakar for their constant support and guidance throughout my Master's program.
 
 Finally, I would like to thank all my friends, seniors and juniors who made my time here at UNLV very memorable. 
 \end{thesisacknowledgments}
@@ -1033,10 +1033,31 @@ The decision tree model built on the training data had a classification accuracy
 	\end{tabular} 
 \end{table}
 
-
-
 \subsection {Comparison of the models}
+
+dskjdbjksdbkjsbfkjsdbfkjdsbfkjsdbfkjdsfbkjbsdfkbfsdkjsbfdkjsdbfkbsdf
+
+\begin{table}
+	\renewcommand{\arraystretch}{1.3}
+	\caption{Comparison of metrics from different models on the training data}
+	\label{table:compare_models_db}
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+    \hline
+  	 & \bfseries Accuracy & \bfseries Sensitivity & \bfseries Specificity & \bfseries Precision & \bfseries F\textsubscript{1} Score  & \bfseries AUC\\  
+    \hline
+    	LR model & 0.843 & 0.774 & 0.864 & 0.635 & 0.70 & 0.882 \\ \hline
+	DTree model & 0.871 & 0.699 & 0.924 & 0738 & 0.72 & 0.860 \\ \hline
+	RF model & 0.861 & 0.723 & 0.903 & 695 & 0.71 & 0.876 \\ \hline
+	\end{tabular} 
+\end{table}
+
+
+\subsection{Feature importance calculation based on selected models.} 
+\subsection{Probability estimates to risk scores}
 \chapter{Conclusion} \label{chapter:conclusion}
+
+\subsection{Future Work}
 %%%
 %%% The bibliography - you can change the alpha to suit your style if you don't like it is it is.
 %%% The bib file should be called 'thesis.bib' - if not then change the second line here to be correct.

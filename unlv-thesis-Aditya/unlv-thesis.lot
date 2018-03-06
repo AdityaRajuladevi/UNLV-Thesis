@@ -17,5 +17,6 @@
 \contentsline {table}{\numberline {4.5}{\ignorespaces Computed metrics based on actual and predicted unseen data values using DTree model\relax }}{41}{table.caption.39}
 \contentsline {table}{\numberline {4.6}{\ignorespaces Computed metrics based on actual and predicted test data values using RF model\relax }}{42}{table.caption.41}
 \contentsline {table}{\numberline {4.7}{\ignorespaces Computed metrics based on actual and predicted unseen data values using RF model\relax }}{42}{table.caption.44}
+\contentsline {table}{\numberline {4.8}{\ignorespaces Comparison of metrics from different models on the training data\relax }}{43}{table.caption.45}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
