@@ -44,9 +44,9 @@
 \BOOKMARK [2][-]{subsection.3.3.4}{Feature Selection}{section.3.3}% 44
 \BOOKMARK [1][-]{section.3.4}{Exploratory Data Analysis}{chapter.3}% 45
 \BOOKMARK [2][-]{subsection.3.4.1}{Academic year Vs F2\137Not\137Retained}{section.3.4}% 46
-\BOOKMARK [2][-]{subsection.3.4.2}{IPEDS Race Vs F2\137Not\137Retained}{section.3.4}% 47
-\BOOKMARK [2][-]{subsection.3.4.3}{Mom\137Education\137Level Vs F2\137Not\137Retained}{section.3.4}% 48
-\BOOKMARK [2][-]{subsection.3.4.4}{Dad\137Education\137Level Vs F2\137Not\137Retained}{section.3.4}% 49
+\BOOKMARK [2][-]{subsection.3.4.2}{IPEDS\137Race Vs F2\137Not\137Retained}{section.3.4}% 47
+\BOOKMARK [2][-]{subsection.3.4.3}{Mom\137Edu\137Level Vs F2\137Not\137Retained}{section.3.4}% 48
+\BOOKMARK [2][-]{subsection.3.4.4}{Dad\137Edu\137Level Vs F2\137Not\137Retained}{section.3.4}% 49
 \BOOKMARK [2][-]{subsection.3.4.5}{College1 Vs F2\137Not\137Retained}{section.3.4}% 50
 \BOOKMARK [0][-]{chapter.4}{Chapter Building Models}{}% 51
 \BOOKMARK [1][-]{section.4.1}{Data Splitting }{chapter.4}% 52
@@ -54,10 +54,11 @@
 \BOOKMARK [2][-]{subsection.4.2.1}{Logistic Regression}{section.4.2}% 54
 \BOOKMARK [2][-]{subsection.4.2.2}{Decision Trees}{section.4.2}% 55
 \BOOKMARK [2][-]{subsection.4.2.3}{Random Forest}{section.4.2}% 56
-\BOOKMARK [2][-]{subsection.4.2.4}{Comparison of the models}{section.4.2}% 57
-\BOOKMARK [2][-]{subsection.4.2.5}{Feature importance calculation based on selected models.}{section.4.2}% 58
-\BOOKMARK [2][-]{subsection.4.2.6}{Probability estimates to risk scores}{section.4.2}% 59
-\BOOKMARK [0][-]{chapter.5}{Chapter Conclusion}{}% 60
-\BOOKMARK [1][-]{subsection.5.0.1}{Future Work}{chapter.5}% 61
-\BOOKMARK [0][-]{chapter*.46}{Bibliography}{}% 62
-\BOOKMARK [0][-]{chapter.1}{Curriculum Vitae }{}% 63
+\BOOKMARK [2][-]{subsection.4.2.4}{Support Vector Machines}{section.4.2}% 57
+\BOOKMARK [2][-]{subsection.4.2.5}{Comparison of the models}{section.4.2}% 58
+\BOOKMARK [2][-]{subsection.4.2.6}{Feature importance calculation based on selected models.}{section.4.2}% 59
+\BOOKMARK [2][-]{subsection.4.2.7}{Probability estimates to risk scores}{section.4.2}% 60
+\BOOKMARK [0][-]{chapter.5}{Chapter Conclusion}{}% 61
+\BOOKMARK [1][-]{subsection.5.0.1}{Future Work}{chapter.5}% 62
+\BOOKMARK [0][-]{chapter*.53}{Bibliography}{}% 63
+\BOOKMARK [0][-]{chapter.1}{Curriculum Vitae }{}% 64

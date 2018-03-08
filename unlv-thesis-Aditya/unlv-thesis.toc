@@ -4,7 +4,7 @@
 \contentsline {chapter}{List of Tables}{viii}{chapter*.5}
 \contentsline {chapter}{List of Figures}{ix}{chapter*.6}
 \contentsline {chapter}{Chapter{} \numberline {1}Introduction}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Objective}{2}{section.1.1}
+\contentsline {section}{\numberline {1.1}Objective}{3}{section.1.1}
 \contentsline {section}{\numberline {1.2}Outline}{3}{section.1.2}
 \contentsline {chapter}{Chapter{} \numberline {2}Background and Preliminaries}{4}{chapter.2}
 \contentsline {section}{\numberline {2.1}Related Work}{4}{section.2.1}
@@ -16,48 +16,49 @@
 \contentsline {subsubsection}{\numberline {2.2.3.2}Decision Trees}{9}{subsubsection.2.2.3.2}
 \contentsline {subsubsection}{\numberline {2.2.3.3}Random Forest Classifiers}{11}{subsubsection.2.2.3.3}
 \contentsline {subsubsection}{\numberline {2.2.3.4}Support Vector Machines }{12}{subsubsection.2.2.3.4}
-\contentsline {subsection}{\numberline {2.2.4}Evaluation Methods}{12}{subsection.2.2.4}
-\contentsline {subsubsection}{\numberline {2.2.4.1}Confusion Matrix}{13}{subsubsection.2.2.4.1}
-\contentsline {subsubsection}{\numberline {2.2.4.2}Classification Accuracy}{14}{subsubsection.2.2.4.2}
-\contentsline {subsubsection}{\numberline {2.2.4.3}Sensitivity}{14}{subsubsection.2.2.4.3}
-\contentsline {subsubsection}{\numberline {2.2.4.4}Specificity}{15}{subsubsection.2.2.4.4}
-\contentsline {subsubsection}{\numberline {2.2.4.5}Precision}{15}{subsubsection.2.2.4.5}
-\contentsline {subsubsection}{\numberline {2.2.4.6}F\textsubscript 1 Score}{16}{subsubsection.2.2.4.6}
-\contentsline {subsubsection}{\numberline {2.2.4.7}Area Under Curve (AUC)}{16}{subsubsection.2.2.4.7}
+\contentsline {subsection}{\numberline {2.2.4}Evaluation Methods}{13}{subsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.4.1}Confusion Matrix}{14}{subsubsection.2.2.4.1}
+\contentsline {subsubsection}{\numberline {2.2.4.2}Classification Accuracy}{15}{subsubsection.2.2.4.2}
+\contentsline {subsubsection}{\numberline {2.2.4.3}Sensitivity}{16}{subsubsection.2.2.4.3}
+\contentsline {subsubsection}{\numberline {2.2.4.4}Specificity}{16}{subsubsection.2.2.4.4}
+\contentsline {subsubsection}{\numberline {2.2.4.5}Precision}{16}{subsubsection.2.2.4.5}
+\contentsline {subsubsection}{\numberline {2.2.4.6}F\textsubscript 1 Score}{17}{subsubsection.2.2.4.6}
+\contentsline {subsubsection}{\numberline {2.2.4.7}Area Under Curve (AUC)}{17}{subsubsection.2.2.4.7}
 \contentsline {subsubsection}{\numberline {2.2.4.8}Cross Validation}{17}{subsubsection.2.2.4.8}
-\contentsline {chapter}{Chapter{} \numberline {3}Methodology}{19}{chapter.3}
-\contentsline {section}{\numberline {3.1}Data Collection}{19}{section.3.1}
-\contentsline {section}{\numberline {3.2}Data Preparation}{19}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Data Description}{19}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Feature Extraction}{21}{subsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.2.1}Computation of SAT\_ACT\_Score Variable}{21}{subsubsection.3.2.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2.2}Computation of F2\_Not\_Retained Variable}{22}{subsubsection.3.2.2.2}
-\contentsline {section}{\numberline {3.3}Data Preprocessing}{22}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Handling Outliers in Data}{22}{subsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.1.1}UnwHSGPA scores}{22}{subsubsection.3.3.1.1}
-\contentsline {subsection}{\numberline {3.3.2}Handling Missing Values}{22}{subsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.2.1}Imputing SAT\_ACT\_Score}{23}{subsubsection.3.3.2.1}
-\contentsline {subsubsection}{\numberline {3.3.2.2}Imputing CoreHSGPA and UnwHSGPA}{24}{subsubsection.3.3.2.2}
-\contentsline {subsubsection}{\numberline {3.3.2.3}Imputing F1\_MidtermGPA}{24}{subsubsection.3.3.2.3}
+\contentsline {chapter}{Chapter{} \numberline {3}Methodology}{20}{chapter.3}
+\contentsline {section}{\numberline {3.1}Data Collection}{20}{section.3.1}
+\contentsline {section}{\numberline {3.2}Data Preparation}{20}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Data Description}{20}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Feature Extraction}{22}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Computation of SAT\_ACT\_Score Variable}{22}{subsubsection.3.2.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2.2}Computation of F2\_Not\_Retained Variable}{23}{subsubsection.3.2.2.2}
+\contentsline {section}{\numberline {3.3}Data Preprocessing}{23}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Handling Outliers in Data}{23}{subsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.1.1}UnwHSGPA scores}{23}{subsubsection.3.3.1.1}
+\contentsline {subsection}{\numberline {3.3.2}Handling Missing Values}{23}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Imputing SAT\_ACT\_Score}{24}{subsubsection.3.3.2.1}
+\contentsline {subsubsection}{\numberline {3.3.2.2}Imputing CoreHSGPA and UnwHSGPA}{25}{subsubsection.3.3.2.2}
+\contentsline {subsubsection}{\numberline {3.3.2.3}Imputing F1\_MidtermGPA}{26}{subsubsection.3.3.2.3}
 \contentsline {subsubsection}{\numberline {3.3.2.4}Imputing F1\_MathGradePass}{26}{subsubsection.3.3.2.4}
-\contentsline {subsection}{\numberline {3.3.3}Data Transformations}{26}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Feature Selection}{26}{subsection.3.3.4}
-\contentsline {section}{\numberline {3.4}Exploratory Data Analysis}{27}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Academic year Vs F2\_Not\_Retained}{28}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}IPEDS Race Vs F2\_Not\_Retained}{28}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Mom\_Education\_Level Vs F2\_Not\_Retained}{30}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Dad\_Education\_Level Vs F2\_Not\_Retained}{30}{subsection.3.4.4}
-\contentsline {subsection}{\numberline {3.4.5}College1 Vs F2\_Not\_Retained}{33}{subsection.3.4.5}
-\contentsline {chapter}{Chapter{} \numberline {4}Building Models}{35}{chapter.4}
-\contentsline {section}{\numberline {4.1}Data Splitting }{35}{section.4.1}
-\contentsline {section}{\numberline {4.2}Experiments on Models}{36}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Logistic Regression}{36}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Decision Trees}{39}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Random Forest}{41}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Comparison of the models}{42}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Feature importance calculation based on selected models.}{44}{subsection.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}Probability estimates to risk scores}{44}{subsection.4.2.6}
-\contentsline {chapter}{Chapter{} \numberline {5}Conclusion}{45}{chapter.5}
-\contentsline {subsection}{\numberline {5.0.1}Future Work}{45}{subsection.5.0.1}
-\contentsline {chapter}{Bibliography}{46}{chapter*.46}
-\contentsline {chapter}{Curriculum Vitae{} \numberline {}}{48}{chapter.1}
+\contentsline {subsection}{\numberline {3.3.3}Data Transformations}{27}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Feature Selection}{28}{subsection.3.3.4}
+\contentsline {section}{\numberline {3.4}Exploratory Data Analysis}{29}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Academic year Vs F2\_Not\_Retained}{29}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}IPEDS\_Race Vs F2\_Not\_Retained}{30}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Mom\_Edu\_Level Vs F2\_Not\_Retained}{31}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Dad\_Edu\_Level Vs F2\_Not\_Retained}{33}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.5}College1 Vs F2\_Not\_Retained}{34}{subsection.3.4.5}
+\contentsline {chapter}{Chapter{} \numberline {4}Building Models}{37}{chapter.4}
+\contentsline {section}{\numberline {4.1}Data Splitting }{37}{section.4.1}
+\contentsline {section}{\numberline {4.2}Experiments on Models}{38}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Logistic Regression}{38}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Decision Trees}{41}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Random Forest}{43}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Support Vector Machines}{45}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Comparison of the models}{48}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Feature importance calculation based on selected models.}{48}{subsection.4.2.6}
+\contentsline {subsection}{\numberline {4.2.7}Probability estimates to risk scores}{48}{subsection.4.2.7}
+\contentsline {chapter}{Chapter{} \numberline {5}Conclusion}{49}{chapter.5}
+\contentsline {subsection}{\numberline {5.0.1}Future Work}{49}{subsection.5.0.1}
+\contentsline {chapter}{Bibliography}{50}{chapter*.53}
+\contentsline {chapter}{Curriculum Vitae{} \numberline {}}{52}{chapter.1}
