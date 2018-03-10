@@ -894,7 +894,7 @@ All the above-mentioned performance metrics were used to compare the models to f
 \subsection {Logistic Regression}
 A Logistic Regression (LR) model was created using the sklearn package in python and it was fitted on the training data. The trained model was then used to perform predictions on the test data. The confusion matrix generated from the predictions of the test data is as shown in Figure \ref{fig:lr_confusion_matrix}
 
-  \begin{figure}
+  \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.6]{LR-Confusion_matrix}
 	\caption{Confusion Matrix of Logistic Regression on test data}
@@ -902,7 +902,7 @@ A Logistic Regression (LR) model was created using the sklearn package in python
 \end{figure} 
 
 The logistic regression model built on the training data had a classification accuracy of 0.843. The table \ref{table:lr-metrics_db} shows the other metrics calculated from the confusion matrix in Figure \ref{fig:lr_confusion_matrix}. 
-\begin{table}
+\begin{table} [!htb]
 	\renewcommand{\arraystretch}{1.3}
 	\caption{Computed metrics based on actual and predicted test data values using LR model}
 	\label{table:lr-metrics_db}
@@ -1020,7 +1020,7 @@ A Random Forest (RF) model was created using the sklearn package in python and i
 \end{figure} 
 
 The Random Forest model built on the training data had a classification accuracy of 0.861. The Table \ref{table:RF_confusion_matrix} shows the other metrics calculated from the confusion matrix in Figure \ref{fig:RF_confusion_matrix}. 
-\begin{table}
+\begin{table}[!htb]
 	\renewcommand{\arraystretch}{1.3}
 	\caption{Computed metrics based on actual and predicted test data values using RF model}
 	\label{table:RF_confusion_matrix}
@@ -1042,14 +1042,16 @@ The Random Forest model built on the training data had a classification accuracy
 
 ROC curve for the RF model on test data was plotted and is as shown in the figure \ref{fig:RF_roc} . K-Fold cross validation with the k value of 10 was applied on the training data to get a cross validated AUC score of 0.876. This clearly confirms that the model is actually learning from the training data and is in fact generalizing the unseen data well.
 
-The trained RF model was used to perform predictions on the unseen dataset that was created from the original dataset. The predictions on the unseen data define the generalizing power of the RF model at the individual student level as well as the academic year level.. The confusion matrix generated from the predictions on unseen data is shown in the figure \ref{fig:RF_unseen_confusion_matrix}.
-
   \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.6]{RF-unseen-Confusion_matrix}
 	\caption{Confusion Matrix of Random Forest on unseen data viz 2016 academic year data}
 	\label{fig:RF_unseen_confusion_matrix}
 \end{figure} 
+
+
+The trained RF model was used to perform predictions on the unseen dataset that was created from the original dataset. The predictions on the unseen data define the generalizing power of the RF model at the individual student level as well as the academic year level.. The confusion matrix generated from the predictions on unseen data is shown in the figure \ref{fig:RF_unseen_confusion_matrix}.
+
 
 
 The decision tree model built on the training data had a classification accuracy of 0.867 on the unseen data. The Table \ref{table:RF-unseen_metrics_db} shows the other metrics calculated from the confusion matrix in Figure \ref{fig:RF_unseen_confusion_matrix}.
@@ -1129,9 +1131,17 @@ The support vector machine model built on the training data had a classification
 
 \subsection {Comparison of the models}
 
-\begin{table}
+The results from the experiments conducted in the previous subsection will be compared to find the best model that is suitable for the UNLV student data. 
+
+\subsubsection {Measures used to Compare Models}
+
+In our Experiments, we used the trained models to make predictions on the test data and unseen data. From the predictions, we calculated various metrics that explain the performance of the model. However, comparing the models performance by combining results of all the metrics is a difficult task. Moreover in classification problems using machine learning, it is important to identify the metrics that better represent the problem being modelled. In our case, we are more focused on identifying the students who will not be retained in their second year i.e. class '1' of the F2\_Not\_Retained variable which is the true positive case of our models' prediction. The metrics accuracy and specificity capture the effect of output class populations on learning i.e. the model will learn more about the output class that has higher population and since our data has more population of students who are retained, it is expected to get high classification accuracies and specificities as the model will predict more number of retained students correctly compared to the not retained students. On the other hand, sensitivity represents the true positive rate and precision represents the confidence of the model in identifying the true positives. F\textsubscript{1} score and AUC are metrics based on sensitivity and specificity and thus are also good representations of the model performance. Hence sensitivity, precision, F\textsubscript{1} score and AUC were used to compare the models.
+
+The metrics calculated from predictions on test data for different models are summarized in Table \ref{table:compare_models_db}. The Roc curve plots of all the models on the test data are as shown in Figure \ref{fig:comparison_roc}.
+
+\begin{table}[!htb]
 	\renewcommand{\arraystretch}{1.3}
-	\caption{Comparison of metrics from different models on the training data}
+	\caption{Comparison of metrics from different models on the testing data}
 	\label{table:compare_models_db}
 	\centering
 	\begin{tabular}{|c|c|c|c|c|c|c|}
@@ -1139,18 +1149,94 @@ The support vector machine model built on the training data had a classification
   	 & \bfseries Accuracy & \bfseries Sensitivity & \bfseries Specificity & \bfseries Precision & \bfseries F\textsubscript{1} Score  & \bfseries AUC\\  
     \hline
     	LR model & 0.843 & 0.774 & 0.864 & 0.635 & 0.70 & 0.882 \\ \hline
-	DTree model & 0.871 & 0.699 & 0.924 & 0738 & 0.72 & 0.860 \\ \hline
-	RF model & 0.861 & 0.723 & 0.903 & 695 & 0.71 & 0.876 \\ \hline
-	SVM model & 0.885 & 0.588 & 0.976 & 881 & 0.71 & 0.857 \\ \hline
+	DTree model & 0.871 & 0.699 & 0.924 & 0.738 & 0.72 & 0.860 \\ \hline
+	RF model & 0.861 & 0.723 & 0.903 & 0.695 & 0.71 & 0.876 \\ \hline
+	SVM model & 0.885 & 0.588 & 0.976 & 0.881 & 0.71 & 0.857 \\ \hline
 	\end{tabular} 
 \end{table}
 
 
-\subsection{Feature importance calculation based on selected models.} 
+ \begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.7]{CompareML-roc}
+	\caption{ROC curve's of all models on test data}
+	\label{fig:comparison_roc}
+\end{figure} 
+
+Logistic regression had the highest sensitivity rate and AUC scores compared to all the other models. It had a very low precision of 63.5\% which indicates that the model has falsely predicted more students as not retained who actually were retained. However our main focus is to identify at-risk students who will not be retained, so we can provide assistance to retain them. Hence, providing assistance to the few falsely identified not retained students is still a good thing as it may at the least help in increasing the academic performance of those students. 
+ 
+In the case of the Decision tree model, we observe good accuracy and specificity values. In fact it has the highest classification accuracy on the testing data compared to all the other models. Moreover, its sensitivity and AUC scores were lower compared to the logistic regression and random forest models which indicates that it is performing poorly in terms of identifying not retained students. The Random forests on the other hand have the second best sensitivity and AUC scores compared to all the other models. Moreover, it has a little better precision and F\textsubscript{1} score compared to logistic regression.
+
+The SVM model had a very high classification accuracy and specificity compared to other models. However its sensitivity and AUC scores were the lowest which indicates that it is performing poorly in terms of identifying not retained students. 
+
+The metrics calculated from predictions on unseen data for different models are summarized in Table \ref{table:compare_models_unseen_db}. The Roc curve plots of all the models on the test data are as shown in Figure \ref{fig:comparison_roc}.
+
+\begin{table}[!htb]
+	\renewcommand{\arraystretch}{1.3}
+	\caption{Comparison of metrics from different models on the unseen data}
+	\label{table:compare_models_unseen_db}
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+    \hline
+  	 & \bfseries Accuracy & \bfseries Sensitivity & \bfseries Specificity & \bfseries Precision & \bfseries F\textsubscript{1} Score  & \bfseries AUC\\  
+    \hline
+        LR model & 0.837 & 0.766 & 0.862 & 0.657 & 0.71 & 0.883 \\ \hline
+        DTree model & 0.867 & 0.721 & 0.917 & 0.750 & 0.74 & 0.87 \\ \hline
+        RF model & 0.867 & 0.721 & 0.917 & 0.750 & 0.74 & 0.87 \\ \hline
+        SVM model & 0.872 & 0.592 & 0.969 & 0.868 & 0.70 & 0.860 \\ \hline
+	\end{tabular} 
+\end{table}
+
+
+ \begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.7]{CompareML-unseen-roc.png}
+	\caption{ROC curve's of all models on unseen data}
+	\label{fig:comparison_roc}
+\end{figure} 
+
+The models performance on unseen data show us that the metrics are close enough to the ones we achieved on test data. This gives a hint of the reliability and uniformity of the model predictions on not just the combined academic years data but individual academic level data as well, which is our primary focus.
+
+Based on the above observations, we conclude that the Logistic Regression and Random forest classifiers are good prediction models for the UNLV dataset.
+
+
+
+\subsection{Feature importance calculation based on selected models} 
+After comparing the models, the two models that were selected were Logistic regression and Random forest classifier. These models were used to identify the most significant factors that contributed to the prediction of the not retained students. To calculate the important factors, the two models were retrained using the train and test data combined.
+
+\subsubsection{Top 15 Predictors for Logistic Regression Model}
+
+As explained earlier ( refer Logistic Regression Model subsection of chapter 3), the process of fitting a logistic regression model on data involves finding a linear combination of input factors along with coefficients that are calculated during the training. Once we have the coefficients, the input features of a record are linearly combined with the coefficients and the result is fed into a sigmoid function to obtain the predictions. Here, the coefficients actually represent the contribution of the feature towards the output prediction. The LR model which was fit on the train and test data was used to obtained the coefficients of each feature. The features were then ordered based on the magnitudes of their coefficients. The top 15 features from the ordered set were selected and plotted in the order of importance as shown in Figure \ref{fig:lr_predictors}.
+ \begin{figure}[!ht]
+	\centering
+	\includegraphics[scale=0.7]{LR-FeatImportance-15}
+	\caption{Top 15 Predictors of Logistic Regression Model}
+	\label{fig:lr_predictors}
+\end{figure} 
+
+We notice that the students academic performance during his spring semester of first year and high school, as well as some factors that represent the students background were contributing more towards the output prediction than the other factors used in the training.
+
+\subsubsection{Top 15 Predictors for Random Forest Model}
+
+As explained earlier ( refer Random Forest Model subsection of chapter 3), the process of fitting a random forest model on data involves creating various trees using random splits on different features. Random forests can use Gini impurity or information gain as the metrics to measure the goodness of each split. In most cases gini impurity is favored due its less computational complexity. During training, random splits are made in different trees by analyzing the decrease in the gini impurity due to the split by a certain feature. This decrease in the gini impurity for a split on each feature can be used to identify the feature importances. The Random forest model which was fit on the train and test data was used to identify and order the feature importances. The top 15 features from the ordered set were selected and plotted in the order of importance as shown in Figure \ref{fig:rf_predictors}.
+
+ \begin{figure}
+	\centering
+	\includegraphics[scale=0.7]{RF-FeatImportance-15}
+	\caption{Top 15 Predictors of Random Forest Model}
+	\label{fig:rf_predictors}
+\end{figure} 
+
+We notice that the students academic performance during his first year at UNLV and high school, as well as some factors that represent the students financial status were identified as contributing more towards the output prediction. This clearly explains that improving students academic performance can boost their retention.
+
 \subsection{Probability estimates to risk scores}
 \chapter{Conclusion} \label{chapter:conclusion}
 
-\subsection{Future Work}
+In this thesis, we used machine learning to predict the first-year student retention rates at UNLV. For this, we identified and collected important student data such as pre-college academics, financial information and academic performance of the student during his first-year from the UNLV data warehouse. We performed data pre-processing and feature selection to select the most significant features for the analysis. The pre-processed data was used to train four important machine learning models which are Logistic regression, Decision trees, Random Forest classifiers and Support Vector machines. The trained models were evaluated and compared for performances using important metrics of classification problems calculated from predictions on test data. 
+
+An analysis of the results revealed that Logistic Regression model and Random Forest model performed better on the UNLV student data. We then used these two models to identify top 15 features that contributed most towards student retention prediction.
+
+
 %%%
 %%% The bibliography - you can change the alpha to suit your style if you don't like it is it is.
 %%% The bib file should be called 'thesis.bib' - if not then change the second line here to be correct.

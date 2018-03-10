@@ -56,9 +56,11 @@
 \BOOKMARK [2][-]{subsection.4.2.3}{Random Forest}{section.4.2}% 56
 \BOOKMARK [2][-]{subsection.4.2.4}{Support Vector Machines}{section.4.2}% 57
 \BOOKMARK [2][-]{subsection.4.2.5}{Comparison of the models}{section.4.2}% 58
-\BOOKMARK [2][-]{subsection.4.2.6}{Feature importance calculation based on selected models.}{section.4.2}% 59
-\BOOKMARK [2][-]{subsection.4.2.7}{Probability estimates to risk scores}{section.4.2}% 60
-\BOOKMARK [0][-]{chapter.5}{Chapter Conclusion}{}% 61
-\BOOKMARK [1][-]{subsection.5.0.1}{Future Work}{chapter.5}% 62
-\BOOKMARK [0][-]{chapter*.53}{Bibliography}{}% 63
-\BOOKMARK [0][-]{chapter.1}{Curriculum Vitae }{}% 64
+\BOOKMARK [3][-]{subsubsection.4.2.5.1}{Measures used to Compare Models}{subsection.4.2.5}% 59
+\BOOKMARK [2][-]{subsection.4.2.6}{Feature importance calculation based on selected models}{section.4.2}% 60
+\BOOKMARK [3][-]{subsubsection.4.2.6.1}{Top 15 Predictors for Logistic Regression Model}{subsection.4.2.6}% 61
+\BOOKMARK [3][-]{subsubsection.4.2.6.2}{Top 15 Predictors for Random Forest Model}{subsection.4.2.6}% 62
+\BOOKMARK [2][-]{subsection.4.2.7}{Probability estimates to risk scores}{section.4.2}% 63
+\BOOKMARK [0][-]{chapter.5}{Chapter Conclusion}{}% 64
+\BOOKMARK [0][-]{chapter*.58}{Bibliography}{}% 65
+\BOOKMARK [0][-]{chapter.1}{Curriculum Vitae }{}% 66
