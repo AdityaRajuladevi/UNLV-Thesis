@@ -4,45 +4,45 @@ The top-level auxiliary file: unlv-thesis.aux
 The style file: alpha.bst
 Database file #1: thesis.bib
 Warning--empty journal in Murtaugh
-You've used 18 entries,
+You've used 19 entries,
             2543 wiz_defined-function locations,
-            679 strings with 7939 characters,
-and the built_in function-call counts, 7184 in all, are:
-= -- 728
-> -- 314
-< -- 12
-+ -- 107
-- -- 104
-* -- 524
-:= -- 1177
-add.period$ -- 55
-call.type$ -- 18
-change.case$ -- 110
-chr.to.int$ -- 18
-cite$ -- 19
-duplicate$ -- 290
-empty$ -- 527
-format.name$ -- 128
-if$ -- 1461
+            683 strings with 8017 characters,
+and the built_in function-call counts, 7436 in all, are:
+= -- 750
+> -- 322
+< -- 13
++ -- 109
+- -- 106
+* -- 534
+:= -- 1215
+add.period$ -- 57
+call.type$ -- 19
+change.case$ -- 115
+chr.to.int$ -- 19
+cite$ -- 20
+duplicate$ -- 301
+empty$ -- 552
+format.name$ -- 132
+if$ -- 1514
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 19
-newline$ -- 93
-num.names$ -- 54
-pop$ -- 99
+newline$ -- 97
+num.names$ -- 57
+pop$ -- 110
 preamble$ -- 1
-purify$ -- 129
+purify$ -- 135
 quote$ -- 0
-skip$ -- 237
+skip$ -- 249
 stack$ -- 0
-substring$ -- 428
-swap$ -- 44
-text.length$ -- 12
-text.prefix$ -- 9
+substring$ -- 435
+swap$ -- 45
+text.length$ -- 13
+text.prefix$ -- 10
 top$ -- 0
-type$ -- 136
+type$ -- 144
 warning$ -- 1
-while$ -- 74
-width$ -- 21
-write$ -- 234
+while$ -- 76
+width$ -- 22
+write$ -- 243
 (There was 1 warning)

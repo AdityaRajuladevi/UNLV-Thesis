@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  10 MAR 2018 12:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  13 MAR 2018 13:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -495,7 +495,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<./images/logo.pdf, id=279, 184.69pt x 65.24374pt>
+<./images/logo.pdf, id=275, 184.69pt x 65.24374pt>
 File: ./images/logo.pdf Graphic file (type pdf)
  <use ./images/logo.pdf>
 Package pdftex.def Info: ./images/logo.pdf used on input line 113.
@@ -599,24 +599,19 @@ Chapter 1.
 
 
 
-] <./images/freshmen_rates.png, id=638, 1008.76875pt x 571.13374pt>
+] <./images/freshmen_rates.png, id=632, 1008.76875pt x 571.13374pt>
 File: ./images/freshmen_rates.png Graphic file (type png)
 
 <use ./images/freshmen_rates.png>
-Package pdftex.def Info: ./images/freshmen_rates.png used on input line 179.
+Package pdftex.def Info: ./images/freshmen_rates.png used on input line 178.
 (pdftex.def)             Requested size: 504.38315pt x 285.56618pt.
 
-Overfull \hbox (34.62816pt too wide) in paragraph at lines 179--180
+Overfull \hbox (34.62816pt too wide) in paragraph at lines 178--179
  [][] 
  []
 
-[2 <./images/freshmen_rates.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 191--193
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
 
  []
 
@@ -630,24 +625,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 197--199
 
  []
 
-[3]
+[3 <./images/freshmen_rates.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
+
+ []
+
+[4]
 Chapter 2.
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no ­ in font cmr10!
-[4
+[5
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 218--221
+Underfull \hbox (badness 10000) in paragraph at lines 219--222
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--221
+Underfull \hbox (badness 10000) in paragraph at lines 219--222
 
  []
 
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 228--229
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
 
  []
 
@@ -657,103 +655,103 @@ File: ./images/MLApproachFinal.png Graphic file (type png)
 <use ./images/MLApproachFinal.png>
 Package pdftex.def Info: ./images/MLApproachFinal.png used on input line 256.
 (pdftex.def)             Requested size: 394.47278pt x 228.35255pt.
- [6] [7 <./images/MLApproachFinal.png>]
-[8] <./images/titanic-decision.png, id=711, 675.52374pt x 413.545pt>
+ [7] [8 <./images/MLApproachFinal.png>]
+[9] <./images/titanic-decision.png, id=711, 675.52374pt x 413.545pt>
 File: ./images/titanic-decision.png Graphic file (type png)
 
 <use ./images/titanic-decision.png>
-Package pdftex.def Info: ./images/titanic-decision.png used on input line 294.
+Package pdftex.def Info: ./images/titanic-decision.png used on input line 292.
 (pdftex.def)             Requested size: 337.76105pt x 206.77199pt.
- [9] [10 <./images/titanic-decision.png>]
-<./images/randomforests.png, id=728, 769.87625pt x 403.5075pt>
+ [10] [11 <./images/titanic-decision.png>]
+<./images/randomforests.png, id=727, 769.87625pt x 403.5075pt>
 File: ./images/randomforests.png Graphic file (type png)
 
 <use ./images/randomforests.png>
-Package pdftex.def Info: ./images/randomforests.png used on input line 319.
+Package pdftex.def Info: ./images/randomforests.png used on input line 317.
 (pdftex.def)             Requested size: 461.92932pt x 242.10637pt.
- [11 <./images/randomforests.png>]
+ [12 <./images/randomforests.png>]
 <./images/svm_example.png, id=739, 411.5375pt x 294.09875pt>
 File: ./images/svm_example.png Graphic file (type png)
 
 <use ./images/svm_example.png>
-Package pdftex.def Info: ./images/svm_example.png used on input line 338.
+Package pdftex.def Info: ./images/svm_example.png used on input line 336.
 (pdftex.def)             Requested size: 246.92441pt x 176.4606pt.
- [12] [13 <./images/svm_example.png (PNG copy)>]
-<./images/Confusion_matrix.png, id=748, 578.16pt x 433.62pt>
+ [13] [14 <./images/svm_example.png (PNG copy)>]
+<./images/Confusion_matrix.png, id=749, 578.16pt x 433.62pt>
 File: ./images/Confusion_matrix.png Graphic file (type png)
 
 <use ./images/Confusion_matrix.png>
-Package pdftex.def Info: ./images/Confusion_matrix.png used on input line 357.
+Package pdftex.def Info: ./images/Confusion_matrix.png used on input line 355.
 (pdftex.def)             Requested size: 346.89867pt x 260.17401pt.
- [14 <./images/Confusion_matrix.png>]
-[15] [16]
+ [15 <./images/Confusion_matrix.png>]
+[16] [17]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 415.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 415.
+(hyperref)                removing `\mathsurround' on input line 412.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 415.
+(hyperref)                removing `\z@' on input line 412.
 
-<./images/ExampleROC.png, id=785, 504.4446pt x 385.9218pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 412.
+
+<./images/ExampleROC.png, id=783, 504.4446pt x 385.9218pt>
 File: ./images/ExampleROC.png Graphic file (type png)
 
 <use ./images/ExampleROC.png>
-Package pdftex.def Info: ./images/ExampleROC.png used on input line 433.
+Package pdftex.def Info: ./images/ExampleROC.png used on input line 430.
 (pdftex.def)             Requested size: 302.66908pt x 231.55486pt.
- [17]
-Underfull \hbox (badness 10000) in paragraph at lines 447--448
+ [18] [19 <./images/ExampleROC.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 444--445
 
  []
 
-[18 <./images/ExampleROC.png>] [19]
+[20]
 Chapter 3.
 
-Overfull \hbox (27.00078pt too wide) in alignment at lines 462--468
+Overfull \hbox (27.00078pt too wide) in alignment at lines 458--464
  [] [] [] [] 
  []
 
 
-Overfull \hbox (27.00078pt too wide) in alignment at lines 468--474
+Overfull \hbox (27.00078pt too wide) in alignment at lines 464--470
  [] [] [] [] 
  []
 
 
-Overfull \hbox (27.00078pt too wide) in alignment at lines 474--476
+Overfull \hbox (27.00078pt too wide) in alignment at lines 470--472
  [] [] [] [] 
  []
 
 
-Overfull \hbox (27.00078pt too wide) in alignment at lines 476--478
+Overfull \hbox (27.00078pt too wide) in alignment at lines 472--474
  [] [] [] [] 
  []
 
 
-Overfull \hbox (27.00078pt too wide) in alignment at lines 478--499
+Overfull \hbox (27.00078pt too wide) in alignment at lines 474--495
  [] [] [] [] 
  []
 
-[20
+
+Overfull \hbox (27.00078pt too wide) in alignment at lines 495--515
+ [] [] [] [] 
+ []
+
+[21
 
 ]
-Overfull \hbox (27.00078pt too wide) in alignment at lines 499--519
+Overfull \hbox (27.00078pt too wide) in alignment at lines 515--518
  [] [] [] [] 
  []
 
-
-Overfull \hbox (27.00078pt too wide) in alignment at lines 519--522
- [] [] [] [] 
- []
-
-[21] [22] <./images/UnwHSGPAScores.png, id=819, 578.16pt x 433.62pt>
+[22] [23] <./images/UnwHSGPAScores.png, id=819, 578.16pt x 433.62pt>
 File: ./images/UnwHSGPAScores.png Graphic file (type png)
 
 <use ./images/UnwHSGPAScores.png>
-Package pdftex.def Info: ./images/UnwHSGPAScores.png used on input line 549.
+Package pdftex.def Info: ./images/UnwHSGPAScores.png used on input line 545.
 (pdftex.def)             Requested size: 258.36667pt x 193.77081pt.
 
 <./images/UnwHSGPAWithoutScores.png, id=820, 578.16pt x 433.62pt>
@@ -761,15 +759,15 @@ File: ./images/UnwHSGPAWithoutScores.png Graphic file (type png)
 
 <use ./images/UnwHSGPAWithoutScores.png>
 Package pdftex.def Info: ./images/UnwHSGPAWithoutScores.png used on input line 
-557.
+553.
 (pdftex.def)             Requested size: 258.36667pt x 193.77081pt.
 
-Overfull \hbox (46.97835pt too wide) in paragraph at lines 548--561
+Overfull \hbox (46.97835pt too wide) in paragraph at lines 544--557
  [][][] 
  []
 
-[23] [24 <./images/UnwHSGPAScores.png> <./images/UnwHSGPAWithoutScores.png>]
-Underfull \hbox (badness 3343) in paragraph at lines 591--591
+[24] [25 <./images/UnwHSGPAScores.png> <./images/UnwHSGPAWithoutScores.png>]
+Underfull \hbox (badness 3343) in paragraph at lines 587--587
 []\OT1/cmr/m/n/10.95 Table 3.3: |F2[]Not[]Retained out-come prob-a-bil-i-ties w
 .r.t avail-abil-ity of data points in
  []
@@ -778,130 +776,132 @@ Underfull \hbox (badness 3343) in paragraph at lines 591--591
 File: ./images/SATBoxPlot.png Graphic file (type png)
 
 <use ./images/SATBoxPlot.png>
-Package pdftex.def Info: ./images/SATBoxPlot.png used on input line 608.
+Package pdftex.def Info: ./images/SATBoxPlot.png used on input line 604.
 (pdftex.def)             Requested size: 404.70924pt x 202.35461pt.
- [25 <./images/SATBoxPlot.png>]
-<./images/Core-Unw-GPA-diff.png, id=846, 578.16pt x 433.62pt>
+ [26 <./images/SATBoxPlot.png>]
+<./images/Core-Unw-GPA-diff.png, id=847, 578.16pt x 433.62pt>
 File: ./images/Core-Unw-GPA-diff.png Graphic file (type png)
 
 <use ./images/Core-Unw-GPA-diff.png>
-Package pdftex.def Info: ./images/Core-Unw-GPA-diff.png used on input line 622.
+Package pdftex.def Info: ./images/Core-Unw-GPA-diff.png used on input line 618.
 
 (pdftex.def)             Requested size: 258.36667pt x 193.77081pt.
 
-<./images/Core-Unw-GPA-distribution.png, id=847, 578.16pt x 433.62pt>
+<./images/Core-Unw-GPA-distribution.png, id=848, 578.16pt x 433.62pt>
 File: ./images/Core-Unw-GPA-distribution.png Graphic file (type png)
 
 <use ./images/Core-Unw-GPA-distribution.png>
 Package pdftex.def Info: ./images/Core-Unw-GPA-distribution.png used on input l
-ine 630.
+ine 626.
 (pdftex.def)             Requested size: 258.36667pt x 193.77081pt.
 
-Overfull \hbox (46.97835pt too wide) in paragraph at lines 621--634
+Overfull \hbox (46.97835pt too wide) in paragraph at lines 617--630
  [][][] 
  []
 
-<./images/F1-MidTermGPA-distribution.png, id=848, 578.16pt x 433.62pt>
+<./images/F1-MidTermGPA-distribution.png, id=849, 578.16pt x 433.62pt>
 File: ./images/F1-MidTermGPA-distribution.png Graphic file (type png)
 
 <use ./images/F1-MidTermGPA-distribution.png>
 Package pdftex.def Info: ./images/F1-MidTermGPA-distribution.png used on input 
-line 641.
+line 637.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
- [26 <./images/Core-Unw-GPA-diff.png> <./images/Core-Unw-GPA-distribution.png>]
- [27 <./images/F1-MidTermGPA-distribution.png>] [28]
+ [27 <./images/Core-Unw-GPA-diff.png> <./images/Core-Unw-GPA-distribution.png>]
+ [28 <./images/F1-MidTermGPA-distribution.png>] [29]
 <./images/NotRetained_fre_acadyear.png, id=867, 500.1084pt x 390.9807pt>
 File: ./images/NotRetained_fre_acadyear.png Graphic file (type png)
 
 <use ./images/NotRetained_fre_acadyear.png>
 Package pdftex.def Info: ./images/NotRetained_fre_acadyear.png used on input li
-ne 696.
+ne 690.
 (pdftex.def)             Requested size: 300.06735pt x 234.59023pt.
- [29 <./images/NotRetained_fre_acadyear.png>] <./images/NotRetained_ipeds.png, 
+ [30 <./images/NotRetained_fre_acadyear.png>] <./images/NotRetained_ipeds.png, 
 id=875, 617.9085pt x 546.3612pt>
 File: ./images/NotRetained_ipeds.png Graphic file (type png)
 
 <use ./images/NotRetained_ipeds.png>
-Package pdftex.def Info: ./images/NotRetained_ipeds.png used on input line 713.
+Package pdftex.def Info: ./images/NotRetained_ipeds.png used on input line 707.
 
 (pdftex.def)             Requested size: 432.53299pt x 382.45023pt.
- [30 <./images/NotRetained_ipeds.png>]
-<./images/mom_edu_countplot.png, id=884, 622.9674pt x 499.3857pt>
+
+<./images/mom_edu_countplot.png, id=879, 622.9674pt x 499.3857pt>
 File: ./images/mom_edu_countplot.png Graphic file (type png)
 
 <use ./images/mom_edu_countplot.png>
-Package pdftex.def Info: ./images/mom_edu_countplot.png used on input line 748.
+Package pdftex.def Info: ./images/mom_edu_countplot.png used on input line 742.
 
 (pdftex.def)             Requested size: 404.92401pt x 324.59685pt.
  [31]
 
 LaTeX Warning: Text page 32 contains only floats.
 
-[32 <./images/mom_edu_countplot.png>]
-Overfull \hbox (6.1711pt too wide) in paragraph at lines 783--784
+[32 <./images/NotRetained_ipeds.png>]
+Overfull \hbox (6.1711pt too wide) in paragraph at lines 777--778
 \OT1/cmr/m/n/10.95 with re-spect to stu-dent re-ten-tion. For this, we plot-ted
  the dif-fer-ent cat-e-gories of Dad[]Education[]Level
  []
 
+[33 <./images/mom_edu_countplot.png>]
 <./images/dad_edu_countplot.png, id=897, 622.9674pt x 499.3857pt>
 File: ./images/dad_edu_countplot.png Graphic file (type png)
 
 <use ./images/dad_edu_countplot.png>
-Package pdftex.def Info: ./images/dad_edu_countplot.png used on input line 787.
+Package pdftex.def Info: ./images/dad_edu_countplot.png used on input line 781.
 
 (pdftex.def)             Requested size: 404.92401pt x 324.59685pt.
- [33 <./images/dad_edu_countplot.png>]
-<./images/college_countplot.png, id=904, 623.6901pt x 524.6802pt>
+
+<./images/college_countplot.png, id=899, 623.6901pt x 524.6802pt>
 File: ./images/college_countplot.png Graphic file (type png)
 
 <use ./images/college_countplot.png>
-Package pdftex.def Info: ./images/college_countplot.png used on input line 821.
+Package pdftex.def Info: ./images/college_countplot.png used on input line 815.
 
 (pdftex.def)             Requested size: 405.39375pt x 341.03809pt.
- [34] [35 <./images/college_countplot.png>] [36]
+ [34] [35 <./images/dad_edu_countplot.png>] [36 <./images/college_countplot.png
+>] [37]
 Chapter 4.
-[37
+[38
 
-] <./images/LR-Confusion_matrix.png, id=927, 578.16pt x 433.62pt>
+] <./images/LR-Confusion_matrix.png, id=928, 578.16pt x 433.62pt>
 File: ./images/LR-Confusion_matrix.png Graphic file (type png)
 
 <use ./images/LR-Confusion_matrix.png>
 Package pdftex.def Info: ./images/LR-Confusion_matrix.png used on input line 89
-9.
+3.
 (pdftex.def)             Requested size: 346.89867pt x 260.17401pt.
 
-<./images/LR-roc.png, id=930, 504.4446pt x 385.9218pt>
+<./images/LR-roc.png, id=931, 504.4446pt x 385.9218pt>
 File: ./images/LR-roc.png Graphic file (type png)
 
 <use ./images/LR-roc.png>
-Package pdftex.def Info: ./images/LR-roc.png used on input line 921.
+Package pdftex.def Info: ./images/LR-roc.png used on input line 915.
 (pdftex.def)             Requested size: 302.66908pt x 231.55486pt.
- [38]
+ [39]
 
-LaTeX Warning: Text page 39 contains only floats.
+LaTeX Warning: Text page 40 contains only floats.
 
-[39 <./images/LR-Confusion_matrix.png> <./images/LR-roc.png>]
+[40 <./images/LR-Confusion_matrix.png> <./images/LR-roc.png>]
 <./images/LR-unseen-Confusion_matrix.png, id=945, 578.16pt x 433.62pt>
 File: ./images/LR-unseen-Confusion_matrix.png Graphic file (type png)
 
 <use ./images/LR-unseen-Confusion_matrix.png>
 Package pdftex.def Info: ./images/LR-unseen-Confusion_matrix.png used on input 
-line 932.
+line 926.
 (pdftex.def)             Requested size: 346.89867pt x 260.17401pt.
- [40 <./images/LR-unseen-Confusion_matrix.png>]
+ [41 <./images/LR-unseen-Confusion_matrix.png>]
 <./images/DTree-Confusion_matrix.png, id=954, 578.16pt x 433.62pt>
 File: ./images/DTree-Confusion_matrix.png Graphic file (type png)
 
 <use ./images/DTree-Confusion_matrix.png>
 Package pdftex.def Info: ./images/DTree-Confusion_matrix.png used on input line
- 958.
+ 952.
 (pdftex.def)             Requested size: 346.89867pt x 260.17401pt.
 
 <./images/DTree-roc.png, id=957, 504.4446pt x 385.9218pt>
 File: ./images/DTree-roc.png Graphic file (type png)
 
 <use ./images/DTree-roc.png>
-Package pdftex.def Info: ./images/DTree-roc.png used on input line 979.
+Package pdftex.def Info: ./images/DTree-roc.png used on input line 973.
 (pdftex.def)             Requested size: 302.66908pt x 231.55486pt.
 
 <./images/DTree-unseen-Confusion_matrix.png, id=960, 578.16pt x 433.62pt>
@@ -909,46 +909,46 @@ File: ./images/DTree-unseen-Confusion_matrix.png Graphic file (type png)
 
 <use ./images/DTree-unseen-Confusion_matrix.png>
 Package pdftex.def Info: ./images/DTree-unseen-Confusion_matrix.png used on inp
-ut line 990.
+ut line 984.
 (pdftex.def)             Requested size: 346.89867pt x 260.17401pt.
- [41 <./images/DTree-Confusion_matrix.png>] [42 <./images/DTree-roc.png> <./ima
+ [42 <./images/DTree-Confusion_matrix.png>] [43 <./images/DTree-roc.png> <./ima
 ges/DTree-unseen-Confusion_matrix.png>] <./images/RF-Confusion_matrix.png, id=9
 75, 578.16pt x 433.62pt>
 File: ./images/RF-Confusion_matrix.png Graphic file (type png)
 
 <use ./images/RF-Confusion_matrix.png>
 Package pdftex.def Info: ./images/RF-Confusion_matrix.png used on input line 10
-17.
+11.
 (pdftex.def)             Requested size: 346.89867pt x 260.17401pt.
 
 <./images/RF-roc.png, id=978, 504.4446pt x 385.9218pt>
 File: ./images/RF-roc.png Graphic file (type png)
 
 <use ./images/RF-roc.png>
-Package pdftex.def Info: ./images/RF-roc.png used on input line 1038.
+Package pdftex.def Info: ./images/RF-roc.png used on input line 1032.
 (pdftex.def)             Requested size: 302.66908pt x 231.55486pt.
- [43 <./images/RF-Confusion_matrix.png>]
-<./images/RF-unseen-Confusion_matrix.png, id=985, 578.16pt x 433.62pt>
+ [44 <./images/RF-Confusion_matrix.png>]
+<./images/RF-unseen-Confusion_matrix.png, id=986, 578.16pt x 433.62pt>
 File: ./images/RF-unseen-Confusion_matrix.png Graphic file (type png)
 
 <use ./images/RF-unseen-Confusion_matrix.png>
 Package pdftex.def Info: ./images/RF-unseen-Confusion_matrix.png used on input 
-line 1047.
+line 1041.
 (pdftex.def)             Requested size: 346.89867pt x 260.17401pt.
- [44 <./images/RF-roc.png> <./images/RF-unseen-Confusion_matrix.png>]
+ [45 <./images/RF-roc.png> <./images/RF-unseen-Confusion_matrix.png>]
 <./images/SVM-Confusion_matrix.png, id=997, 578.16pt x 433.62pt>
 File: ./images/SVM-Confusion_matrix.png Graphic file (type png)
 
 <use ./images/SVM-Confusion_matrix.png>
 Package pdftex.def Info: ./images/SVM-Confusion_matrix.png used on input line 1
-078.
+072.
 (pdftex.def)             Requested size: 346.89867pt x 260.17401pt.
- [45 <./images/SVM-Confusion_matrix.png>] <./images/SVM-roc.png, id=1005, 504.4
+ [46 <./images/SVM-Confusion_matrix.png>] <./images/SVM-roc.png, id=1005, 504.4
 446pt x 385.9218pt>
 File: ./images/SVM-roc.png Graphic file (type png)
 
 <use ./images/SVM-roc.png>
-Package pdftex.def Info: ./images/SVM-roc.png used on input line 1099.
+Package pdftex.def Info: ./images/SVM-roc.png used on input line 1093.
 (pdftex.def)             Requested size: 302.66908pt x 231.55486pt.
 
 <./images/SVM-unseen-Confusion_matrix.png, id=1008, 578.16pt x 433.62pt>
@@ -956,54 +956,54 @@ File: ./images/SVM-unseen-Confusion_matrix.png Graphic file (type png)
 
 <use ./images/SVM-unseen-Confusion_matrix.png>
 Package pdftex.def Info: ./images/SVM-unseen-Confusion_matrix.png used on input
- line 1110.
+ line 1104.
 (pdftex.def)             Requested size: 346.89867pt x 260.17401pt.
- [46 <./images/SVM-roc.png>]
-[47 <./images/SVM-unseen-Confusion_matrix.png>]
+ [47 <./images/SVM-roc.png>]
+[48 <./images/SVM-unseen-Confusion_matrix.png>]
 <./images/CompareML-roc.png, id=1023, 497.2176pt x 371.4678pt>
 File: ./images/CompareML-roc.png Graphic file (type png)
 
 <use ./images/CompareML-roc.png>
-Package pdftex.def Info: ./images/CompareML-roc.png used on input line 1161.
+Package pdftex.def Info: ./images/CompareML-roc.png used on input line 1155.
 (pdftex.def)             Requested size: 348.04994pt x 260.02568pt.
- [48 <./images/CompareML-roc.png>]
+ [49 <./images/CompareML-roc.png>]
 <./images/CompareML-unseen-roc.png, id=1031, 497.2176pt x 371.4678pt>
 File: ./images/CompareML-unseen-roc.png Graphic file (type png)
 
 <use ./images/CompareML-unseen-roc.png>
 Package pdftex.def Info: ./images/CompareML-unseen-roc.png used on input line 1
-193.
+187.
 (pdftex.def)             Requested size: 348.04994pt x 260.02568pt.
- [49]
-<./images/LR-FeatImportance-15.png, id=1037, 722.7pt x 505.89pt>
+ [50]
+<./images/LR-FeatImportance-15.png, id=1038, 722.7pt x 505.89pt>
 File: ./images/LR-FeatImportance-15.png Graphic file (type png)
 
 <use ./images/LR-FeatImportance-15.png>
 Package pdftex.def Info: ./images/LR-FeatImportance-15.png used on input line 1
-212.
+206.
 (pdftex.def)             Requested size: 505.88655pt x 354.12057pt.
 
-Overfull \hbox (36.13156pt too wide) in paragraph at lines 1212--1213
+Overfull \hbox (36.13156pt too wide) in paragraph at lines 1206--1207
  [][] 
  []
 
-[50 <./images/CompareML-unseen-roc.png>]
+[51 <./images/CompareML-unseen-roc.png>]
 <./images/RF-FeatImportance-15.png, id=1045, 722.7pt x 505.89pt>
 File: ./images/RF-FeatImportance-15.png Graphic file (type png)
 
 <use ./images/RF-FeatImportance-15.png>
 Package pdftex.def Info: ./images/RF-FeatImportance-15.png used on input line 1
-225.
+219.
 (pdftex.def)             Requested size: 505.88655pt x 354.12057pt.
 
-Overfull \hbox (36.13156pt too wide) in paragraph at lines 1225--1226
+Overfull \hbox (36.13156pt too wide) in paragraph at lines 1219--1220
  [][] 
  []
 
-[51 <./images/LR-FeatImportance-15.png>] [52 <./images/RF-FeatImportance-15.png
+[52 <./images/LR-FeatImportance-15.png>] [53 <./images/RF-FeatImportance-15.png
 >]
 Chapter 5.
-(./unlv-thesis.bbl [53
+(./unlv-thesis.bbl [54
 
 ]
 Underfull \hbox (badness 1584) in paragraph at lines 30--35
@@ -1011,59 +1011,59 @@ Underfull \hbox (badness 1584) in paragraph at lines 30--35
 JM Laur^^S^^Pa, Sandeep
  []
 
-[54
+[55
 
-]) [55]pdfTeX warning (ext4): destination with the same identifier (name{chapte
+]) [56]pdfTeX warning (ext4): destination with the same identifier (name{chapte
 r.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1250 \chapter{}
+l.1244 \chapter{}
                   %% please leave this one blank - the vita stuff is sort of...
 Curriculum Vitae .
 
-Underfull \hbox (badness 10000) in paragraph at lines 1258--1261
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1255
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1262--1263
+Underfull \hbox (badness 10000) in paragraph at lines 1256--1257
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1264--1269
+Underfull \hbox (badness 10000) in paragraph at lines 1258--1263
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1270.
-[56
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1264.
+[57
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1270.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1264.
  (./unlv-thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1270.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1270.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1264.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1264.
 
 Package rerunfilecheck Info: File `unlv-thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 6A327683111B74540E63C4A4BDFE2965;4980.
+(rerunfilecheck)             Checksum: 98201B6792AA8583CB24B962D7FBFE3E;4890.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1270.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1264.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 9290 strings out of 492995
- 141411 string characters out of 6132704
- 268775 words of memory out of 5000000
+ 9291 strings out of 492995
+ 141427 string characters out of 6132704
+ 269820 words of memory out of 5000000
  12482 multiletter control sequences out of 15000+600000
  10975 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,13n,51p,1739b,7651s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,13n,51p,1784b,7651s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
@@ -1075,10 +1075,10 @@ mr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 .pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
 fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
 b>
-Output written on unlv-thesis.pdf (67 pages, 1175449 bytes).
+Output written on unlv-thesis.pdf (68 pages, 1185166 bytes).
 PDF statistics:
  1155 PDF objects out of 1200 (max. 8388607)
- 996 compressed objects within 10 object streams
- 214 named destinations out of 1000 (max. 500000)
- 704 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 995 compressed objects within 10 object streams
+ 215 named destinations out of 1000 (max. 500000)
+ 696 words of extra memory for PDF output out of 10000 (max. 10000000)
 

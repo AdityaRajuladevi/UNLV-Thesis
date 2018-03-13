@@ -1,26 +1,26 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Admissions data at a University\relax }}{7}{table.caption.8}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Admissions data at a University\relax }}{8}{table.caption.8}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {3.1}{\ignorespaces Description of data fields for first-year student data\relax }}{21}{table.3.1}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Variables with missing values and their count\relax }}{24}{table.caption.16}
-\contentsline {table}{\numberline {3.3}{\ignorespaces F2\_Not\_Retained outcome probabilities w.r.t availability of data points in SAT\_ACT\_Score\relax }}{25}{table.caption.17}
-\contentsline {table}{\numberline {3.4}{\ignorespaces Tests based on type of input and output variables\relax }}{28}{table.caption.21}
-\contentsline {table}{\numberline {3.5}{\ignorespaces Retention Rates of each IPEDS Race Category\relax }}{31}{table.caption.24}
-\contentsline {table}{\numberline {3.6}{\ignorespaces Retention Rates of different categories of Mom\_Edu\_Level variable\relax }}{32}{table.caption.26}
-\contentsline {table}{\numberline {3.7}{\ignorespaces Retention Rates of different categories of Dad\_Edu\_Level variable\relax }}{34}{table.caption.28}
-\contentsline {table}{\numberline {3.8}{\ignorespaces Retention Rates of different categories of College1 variable\relax }}{35}{table.caption.30}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Variables with missing values and their count\relax }}{25}{table.caption.16}
+\contentsline {table}{\numberline {3.3}{\ignorespaces F2\_Not\_Retained outcome probabilities w.r.t availability of data points in SAT\_ACT\_Score\relax }}{26}{table.caption.17}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Tests based on type of input and output variables\relax }}{29}{table.caption.21}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Retention Rates of each IPEDS Race Category\relax }}{32}{table.caption.24}
+\contentsline {table}{\numberline {3.6}{\ignorespaces Retention Rates of different categories of Mom\_Edu\_Level variable\relax }}{34}{table.caption.26}
+\contentsline {table}{\numberline {3.7}{\ignorespaces Retention Rates of different categories of Dad\_Edu\_Level variable\relax }}{35}{table.caption.28}
+\contentsline {table}{\numberline {3.8}{\ignorespaces Retention Rates of different categories of College1 variable\relax }}{37}{table.caption.30}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Count of students in each academic year\relax }}{37}{table.caption.31}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Computed metrics based on actual and predicted test data values using LR model\relax }}{39}{table.caption.33}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Computed metrics based on actual and predicted unseen data values using LR model\relax }}{40}{table.caption.36}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Computed metrics based on actual and predicted test data values using DTree model\relax }}{41}{table.caption.38}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Computed metrics based on actual and predicted unseen data values using DTree model\relax }}{43}{table.caption.41}
-\contentsline {table}{\numberline {4.6}{\ignorespaces Computed metrics based on actual and predicted test data values using RF model\relax }}{43}{table.caption.43}
-\contentsline {table}{\numberline {4.7}{\ignorespaces Computed metrics based on actual and predicted unseen data values using RF model\relax }}{45}{table.caption.46}
-\contentsline {table}{\numberline {4.8}{\ignorespaces Computed metrics based on actual and predicted test data values using SVM model\relax }}{46}{table.caption.48}
-\contentsline {table}{\numberline {4.9}{\ignorespaces Computed metrics based on actual and predicted unseen data values using SVM model\relax }}{47}{table.caption.51}
-\contentsline {table}{\numberline {4.10}{\ignorespaces Comparison of metrics from different models on the testing data\relax }}{48}{table.caption.52}
-\contentsline {table}{\numberline {4.11}{\ignorespaces Comparison of metrics from different models on the unseen data\relax }}{49}{table.caption.54}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Count of students in each academic year\relax }}{38}{table.caption.31}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Computed metrics based on actual and predicted test data values using LR model\relax }}{40}{table.caption.33}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Computed metrics based on actual and predicted unseen data values using LR model\relax }}{41}{table.caption.36}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Computed metrics based on actual and predicted test data values using DTree model\relax }}{42}{table.caption.38}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Computed metrics based on actual and predicted unseen data values using DTree model\relax }}{44}{table.caption.41}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Computed metrics based on actual and predicted test data values using RF model\relax }}{44}{table.caption.43}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Computed metrics based on actual and predicted unseen data values using RF model\relax }}{46}{table.caption.46}
+\contentsline {table}{\numberline {4.8}{\ignorespaces Computed metrics based on actual and predicted test data values using SVM model\relax }}{47}{table.caption.48}
+\contentsline {table}{\numberline {4.9}{\ignorespaces Computed metrics based on actual and predicted unseen data values using SVM model\relax }}{48}{table.caption.51}
+\contentsline {table}{\numberline {4.10}{\ignorespaces Comparison of metrics from different models on the testing data\relax }}{49}{table.caption.52}
+\contentsline {table}{\numberline {4.11}{\ignorespaces Comparison of metrics from different models on the unseen data\relax }}{50}{table.caption.54}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
