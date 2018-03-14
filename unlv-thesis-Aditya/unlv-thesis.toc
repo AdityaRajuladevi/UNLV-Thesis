@@ -43,23 +43,24 @@
 \contentsline {subsection}{\numberline {3.3.3}Data Transformations}{28}{subsection.3.3.3}
 \contentsline {subsection}{\numberline {3.3.4}Feature Selection}{29}{subsection.3.3.4}
 \contentsline {section}{\numberline {3.4}Exploratory Data Analysis}{30}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Academic year Vs F2\_Not\_Retained}{31}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}IPEDS\_Race Vs F2\_Not\_Retained}{31}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Mom\_Edu\_Level Vs F2\_Not\_Retained}{31}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Dad\_Edu\_Level Vs F2\_Not\_Retained}{33}{subsection.3.4.4}
-\contentsline {subsection}{\numberline {3.4.5}College1 Vs F2\_Not\_Retained}{34}{subsection.3.4.5}
+\contentsline {subsection}{\numberline {3.4.1}Cohort year Vs F2\_Not\_Retained}{30}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}IPEDS\_Race Vs F2\_Not\_Retained}{30}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Mom\_Edu\_Level Vs F2\_Not\_Retained}{32}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Dad\_Edu\_Level Vs F2\_Not\_Retained}{34}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.5}College1 Vs F2\_Not\_Retained}{35}{subsection.3.4.5}
 \contentsline {chapter}{Chapter{} \numberline {4}Building Models}{38}{chapter.4}
 \contentsline {section}{\numberline {4.1}Data Splitting }{38}{section.4.1}
 \contentsline {section}{\numberline {4.2}Experiments on Models}{39}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Logistic Regression}{39}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Decision Trees}{42}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Random Forest}{44}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.3}Random Forest Classifier}{44}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}Support Vector Machines}{46}{subsection.4.2.4}
 \contentsline {subsection}{\numberline {4.2.5}Comparison of the models}{48}{subsection.4.2.5}
 \contentsline {subsubsection}{\numberline {4.2.5.1}Measures used to Compare Models}{48}{subsubsection.4.2.5.1}
 \contentsline {subsection}{\numberline {4.2.6}Feature importance calculation based on selected models}{51}{subsection.4.2.6}
 \contentsline {subsubsection}{\numberline {4.2.6.1}Top 15 Predictors for Logistic Regression Model}{51}{subsubsection.4.2.6.1}
 \contentsline {subsubsection}{\numberline {4.2.6.2}Top 15 Predictors for Random Forest Model}{52}{subsubsection.4.2.6.2}
-\contentsline {chapter}{Chapter{} \numberline {5}Conclusion}{54}{chapter.5}
-\contentsline {chapter}{Bibliography}{55}{chapter*.58}
-\contentsline {chapter}{Curriculum Vitae{} \numberline {}}{57}{chapter.1}
+\contentsline {subsection}{\numberline {4.2.7}Ranking Students based on the Risk of Not Being Retained}{53}{subsection.4.2.7}
+\contentsline {chapter}{Chapter{} \numberline {5}Conclusion And Future work}{55}{chapter.5}
+\contentsline {chapter}{Bibliography}{57}{chapter*.59}
+\contentsline {chapter}{Curriculum Vitae{} \numberline {}}{59}{chapter.1}
