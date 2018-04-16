@@ -1,12 +1,6 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
 \begin{thebibliography}{MDDM16}
 
-\bibitem[A{\etalchar{+}}12]{astin2012assessment}
-Alexander~W Astin et~al.
-\newblock {\em Assessment for excellence: The philosophy and practice of
-  assessment and evaluation in higher education}.
-\newblock Rowman \& Littlefield Publishers, 2012.
-
 \bibitem[AC17]{adejo2017}
 Olugbenga Adejo and Thomas Connolly.
 \newblock An integrated system framework for predicting students? academic
@@ -26,12 +20,11 @@ Paul A.~Murtaugh, Leslie Burns, and Jill Schuster.
 \newblock Predicting the retention of university students.
 \newblock 40:355--371, 06 1999.
 
-\bibitem[BMZ{\etalchar{+}}15]{bainbridge2015}
-Jay Bainbridge, James Melitski, Anne Zahradnik, Eitel~JM Laur{\'\i}a, Sandeep
-  Jayaprakash, and Josh Baron.
-\newblock Using learning analytics to predict at-risk students in online
-  graduate public affairs and administration education.
-\newblock {\em Journal of Public Affairs Education}, pages 247--262, 2015.
+\bibitem[Ast12]{astin2012assessment}
+Alexander~W Astin.
+\newblock {\em Assessment for excellence: The philosophy and practice of
+  assessment and evaluation in higher education}.
+\newblock Rowman \& Littlefield Publishers, 2012.
 
 \bibitem[Bra02]{braxton2002introduction}
 John~M Braxton.
@@ -54,6 +47,7 @@ Tom Fawcett.
 \bibitem[Hal]{ACTSAT}
 Edwards Halle.
 \newblock {SAT / ACT Prep Online Guides and Tips}.
+\newblock \url{https://blog.prepscholar.com/act-to-sat-conversion}.
 
 \bibitem[Her06]{herzog2006estimating}
 Serge Herzog.
@@ -65,6 +59,8 @@ Serge Herzog.
 \bibitem[IPE]{IPEDSRetentionRate}
 IPEDS.
 \newblock {Retention Rates calculated by IPEDS}.
+\newblock
+  \url{https://nces.ed.gov/ipeds/trendgenerator/tganswer.aspx?sid=7&qid=32}.
 
 \bibitem[LAS{\etalchar{+}}15]{lakkaraju2015machine}
 Himabindu Lakkaraju, Everaldo Aguiar, Carl Shan, David Miller, Nasir Bhanpuri,
@@ -79,6 +75,14 @@ Linda~K Lau.
 \newblock Institutional factors affecting student retention.
 \newblock {\em Education-Indianapolis then Chula Vista-}, 124(1):126--136,
   2003.
+
+\bibitem[LBD{\etalchar{+}}12]{lauria2012mining}
+Eitel~JM Laur{\'\i}a, Joshua~D Baron, Mallika Devireddy, Venniraiselvi
+  Sundararaju, and Sandeep~M Jayaprakash.
+\newblock Mining academic data to improve college student retention: An open
+  source perspective.
+\newblock In {\em Proceedings of the 2nd International Conference on Learning
+  Analytics and Knowledge}, pages 139--142. ACM, 2012.
 
 \bibitem[MDDM16]{marbouti2016models}
 Farshid Marbouti, Heidi~A Diefes-Dux, and Krishna Madhavan.

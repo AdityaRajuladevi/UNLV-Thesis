@@ -30,8 +30,8 @@
 \BOOKMARK [1][-]{section.3.2}{Data Preparation}{chapter.3}% 30
 \BOOKMARK [2][-]{subsection.3.2.1}{Data Description}{section.3.2}% 31
 \BOOKMARK [2][-]{subsection.3.2.2}{Feature Extraction}{section.3.2}% 32
-\BOOKMARK [3][-]{subsubsection.3.2.2.1}{Computation of SAT\137ACT\137Score Variable}{subsection.3.2.2}% 33
-\BOOKMARK [3][-]{subsubsection.3.2.2.2}{Computation of F2\137Not\137Retained Variable}{subsection.3.2.2}% 34
+\BOOKMARK [3][-]{subsubsection.3.2.2.1}{Computation of SAT\137ACT\137Score Feature}{subsection.3.2.2}% 33
+\BOOKMARK [3][-]{subsubsection.3.2.2.2}{Computation of F2\137Not\137Retained Feature}{subsection.3.2.2}% 34
 \BOOKMARK [1][-]{section.3.3}{Data Preprocessing}{chapter.3}% 35
 \BOOKMARK [2][-]{subsection.3.3.1}{Handling Outliers in Data}{section.3.3}% 36
 \BOOKMARK [3][-]{subsubsection.3.3.1.1}{UnwHSGPA scores}{subsection.3.3.1}% 37
@@ -43,23 +43,23 @@
 \BOOKMARK [2][-]{subsection.3.3.3}{Data Transformations}{section.3.3}% 43
 \BOOKMARK [2][-]{subsection.3.3.4}{Feature Selection}{section.3.3}% 44
 \BOOKMARK [1][-]{section.3.4}{Exploratory Data Analysis}{chapter.3}% 45
-\BOOKMARK [2][-]{subsection.3.4.1}{Cohort year Vs F2\137Not\137Retained}{section.3.4}% 46
-\BOOKMARK [2][-]{subsection.3.4.2}{IPEDS\137Race Vs F2\137Not\137Retained}{section.3.4}% 47
+\BOOKMARK [2][-]{subsection.3.4.1}{Cohort year vs. F2\137Not\137Retained}{section.3.4}% 46
+\BOOKMARK [2][-]{subsection.3.4.2}{IPEDS\137Race vs. F2\137Not\137Retained}{section.3.4}% 47
 \BOOKMARK [2][-]{subsection.3.4.3}{Mom\137Edu\137Level Vs F2\137Not\137Retained}{section.3.4}% 48
 \BOOKMARK [2][-]{subsection.3.4.4}{Dad\137Edu\137Level Vs F2\137Not\137Retained}{section.3.4}% 49
 \BOOKMARK [2][-]{subsection.3.4.5}{College1 Vs F2\137Not\137Retained}{section.3.4}% 50
-\BOOKMARK [0][-]{chapter.4}{Chapter Building Models}{}% 51
+\BOOKMARK [0][-]{chapter.4}{Chapter Experiments and Results}{}% 51
 \BOOKMARK [1][-]{section.4.1}{Data Splitting }{chapter.4}% 52
 \BOOKMARK [1][-]{section.4.2}{Experiments on Models}{chapter.4}% 53
 \BOOKMARK [2][-]{subsection.4.2.1}{Logistic Regression}{section.4.2}% 54
 \BOOKMARK [2][-]{subsection.4.2.2}{Decision Trees}{section.4.2}% 55
 \BOOKMARK [2][-]{subsection.4.2.3}{Random Forest Classifier}{section.4.2}% 56
 \BOOKMARK [2][-]{subsection.4.2.4}{Support Vector Machines}{section.4.2}% 57
-\BOOKMARK [2][-]{subsection.4.2.5}{Comparison of the models}{section.4.2}% 58
+\BOOKMARK [2][-]{subsection.4.2.5}{Comparison of the Models}{section.4.2}% 58
 \BOOKMARK [3][-]{subsubsection.4.2.5.1}{Measures used to Compare Models}{subsection.4.2.5}% 59
-\BOOKMARK [2][-]{subsection.4.2.6}{Feature importance calculation based on selected models}{section.4.2}% 60
-\BOOKMARK [3][-]{subsubsection.4.2.6.1}{Top 15 Predictors for Logistic Regression Model}{subsection.4.2.6}% 61
-\BOOKMARK [3][-]{subsubsection.4.2.6.2}{Top 15 Predictors for Random Forest Model}{subsection.4.2.6}% 62
+\BOOKMARK [2][-]{subsection.4.2.6}{Feature Importance calculation based on Selected Models}{section.4.2}% 60
+\BOOKMARK [3][-]{subsubsection.4.2.6.1}{Top Fifteen Predictors for Logistic Regression Model}{subsection.4.2.6}% 61
+\BOOKMARK [3][-]{subsubsection.4.2.6.2}{Top Fifteen Predictors for Random Forest Model}{subsection.4.2.6}% 62
 \BOOKMARK [2][-]{subsection.4.2.7}{Ranking Students based on the Risk of Not Being Retained}{section.4.2}% 63
 \BOOKMARK [0][-]{chapter.5}{Chapter Conclusion And Future work}{}% 64
 \BOOKMARK [0][-]{chapter*.59}{Bibliography}{}% 65

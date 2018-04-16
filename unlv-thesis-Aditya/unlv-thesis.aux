@@ -51,7 +51,7 @@
 \citation{marbouti2016models}
 \citation{adejo2017}
 \citation{alkhasawneh2014developing}
-\citation{bainbridge2015}
+\citation{lauria2012mining}
 \@writefile{toc}{\contentsline {chapter}{Chapter{} \numberline {2}Background and Preliminaries}{5}{chapter.2}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -122,8 +122,8 @@
     {6}{254.11694pt}}
 \citation{ACTSAT}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Feature Extraction}{23}{subsection.3.2.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2.1}Computation of SAT\_ACT\_Score Variable}{23}{subsubsection.3.2.2.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2.2}Computation of F2\_Not\_Retained Variable}{24}{subsubsection.3.2.2.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2.1}Computation of SAT\_ACT\_Score Feature}{23}{subsubsection.3.2.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2.2}Computation of F2\_Not\_Retained Feature}{24}{subsubsection.3.2.2.2}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.3}Data Preprocessing}{24}{section.3.3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Handling Outliers in Data}{24}{subsection.3.3.1}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.1}UnwHSGPA scores}{24}{subsubsection.3.3.1.1}}
@@ -134,8 +134,8 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Removing Outliers from UnwHSGPA\relax }}{25}{figure.caption.15}}
 \newlabel{fig:unwHSGPA}{{3.1}{25}{Removing Outliers from UnwHSGPA\relax }{figure.caption.15}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Handling Missing Values}{25}{subsection.3.3.2}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Variables with missing values and their count\relax }}{25}{table.caption.16}}
-\newlabel{table:missing_db}{{3.2}{25}{Variables with missing values and their count\relax }{table.caption.16}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Features with missing values and their count\relax }}{25}{table.caption.16}}
+\newlabel{table:missing_db}{{3.2}{25}{Features with missing values and their count\relax }{table.caption.16}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2.1}Imputing SAT\_ACT\_Score}{25}{subsubsection.3.3.2.1}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces F2\_Not\_Retained outcome probabilities w.r.t availability of data points in SAT\_ACT\_Score\relax }}{26}{table.caption.17}}
 \newlabel{table:sat_act_db}{{3.3}{26}{F2\_Not\_Retained outcome probabilities w.r.t availability of data points in SAT\_ACT\_Score\relax }{table.caption.17}{}}
@@ -153,116 +153,115 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Distribution plot of the F1\_MidtermGPA\relax }}{28}{figure.caption.20}}
 \newlabel{fig:F1_MidtermGPA_plot}{{3.4}{28}{Distribution plot of the F1\_MidtermGPA\relax }{figure.caption.20}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Data Transformations}{28}{subsection.3.3.3}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.4}{\ignorespaces Tests based on type of input and output variables\relax }}{29}{table.caption.21}}
-\newlabel{table:statistical_db}{{3.4}{29}{Tests based on type of input and output variables\relax }{table.caption.21}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.4}{\ignorespaces Tests based on type of input and output features\relax }}{29}{table.caption.21}}
+\newlabel{table:statistical_db}{{3.4}{29}{Tests based on type of input and output features\relax }{table.caption.21}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3.4}Feature Selection}{29}{subsection.3.3.4}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.4}Exploratory Data Analysis}{30}{section.3.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Cohort year Vs F2\_Not\_Retained}{30}{subsection.3.4.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}IPEDS\_Race Vs F2\_Not\_Retained}{30}{subsection.3.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Cohort year vs. F2\_Not\_Retained}{30}{subsection.3.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}IPEDS\_Race vs. F2\_Not\_Retained}{30}{subsection.3.4.2}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Academic Year vs F2\_NotRetained\relax }}{31}{figure.caption.22}}
 \newlabel{fig:AcadYear_F2NotRetained_plot}{{3.5}{31}{Academic Year vs F2\_NotRetained\relax }{figure.caption.22}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.5}{\ignorespaces Retention Rates of each IPEDS Race Category\relax }}{31}{table.caption.24}}
-\newlabel{table:ipeds_race_retentions}{{3.5}{31}{Retention Rates of each IPEDS Race Category\relax }{table.caption.24}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Count plot of IPEDS\_Race variable\relax }}{32}{figure.caption.23}}
-\newlabel{fig:ipeds_F2NotRetained_plot}{{3.6}{32}{Count plot of IPEDS\_Race variable\relax }{figure.caption.23}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Count plot of IPEDS\_Race feature\relax }}{31}{figure.caption.23}}
+\newlabel{fig:ipeds_F2NotRetained_plot}{{3.6}{31}{Count plot of IPEDS\_Race feature\relax }{figure.caption.23}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.5}{\ignorespaces Retention Rates of each IPEDS\_Race Category\relax }}{32}{table.caption.24}}
+\newlabel{table:ipeds_race_retentions}{{3.5}{32}{Retention Rates of each IPEDS\_Race Category\relax }{table.caption.24}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}Mom\_Edu\_Level Vs F2\_Not\_Retained}{32}{subsection.3.4.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Count plot of Mom\_Edu\_Level variable\relax }}{33}{figure.caption.25}}
-\newlabel{fig:mom_edu_F2NotRetained_plot}{{3.7}{33}{Count plot of Mom\_Edu\_Level variable\relax }{figure.caption.25}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.6}{\ignorespaces Retention Rates of different categories of Mom\_Edu\_Level variable\relax }}{33}{table.caption.26}}
-\newlabel{table:mom_edu_retentions}{{3.6}{33}{Retention Rates of different categories of Mom\_Edu\_Level variable\relax }{table.caption.26}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Count plot of Mom\_Edu\_Level feature\relax }}{33}{figure.caption.25}}
+\newlabel{fig:mom_edu_F2NotRetained_plot}{{3.7}{33}{Count plot of Mom\_Edu\_Level feature\relax }{figure.caption.25}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.6}{\ignorespaces Retention Rates of different categories of Mom\_Edu\_Level feature\relax }}{33}{table.caption.26}}
+\newlabel{table:mom_edu_retentions}{{3.6}{33}{Retention Rates of different categories of Mom\_Edu\_Level feature\relax }{table.caption.26}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.4.4}Dad\_Edu\_Level Vs F2\_Not\_Retained}{34}{subsection.3.4.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Count plot of Dad\_Edu\_Level variable \relax }}{34}{figure.caption.27}}
-\newlabel{fig:dad_edu_F2NotRetained_plot}{{3.8}{34}{Count plot of Dad\_Edu\_Level variable \relax }{figure.caption.27}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.7}{\ignorespaces Retention Rates of different categories of Dad\_Edu\_Level variable\relax }}{35}{table.caption.28}}
-\newlabel{table:dad_edu_retentions}{{3.7}{35}{Retention Rates of different categories of Dad\_Edu\_Level variable\relax }{table.caption.28}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Count plot of Dad\_Edu\_Level feature \relax }}{34}{figure.caption.27}}
+\newlabel{fig:dad_edu_F2NotRetained_plot}{{3.8}{34}{Count plot of Dad\_Edu\_Level feature \relax }{figure.caption.27}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.7}{\ignorespaces Retention Rates of different categories of Dad\_Edu\_Level feature\relax }}{35}{table.caption.28}}
+\newlabel{table:dad_edu_retentions}{{3.7}{35}{Retention Rates of different categories of Dad\_Edu\_Level feature\relax }{table.caption.28}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.4.5}College1 Vs F2\_Not\_Retained}{35}{subsection.3.4.5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Count plot of College1 variable\relax }}{36}{figure.caption.29}}
-\newlabel{fig:college_F2NotRetained_plot}{{3.9}{36}{Count plot of College1 variable\relax }{figure.caption.29}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.8}{\ignorespaces Retention Rates of different categories of College1 variable\relax }}{36}{table.caption.30}}
-\newlabel{table:college_retentions}{{3.8}{36}{Retention Rates of different categories of College1 variable\relax }{table.caption.30}{}}
-\@writefile{toc}{\contentsline {chapter}{Chapter{} \numberline {4}Building Models}{38}{chapter.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Count plot of College1 feature\relax }}{36}{figure.caption.29}}
+\newlabel{fig:college_F2NotRetained_plot}{{3.9}{36}{Count plot of College1 feature\relax }{figure.caption.29}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.8}{\ignorespaces Retention Rates of different categories of College1 feature\relax }}{36}{table.caption.30}}
+\newlabel{table:college_retentions}{{3.8}{36}{Retention Rates of different categories of College1 feature\relax }{table.caption.30}{}}
+\@writefile{toc}{\contentsline {chapter}{Chapter{} \numberline {4}Experiments and Results}{37}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chapter:building_models}{{4}{38}{Building Models}{chapter.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Data Splitting }{38}{section.4.1}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Count of students in each Cohort year\relax }}{38}{table.caption.31}}
-\newlabel{table:acad_db}{{4.1}{38}{Count of students in each Cohort year\relax }{table.caption.31}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Experiments on Models}{39}{section.4.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Logistic Regression}{39}{subsection.4.2.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Confusion Matrix of Logistic Regression on test data\relax }}{40}{figure.caption.32}}
-\newlabel{fig:lr_confusion_matrix}{{4.1}{40}{Confusion Matrix of Logistic Regression on test data\relax }{figure.caption.32}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces Computed metrics based on actual and predicted test data values using LR model\relax }}{40}{table.caption.33}}
-\newlabel{table:lr-metrics_db}{{4.2}{40}{Computed metrics based on actual and predicted test data values using LR model\relax }{table.caption.33}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces ROC curve for Logistic Regression on test data\relax }}{40}{figure.caption.34}}
-\newlabel{fig:lr_roc}{{4.2}{40}{ROC curve for Logistic Regression on test data\relax }{figure.caption.34}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Confusion Matrix of Logistic Regression on unseen data i.e. 2016 cohort year data\relax }}{41}{figure.caption.35}}
-\newlabel{fig:lr_unseen_confusion_matrix}{{4.3}{41}{Confusion Matrix of Logistic Regression on unseen data i.e. 2016 cohort year data\relax }{figure.caption.35}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.3}{\ignorespaces Computed metrics based on actual and predicted unseen data values using LR model\relax }}{41}{table.caption.36}}
-\newlabel{table:lr-unseen_metrics_db}{{4.3}{41}{Computed metrics based on actual and predicted unseen data values using LR model\relax }{table.caption.36}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Decision Trees}{42}{subsection.4.2.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Confusion Matrix of Decision Tree on test data\relax }}{42}{figure.caption.37}}
-\newlabel{fig:Dtree_confusion_matrix}{{4.4}{42}{Confusion Matrix of Decision Tree on test data\relax }{figure.caption.37}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.4}{\ignorespaces Computed metrics based on actual and predicted test data values using DTree model\relax }}{42}{table.caption.38}}
-\newlabel{table:Dtree_confusion_matrix}{{4.4}{42}{Computed metrics based on actual and predicted test data values using DTree model\relax }{table.caption.38}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces ROC curve for Decision Tree on test data\relax }}{43}{figure.caption.39}}
-\newlabel{fig:DTree_roc}{{4.5}{43}{ROC curve for Decision Tree on test data\relax }{figure.caption.39}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Confusion Matrix of Decision Tree on unseen data i.e. 2016 cohort year data\relax }}{43}{figure.caption.40}}
-\newlabel{fig:DTree_unseen_confusion_matrix}{{4.6}{43}{Confusion Matrix of Decision Tree on unseen data i.e. 2016 cohort year data\relax }{figure.caption.40}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.5}{\ignorespaces Computed metrics based on actual and predicted unseen data values using DTree model\relax }}{44}{table.caption.41}}
-\newlabel{table:DTree-unseen_metrics_db}{{4.5}{44}{Computed metrics based on actual and predicted unseen data values using DTree model\relax }{table.caption.41}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}Random Forest Classifier}{44}{subsection.4.2.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Confusion Matrix of Random Forest on test data\relax }}{44}{figure.caption.42}}
-\newlabel{fig:RF_confusion_matrix}{{4.7}{44}{Confusion Matrix of Random Forest on test data\relax }{figure.caption.42}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.6}{\ignorespaces Computed metrics based on actual and predicted test data values using RF model\relax }}{44}{table.caption.43}}
-\newlabel{table:RF_confusion_matrix}{{4.6}{44}{Computed metrics based on actual and predicted test data values using RF model\relax }{table.caption.43}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces ROC curve for Random Forest on test data\relax }}{45}{figure.caption.44}}
-\newlabel{fig:RF_roc}{{4.8}{45}{ROC curve for Random Forest on test data\relax }{figure.caption.44}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.7}{\ignorespaces Computed metrics based on actual and predicted unseen data values using RF model\relax }}{45}{table.caption.46}}
-\newlabel{table:RF-unseen_metrics_db}{{4.7}{45}{Computed metrics based on actual and predicted unseen data values using RF model\relax }{table.caption.46}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces Confusion Matrix of Random Forest on unseen data i.e. 2016 cohort year data\relax }}{46}{figure.caption.45}}
-\newlabel{fig:RF_unseen_confusion_matrix}{{4.9}{46}{Confusion Matrix of Random Forest on unseen data i.e. 2016 cohort year data\relax }{figure.caption.45}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.4}Support Vector Machines}{46}{subsection.4.2.4}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.8}{\ignorespaces Computed metrics based on actual and predicted test data values using SVM model\relax }}{46}{table.caption.48}}
-\newlabel{table:SVM_confusion_matrix}{{4.8}{46}{Computed metrics based on actual and predicted test data values using SVM model\relax }{table.caption.48}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces Confusion Matrix of Support Vector Machine model on test data\relax }}{47}{figure.caption.47}}
-\newlabel{fig:SVM_confusion_matrix}{{4.10}{47}{Confusion Matrix of Support Vector Machine model on test data\relax }{figure.caption.47}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.11}{\ignorespaces ROC curve for Decision Tree on test data\relax }}{47}{figure.caption.49}}
-\newlabel{fig:SVM_roc}{{4.11}{47}{ROC curve for Decision Tree on test data\relax }{figure.caption.49}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.12}{\ignorespaces Confusion Matrix of SVM model on unseen data i.e. 2016 cohort year data\relax }}{48}{figure.caption.50}}
-\newlabel{fig:SVM_unseen_confusion_matrix}{{4.12}{48}{Confusion Matrix of SVM model on unseen data i.e. 2016 cohort year data\relax }{figure.caption.50}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.9}{\ignorespaces Computed metrics based on actual and predicted unseen data values using SVM model\relax }}{48}{table.caption.51}}
-\newlabel{table:SVM-unseen_metrics_db}{{4.9}{48}{Computed metrics based on actual and predicted unseen data values using SVM model\relax }{table.caption.51}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.5}Comparison of the models}{48}{subsection.4.2.5}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.5.1}Measures used to Compare Models}{48}{subsubsection.4.2.5.1}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.10}{\ignorespaces Comparison of metrics from different models on the testing data\relax }}{49}{table.caption.52}}
-\newlabel{table:compare_models_db}{{4.10}{49}{Comparison of metrics from different models on the testing data\relax }{table.caption.52}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.13}{\ignorespaces ROC curve's of all models on test data\relax }}{49}{figure.caption.53}}
-\newlabel{fig:comparison_roc}{{4.13}{49}{ROC curve's of all models on test data\relax }{figure.caption.53}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.11}{\ignorespaces Comparison of metrics from different models on the unseen data\relax }}{50}{table.caption.54}}
-\newlabel{table:compare_models_unseen_db}{{4.11}{50}{Comparison of metrics from different models on the unseen data\relax }{table.caption.54}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.14}{\ignorespaces ROC curve's of all models on unseen data\relax }}{51}{figure.caption.55}}
-\newlabel{fig:comparison_roc}{{4.14}{51}{ROC curve's of all models on unseen data\relax }{figure.caption.55}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.6}Feature importance calculation based on selected models}{51}{subsection.4.2.6}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.6.1}Top 15 Predictors for Logistic Regression Model}{51}{subsubsection.4.2.6.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.15}{\ignorespaces Top 15 Predictors of Logistic Regression Model\relax }}{52}{figure.caption.56}}
-\newlabel{fig:lr_predictors}{{4.15}{52}{Top 15 Predictors of Logistic Regression Model\relax }{figure.caption.56}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.6.2}Top 15 Predictors for Random Forest Model}{52}{subsubsection.4.2.6.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.16}{\ignorespaces Top 15 Predictors of Random Forest Model\relax }}{53}{figure.caption.57}}
-\newlabel{fig:rf_predictors}{{4.16}{53}{Top 15 Predictors of Random Forest Model\relax }{figure.caption.57}{}}
+\newlabel{chapter:building_models}{{4}{37}{Experiments and Results}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Data Splitting }{37}{section.4.1}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Count of students in each Cohort year\relax }}{37}{table.caption.31}}
+\newlabel{table:acad_db}{{4.1}{37}{Count of students in each Cohort year\relax }{table.caption.31}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Experiments on Models}{38}{section.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Logistic Regression}{38}{subsection.4.2.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Confusion Matrix of Logistic Regression on validation data\relax }}{39}{figure.caption.32}}
+\newlabel{fig:lr_confusion_matrix}{{4.1}{39}{Confusion Matrix of Logistic Regression on validation data\relax }{figure.caption.32}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces Computed metrics based on actual and predicted validation data values using LR model\relax }}{39}{table.caption.33}}
+\newlabel{table:lr-metrics_db}{{4.2}{39}{Computed metrics based on actual and predicted validation data values using LR model\relax }{table.caption.33}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces ROC curve for Logistic Regression on validation data\relax }}{40}{figure.caption.34}}
+\newlabel{fig:lr_roc}{{4.2}{40}{ROC curve for Logistic Regression on validation data\relax }{figure.caption.34}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Confusion Matrix of Logistic Regression on test data (i.e., 2016 cohort year data)\relax }}{40}{figure.caption.35}}
+\newlabel{fig:lr_unseen_confusion_matrix}{{4.3}{40}{Confusion Matrix of Logistic Regression on test data (i.e., 2016 cohort year data)\relax }{figure.caption.35}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.3}{\ignorespaces Computed metrics based on actual and predicted test data values using LR model\relax }}{40}{table.caption.36}}
+\newlabel{table:lr-unseen_metrics_db}{{4.3}{40}{Computed metrics based on actual and predicted test data values using LR model\relax }{table.caption.36}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Decision Trees}{41}{subsection.4.2.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Confusion Matrix of Decision Tree on test data\relax }}{41}{figure.caption.37}}
+\newlabel{fig:Dtree_confusion_matrix}{{4.4}{41}{Confusion Matrix of Decision Tree on test data\relax }{figure.caption.37}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.4}{\ignorespaces Computed metrics based on actual and predicted validation data values using DTree model\relax }}{41}{table.caption.38}}
+\newlabel{table:Dtree_confusion_matrix}{{4.4}{41}{Computed metrics based on actual and predicted validation data values using DTree model\relax }{table.caption.38}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces ROC curve for Decision Tree on validation data\relax }}{42}{figure.caption.39}}
+\newlabel{fig:DTree_roc}{{4.5}{42}{ROC curve for Decision Tree on validation data\relax }{figure.caption.39}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Confusion Matrix of Decision Tree on test data (i.e., 2016 cohort year data)\relax }}{42}{figure.caption.40}}
+\newlabel{fig:DTree_unseen_confusion_matrix}{{4.6}{42}{Confusion Matrix of Decision Tree on test data (i.e., 2016 cohort year data)\relax }{figure.caption.40}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.5}{\ignorespaces Computed metrics based on actual and predicted test data values using DTree model\relax }}{43}{table.caption.41}}
+\newlabel{table:DTree-unseen_metrics_db}{{4.5}{43}{Computed metrics based on actual and predicted test data values using DTree model\relax }{table.caption.41}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}Random Forest Classifier}{43}{subsection.4.2.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Confusion Matrix of Random Forest on validation data\relax }}{43}{figure.caption.42}}
+\newlabel{fig:RF_confusion_matrix}{{4.7}{43}{Confusion Matrix of Random Forest on validation data\relax }{figure.caption.42}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.6}{\ignorespaces Computed metrics based on actual and predicted validation data values using RF model\relax }}{44}{table.caption.43}}
+\newlabel{table:RF_confusion_matrix}{{4.6}{44}{Computed metrics based on actual and predicted validation data values using RF model\relax }{table.caption.43}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces ROC curve for Random Forest on validation data\relax }}{44}{figure.caption.44}}
+\newlabel{fig:RF_roc}{{4.8}{44}{ROC curve for Random Forest on validation data\relax }{figure.caption.44}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.7}{\ignorespaces Computed metrics based on actual and predicted test data values using RF model\relax }}{44}{table.caption.46}}
+\newlabel{table:RF-unseen_metrics_db}{{4.7}{44}{Computed metrics based on actual and predicted test data values using RF model\relax }{table.caption.46}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces Confusion Matrix of Random Forest on test data (i.e., 2016 cohort year data)\relax }}{45}{figure.caption.45}}
+\newlabel{fig:RF_unseen_confusion_matrix}{{4.9}{45}{Confusion Matrix of Random Forest on test data (i.e., 2016 cohort year data)\relax }{figure.caption.45}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.4}Support Vector Machines}{45}{subsection.4.2.4}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.8}{\ignorespaces Computed metrics based on actual and predicted validation data values using SVM model\relax }}{45}{table.caption.48}}
+\newlabel{table:SVM_confusion_matrix}{{4.8}{45}{Computed metrics based on actual and predicted validation data values using SVM model\relax }{table.caption.48}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces Confusion Matrix of Support Vector Machine model on validation data\relax }}{46}{figure.caption.47}}
+\newlabel{fig:SVM_confusion_matrix}{{4.10}{46}{Confusion Matrix of Support Vector Machine model on validation data\relax }{figure.caption.47}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.11}{\ignorespaces ROC curve for SVM on validation data\relax }}{46}{figure.caption.49}}
+\newlabel{fig:SVM_roc}{{4.11}{46}{ROC curve for SVM on validation data\relax }{figure.caption.49}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.12}{\ignorespaces Confusion Matrix of SVM model on test data (i.e., 2016 cohort year data)\relax }}{47}{figure.caption.50}}
+\newlabel{fig:SVM_unseen_confusion_matrix}{{4.12}{47}{Confusion Matrix of SVM model on test data (i.e., 2016 cohort year data)\relax }{figure.caption.50}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.9}{\ignorespaces Computed metrics based on actual and predicted test data values using SVM model\relax }}{47}{table.caption.51}}
+\newlabel{table:SVM-unseen_metrics_db}{{4.9}{47}{Computed metrics based on actual and predicted test data values using SVM model\relax }{table.caption.51}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.5}Comparison of the Models}{47}{subsection.4.2.5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.5.1}Measures used to Compare Models}{47}{subsubsection.4.2.5.1}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.10}{\ignorespaces Comparison of metrics from different models on the validation data\relax }}{48}{table.caption.52}}
+\newlabel{table:compare_models_db}{{4.10}{48}{Comparison of metrics from different models on the validation data\relax }{table.caption.52}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.13}{\ignorespaces ROC curve's of all models on validation data\relax }}{49}{figure.caption.53}}
+\newlabel{fig:comparison_roc}{{4.13}{49}{ROC curve's of all models on validation data\relax }{figure.caption.53}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.11}{\ignorespaces Comparison of metrics from different models on the test data\relax }}{49}{table.caption.54}}
+\newlabel{table:compare_models_unseen_db}{{4.11}{49}{Comparison of metrics from different models on the test data\relax }{table.caption.54}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.14}{\ignorespaces ROC curve's of all models on test data\relax }}{50}{figure.caption.55}}
+\newlabel{fig:comparison_test_roc}{{4.14}{50}{ROC curve's of all models on test data\relax }{figure.caption.55}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.6}Feature Importance calculation based on Selected Models}{50}{subsection.4.2.6}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.6.1}Top Fifteen Predictors for Logistic Regression Model}{50}{subsubsection.4.2.6.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.15}{\ignorespaces Top 15 Predictors of Logistic Regression Model\relax }}{51}{figure.caption.56}}
+\newlabel{fig:lr_predictors}{{4.15}{51}{Top 15 Predictors of Logistic Regression Model\relax }{figure.caption.56}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.6.2}Top Fifteen Predictors for Random Forest Model}{51}{subsubsection.4.2.6.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.16}{\ignorespaces Top 15 Predictors of Random Forest Model\relax }}{52}{figure.caption.57}}
+\newlabel{fig:rf_predictors}{{4.16}{52}{Top 15 Predictors of Random Forest Model\relax }{figure.caption.57}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2.7}Ranking Students based on the Risk of Not Being Retained}{53}{subsection.4.2.7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.17}{\ignorespaces Top 10 Students at the risk of not being retained in F2 term\relax }}{54}{figure.caption.58}}
-\newlabel{fig:risk_rank}{{4.17}{54}{Top 10 Students at the risk of not being retained in F2 term\relax }{figure.caption.58}{}}
-\@writefile{toc}{\contentsline {chapter}{Chapter{} \numberline {5}Conclusion And Future work}{55}{chapter.5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.17}{\ignorespaces Top 10 Students at the risk of not being retained in F2 term\relax }}{53}{figure.caption.58}}
+\newlabel{fig:risk_rank}{{4.17}{53}{Top 10 Students at the risk of not being retained in F2 term\relax }{figure.caption.58}{}}
+\@writefile{toc}{\contentsline {chapter}{Chapter{} \numberline {5}Conclusion And Future work}{54}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chapter:conclusion}{{5}{55}{Conclusion And Future work}{chapter.5}{}}
+\newlabel{chapter:conclusion}{{5}{54}{Conclusion And Future work}{chapter.5}{}}
 \bibstyle{alpha}
 \bibdata{thesis}
-\bibcite{astin2012assessment}{A{$^{+}$}12}
 \bibcite{adejo2017}{AC17}
 \bibcite{alkhasawneh2014developing}{AH14}
 \bibcite{Murtaugh}{AMBS99}
-\bibcite{bainbridge2015}{BMZ{$^{+}$}15}
+\bibcite{astin2012assessment}{Ast12}
 \bibcite{braxton2002introduction}{Bra02}
 \bibcite{bingham2016}{BS16}
 \bibcite{fawcett2006introduction}{Faw06}
@@ -270,14 +269,15 @@
 \bibcite{herzog2006estimating}{Her06}
 \bibcite{IPEDSRetentionRate}{IPE}
 \bibcite{lakkaraju2015machine}{LAS{$^{+}$}15}
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{57}{chapter*.59}}
 \bibcite{lau2003institutional}{Lau03}
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{56}{chapter*.59}}
+\bibcite{lauria2012mining}{LBD{$^{+}$}12}
 \bibcite{marbouti2016models}{MDDM16}
 \bibcite{Mitchell1997}{Mit97}
 \bibcite{plagge2013using}{Pla13}
 \bibcite{thammasiri2014critical}{TDMK14}
 \bibcite{tinto1999taking}{Tin99}
 \bibcite{tinto2006}{Tin06}
-\@writefile{toc}{\contentsline {chapter}{Curriculum Vitae{} \numberline {}}{59}{chapter.1}}
+\@writefile{toc}{\contentsline {chapter}{Curriculum Vitae{} \numberline {}}{58}{chapter.1}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}

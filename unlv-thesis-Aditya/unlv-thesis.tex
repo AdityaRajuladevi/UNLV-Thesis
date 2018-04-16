@@ -15,6 +15,7 @@
 \usepackage{multirow}
 \usepackage{longtable}
 \usepackage{amsmath}
+\usepackage{url}
 \hypersetup{
 	colorlinks=false, %set true if you want colored links
 	linktoc=all,     %set to all if you want both sections and subsections linked
@@ -53,7 +54,7 @@
 %%% Add your previous degrees here
 \thesisauthorpreviousdegrees{
 Bachelor of Technology (B-Tech) \\ \vspace*{-0.12in}
-Jawahar Lal Nehru Technological University, Hyderabad, India\\ \vspace*{-0.12in}
+Jawaharlal Nehru Technological University, Hyderabad, India\\ \vspace*{-0.12in}
 2014}
 
 %%%
@@ -69,8 +70,8 @@ Jawahar Lal Nehru Technological University, Hyderabad, India\\ \vspace*{-0.12in}
 %\signatures{}   % will generate 'signatures on the approval page' grad college does 
 %not like this, so don't do that in their version
 \chair{Fatma\ Nasoz, Ph.D.}
-\memberone{Laxmi\ Gewali, Ph.D.}
-\membertwo{Justin\ Zhan, Ph.D.}
+\memberone{Justin\ Zhan, Ph.D.}
+\membertwo{Yoohwan\ Kim, Ph.D.}
 \collegerep{Magdalena\ Martinez, Ph.D.}
 
 %----------------------- Macros ----------------------------------------- 
@@ -132,11 +133,11 @@ intervention resources effectively.
 \begin{thesisacknowledgments}
 I would like to express my sincere gratitude to my advisor, Dr. Fatma Nasoz, for her motivation, guidance, and support throughout the research. She continuously steered me in the right direction in this research as well as my Master's program.
 
-I would like to extend my thanks to Dr. Laxmi Gewali, Dr. Justin Zhan, and Dr. Magdalena Martinez for their support and for being a part of my thesis committee. I am really grateful for all the support from Dr. Ajoy K Datta who was always available to me whenever I needed his guidance.
+I would like to extend my thanks to Dr. Justin Zhan, Dr. Yoohwan Kim and Dr. Magdalena Martinez for their support and for being a part of my thesis committee. I am really grateful for all the support from Dr. Ajoy K Datta who was always available to me whenever I needed his guidance.
 
-I am gratefully indebted to Kivanc Oner, Carrie Trentham and Becky Lorig from the Enterprises Application Services department at UNLV for their continuous support and valuable comments on this thesis. They have been of great help in  answering my questions about student enrollment and retention problem at UNLV and helped me find the student data required for my analysis housed in the UNLV data warehouse.
+I am gratefully indebted to Kivanc Oner, Carrie Trentham and Becky Lorig from the Enterprise Application Services department at UNLV for their continuous support and valuable comments on this thesis. They have been of great help in  answering my questions about student enrollment and retention problem at UNLV and helped me find the student data required for my analysis housed in the UNLV data warehouse.
 
-My deep sense of gratitude to my parents Venkat Rao Rajuladevi, Mallika Rajuladevi and my sister Arthi Rajuladevi who are my moral strength and motivation. I would like to thank Sai Phani Krishna Parsa, Paritosh Parmar and Ashish Tamarakar for their constant support and guidance throughout my Master's program.
+My deep sense of gratitude to my parents Venkat Rao Rajuladevi, Mallika Rajuladevi and my sister Arthi Rajuladevi who are my moral strength and motivation. I would like to thank Sai Phani Krishna Parsa, Paritosh Parmar, and Ashish Tamarakar for their constant support and guidance throughout my Master's program.
 
 Finally, I would like to thank all my friends, seniors and juniors who made my time here at UNLV very memorable. 
 \end{thesisacknowledgments}
@@ -170,11 +171,11 @@ Finally, I would like to thank all my friends, seniors and juniors who made my t
 %%%
 %%% This is the start of the first 
 \chapter{Introduction}\label{chapter:introduction} 
-The Integrated Postsecondary Education Data System (IPEDS) is a national system of surveys conducted annually by the National Center for Education Statistics (NCES) that collects student information including retention and graduation rates from many institutions in the U.S. IPEDS requires the participating institutions to follow certain definitions and standards during data collection. It defines first-year student retention rate (often referred to as the retention rate) as the percentage of first-time full-time students from the previous fall who are again enrolled in the current fall. Here, a first-time student is one who is attending college for the first time and is considered full-time if he enrolls for more than 12 credits in a semester. The first-time full-time students of a given academic year are considered as a cohort, where specific cohort year represents census collected on students who were retained from the previous fall. The retention rate at postsecondary institutions in the U.S as surveyed by IPEDS for the cohort year 2016 was 75.1\% \cite{IPEDSRetentionRate}, which indicates that many universities are performing poorly in terms of retaining first-year students. Low retention rates are also a bad indicator of the university's performance and can damage the reputation of the institution in the eyes of students and parents. 
+The Integrated Postsecondary Education Data System (IPEDS) is a national system of surveys conducted annually by the National Center for Education Statistics (NCES). Among other student information, it that collects retention and graduation rates from the participating institutions and it requires the institutions to follow certain definitions and standards during data reporting. IPEDS defines first-year student retention rate (often referred to as ``the retention rate'') as the percentage of first-time full-time students from the previous fall semester who enroll in the same institution in the current fall.  A first-time student is one who is attending college for the first time and is considered full-time if he enrolls for more than 12 credits in a semester. The first-time full-time students of a given academic year are considered as a cohort, where specific cohort year represents census collected on students who were retained from the previous fall. The retention rate at postsecondary institutions in the U.S. as surveyed by IPEDS for the cohort year 2016 was 75.1\% \cite{IPEDSRetentionRate}, which indicates that many universities are performing poorly in terms of retaining first-year students. Low retention rates are also a bad indicator of the university's performance and can damage the reputation of the institution in the eyes of students and parents. 
 
-The reasons behind student dropout after first year in universities can range from high expectations of the college programs, transition into an interdisciplinary curriculum, economic problems, inability to mix well with other students or struggling due to unfulfilled prerequisite requirements \cite{lau2003institutional}. Many researchers have formulated solutions such as building learning communities, providing additional resources \cite{tinto1999taking}, highlighting student participation in campus life and providing academic support \cite{lau2003institutional}. Also, few studies have indicated that the risk of dropping out decreases with an increase in academic performance \cite{Murtaugh}. Thus, one way to increase retention is to increase academic success. In recent years, many universities have invested significantly in development and implementation of intervention programs to help at-risk students and support them individually to improve their academic performance. 
+The reasons behind student dropout after first year in universities can range from high expectations of the college programs, transition into an interdisciplinary curriculum, economic problems, inability to mix well with other students, or struggling due to unfulfilled prerequisite requirements \cite{lau2003institutional}. Many researchers have formulated solutions such as building learning communities, providing additional resources \cite{tinto1999taking}, highlighting student participation in campus life and providing academic support \cite{lau2003institutional}. Also, few studies have indicated that the risk of dropping out decreases with an increase in academic performance \cite{Murtaugh}. Thus, one way to increase retention is to increase academic success. In recent years, many universities have invested significantly in development and implementation of intervention programs to help at-risk students and support them individually to improve their academic performance. 
 
-The success of such intervention programs depends on the university's ability to accurately identify students who need help. In a traditional approach, many universities have used academic performance indicators such as GPA's, absence rates, high school grades, SAT or ACT scores of students to generate rules that can be used to identify at-risk  students \cite{bingham2016}. Although such rule-based systems served as good indicators of identifying at-risk students for some years, they had some downsides such as fewer accuracies, are static, expensive to generate and maintain and most importantly they lacked a validation mechanism to verify the predictions. Alternatively, recent research has indicated the potential value of machine learning algorithms such as Logistic Regression, Random Forest Classifiers, Decision Trees, Support Vector Machines (SVM) and Neural networks for the problem \cite{plagge2013using,lakkaraju2015machine,marbouti2016models}. These algorithms when trained using traditional academic data can identify at-risk students more accurately. The performance of these algorithms can be evaluated using various metrics such as Precision, Recall, and Area Under Curve (AUC) thus giving us a good indicator to validate the results. However, the application of such predictive methods to identify at-risk students is still at its early stages owing to the implementation complexity and the availability of data. Currently, many universities have defined rules in the collection of data to use for such a research.
+The success of such intervention programs depends on the university's ability to accurately identify students who need help. In a traditional approach, many universities have used academic performance indicators such as GPAs, truancy rates, high school grades, SAT and/or ACT scores of students to generate rules that can be used to identify at-risk  students \cite{bingham2016}. Although such rule-based systems served as good indicators of identifying at-risk students for some years, they had some downsides such as having fewer accuracies, being static, being expensive to generate and maintain and most importantly lacking a validation mechanism to verify the predictions. Alternatively, recent research has indicated the potential value of machine learning algorithms such as Logistic Regression, Random Forest Classifiers, Decision Trees, Support Vector Machines (SVM) and Neural Networks for the problem \cite{plagge2013using,lakkaraju2015machine,marbouti2016models}. These algorithms, when trained using traditional academic data can identify at-risk students more accurately. The performance of these algorithms can be evaluated using various metrics such as Precision, Recall, and Area Under Curve (AUC) thus giving us a good indicator to validate the results. However, the application of such predictive methods to identify at-risk students is still at its early stages owing to the limited availability of data and the implementation complexity. Currently, many universities have defined rules in the collection of data to use for such a research.
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.45]{freshmen_rates}
@@ -185,38 +186,38 @@ The success of such intervention programs depends on the university's ability to
 Over the recent years, the retention rates at UNLV have displayed a highly varying pattern. It dropped from 77\% in 2011 cohort year to 74\% in 2013 cohort year and then increased to 77\% in 2015 cohort year, which later on fell to 74\% in 2015 cohort year as shown in Figure \ref{fig:unlv_retention_trend}. Such an unstable pattern of freshmen retention rates has drawn a lot of attention by the educators and administration at UNLV. Therefore, a predictive approach to identify at-risk students and supporting them with additional resources would be quite beneficial to increase the retention rates at UNLV. 
 
 \section{Objective}\label{section:objective}
-The objective of this thesis is to create predictive models that can be used to identify at-risk students. In this thesis, important machine learning algorithms including Logistic Regression, Decision trees, Random Tree Classifiers and SVM's will be trained on real-time student data of UNLV. The trained models will then be used to identify students who are at the risk of not being retained from an test dataset which the model has not seen earlier. The models are evaluated and compared using metrics such as precision, recall, and area under the curve to determine which model provides the best results. Another contribution of this thesis is to rank students based on predictions from models which will be very helpful in efficient allocation of resources as part of the intervention programs.
+The objective of this thesis is to create predictive models that can be used to identify students who are at the risk of not being retained. In this thesis, machine learning algorithms including Logistic Regression, Decision trees, Random Tree Classifiers, and SVMs will be trained on UNLV student data. Trained models will then be used to predict at-risk students on  a test dataset which the model has not seen earlier. The models are evaluated and compared using metrics such as precision, recall, and area under the curve to determine which model provides the best results. Another contribution of this thesis is to rank students based on predictions from models, which will be very helpful in efficient allocation of resources as part of the intervention programs.
 
 \section{Outline}\label{section:outline}
 
-In Chapter \ref{chapter:introduction}, the brief topic of First-Year student retention rates, its importance to universities and the proposed approach to increase the retention rates at UNLV was described.\newline
+In Chapter \ref{chapter:introduction}, the brief topic of First-Year student retention rates, its importance to universities and the proposed approach to increase the retention rates at UNLV were described.\newline
 
-\noindent In Chapter \ref{chapter:background}, we will discuss the existing research on improving first-year retention rates and the background information required to understand the proposed predictive approach using machine learning. It will cover the most important and popular algorithms of machine learning.
+\noindent In Chapter \ref{chapter:background}, we will discuss the existing research on improving first-year retention rates and provide the background information required to understand the proposed predictive approach using machine learning. It will cover the most important and popular algorithms of machine learning.
 \newline
 
-\noindent In Chapter \ref{chapter:methodology}, we will describe the methodology adapted for the analysis. The characteristics of datasets used will also be described.
+\noindent In Chapter \ref{chapter:methodology}, we will describe the methodology adapted for the analysis. The characteristics of the datasets will also be described.
 \newline
 
-\noindent In Chapter \ref{chapter:building_models}, we perform experiments by building models and comparing their performances to identify the ones that are best suitable for the UNLV data. \newline
+\noindent In Chapter \ref{chapter:building_models}, we will perform experiments by building the models, report the results and compare their performances to identify the ones that are best suitable for the UNLV data. \newline
 
 \noindent In Chapter \ref{chapter:conclusion}, we will summarize the findings of the analysis along with some insights about future work.
 
 \chapter{Background and Preliminaries} \label{chapter:background}
 \section{Related Work}\label{section:relatedwork}
 
-The prediction of first-year student retention rates and identification of students who are at the risk of not being retained after their first year has been a well-researched problem in the area of higher education sector for decades. Early studies involved learning the important factors that lead to student dropout by developing a theoretical model. Tinto is one of the major and earliest researchers in this area. Tinto's student engagement model \cite{tinto1999taking} has served as the basis for a large number of theoretical studies \cite{braxton2002introduction}. Similar research was carried out by Ernest Pascarella, Patrick Terenzini, and Alexander Astin, which focused more on the external factors such as the institution's administration and its policies when determining the reasons for student retention \cite{astin2012assessment}. Tinto in his 2006 study \cite{tinto2006} has stated that there has been a huge increase in the number of businesses and organizations to analyze and help institutions with the student retention problem. Later, in the same study, he revealed that there was only a little change in the retention rates even with some huge businesses helping the universities. He also described the importance of external factors such as student-faculty relationships, extracurricular programs and orientation programs for first-year students. Moreover, he incorporated the role of academic factors into his model to make it more suitable to the college structure \cite{tinto2006}. Astin in his Input-Environment model \cite{astin2012assessment}, suggests that researchers should consider pre-college factors such as gender, race/ethnicity, family background, high school GPA  as important for student retention.
+The prediction of first-year student retention rates and identification of students who are at risk of not being retained after their first year has been a well-researched problem in the area of higher education for decades. Early studies involved learning the important factors that lead to student dropout by developing a theoretical model. Tinto is one of the major and earliest researchers in this area. Tinto's student engagement model \cite{tinto1999taking} has served as the basis for a large number of theoretical studies \cite{braxton2002introduction}. Similar research was carried out by Astin et al., which focused more on the external factors such as the institution's administration and its policies when determining the reasons for student retention \cite{astin2012assessment}. Tinto in his 2006 study \cite{tinto2006} has stated that there has been a huge increase in the number of businesses and organizations that analyze and help institutions with the student retention problem. Later in the same study, he revealed that there was only a little change in retention rates even with these businesses helping the universities. He also described the importance of external factors such as student-faculty relationships, extracurricular programs, and orientation programs for first-year students. Moreover, he incorporated the role of academic factors into his model to make it more suitable to the college structure \cite{tinto2006}. Astin et al. in their Input-Environment model \cite{astin2012assessment}, suggests that researchers should consider pre-college factors such as gender, race and ethnicity, family background, and high school GPA  to be important for student retention.
 
-In addition to understanding the factors responsible for student dropout, researchers were interested in identifying students who are at the risk of not being retained in order to intervene and prevent them from dropping out. Early research included usage of statistical and analytical methods such as logistic regression and discriminant analysis for predicting if a student will be retained \cite{lakkaraju2015machine,marbouti2016models,adejo2017}. The results from these models showed that the learning algorithms were, in fact, better than many existing rule-based models in learning patterns from the existing student data. Educational data mining has emerged into an important field of research in studying student retention, because of its high accuracy and robustness in working with missing data \cite{alkhasawneh2014developing}. In another study, Jay Bainbridge et al. used fall 2010 undergraduate students data from four different sources and applied classifiers such as logistic regression, support vector machines and decision trees for prediction and comparison purposes\cite{bainbridge2015}. The results showed that logistic regression and SVM trees provided higher classification accuracies compared to the decision trees to predict students at risk. 
+In addition to understanding the factors responsible for student dropout, researchers were interested in identifying students who are at the risk of not being retained in order to intervene and prevent them from dropping out. Early research included usage of statistical and analytical methods such as logistic regression and discriminant analysis for predicting if a student will be retained \cite{lakkaraju2015machine,marbouti2016models,adejo2017}. The results from these models showed that these learning algorithms were, in fact, better than many existing rule-based models in terms of learning patterns from the existing student data. Educational data mining has emerged into an important field of research in studying student retention, because of its high accuracy and robustness in working with missing data \cite{alkhasawneh2014developing}. In another study, Lauria et al. used fall 2010 undergraduate student data from four different sources and applied classifiers such as logistic regression, support vector machines and C4.5 decision trees for prediction and comparison purposes\cite{lauria2012mining}. The results showed that logistic regression and SVM algorithms provided higher classification accuracies compared to the decision trees to predict students at risk. 
 
-Serge Herzog a researcher from University of Nevada, Reno(UNR) campus has done some extensive research on student retention and graduation prediction. He used Decision trees and Neural networks to predict student retention on data from UNR\cite{herzog2006estimating}. Farshid Marbouti, Heidi A.Diefes-Dux, Krishna Madhavan have compared seven different prediction models for identifying at-risk students using in-semester performance factors (i.e., grades) which were based on standards-based grading \cite{marbouti2016models} . Another similar research focused on the problem of imbalanced output class distribution in the field of student retention in which the researchers tested three balancing techniques such as over-sampling, under-sampling and synthetic minority over-sampling (SMOTE) along with machine learning algorithms \cite{thammasiri2014critical}.
+Herzog, a researcher from University of Nevada, Reno(UNR) has done some extensive research on student retention and graduation prediction where he used decision trees and neural networks to predict student retention on data from UNR\cite{herzog2006estimating}. Marbouti et al. have compared seven different prediction models for identifying at-risk students using in-semester performance factors ( e.g. grades) which were based on standards-based grading \cite{marbouti2016models} . Another similar research focused on the problem of imbalanced output class distribution in the field of student retention, in which the researchers tested three balancing techniques such as over-sampling, under-sampling, and synthetic minority over-sampling (SMOTE) along with machine learning algorithms \cite{thammasiri2014critical}.
 
-Although predictive analysis using machine learning models have proved to be very effective in identifying at-risk students, they were still not efficient and useful to educators who wanted to develop academic support programs and resources to support the identified students. The primary reason being the lack of understanding of the metrics from the predictive models by the educators. A few researchers analyzed this issue at the high school level and came up with a framework to convert model accuracies to risk scores that could be used by the educators in the efficient allocation of the resources \cite{lakkaraju2015machine}. Though the above-mentioned framework was giving good results, it was restricted to school-level data and thus cannot yield accurate results in the university-level as they both are very different environments with different set of factors. Hence in this thesis, we perform such a predictive analysis on the retention problem at college-level  to identify at-risk students, so interventions can be offered in a timely manner.
+Although predictive analysis using machine learning models have proved to be very effective in identifying at-risk students, they were still not efficient and useful to educators who wanted to develop academic support programs and resources to support the identified students. The primary reason reason for this is the limited understanding of the metrics from the predictive models by the educators. A few researchers analyzed this issue at the high school level and came up with a framework to convert model accuracies to risk scores that could be used by the educators in efficient allocation of resources \cite{lakkaraju2015machine}. Although the above-mentioned framework was providing good results, it was restricted to school-level data and thus could not yield accurate results in the university-level as they are very different environments with different set of factors. Hence in this thesis, we perform such a predictive analysis on the retention problem at college-level  to identify at-risk students, so interventions can be offered in a timely manner.
 
 \section{Preliminaries}\label{section:preliminaries}
 
 \subsection{Machine Learning Concepts}
 
-\noindent  Tom Mitchell defined Machine Learning as \cite{Mitchell1997}: 
+\noindent  Mitchell defined Machine Learning as \cite{Mitchell1997}: 
 \newline\newline
 \hangindent=0.7cm "A computer is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E." \newline 
 
@@ -224,14 +225,14 @@ Although predictive analysis using machine learning models have proved to be ver
 
 \noindent E = the experience of playing many games of chess with different people
 
-\noindent T = the task of playing chess.
+\noindent T = the task of playing chess
 
-\noindent P = the probability that the program will win the next game.\newline 
+\noindent P = the probability that the program will win the next game \newline 
 
-\noindent In general, machine learning tries to learn patterns inherent in the underlying data and remembers it as experience, which it uses for predictions. It was conceptualized from the notion of learning process adopted by a human brain. Just as the human brain gets better at a specific task by repeated learning and previous experiences, a computer will also learn more patterns hidden in the data based on its previous experiences. Additionally, the huge processing power of computers enables them to perform such a learning process on complex data which can be very difficult for a human to understand. 
+\noindent In general, machine learning tries to learn patterns inherent in the underlying data and remembers it as an experience and uses it for predictions. It was conceptualized from the notion of learning process adopted by a human brain. Just as the human brain gets better at a specific task by repeated learning and previous experiences, a computer will also learn more patterns hidden in the data based on its previous experiences. Additionally, the huge processing power of computers enables them to perform such a learn from highly complex data which can be very difficult for a human to understand. 
 
 \subsection{Predictive Analytics}
-Predictive analytics primarily deals with extracting patterns using machine learning models from existing datasets. The extracted patterns are used to predict future events and behaviors on previously unseen data. Predictive analytics is being used in a wide range of fields such as education, finance, automobile, and healthcare. The analytics is performed by running different machine learning algorithms on previously collected data. The algorithms try to learn patterns between different properties of the data and preserve the knowledge in model parameters. The resulting model is able to predict the unknown property of a future unseen data. 
+Predictive analytics primarily deals with extracting patterns from datasets using machine learning models. The extracted patterns are used to predict future events and behaviors of previously unseen data. Predictive analytics is being used in a wide range of fields such as education, finance, automobile, and healthcare. The analytics is performed by running different machine learning algorithms on previously collected data. The algorithms try to learn patterns between different features of the data and preserve the knowledge in model parameters. The resulting model is able to predict the unknown property of a future unseen data. 
 
  \begin{table}[!t]
 	\renewcommand{\arraystretch}{1.3}
@@ -250,7 +251,7 @@ Predictive analytics primarily deals with extracting patterns using machine lear
 	\end{tabular}
 \end{table}
 
-As an illustrative example, consider the student data captured during admissions at a university as shown in Table  \ref{table:example_db}. The aim is to predict if the student will be accepted or not by looking at the other variables in the data. The column Accepted is said to be a dependent variable, and all the other variables are called independent variables. A ``1'' in the Accepted column represents the outcome of the student being accepted into the university and a ``0'' means he was rejected. To this data, we apply a machine learning algorithm that will learn a prediction model based on the relations between the input independent variables and the output dependent variable. The learned model is then able to predict the output variable by taking other variables as input. The output variable can be of any data type. If it is a continuous numerical value, then the machine learning problem is known as regression and if it is categorical value, then the machine learning problem is known as classification.
+As an illustrative example, consider the student data captured during admissions at a university as shown in table  \ref{table:example_db}. The aim is to predict if the student will be accepted or not by looking at the other variables in the data. The column ``Accepted'' is said to be a dependent variable, and all the other variables are called independent variables. A ``1'' in the Accepted column represents the outcome of the student being accepted into the university and a ``0'' means he was rejected. To this data, we apply a machine learning algorithm that will learn a predictive model based on the relationships between the independent (input) variables and the dependent (output) variable. The learned model is then able to predict the output variable of an before unseen data sample by taking its other variables as input. The output variable can be of any data type. If it is a continuous numerical value, then the machine learning problem is known as regression and if it is categorical value, then the machine learning problem is known as classification.
   \begin{figure}
 	\centering
 	\includegraphics[scale=0.5]{MLApproachFinal}
@@ -258,26 +259,26 @@ As an illustrative example, consider the student data captured during admissions
 	\label{fig:predictive_analysis-approach}
 \end{figure} 
 
-The general approach for applying predictive analysis on a data can be divided into 2 phases as shown in figure \ref{fig:predictive_analysis-approach}. Build phase deals with the process of creating a prediction model and testing its performance. The process of creating the prediction model is known as training and the data used is known as training data. To test the effectiveness of the created model, it is tested on another set of previously unseen data known as testing data. We use two different datasets to check the generalization capacity of the model in making predictions on previously unseen data. If we use all the available data for training, the model may learn too much from the inputs giving rise to the problem of overfitting. Overfitting occurs when a model is performing well on its training data, but not on the other unseen data. A common approach to handle the problem of overfitting is to divide the input data into training and testing sets. The model is then evaluated for performance using metrics calculated from test data. The metrics used to evaluate a model are explained in detail in the coming chapters. The evaluated model is used in the operational phase to perform predictions given a new data. 
+The general approach for applying predictive analysis on datasets can be divided into 2 phases as shown in figure \ref{fig:predictive_analysis-approach}. Build phase deals with the process of creating a prediction model and validating its performance. The process of creating the prediction model is known as training and the data used is known as the training data. To measure the effectiveness of the created model, it is tested on another set of previously unseen data known as validation data. We use two different datasets to check the generalization capacity of the model in making predictions on previously unseen data. If we use all the available data for training, the model may learn too much from the inputs giving rise to the problem of overfitting. Overfitting occurs when a model is performing well on its training data, but not on the previously unseen data. A common approach to handle the problem of overfitting is to divide the input data into training and validation sets. The models performance is then evaluated using metrics calculated on validation data. The metrics used to evaluate a model are explained in detail in the coming chapters. The model created in the build phase is used in the operational phase to perform predictions given a new data example. 
 
 \subsection{Selected Models}
-Based on the way machine learning algorithms ``learn'' patterns from data, they can be classified into two groups: supervised and unsupervised learning. In supervised learning, we train the machine learning model using data whose possible outcomes are already known, whereas unsupervised learning is the training of machine learning models using information that is neither classified nor labeled and allows the algorithm to learn by itself. 
+Based on how machine learning algorithms ``learn'' patterns from data, they can be classified into two groups: supervised and unsupervised learning algorithms. In supervised learning, the machine learning model is trained using data whose outcomes are already known, whereas unsupervised learning is the training of machine learning models using information that is neither classified nor labeled. 
 
-In our case, since we have data about students along with labels of the outcome variable that indicates if the student was retained in the next fall semester or not, we will do supervised learning. Additionally, since the outcome variable in our analysis is a categorial variable, our problem is of classification. In this section, we discuss various classification models that were used in this thesis to analyze the student data of UNLV. The models selected for comparison were Logistic Regression, Decision Trees, Random Forest Classifiers, and SVM's.
+In our case, since the data about students have the output labels that indicates if the student was retained in the next fall semester or not, we will apply supervised learning. Additionally, since the outcome variable in our analysis is a categorial variable, our problem is of classification. In this section, we discuss various classification models that were used in this thesis to analyze the student data of UNLV. The models selected for comparison were Logistic Regression, Decision Trees, Random Forest Classifiers, and SVMs.
 
 \subsubsection {Logistic Regression Model} \label{sssec:lr}
 
-Logistic Regression is a supervised machine learning classification algorithm that is used to predict the output of a categorical dependent variable based on the probabilities of achieving the output categories. In logistic regression, the dependent variable is a categorical variable. It is a variation of linear regression, where a model is constructed in supervision of the available data to calculate the unknown outcome variable. In linear regression, input values (x) are combined linearly using weights or coefficient values to predict an output value (y), whereas logistic regression calculates the probability of getting the outcome dependent variable (y). The general equation for this learning approach with one independent variable and a dependent output variable 'y' is as shown in the Equation\ref{eq:logistic} 
+Logistic Regression is a supervised machine learning classification algorithm that is used to predict the output of a categorical dependent variable, based on the probabilities of achieving the output categories. In logistic regression, the dependent variable is a categorical variable. It is similar to linear regression in which a model is constructed in supervision of the available data to calculate the unknown outcome variable. In linear regression, input values (x) are combined linearly using weights or coefficient values to predict a real-valued output (y), whereas logistic regression calculates the probability of outcome dependent variable (y) belonging to each class. The general equation for this learning approach with one independent variable and a dependent output variable `y' is as shown in equation \ref{eq:logistic} 
 \begin{equation}
  P(y=1)= g(\beta0+\beta1 *x )  \label{eq:logistic} 
  \end{equation}
- where the coefficient '$\beta$0' is the bias and \lq$\beta$1\rq  is the coefficient for the single input value (x) which are learned from the available input data during training and 'g' is a mathematical function known as Sigmoid function, that maps the linear combination of inputs into the range of [0,1], thus giving us probabilities and is defined as shown in the Equation\ref{eq:sigmoid}. For the case of multiple independent input variables, the input values (x) are represented as a vector X along with equal number of coefficients to be learned.
+ where the coefficient `$\beta$0' is the bias and \lq$\beta$1\rq  is the coefficient for the single input value (x) which are learned from the available input data during training and `g' is a mathematical function known as Sigmoid function that maps the linear combination of inputs into the range of [0,1], thus giving us probabilities and is defined as shown in equation \ref{eq:sigmoid}. For the case of multiple independent input variables, the input values (x) are represented as a vector x along with equal number of coefficients to be learned.
  
 \begin{equation}
  g(z) =  \frac{\mathrm{1} }{\mathrm{1} + e^- z }  \label{eq:sigmoid} 
  \end{equation}
 
-As an illustrative example, consider the problem of identifying if a student will pass an exam based on the number of hours he studies before the exam. In this case, we can define the input independent variable as the number\_of\_hours\_studied which takes a numerical value and the output variable as Student\_Passed which takes values { 0 or 1 }. Hence our logistic regression problem then represents the probability of the student passing an exam given the number of hours he studied before the exam and is shown in Equation\ref{eq:logisticExample}. A rule of thumb in logistic regression is if the probability is $>$ 0.5 then the decision is true i.e. {1} and {0} otherwise. Hence the logistic regression model predicts if the student passes the exam by calculating the probability and thresholding it based on 0.5.
+As an illustrative example, consider the problem of identifying if a student will pass an exam based on the number of hours he studies before the exam. In this case, we can define the input independent variable as the number\_of\_hours\_studied which takes a numerical value and the output variable as Student\_Passed which takes values { 0 or 1 }. Then our logistic regression problem represents the probability of the student passing an exam given the number of hours he studied before the exam and is shown in equation \ref{eq:logisticExample}. A rule of thumb in logistic regression is if the probability is $>$ 0.5 then the decision is true (i.e., 1) and false (i.e., 0) otherwise. Therefore the logistic regression model predicts if the student passes the exam, by calculating the probability and thresholding it based on 0.5.
 
 \begin{equation}
  P(y=1) = P(Student\_Passed= True) = 0.82 * (number\_of\_hours\_studied) -0.32.  \label{eq:logisticExample} 
@@ -285,7 +286,7 @@ As an illustrative example, consider the problem of identifying if a student wil
 
 \subsubsection {Decision Trees}
 
-A decision tree is a supervised machine learning algorithm which is mostly useful for classification problems and works for both continuous and categorical input and output variables. In simple terms, a decision tree uses a tree representation to make predictions, in which each branch represents a choice between a number of alternatives of an attribute in the internal nodes leading to a final decision in the leaf node. Decision trees where the output variable is categorical are known as Classification trees.
+A decision tree is a supervised machine learning algorithm, which is mostly useful for classification problems and works for both continuous and categorical input and output variables. In simple terms, a decision tree uses a tree representation to make predictions, in which each branch represents a choice between a number of alternatives of an attribute in the internal nodes leading to a final decision in the leaf node. Decision trees where the output variable is categorical are known as Classification trees.
 
   \begin{figure}
 	\centering
@@ -294,24 +295,24 @@ A decision tree is a supervised machine learning algorithm which is mostly usefu
 	\label{fig:classification_tree_titanic}
 \end{figure} 
 
-The general approach of constructing a decision tree from the training data involves splitting the entire data at the root node into a subset based on a requirement (generally, a decision on an attribute). The process of splitting based on decisions of different internal node attributes continues until a subset at a node has same values of the target variable, or when splitting no longer adds value to the predictions. The main goal of decision trees is to find the best split of each node of the tree. But measuring the "goodness" of a given split is a subjective question. In practice, different metrics are used for evaluating splits. Two main metrics used to evaluate the splits are :
+The general approach of constructing a decision tree from the training data involves splitting the entire data at the root node into a subset based on a requirement (generally, a decision on a feature). The process of splitting based on decisions of different internal node features continues until a subset at a node has the same values of the target variable, or when splitting no longer adds value to the predictions. The main goal of decision trees is to find the best split of each node of the tree. But measuring the ``goodness" of a given split is a subjective question. In practice, different metrics are used for evaluating splits. Two main metrics used to evaluate the splits are :
 \begin{description}
-    \item[Gini impurity] : It is used to compute the impurity of a data partition. It is a measure of how often a randomly chosen element from the set would be incorrectly labeled if it was randomly labeled according to the distribution of labels in the subset. It reaches its minimum (zero) when all cases in the node fall into a single target category. 
+    \item[Gini impurity]: It is used to compute the impurity of a data partition. It is a measure of how often a randomly chosen element from the set would be incorrectly labeled if it was randomly labeled according to the distribution of labels in the subset. It reaches its minimum (zero) when all cases in the node fall into a single target category. 
 
-    \item[Information gain] : For each node of the tree, the information gain value represents the expected amount of information that would be needed to specify whether a new instance should be classified yes or no, given that the example reached that node. The node with highest information gain value yields the best split. 
+    \item[Information gain]: For each node of the tree, the information gain value represents the expected amount of information that would be needed to specify whether a new instance should be classified as yes or no, given that the example reached that node. The node with highest information gain value yields the best split. 
      
  \end{description}
  
-For illustration purpose, consider the classification tree shown in Figure \ref{fig:classification_tree_titanic}  which describes the survival of passengers on the Titanic ship when it sinked. The figures under the leaf nodes show the probability of survival and the percentage of observations in the leaf. The tree was constructed using gini impurity as the split evaluation metric. From the tree we can make the following inferences: 
+For illustration purposes, consider the classification tree shown in figure \ref{fig:classification_tree_titanic}  which describes the survival of passengers on the Titanic ship when it sinked. The figures under the leaf nodes show the probability of survival and the percentage of observations in the leaf. The tree was constructed using gini impurity as the split evaluation metric. From the tree we can make the following inferences: 
 \begin{enumerate}
-  \item If the passenger is a male and has an age greater than 9.5 then he did not survive the titanic sink.
-  \item All the female passengers had a survival probability of 0.73.
-  \item If the passenger was male, had an age less than 9.5 and had lesser than 2.5 family members aboard survived the sink with a probability of 0.89.
+  \item If the passenger was a male and had an age greater than 9.5 then he did not survive the Titanic sink.
+  \item Female passengers had a survival probability of 0.73.
+  \item If the passenger was male, had an age less than 9.5, and had less than 2.5 family members aboard the ship, he survived the sink with a probability of 0.89.
 \end{enumerate}
 
 
 \subsubsection {Random Forest Classifiers}  \label{sssec:rf}
-Random forest classifier is another supervised machine learning algorithm that can be used for both classification and regression problems. It is generally classified into a special type of machine learning known as an Ensemble learning in which a combination of weak classifiers is used to form a strong classifier which can be used to perform better predictive analysis. In case of the random forests, decision trees are the weak learners.  Although decision trees perform really well on some datasets, they are generally called weak learners as they tend to have high variance when they are trained on different subsections of the same data. Here, variance refers to the spread of the predictions and occurs when a model is sensitive to small changes in the training data which is the case of overfitting. This happens due to the greedy approach of decision tree algorithm in selecting the best split to learn rules from the training data.
+Random Forest Classifier is another supervised machine learning algorithm that can be used for both classification and regression problems. It is generally classified into a special type of machine learning known as an Ensemble learning in which a combination of weak classifiers is used to form a strong classifier, which can be used to perform better predictive analysis. In case of the random forests, decision trees are the weak learners.  Although decision trees perform really well on some datasets, they are generally called weak learners as they tend to have high variance when they are trained on different subsections of the same data. Here, variance refers to the spread of the predictions and occurs when a model is sensitive to small changes in the training data, which leads to overfitting. This happens due to the greedy approach of decision tree algorithm in selecting the best split to learn rules from the training data.
   \begin{figure}
 	\centering
 	\includegraphics[scale=0.6]{randomforests}
@@ -320,16 +321,16 @@ Random forest classifier is another supervised machine learning algorithm that c
 \end{figure} 
 
 
-Random forests on the other hand create a number of decision trees during training by using different subsections of the training data. Moreover the process of finding the root node and splitting the feature nodes occurs randomly in random forests. Once we have a forest of trees, decisions from different trees are combined to make a final decision regarding the data. This way the random forests will generalize the predictions better as the combination of decisions will not be sensitive to the trained data as each tree learns from different subsections of data. The more the number of trees in the random forest the better generalized are the predictions.
+Random forests on the other hand create a number of decision trees during training by using different subsections of the training data. Moreover, the process of finding the root node and splitting the feature nodes occurs randomly in random forests. Once we have a forest of trees, decisions from different trees are combined to make a final decision regarding the data. This way the random forests will generalize the predictions better since the combination of decisions will not be sensitive to the trained data as each tree learns from different subsections of data. The more the number of trees in the random forest the better generalized the predictions.
 
 
-The figure \ref{fig:random_forest_trees} explains the construction of random forests from the available input data. The initial training data is split into random subsets using which individual decision trees are constructed. The trees constructed from different subsets can have a different structure. Once we have the random forest, when a new input is given, it makes a prediction by using a voting of results from all the trees.
+Figure \ref{fig:random_forest_trees} explains the construction of random forests from the available input data. The initial training data is split into random subsets using which individual decision trees are constructed. The trees constructed from different subsets can have a different structure. Once we have the random forest, when a new input is given, it makes a prediction by using a voting of results from all the trees.
 
 \subsubsection {Support Vector Machines }
 
-Support Vector Machine (SVM) is a supervised machine learning algorithm which can be used for both classification and regression problems. It is commonly known as a large margin classifier and is mostly useful for classification problems. In this algorithm, each data item with ``n'' features is plotted as a point in an n-dimensional space with the value of each feature being the value of a particular coordinate. Then, classification is done by finding the hyper-plane that separates the two classes very well. A hyperplane is a line that splits the input variable space.
+Support Vector Machine (SVM) is a supervised machine learning algorithm, which can be used for both classification and regression problems. It is commonly known as a large margin classifier and is most useful for classification problems. In this algorithm, each data example with ``n'' features is plotted as a point in an n-dimensional space with the value of each feature being the value of a particular coordinate. Then, classification is done by finding the hyper-plane that separates the two classes best. A hyperplane is a line that splits the input variable space.
 
-As an example, consider a binary classification problem with one input variable (x) and one output variable (y), which can be easily visualized in a two-dimensional space as shown in Figure \ref{fig:svm_example}. The SVM classifier tries to find a hyperplane that separates all of the input points (in this case a line). After the line that separates the input data is obtained, it can be used to make classifications by plugging in input values. If the equation returns a positive value, then the point is classified as being in the first class and if its a negative value, then the point is classified as being in the second class. Alternatively, a point close to the line returns a value close to zero and it may be difficult to classify it. The perpendicular distance between the line and the closest data points is referred to as the margin. The best line that can separate the two classes is the line that has the largest margin. Thus the name Large-Margin classifier. These closest points play an important role in defining the line and in construction of the classifier and thus are called the support vectors. The hyperplane is learned from the training data using an optimization procedure that maximizes the margin.
+As an example, consider a binary classification problem with one input variable (x) and one output variable (y), which can be easily visualized in a two-dimensional space as shown in figure \ref{fig:svm_example}. The SVM classifier tries to find a hyperplane (in this case a line) that separates all of the input points. After the line that separates the input data is obtained, it can be used to make classifications by plugging in input values. If the equation returns a positive value, then the point is classified as being in the first class and if returns a negative value, then the point is classified as being in the second class. Alternatively, a point close to the line returns a value close to zero and it may be difficult to classify it. The perpendicular distance between the line and the closest data points is referred to as the margin. The best line that can separate the two classes is the line that has the largest margin, thus the name ``Large-Margin classifier''. These closest points play an important role in defining the line and in construction of the classifier, therefore they are called the support vectors. The hyperplane is learned from the training data using an optimization procedure that maximizes the margin.
 
   \begin{figure}
 	\centering
@@ -338,17 +339,17 @@ As an example, consider a binary classification problem with one input variable 
 	\label{fig:svm_example}
 \end{figure} 
 
-In practice, real world data is messy and cannot be perfectly separated with a hyperplane. In such cases, the SVM tries to relax the constraint of maximum margin hyperplane by allowing some points in the training data to violate the separating hyperplane principle. This is generally done by varying a tuning parameter known as 'C' which defines the amount of the violation allowed by the classifier. The general approach is to try different values of C and chose the one that is best for the data.
+In practice, real world data is messy and cannot be perfectly separated with a hyperplane. In such cases, the SVM tries to relax the constraint of maximum-margin hyperplane by allowing some points in the training data to violate the separating hyperplane principle. This is generally done by varying a tuning parameter known as `C' which defines the amount of the violation allowed by the classifier. The general approach is to try different values of C and choose the one that is the best fit for the data.
 
-In SVM, it is easy to have a linear hyper-plane between two classes. However, to create hyperplanes that separate non-linear data, SVM uses a technique called the kernel trick. In the kernel trick, SVM uses functions which takes the low dimensional non-separable input space and transforms it into a higher dimensional separable space. The functions used are known as kernels. The most commonly used kernels are linear kernels, polynomial kernels and radial kernels. 
+In SVM, it is easy to have a linear hyperplane between two classes. However, to create hyperplanes that separate non-linear data, SVM uses a technique called the kernel trick. In the kernel trick, SVM uses functions, which take the low dimensional non-separable input space and transforms it into a higher dimensional separable space. The functions used are known as kernels. The most commonly used kernels are linear kernels, polynomial kernels, and radial kernels. 
 
 \subsection {Evaluation Methods}
-In this subsection, we will explain the various evaluation methods that are used in this thesis to assess and compare the performance of selected models.
+In this section, we will explain the various evaluation methods that are used in this thesis to assess and compare the performance of selected models.
 
-In machine learning, the problem at hand is of making good predictions on unknown and unseen data by the learned models. In simple terms, we want to know for sure how well the model is able to generalize new unseen data and ensure that it is not just memorizing patterns from the data. To make a better analysis of the generalizing power of the model, the data is generally split into training and testing sets, where training data is used to create the model while testing data to evaluate the model. There are many performance measures in machine learning to evaluate our models. Moreover, having a performance measure defined for the problem also gives us the advantage of focusing our time effectively on improving our model predictions. We generally use the term 'metric' to refer to a performance measure in machine learning. Various metrics are available depending on whether the problem is of classification or regression. Since we are dealing with a classification problem, we will concentrate more on the metrics for a classification problem.
+In machine learning, the problem at hand is of making good predictions on unknown and unseen data by the learned models. In simple terms, we want to know for sure how well the model is able to generalize new previously unseen data and ensure that it is not just memorizing patterns from the training data. To make a better analysis of the generalizing power of the model, the data is generally split into training and testing sets, where training data is used to create the model while testing data to evaluate the model. There are many performance measures in machine learning to evaluate our models. Moreover, having a performance measure defined for the problem also gives us the advantage of focusing our time effectively on improving our model predictions. We generally use the term 'metric' to refer to a performance measure in machine learning. Various metrics are available depending on whether the problem is of classification or regression. Since we are dealing with a classification problem, we will concentrate more on the metrics for classification problems.
 
 \subsubsection {Confusion Matrix}
-Confusion matrix is a representation of the predictions made by the classification model on a given data. It is a very important and useful metric in classification problems as it can not only be used to represent the models performance by itself but can also compute other metrics. A confusion matrix is composed of statistics such as true positives, true negatives, false positives, and false negatives, which are calculated using actual and predicted values. The idea of such a representation was to understand how many times the model was right in predicting a true or false value and how many times it failed to do so.
+Confusion matrix is a representation of the predictions made by the classification model on a given dataset. It is a very important and useful metric in classification problems as it is not useful to represent the models performance by itself, but can also be used to compute other metrics. A confusion matrix is composed of statistics such as true positives, true negatives, false positives, and false negatives, which are calculated using actual and predicted values. The idea of such a representation was to understand how many times the model was right in predicting a true or false value and how many times it failed to do so.
 
   \begin{figure}[!htbp]
 	\centering
@@ -357,21 +358,21 @@ Confusion matrix is a representation of the predictions made by the classificati
 	\label{fig:example_confusion_matrix}
 \end{figure} 
 
-To help understand the concepts of the confusion matrix representation, an example confusion matrix is shown in Figure \ref{fig:example_confusion_matrix}. The matrix was generated from a total population of 231 students, where the predictions represent if the student passed a certain exam or not. 
+To help understand the concepts of the confusion matrix representation, an example confusion matrix is shown in figure \ref{fig:example_confusion_matrix}. The matrix was generated from a total population of 231 students, where the predictions represent if the student passed a certain exam or not. 
 \begin{description}
-    \item[True Positive] : The case where the actual value was true and the model also predicted it as true is known as a True Positive. The total number of such true positives from the population are represented on the bottom right corner of the confusion matrix. In Figure \ref{fig:example_confusion_matrix}, the total number of true positives is 54 out of the total population of 231.
+    \item[True Positive]: The case where the actual value was true and the model also predicted it as true is known as a True Positive. The total number of such true positives from the population are represented on the bottom right corner of the confusion matrix. In Figure \ref{fig:example_confusion_matrix}, the total number of true positives is 54 out of the total population of 231.
 
-    \item[False Negative] : The case where the actual value was true and the model predicted it as false is known as a False Negative. The total number of such false negatives from the population are represented on the bottom left corner of the confusion matrix. In Figure \ref{fig:example_confusion_matrix}, the total number of false negatives is 20 out of the total population of 231.
+    \item[False Negative]: The case where the actual value was true and the model predicted it as false is known as a False Negative. The total number of such false negatives from the population are represented on the bottom left corner of the confusion matrix. In Figure \ref{fig:example_confusion_matrix}, the total number of false negatives is 20 out of the total population of 231.
 
-     \item[False Positive] : The case where the actual value was false and the model predicted it as true is known as a False Positive. The total number of such false positives from the population are represented on the top right corner of the confusion matrix. In Figure \ref{fig:example_confusion_matrix}, the total number of false positives is 66 out of the total population of 231.
+     \item[False Positive]: The case where the actual value was false and the model predicted it as true is known as a False Positive. The total number of such false positives from the population are represented on the top right corner of the confusion matrix. In Figure \ref{fig:example_confusion_matrix}, the total number of false positives is 66 out of the total population of 231.
      
-      \item[True Negative] : The case where the actual value was false and the model also predicted it as false is known as a True Negative. The total number of such true negatives from the population are represented on the top left corner of the confusion matrix. In Figure \ref{fig:example_confusion_matrix}, the total number of true negatives is 91 out of the total population of 231.
+      \item[True Negative]: The case where the actual value was false and the model also predicted it as false is known as a True Negative. The total number of such true negatives from the population are represented on the top left corner of the confusion matrix. In Figure \ref{fig:example_confusion_matrix}, the total number of true negatives is 91 out of the total population of 231.
      
  \end{description}
- The confusion matrix in Figure \ref{fig:example_confusion_matrix} is for a binary classification problem with 2 classes \{'Passed', and 'Failed'\}. For a multi-class classification problem, each class has a row and a column in the confusion matrix and the problem is generally analyzed as a one-vs-all problem.
+ The confusion matrix in figure \ref{fig:example_confusion_matrix} is for a binary classification problem with 2 classes \{'Passed', 'Failed'\}. For a multi-class classification problem, each class has a row and a column in the confusion matrix and the problem is generally analyzed as a one-vs-all problem.
 
 \subsubsection{Classification Accuracy}
-Classification accuracy is the proportion of the number of correct predictions to all the predictions made by the model. This is the most common evaluation metric for classification problems. It can be calculated by using the values in the confusion matrix as the ratio of the sum of true positives and true negatives to the total size of the predicted population. The Equation \ref{eq:classificationAccuracy}  represents the calculation of classification accuracy.
+Classification accuracy is the proportion of the number of correct predictions to all the predictions made by the model. This is the most common evaluation metric for classification problems. It can be calculated by using the values in the confusion matrix as the ratio of the sum of true positives and true negatives to the total size of the predicted population. The equation \ref{eq:classificationAccuracy}  represents the calculation of classification accuracy.
 
 \begin{equation}
 Classification\, Accuracy = \dfrac{True\, Positives + True\, Negatives}{size\, of\, predicted\, population} \label{eq:classificationAccuracy} 
@@ -381,7 +382,7 @@ The classification accuracy calculated from the confusion matrix shown in Figure
 
 \subsubsection{Sensitivity}
 
-Sensitivity describes the probability of the prediction being true when the actual class is true. In simple terms, it describes how sensitive the model is when predicting positive instances. It is also known as "True Positive Rate" or "Recall" and is calculated as the ratio of true positives to the actual true cases. It can be calculated by using the values in the confusion matrix as the ratio of true positives to the sum of true positives and false negatives. The Equation \ref{eq:Sensitivity}  represents the calculation of sensitivity.
+Sensitivity describes the probability of the prediction being true when the actual class is true. In simple terms, it describes how sensitive the model is when predicting positive instances. It is also known as "True Positive Rate" or "Recall" and is calculated as the ratio of true positives to the actual positive cases. It can be calculated by using the values in the confusion matrix as the ratio of true positives to the sum of true positives and false negatives. The equation \ref{eq:Sensitivity}  represents the calculation of sensitivity.
 
 \begin{equation}
 Sensitivity = \dfrac{True\, Positives }{True\, Positives\, + False\, Negatives} \label{eq:Sensitivity} 
@@ -392,7 +393,7 @@ The sensitivity calculated from the confusion matrix shown in Figure \ref{fig:ex
 
 \subsubsection{Specificity}
 
-Specificity describes the probability of the prediction being false when the actual class is false. In simple terms, it describes how specific the model is when predicting negative instances. It is calculated as the ratio of true negatives to the actual false cases. It can be calculated by using the values in the confusion matrix as the ratio of true negatives to the sum of true negatives and false positives. The Equation \ref{eq:Specificity}  represents the calculation of specificity.
+Specificity describes the probability of the prediction being false when the actual class is false. In simple terms, it describes how specific the model is when predicting negative instances. It is calculated as the ratio of true negatives to the actual negative cases. It can be calculated by using the values in the confusion matrix as the ratio of true negatives to the sum of true negatives and false positives. The equation \ref{eq:Specificity}  represents the calculation of specificity.
 
 \begin{equation}
 Specificity = \dfrac{True\, Negatives }{True\, Negatives\, + False\, Positives} \label{eq:Specificity} 
@@ -401,7 +402,7 @@ Specificity = \dfrac{True\, Negatives }{True\, Negatives\, + False\, Positives} 
 The specificity calculated from the confusion matrix shown in Figure \ref{fig:example_confusion_matrix} would be 91/(91+66), which is 0.58.
 
 \subsubsection{Precision}
-Precision defines the probability of the prediction being correct when the model identified it as true. In simple terms, it describes how precise the model is when predicting positive instances. It is calculated as the ratio of true positives to the predicted true cases. It can be calculated by using the values in the confusion matrix as the ratio of true positives to the sum of true positives and false positives. The Equation \ref{eq:Precision}  represents the calculation of precision.
+Precision defines the probability of the prediction being correct when the model identified it as positive. In simple terms, it describes how precise the model is when predicting positive instances. It is calculated as the ratio of true positives to the predicted positive cases. It can be calculated by using the values in the confusion matrix as the ratio of true positives to the sum of true positives and false positives. The equation \ref{eq:Precision}  represents the calculation of precision.
 
 \begin{equation}
 Precision = \dfrac{True\, Positives }{True\, Positives\, + False\, Positives} \label{eq:Precision} 
@@ -411,7 +412,7 @@ The precision calculated from the confusion matrix shown in Figure \ref{fig:exam
 
 \subsubsection{F\textsubscript1 Score}
 
-F\textsubscript{1} score is calculated by taking a harmonic mean of the precision and recall of the model's predictions. It is also known as F-measure or balanced F-score. The Equation \ref{eq:Precision}  represents the calculation of precision.
+F\textsubscript{1} score is calculated by taking a harmonic mean of the precision and recall of the model's predictions. It is also known as F-measure or balanced F-score. The equation \ref{eq:Precision}  represents the calculation of precision.
 
 \begin{equation}
 F_{1} = \dfrac{2*(Precision * Recall) }{Precision + Recall} \label{eq:Precision} 
@@ -422,7 +423,7 @@ The F\textsubscript{1} score calculated from the confusion matrix shown in Figur
 
 \subsubsection{Area Under Curve (AUC)}
 
-In binary classification problems, the general rule of thumb is to use a probability threshold of 0.5 to make classification predictions. But for few scenarios, this threshold might not hold good and using a different threshold would be more appropriate. An Receiver Operating Curve (ROC) is the most commonly used way to visualize the performance of a binary classifier for different thresholds. It is obtained by plotting the True Positive Rate against the False Positive Rate. False positive rate is calculated as (1 - Specificity). From the ROC plot, we can calculate the Area under the curve (often referred to as simply the AUC) which is the probability that a classifier will rank a randomly chosen positive instance higher than a randomly chosen negative one \cite{fawcett2006introduction}.
+In binary classification problems, the general rule of thumb is to use a probability threshold of 0.5 to make classification predictions. But for few scenarios, this threshold might not hold good and using a different threshold would be more appropriate. An Receiver Operating Characteristic (ROC) curve is the most commonly used method to visualize the performance of a binary classifier for different thresholds. It is obtained by plotting the True Positive Rate against the False Positive Rate. False positive rate is calculated as (1 - Specificity). From the ROC plot, we can calculate the Area Under the Curve (often referred to as simply the AUC) which is the probability that a classifier will rank a randomly chosen positive instance higher than a randomly chosen negative one \cite{fawcett2006introduction}.
 
 
   \begin{figure}[!htbp]
@@ -432,28 +433,29 @@ In binary classification problems, the general rule of thumb is to use a probabi
 	\label{fig:example_roc}
 \end{figure} 
 
-The Figure \ref{fig:example_roc} shows the roc curve constructed from our example data captured by confusion matrix in the Figure \ref{fig:example_confusion_matrix}. In the plot, the area under the blue line refers to the AUC of the classifier, which in this case is (0.72). The dashed line in the diagonal represents the ROC curve of a random predictor whose AUC is 0.5.
+Figure \ref{fig:example_roc} shows the ROC curve constructed from our example data captured by confusion matrix in the figure \ref{fig:example_confusion_matrix}. In the plot, the area under the blue line refers to the AUC of the classifier, which in this case is 0.72. The dashed line in the diagonal represents the ROC curve of a random predictor whose AUC is 0.5.
 
 \subsubsection{Cross Validation}
-So far, we discussed the calculation of various metrics based on the predictions obtained from a single test data which was split from the original data. The approach of dividing the input data into training and testing data is also known as holdout method. The typical split rate is about 70\% of input data into training and remaining 30\% into testing data. These splits are generally created by random sampling. One problem with the holdout strategy to evaluate the models performance is that the random splits might not be fair and sometimes a specific combination of input data might always end up in testing data about which the model will have little information since it did not see them during training. As a result, the model cannot make good predictions on them. To tackle with such scenarios, we use a method known as Cross Validation. 
+So far, we discussed the calculation of various metrics based on the predictions obtained from single test data examples which was split from the original data. The approach of dividing the input data into training and validation data is also known as holdout method. The typical split rate is about 70\% of input data into training and remaining 30\% into validation data. These splits are generally created by random sampling. One problem with the holdout strategy to evaluate the models performance is that the random splits might not be fair and sometimes a specific combination of input data might always end up in testing data about which the model will have little information since it did not see them during training. As a result, the model cannot make good predictions on them. To tackle with such scenarios, we use a method known as cross validation. 
 
-In Cross validation, the machine learning models are trained on several subsets of the available input data and evaluated on the complementary subset of the data. There are several available strategies based on the way the subsets are split. K-Fold cross validation and Stratified K-Fold cross validation are among the most popular and frequently used strategies.
+In cross validation, the machine learning models are trained on several subsets of the available input data and evaluated on the complementary subset of the data. There are several available strategies based on the way the subsets are split. K-Fold cross validation and Stratified K-Fold cross validation are among the most popular and frequently used strategies.
 
-In K-Fold cross validation, the data is divided into k subsets. In simple terms, the holdout method is repeated k times, such that each time, one of the k subsets is used as the test set/ validation set and the other k-1 subsets are put together to form a training set. The error estimation is averaged over all k trials to get total effectiveness of our model. As can be seen, every data point gets to be in a validation set exactly once, and gets to be in a training set k-1 times. This significantly reduces error in predictions as we are using most of the data for fitting, and also significantly reduces the spread of predictions as most of the data is also being used in validation set. Interchanging the training and test sets also adds to the effectiveness of this method. The typical value of K suggested by many researchers is 10.
+In K-Fold cross validation, the data is divided into k subsets. In simple terms, the holdout method is repeated k times, such that at each time, one of the k subsets is used as the validation set and the other k-1 subsets are put together to form a training set. The error estimation is averaged over all k trials to get the total effectiveness of our model. As can be seen, every data point gets to be in a validation set exactly once, and gets to be in a training set k-1 times. This significantly reduces the error in predictions as we are using most of the data for fitting, and also significantly reduces the spread of predictions as most of the data is also being used in validation set. Interchanging the training and validation sets also adds to the effectiveness of this method. The typical value of k suggested by many researchers is 10, which means that a total of 10 subsets are created from the data and during each run 9 subsets (i.e. 90\% of the data) is used for training and the remaining 1 subset (i.e. 10\% of data) is used for validation. 
 
-Stratified K-Fold cross validation is actually a variation of the K-fold cross validation which works better when applied on data that has huge imbalance in the response variable. In this approach, each fold contains approximately the same percentage of samples of each target class as the complete set.\newline
+Stratified K-Fold cross validation is actually a variation of the K-fold cross validation that works better when applied on data that has huge imbalance in the response variable. In this approach, each fold contains approximately the same percentage of samples of each target class as the complete set.\newline
 
-\noindent In this subsection, we discussed about classification accuracy, sensitivity, specificity, recall, AUC and cross validation. Among the evaluation metrics, sometimes the classification accuracy can be a bad indicator of the model performance as it requires the output classes distribution in the original set to be balanced which is rarely true for real world datasets. As for other metrics, it becomes hard to compare three to four values to identify the model that performs best. Therefore, in these cases F\textsubscript1 score and AUC can be used as a single value comparators of the models performances. Moreover, applying cross validation strategies to calculate the metrics would give evaluation measures that describe the model performance with higher confidence.
+\noindent In this subsection, we explained classification accuracy, sensitivity, specificity, recall, AUC and cross validation. Among the evaluation metrics, sometimes the classification accuracy can be a bad indicator of the model performance as it requires the output classes distribution in the original set to be balanced which is rarely true for real world datasets. As for other metrics, it becomes hard to compare three to four values to identify the model that performs best. Therefore, in these cases F\textsubscript1 score and AUC can be used as a single value comparators of the model performances. Moreover, applying cross validation strategies to calculate the metrics would give evaluation measures that describe the model performance with higher confidence.
 
 
 \chapter{Methodology} \label{chapter:methodology}
 \section{Data Collection}
 
-The Operations Support and Reporting Office at UNLV is responsible for extracting information regarding student enrollments and performances from the student data housed in the UNLV Data Warehouse and reporting the census to Integrated Postsecondary Education Data System (IPEDS). The data used in this thesis was obtained from the retention data submitted to IPEDS every year. The following subsections will describe more information about the data.
+The Operations Support and Reporting Office at UNLV is responsible for extracting information on student enrollment and performance from the student data housed in the UNLV Data Warehouse and reporting the census to Integrated Postsecondary Education Data System (IPEDS). The data used in this thesis was obtained from the retention data submitted to IPEDS every year. The following subsections will describe more information about the data.
 
 \section {Data Preparation}
+In this section, we will discuss the steps taken to clean the dataset to obtain the input and output variables from the original raw data that can be used by the machine learning models. 
 \subsection{Data Description}
-The census data from the Operations Support and Reporting Office was exported into a csv file to be used by the analysis. The raw data consisted of a total of 17,708 freshmen student records from five cohort years starting from 2012 to 2016. The data consisted of a variety of information about each student, such as pre-college academics, standardized test scores, the social and economic status of the student, freshmen year academics and finally if the student was retained in the next fall. On the whole, a total of 41 attributes were captured for each student including the output response variable. Table \ref{table:long_data_description_db} describes the variables and their types. The following subsections will describe in detail the steps taken to preprocess and transform the data to be used for the analysis.
+The census data from the Operations Support and Reporting Office was exported into a .csv file to be used by the analysis. The raw data consists of 17,708 freshmen student records from five cohort years starting from 2012 to 2016. The data consisted of a variety of information about each student, such as pre-college academics, standardized test scores, the social and economic status of the student, freshmen-year academics, and whether the student was retained the following fall. On the whole, 41 attributes were captured for each student including the output variable. Table \ref{table:long_data_description_db} describes the variables and their types. The following subsections will describe, in detail, the steps taken to preprocess and transform the data to be used for the analysis.
 
  \begin{longtable}{|c|l|l|l|}
 
@@ -518,23 +520,23 @@ The census data from the Operations Support and Reporting Office was exported in
 \end{longtable}
  
 \subsection{Feature Extraction}
-Feature extraction involves creating important useful features from the available raw data. Based on the problem statement and the available attributes from the collected raw data, the following important features were generated.
+Feature extraction involves creating important useful features from the available raw data. Based on the problem statement and the available attributes from the collected raw data, the following features were generated.
 
-\subsubsection {Computation of SAT\_ACT\_Score Variable}
-The admissions office at UNLV requires all the students to report scores of standardized exams such as ACT and SAT during their admission process. However, few students who are admitted alternatively are exempted from submitting these scores. As a result of this, the ACT and SAT scores were missing for many students in the raw data. Especially 56\% of students did not have ACT scores while only 28\% did not have SAT scores. Hence to capture the importance of the standardized scores into our analysis, we converted the available ACT composite scores to equivalent 
-SAT composite scores based on the conversion table from \cite{ACTSAT}. The term SAT\_ACT\_Score was used to refer to this converted scores variable.
+\subsubsection {Computation of SAT\_ACT\_Score Feature}
+The admissions office at UNLV requires all students to report scores of standardized exams such as ACT and SAT during their applications. However, few students who are admitted alternatively are exempted from submitting these scores. As a result of this, the ACT and SAT scores were missing for many students in the raw data. More specifically 56\% of students did not have ACT scores and 28\% did not have SAT scores. Hence to capture the importance of the standardized scores into our analysis, we converted the available ACT composite scores to equivalent 
+SAT composite scores based on the conversion table from \cite{ACTSAT}. The term SAT\_ACT\_Score was used to refer to this converted scores feature.
 
-\subsubsection {Computation of F2\_Not\_Retained Variable}
-The main focus of this thesis is to identify the students who are at the risk of not being retained after their first year. In the raw dataset the flag F2\_Retain captures the aspect of student being retained and hence can be used to generate the outcome variable. We compute the complement of this flag to obtain the feature F2\_Not\_Retained which takes ``0'' if the student was retained and ``1'' if the student was not retained. The problem of identifying students who are at the risk of not being retained after first year is then a binary classification task with F2\_Not\_Retained as the outcome variable.
+\subsubsection {Computation of F2\_Not\_Retained Feature}
+The main focus of this thesis is to identify the students who are at the risk of not being retained after their first year. In the raw dataset the flag F2\_Retain captures the aspect of a student being retained and hence can be used to generate the outcome feature. We compute the complement of this flag to obtain the feature F2\_Not\_Retained which takes ``0'' if the student was retained and ``1'' if the student was not retained. The problem of identifying students who are at risk of not being retained after first year is then a binary classification task with F2\_Not\_Retained as the outcome variable.
 
 \section {Data Preprocessing}
-Data Preprocessing is a technique that is used to convert the raw data into a clean data set. In other words, whenever the data is gathered from different sources it is collected in raw format which is not feasible for the analysis.
-Therefore, certain steps are executed to convert the data into a tiny clean dataset. This technique is performed before the execution of any predictive Analysis. 
+Data preprocessing is a technique that is used to convert raw data into a clean data set. In other words, whenever the data is gathered from different sources, it is collected in raw format which is not feasible for the analysis.
+Therefore, certain steps are executed to convert the data into a clean dataset. This technique is performed before the execution of any predictive analysis. 
 
 
 \subsection {Handling Outliers in Data}
 
-The process of collecting data from different sources can introduce outliers into the dataset. This may be due to a faulty data extraction program or a human error. In predictive data analysis outliers can have significant effect on the predictive power of the models as they can introduce huge noise into the model. Hence, it is always essential to remove outliers in the dataset before performing any analysis. Outliers were identified in our dataset. Data distribution plots with index on x-axis and values on y-axis were used to demonstrate the presence of outlier in a feature. The general approach to handle outliers is to replace them with the mean of the attribute.
+The process of collecting data from different sources can introduce outliers into the dataset. This may be due to a faulty data extraction program or human error. In predictive data analysis, outliers can have a significant effect on the predictive power of the models as they can introduce huge noise into the model. Hence, it is always essential to remove outliers in the dataset before performing any analysis. Outliers were identified in our dataset and data distribution plots with index on x-axis and values on y-axis were used to demonstrate the presence of outlier in a feature. The general approach to handle outliers is to replace them with the mean of the attribute.
 
 
 \subsubsection{UnwHSGPA scores}
@@ -557,19 +559,19 @@ The process of collecting data from different sources can introduce outliers int
     \caption{Removing Outliers from UnwHSGPA}\label{fig:unwHSGPA}
 \end{figure}
 
- There were a few outliers identified for variable UnwHSGPA. As shown in figure \ref{fig:UnwHSGPA-with-outliers}, we notice that few UnwHSGPA scores have values greater than 80 which is highly unlikely to be the UnwHSGPA score of a student. The outliers of the UnwHSGPA were replaced by mean value of the said dataset excluding all the outliers. Data distribution plot of the variable UnwHSGPA after removing outliers is shown in figure \ref{fig:UnwHSGPA-No-outliers}
+ There were a few outliers identified for the feature UnwHSGPA. As shown in figure \ref{fig:UnwHSGPA-with-outliers}, we notice that few UnwHSGPA scores have values greater than 80 which is highly unlikely to be the UnwHSGPA score of a student. The outliers of the UnwHSGPA were replaced by mean value of the said dataset excluding all the outliers. Data distribution plot of the variable UnwHSGPA after removing outliers is shown in figure \ref{fig:UnwHSGPA-No-outliers}.
 
 
 \subsection {Handling Missing Values}
-In this subsection, we will discuss how we handled missing values in the dataset. The Table \ref{table:missing_db} shows variables along with the count of missing values. Machine learning deals with the usage of mathematical models on the data and hence it cannot be applied to datasets that have missing values. The general approach is to fill the missing value with a suitable value. The process of filling missing values in the data is known as Imputation. Researchers frequently use the mean, mode or median of the observed given values to substitute in the missing field.
+In this subsection, we will discuss how we handled missing values in the dataset. Table \ref{table:missing_db} shows features along with the count of missing values. Machine learning deals with the usage of mathematical models on the data, therefore it cannot be applied to datasets that have missing values. The general approach is to fill the missing value with a suitable value. The process of filling missing values in the data is known as Imputation. Researchers frequently use the mean, mode, or median of the observed values to substitute for the missing field.
  \begin{table}[!htb]
 	\renewcommand{\arraystretch}{1.3}
-	\caption{Variables with missing values and their count}
+	\caption{Features with missing values and their count}
 	\label{table:missing_db}
 	\centering
 	\begin{tabular}{|c|c|}
 		\hline
-		\bfseries Variable & \bfseries Number of missing values \\
+		\bfseries Features & \bfseries Number of missing values \\
 		\hline
 		SAT\_ACT\_Score & 830\\ \hline
 		UnwHSGPA & 1933\\ \hline
@@ -580,7 +582,7 @@ In this subsection, we will discuss how we handled missing values in the dataset
 \end{table}
 
 \subsubsection {Imputing SAT\_ACT\_Score}
-The SAT\_ACT\_Score variable had 830 missing values. Firstly, to understand the impact of missing values, we calculated the probabilities of the outcomes of  the F2\_Not\_Retained variable with respect to the availability of data points in SAT\_ACT\_Score variable. In one case we ignored the records that had missing values and in other case we included all the records. The probabilities are as shown in Table \ref{table:sat_act_db}. By looking at the table, it can be inferred that presence of missing values in SAT\_ACT\_Score variable had very little impact on the percentage of students not being retained. A total of 24.1\% students were not retained when a value was present in the variable and 25.6\% were not retained when the variable had a missing value.
+The SAT\_ACT\_Score feature had 830 missing values. First, to understand the impact of missing values, we calculated the probabilities of the outcomes of  the F2\_Not\_Retained feature with respect to the availability of data points in SAT\_ACT\_Score variable. In one case we ignored the records that had missing values and in the other case we included all the records. The probabilities are as shown in table \ref{table:sat_act_db}. By looking at the table, it can be inferred that presence of missing values in SAT\_ACT\_Score feature had very little impact on the percentage of students not being retained. A total of 24.1\% students were not retained when a value was present in the variable and 25.6\% were not retained when the feature had a missing value.
 
 \begin{table}[!t]
 	\renewcommand{\arraystretch}{1.3}
@@ -606,10 +608,10 @@ The SAT\_ACT\_Score variable had 830 missing values. Firstly, to understand the 
 	\label{fig:Sat_F2NotRetained_plot}
 \end{figure}
 
-Moreover, the boxplot of the SAT\_ACT\_Score vs F2\_NotRetained (Figure \ref{fig:Sat_F2NotRetained_plot}) also shows that SAT\_ACT\_Score has very low impact on the student dropout. Based on the above facts, the missing values in this variable were replaced by the mean value. 
+Moreover, the boxplot of the SAT\_ACT\_Score vs F2\_NotRetained (figure \ref{fig:Sat_F2NotRetained_plot}) also shows that SAT\_ACT\_Score has very low impact on the student dropout. Based on the above facts, the missing values in this feature were replaced by the mean value. 
 
 \subsubsection {Imputing CoreHSGPA and UnwHSGPA}
-The CoreHSGPA variable had 3463 missing values, whereas the UnwHSGPA had 1943 missing values. Before imputing, we tried to analyze the relation between both the variables (Figure \ref{fig:diffHSGPA}). For this we calculated the difference between CoreHSGPA and UnwHSGPA of available records and plotted them as shown in Figure \ref{fig:Core_Unw_diff}. We can clearly observe that majority of the differences were lying in the range of [-1,1], which indicates that the two variables had very close relation. Similar pattern was revealed from the distribution plot of the variable differences as shown in Figure( \ref{fig:Core_Unw_dist}), which shows that the differences followed a gaussian distribution with a mean of 0.23. Based on the above facts, we replaced the missing values in a variable with the available variable scores. The remaining missing values were replaced by the mean value of the respective variable.
+The CoreHSGPA feature had 3463 missing values, whereas the UnwHSGPA had 1943 missing values. Before imputing, we analyzed the relation between these two features (figure \ref{fig:diffHSGPA}). For this, we calculated the difference between CoreHSGPA and UnwHSGPA of available records and plotted them as shown in figure \ref{fig:Core_Unw_diff}. We can clearly observe that majority of the differences were lying in the range of [-1,1], which indicates that the two features were very closely related. Similar pattern was revealed from the distribution plot of the variable differences as shown in figure(\ref{fig:Core_Unw_dist}), which shows that the differences followed a Gaussian distribution with a mean of 0.23. Based on the above facts, we replaced the missing values in the feature with the available scores. The remaining missing values were replaced by the mean value of the respective feature.
 
 
 \begin{figure}[!htbp]
@@ -639,20 +641,20 @@ The CoreHSGPA variable had 3463 missing values, whereas the UnwHSGPA had 1943 mi
 	\label{fig:F1_MidtermGPA_plot}
 \end{figure}
 
-The F1\_MidtermGPA variable had 286 missing values which adds up to a very small percentage in the overall data. We analyzed the distribution plot of F1\_MidtermGPA (Figure \ref{fig:F1_MidtermGPA_plot}) and noticed that it also follows a gaussian distribution with mean value of 2.5272 and a standard deviation of 0.851. Considering the above information we imputed the missing value of the variable with its mean as it would not shift the distribution of the variable.
+The F1\_MidtermGPA feature had 286 missing values, which adds up to a very small percentage in the overall data. We analyzed the distribution plot of F1\_MidtermGPA (figure \ref{fig:F1_MidtermGPA_plot}) and noticed that it follows a Gaussian distribution with mean value of 2.5272 and a standard deviation of 0.851. Considering the above information we imputed the missing value of the feature with its mean as it would not shift the distribution of the variable.
 
 \subsubsection {Imputing F1\_MathGradePass}
-F1\_MathGradePass is a categorical variable with values `Y' or `N', where a `Y' represents if a student got a passing grade in math taken during his first fall term and `N' if he got a failing grade. It had a total of 4989 missing values in the variable. Such a large number of missing values for this variable is attributed to the fact that a student who did not take any math course will not have a value in this variable. Hence the missing value was replaced with a `N'.
+F1\_MathGradePass is a categorical feature with values `Y' or `N', where a `Y' represents if a student got a passing grade in math taken during his first fall term and `N' if they got a failing grade. It had 4989 missing values in the variable. Such a large number of missing values for this variable is attributed to the fact that a student who did not take any math course will not have a value in this feature. Hence the missing value was replaced with a `N'.
 
 \subsection {Data Transformations}
-Now that we have a cleaned dataset, we need to apply transformations on the data before they can be inputted to a machine learning algorithm. This step is essential as our dataset has a lot of categorical variables which need to be converted to numerical values before we perform any further analysis. 
+Now that we have a clean dataset, we need to apply transformations on the data before they can be inputted to a machine learning algorithm. This step is essential as our dataset has a lot of categorical features, which need to be converted to numerical values before we perform any further analysis. 
 
-The general approach is to encode the categories with numerical values. One-hot encoding is a popular encoding technique used in machine learning in which a categorical variable is converted into a binary vector, where each possible value of the categorical variable is assigned to a dummy variable with a default value of `0' and the dummy variable which was the value of the categorical variable will have the value `1'. In simple terms, applying one-hot encoding to a categorical variable results in an one-hot vector, where only one element is non-zero, or hot. There were a total of 23 categorical variables in our dataset which were one-hot encoded to yield a total of 85 variables. We noticed that applying transformations on our cleaned data resulted in a huge increase in the number of variables available for analysis. Having more number of variables can result in poor performance of the models as there might be some variables that are redundant and irrelevant to our prediction problem. To handle such scenarios, feature selection is useful as it automates the process of selecting features that are important to the prediction model. The next subsection describes in detail about the feature selection process used in this thesis.
+The general approach is to encode the categories with numerical values. One-hot encoding is a popular encoding technique used in machine learning. In this technique a categorical feature is converted into a binary vector, where each possible value of the categorical feature is assigned to a dummy variable with a default value of `0' and the dummy variable that was the value of the categorical feature will have the value `1'. In simple terms, applying one-hot encoding to a categorical variable results in a one-hot vector, where only one element is non-zero, or hot. There were 23 categorical features in our dataset which were one-hot encoded to yield 85 features. We noticed that applying transformations on our clean data resulted in a huge increase in the number of features available for analysis. Having more number of features can result in poor performance of the models as there might be some variables that are redundant and irrelevant to our prediction problem. To handle such scenarios, feature selection is useful as it automates the process of selecting features that are important to the prediction model. The next subsection describes in detail about the feature selection process used in this thesis.
 
 \subsection {Feature Selection}
 \begin{table}
 	\renewcommand{\arraystretch}{1.3}
-	\caption{Tests based on type of input and output variables}
+	\caption{Tests based on type of input and output features}
 	\label{table:statistical_db}
 	\centering
 	\begin{tabular}{|c|c|c|c|}
@@ -665,60 +667,59 @@ The general approach is to encode the categories with numerical values. One-hot 
 
 \end{tabular}
 \end{table}
-Feature selection is the process of identifying and selecting features from our data that contribute most to the prediction of our output variable. Feature selection methods are useful to identify and remove unneeded, irrelevant and redundant attributes from data that do not contribute to the accuracy of a predictive model. There are various feature selection methods available in machine learning that can be applied to the available dataset. One key factor to consider before using a particular method is to have an idea of the models you are going to use on your data. 
+Feature selection is the process of identifying and selecting features from our data that contribute most to the prediction of our output variable. Feature selection methods are useful to identify and remove unneeded, irrelevant and redundant attributes from data that do not contribute to the accuracy of a predictive model. There are various feature selection methods available in machine learning that can be applied to the available dataset. One key factor to consider before using a particular method is to have an idea of the models that will be used on the data. 
 
-One of the feature selection approaches deals with the idea of identifying the relationship of features with the output variable to decide their importances. To find such relationships, we need to identify the data type of features and the output variable. The Table \ref{table:statistical_db} shows the types of tests used based on input feature types and output response types. The tests are as follows: 
+One of the feature selection approaches deals with the idea of identifying the relationship of features with the output variable to decide on their importance. To find such relationships, we need to identify the data type of the features and the output variable. Table \ref{table:statistical_db} shows the types of tests used based on input feature types and output types. The tests are as follows: 
 
-\noindent \textbf{Correlation} : In general, we use the Pearson correlation coefficient to measure the strength of a linear association between two numerical variables. The higher the magnitude of the correlation coefficient, the greater is the variables influence on predicting output variable.
+\noindent \textbf{Correlation}: In general, we use the Pearson correlation coefficient to measure the strength of a linear association between two numerical features. The higher the magnitude of the correlation coefficient, the greater the feature's influence on predicting the output variable.
 
-\noindent \textbf{ANOVA} : ANOVA refers to Analysis of Variance which is a collection of statistical models and their associated procedures (such as ``variation'' among and between groups) used to analyze the differences among group means.
+\noindent \textbf{ANOVA}: ANOVA refers to Analysis of Variance, which is a collection of statistical models and their associated procedures (such as ``variation'' among and between groups) used to analyze the differences among group means.
 
-\noindent \textbf{Chi-Square} : A chi-square test, also written as $\tilde{\chi}^2$ test is used to determine whether there is a significant difference between the expected frequencies and the observed frequencies in one or more categories.
+\noindent \textbf{Chi-Square}: A chi-square test ($\tilde{\chi}^2$ test) is used to determine whether there is a significant difference between the expected frequencies and the observed frequencies in one or more categories.
 
-In our dataset, the response variable is categorical with classes \{`Y' , `N'\} and input features are both categorical and quantitative. Hence an appropriate choice of test to find relationships between the input features and output response is to use the Chi-square test. In machine learning the process of using such statistical tests on the dataset is known as Univariate selection. Hence univariate selection using Chi-Square test was applied on the transformed dataset to yield 51 important features as opposed to the 85 features obtained after data transformation.
+In our dataset, the output response is categorical with classes \{`Y', `N'\} and input features are both categorical and quantitative. Therefore, an appropriate choice of test to find relationships between the input features and output response is the Chi-square test. In machine learning the process of using such statistical tests on the dataset is known as univariate selection. Univariate selection using Chi-Square test was applied on the transformed dataset to yield 51 important features as opposed to the 85 features obtained after data transformation.
 
 
 \section{Exploratory Data Analysis}
-Exploratory data analysis (EDA) is an approach employed to analyze data sets and summarize their main characteristics, often with visual methods, without making any assumptions about its contents. It is an important step to take before diving into statistical modeling or predictive analysis because it provides the important information and context needed to develop an appropriate model for the problem. In this section, we try to uncover some important patterns inherent in our data with appropriate plots.
+Exploratory data analysis (EDA) is an approach employed to analyze datasets and summarize their main characteristics, often with visual methods, without making any assumptions about its contents. It is an important step to perform before diving into statistical modeling or predictive analysis, because it provides the important information and context needed to develop an appropriate model for the problem. In this section, we try to uncover some important patterns inherent in our data with appropriate plots.
 
 
-
-\subsection {Cohort year Vs F2\_Not\_Retained}
+\subsection {Cohort year vs. F2\_Not\_Retained}
 
 To understand the distribution of student dropouts in each cohort year, we plotted the proportions of the outcome variable F2\_Not\_Retained for each cohort year as shown in Figure \ref{fig:AcadYear_F2NotRetained_plot}. Each cohort year represents the students who re enrolled in Fall semester of that specific year after their first year. From the plot, we can infer that the number of students who drop out after their first-year varies very slightly over the recent years. More importantly, we see a pattern of increasing student dropout rates as opposed to an expected decrease even though efforts are being made by educators at UNLV to improve the student retention rates.
 
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[scale=0.65]{NotRetained_fre_acadyear}
+	\includegraphics[scale=0.60]{NotRetained_fre_acadyear}
 	\caption{Academic Year vs F2\_NotRetained}
 	\label{fig:AcadYear_F2NotRetained_plot}
 \end{figure}
 
 
-\subsection {IPEDS\_Race Vs F2\_Not\_Retained}
-In this subsection, we tried to analyze the patterns observed by different categories of the IPEDS Race with respect to student retention. For this, we first plotted the different IPEDS Race categories on x-axis and the count of students belonging to that particular race on y-axis as shown in figure \ref{fig:ipeds_F2NotRetained_plot}. We observed that the student population of different races was very different at UNLV with higher populations belonging to Asian, Hispanic and White races.
+\subsection {IPEDS\_Race vs. F2\_Not\_Retained}
+In this subsection, we tried analyzed the patterns observed by different categories of the IPEDS\_Race with respect to student retention. For this, we first plotted the different IPEDS\_Race categories on the x-axis and the count of students belonging to that particular race on the y-axis as shown in figure \ref{fig:ipeds_F2NotRetained_plot}. We observe that UNLV has a diverse student population with more students belonging to `Asian', `Hispanic' and `White' races.
 
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[scale=0.65]{NotRetained_ipeds}
-	\caption{Count plot of IPEDS\_Race variable}
+	\includegraphics[scale=0.60]{NotRetained_ipeds}
+	\caption{Count plot of IPEDS\_Race feature}
 	\label{fig:ipeds_F2NotRetained_plot}
 \end{figure}
 
 
 
-Although fig \ref{fig:ipeds_F2NotRetained_plot} gives us a good idea about the type of students at UNLV, it is not sufficient to help us understand the retention patterns among the different categories. For this, we calculated the retention rates of each race category and tabulated them in Table \ref{table:ipeds_race_retentions}. Considering the student distributions in each race category and their retention rates from the table, we conclude that the Asian race category had the highest student retention followed by Hispanic and White categories. On the whole we observe that the student's race is useful in predicting if he/she will be retained after the first year.
+Although figure \ref{fig:ipeds_F2NotRetained_plot} gives us a good idea about the type of students at UNLV, it is not sufficient to help us understand the retention patterns among different categories. For this, we calculated the retention rates of each race category and tabulated them in table \ref{table:ipeds_race_retentions}. Considering the student distributions in each race category and their retention rates from the table, we conclude that the `Asian' race category had the highest student retention followed by `Hispanic' and `White' categories. On the whole, we observed that a student's race is useful in predicting if they will be retained after the first year.
 
  \begin{table}[!ht]
 	\renewcommand{\arraystretch}{1.3}
-	\caption{Retention Rates of each IPEDS Race Category}
+	\caption{Retention Rates of each IPEDS\_Race Category}
 	\label{table:ipeds_race_retentions}
 	\centering
 	\begin{tabular}{|c|c|c|}
 		\hline
-		\bfseries IPEDS Race & \bfseries F2\_Retained & \bfseries F2\_Not\_Retained\\
+		\bfseries IPEDS\_Race & \bfseries F2\_Retained & \bfseries F2\_Not\_Retained\\
 		\hline
 		Asian & 85.75\% & 14.25\% \\ \hline
 		American Indian or Alaska Native & 53.48\% & 46.51\% \\ \hline
@@ -735,23 +736,23 @@ Although fig \ref{fig:ipeds_F2NotRetained_plot} gives us a good idea about the t
 
 
 \subsection {Mom\_Edu\_Level	 Vs F2\_Not\_Retained}
-The variable Mom\_Edu\_Level represents the highest education level of the student's mother. In this subsection, we tried to analyze the patterns observed by different categories of this variable with respect to student retention. For this, we plotted the different categories of Mom\_Edu\_Level variable on x-axis and the count of students whose Mom's education level belonged to that category on y-axis as shown in Figure \ref{fig:mom_edu_F2NotRetained_plot}. We observed that the education level of the Mom of students at UNLV was highly distributed. It gives us information that most of the student's Mom had a minimum education of High School or more. However, this does not explain much about the effect of Mom's education level on student's retention.
+The feature Mom\_Edu\_Level represents the highest education level of the student's mother. In this section, we analyzed the patterns observed by different categories of this variable with respect to student retention. For this, we plotted the different categories of Mom\_Edu\_Level feature on the x-axis and the count of students whose Mom's education level belonged to that category on the y-axis as shown in figure \ref{fig:mom_edu_F2NotRetained_plot}. We observed that the values of Mom\_Education\_Level of the students was highly distributed. It gives us information that most of the students Mom\_Edu\_Level had a minimum education level of `High School' or more. However, this does not explain much about the effect of the mom's education level on the student's retention.
 
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[scale=0.65]{mom_edu_countplot}
-	\caption{Count plot of Mom\_Edu\_Level variable}
+	\caption{Count plot of Mom\_Edu\_Level feature}
 	\label{fig:mom_edu_F2NotRetained_plot}
 \end{figure}
 
 \begin{table}[!t]
 	\renewcommand{\arraystretch}{1.3}
-	\caption{Retention Rates of different categories of Mom\_Edu\_Level variable}
+	\caption{Retention Rates of different categories of Mom\_Edu\_Level feature}
 	\label{table:mom_edu_retentions}
 	\centering
 	\begin{tabular}{|c|c|c|}
 		\hline
-		\bfseries Mom's Education Level & \bfseries F2\_Retained & \bfseries F2\_Not\_Retained\\
+		\bfseries Mom\_Edu\_Level & \bfseries F2\_Retained & \bfseries F2\_Not\_Retained\\
 		\hline
 		Post-Doctorate  & 100.00\%  & 00.00\% \\ \hline
 		Doctorate (Professional) & 84.37\% &  15.62\% \\ \hline
@@ -770,27 +771,28 @@ The variable Mom\_Edu\_Level represents the highest education level of the stude
 
 
 
-To get a better understanding of the effect of Mom's Education on the students' retention, we calculated the retention rates of students from each category of the variable and tabulated them in Table \ref{table:mom_edu_retentions}. Considering the student distributions in each category and the retention rates of the variable from table, we notice some expected patterns such as more students were retained if their Mom had an Education level higher than bachelor's. But strangely we also noticed that the retention rate of students whose Mom's education level is Less than HS Graduate was also good. This gives us a hint of the variability of patterns inherent in the students data of UNLV.
+To get a better understanding of the effect of Mom\_Edu\_Level on the students' retention, we calculated the retention rates of students from each category of the feature and tabulated them in table \ref{table:mom_edu_retentions}. Considering the student distributions in each category and the retention rates of the variable from table, we notice some expected patterns such as more students were retained if Mom\_Edu\_Level was higher than `Bachelor Level Degree'. But interestingly, we also noticed that the retention rate of students whose Mom\_Edu\_Level is less than `HS Graduate' was high. This gives us a hint of the variability of patterns inherent in the data.
 
 
 \subsection {Dad\_Edu\_Level Vs F2\_Not\_Retained}
-The variable Dad\_Edu\_Level represents the highest education level of a student's father. In this subsection, we tried to analyze the patterns observed by different categories of the Dad\_Edu\_Level variable with respect to student retention. For this, we plotted the different categories of Dad\_Education\_Level variable on x-axis and the count of students belonging to that category on y-axis as shown in figure \ref{fig:dad_edu_F2NotRetained_plot}. We observed that the education level of the Dad of students at UNLV was highly distributed. It gives us information that most of the student's Dad's had a minimum education of High School or more.
+The variable Dad\_Edu\_Level represents the highest education level of a student's father. In this subsection, analyzed the patterns observed by different categories of the Dad\_Edu\_Level variable with respect to student retention. For this, we plotted the different categories of Dad\_Education\_Level feature on the x-axis and the count of students belonging to that category on the y-axis as shown in figure \ref{fig:dad_edu_F2NotRetained_plot}. We observed that the values of Dad\_Education\_Level of the students was highly distributed. It gives us information that most of the student's Dad\_Edu\_Level had a minimum education of High School or more. However, this does not explain much about the effect of the Dad\_Edu\_Level on the student's retention.
+
 
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[scale=0.65]{dad_edu_countplot}
-	\caption{Count plot of Dad\_Edu\_Level variable }
+	\includegraphics[scale=0.60]{dad_edu_countplot}
+	\caption{Count plot of Dad\_Edu\_Level feature }
 	\label{fig:dad_edu_F2NotRetained_plot}
 \end{figure}
 
 \begin{table}
 	\renewcommand{\arraystretch}{1.3}
-	\caption{Retention Rates of different categories of Dad\_Edu\_Level variable}
+	\caption{Retention Rates of different categories of Dad\_Edu\_Level feature}
 	\label{table:dad_edu_retentions}
 	\centering
 	\begin{tabular}{|c|c|c|}
 		\hline
-		\bfseries Dad's Education Level & \bfseries F2\_Retained & \bfseries F2\_Not\_Retained\\
+		\bfseries Dad\_Edu\_Level & \bfseries F2\_Retained & \bfseries F2\_Not\_Retained\\
 		\hline
 		Post-Doctorate  & 86.66\%  & 13.34\% \\ \hline
 		Doctorate (Professional) & 77.86\% &  22.14\% \\ \hline
@@ -807,22 +809,22 @@ The variable Dad\_Edu\_Level represents the highest education level of a student
 	\end{tabular}
 \end{table}
 
-To get a better understanding of the effect of Dad's Education on students' retention, we calculated the retention rates of students from each category of the variable and tabulated them in Table \ref{table:dad_edu_retentions}. Considering the student distributions in each category and the retention rates of the variable from table, we notice many expected patterns such as more students were retained if their Dad had an Education level higher than bachelors'. But strangely, we also noticed that the retention rate of students with their Dad's education level as Less than HS Graduate was also good at UNLV. This gives us a hint of the variability of patterns inherent in the students data of UNLV.
+To get a better understanding of the effect of Dad\_Edu\_Level on students' retention, we calculated the retention rates of students from each category of the feature and tabulated them in table \ref{table:dad_edu_retentions}. Considering the student distributions in each category and the retention rates of the variable from table, we notice some expected patterns such as more students were retained if their Dad\_Edu\_Level was higher than `Bachelor Level Degree'. But interestingly, we also noticed that the retention rate of students whose Dad\_Edu\_Level is less than `HS Graduate' was high. This gives us a hint of the variability of patterns inherent in the data.
 
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.65]{college_countplot}
-	\caption{Count plot of College1 variable}
+	\caption{Count plot of College1 feature}
 	\label{fig:college_F2NotRetained_plot}
 \end{figure}
 
 \subsection {College1 Vs F2\_Not\_Retained}
-The variable College1 represents the name of the college of the student during his first fall term. In this section, we tried to analyze the patterns observed by different categories of the student's college in his F1 term with respect to student retention. For this, we plotted the different categories of College1 variable on x-axis and the count of students belonging to that category on y-axis as shown in figure \ref{fig:college_F2NotRetained_plot}. We observed that the count of students belonging to a college was quite distributed with more students from College of Sciences followed by Lee Business school.
+The feature College1 represents the name of the student's college during their first fall term. In this section, we analyzed the patterns observed by different categories of the College1 with respect to student retention. For this, we plotted the different categories of College1 feature on the x-axis and the count of students belonging to that category on the y-axis as shown in figure \ref{fig:college_F2NotRetained_plot}. We observed that the count of students belonging to a college was quite distributed with more students from `College of Sciences' and `Lee Business school'.
 
 
 \begin{table}
 	\renewcommand{\arraystretch}{1.3}
-	\caption{Retention Rates of different categories of College1 variable}
+	\caption{Retention Rates of different categories of College1 feature}
 	\label{table:college_retentions}
 	\centering
 	\begin{tabular}{|l|c|c|}
@@ -845,15 +847,15 @@ The variable College1 represents the name of the college of the student during h
 \end{table}
 
 
-To get a better understanding of the effect of student's college on retention, we calculated the retention rates of each college and tabulated them in Table \ref{table:college_retentions}. Considering the student distributions in each college and the retention rates of the colleges from the table \ref{table:college_retentions}, we notice few patterns such as more students were retained in College of Sciences and College of Engineering which had higher student counts. Even though other colleges had lesser student populations, their student retention rates were similar and averaged to about 75\%.
+To get a better understanding of the effect of student's college on retention, we calculated the retention rates of each college and tabulated them in table \ref{table:college_retentions}. Considering the student distributions in each college and the retention rates of the colleges from the table \ref{table:college_retentions}, we noticed a few patterns such as more students were retained in `College of Sciences' and `College of Engineering', which had higher student counts. Even though other colleges had lesser student populations, their student retention rates were similar and averaged at about 75\%.
 
-\chapter{Building Models} \label{chapter:building_models}
+\chapter{Experiments and Results} \label{chapter:building_models}
 
 \section {Data Splitting }
 
-Once the dataset was cleaned and feature selection was performed on it, there were 51 variables excluding the F2\_Not\_Retained variable, which means we have a total of 51 independent variables that act as predictors and are inputted into the model to predict the value of F2\_Not\_Retained the output variable. 
+Once the dataset was cleaned and feature selection was performed on it, there were 51 features excluding the F2\_Not\_Retained variable, which means we had 51 independent features that acted as predictors and were inputted into the model to predict the value of F2\_Not\_Retained (the output variable). 
 
-The data was split based on the cohort year, so it will be easy to analyze and test the retention rates on individual students as well as the whole cohort year. The count of students in each cohort year is shown in Table \ref{table:acad_db}.
+The data was split based on the cohort year, so it would be easy to analyze and test the retention rates on individual students as well as the whole cohort year. The count of students in each cohort year is shown in table \ref{table:acad_db}.
 
 \begin{table}[!htbp]
 	\renewcommand{\arraystretch}{1.3}
@@ -872,31 +874,32 @@ The data was split based on the cohort year, so it will be easy to analyze and t
 \end{tabular} 
 \end{table}
 
-From the entire dataset, the student records from the cohort years 2012, 2013 ,2014 and 2015 were combined to form the train\_test dataset. The remaining student records from the cohort year 2016 were used to form test\_unseen dataset. The idea was to use the 4 years of data to train, test and evaluate the model. Once the model is trained and tested, it will be used to make predictions on student records from the test\_unseen dataset. This way, by not using any data from the 2016 cohort year in training and testing processes, the model will treat it as totally unseen data and makes predictions which will not be based on any assumptions on the data of that year. There were a total of 13,192 student records in the train\_test dataset and 3756 student records in test\_unseen dataset.
+From the entire dataset, the student records from the cohort years 2012, 2013 ,2014 and 2015 were combined to form the train\_validate dataset. The remaining student records from the cohort year 2016 were used to form test\_data dataset. The idea was to use the 4 years of data to train, validate, and evaluate the model. Once the model is trained and validated, it was used to make predictions on student records from the test\_data dataset. This way, by not using any data from the 2016 cohort year in training and validation processes, the model would treat it as totally unseen data and makes predictions which will not be based on any assumptions on the data of that year. There were 13,192 student records in the train\_validate dataset and 3756 student records in test\_data dataset.
 
-Seventy percent (70\%) of the train\_test dataset which is 9766 student records were used to train the selected models. The remaining thirty percent (30\%) which is 4186 student records were used to test, evaluate and compare the performances of the trained models. 
+Seventy percent (70\%) of the train\_test dataset, which was 9766 student records were used to train the selected models. The remaining thirty percent (30\%), which was 4186 student records were used to validate, evaluate, and compare the performances of the trained models. 
 
 \section {Experiments on Models}
-Once the training, testing and unseen data were created from the original dataset, each of the selected models were trained using the training data and evaluated on the test data. The models which were trained are Logistic Regression, Decision Tree, Random Forest Classifier and Support Vector Machines. 
+Once the training, validation and testing data were created from the original dataset, each of the selected models were trained using the training data and evaluated on the validation data. The models which were trained are logistic regression, decision tree, random forest classifier and support vector machines. 
 
-Once each model was trained, we used it to make predictions and generate a confusion matrix on the test data. The confusion matrix was used to calculate the classification accuracy, sensitivity, specificity, precision, F\textsubscript{1} scores and plot the ROC curve for the model. We also applied K-fold cross-validation on the training data to get the cross-validated AUC value, that was used to verify if the model results were not biased. If the cross-validated AUC score was similar to the one we get from the predictions on test data, it means that the model is actually learning from the training data. Furthermore, we use the trained model to make predictions on unseen data and generate confusion matrix to compute the performance metrics which give us a better idea of the generalizing power of the model on unseen data.  
+Once each model was trained, we used it to make predictions and generate a confusion matrix on the validation data. The confusion matrix was used to calculate the classification accuracy, sensitivity, specificity, precision, F\textsubscript{1} scores, and to plot the ROC curve for the model. We also applied K-fold cross-validation on the training data to get the cross-validated AUC value, that was used to verify if the model results were not biased. If the cross-validated AUC score was similar to the one we got from the predictions on validation data, it means that the model was actually learning from the training data. Furthermore, we used the trained model to make predictions on test data and generate confusion matrix to compute the performance metrics which give us a better idea of the generalizing power of the model on previously unseen data.  
 
-All the above-mentioned performance metrics were used to compare the models to find the one that suits best for the UNLV students data. 
+All the above-mentioned performance metrics were used to compare the models to find the one that suits best for the UNLV student data. 
 
 \subsection {Logistic Regression}
-A Logistic Regression (LR) model was created using the sklearn package in python and it was fitted on the training data. The trained model was then used to make predictions on the test data. The confusion matrix generated from predictions on test data is as shown in Figure \ref{fig:lr_confusion_matrix}
+A Logistic Regression (LR) model was created using the sklearn package in python and it was fitted on the training data. The trained model was then used to make predictions on the validation data. The confusion matrix generated from predictions on validation data is as shown in figure \ref{fig:lr_confusion_matrix}.
 
   \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.6]{LR-Confusion_matrix}
-	\caption{Confusion Matrix of Logistic Regression on test data}
+	\caption{Confusion Matrix of Logistic Regression on validation data}
 	\label{fig:lr_confusion_matrix}
 \end{figure} 
 
-The logistic regression model built on the training data had a classification accuracy of 0.843. The Table \ref{table:lr-metrics_db} shows other metrics calculated from the confusion matrix in Figure \ref{fig:lr_confusion_matrix}. 
+The logistic regression model built on the training data had a classification accuracy of 0.843 when used to perform predictions on the validation data. Table \ref{table:lr-metrics_db} shows other metrics calculated from the confusion matrix in Figure \ref{fig:lr_confusion_matrix}. 
+
 \begin{table} [!htb]
 	\renewcommand{\arraystretch}{1.3}
-	\caption{Computed metrics based on actual and predicted test data values using LR model}
+	\caption{Computed metrics based on actual and predicted validation data values using LR model}
 	\label{table:lr-metrics_db}
 	\centering
 	\begin{tabular}{|c|c|c|c|c|c|c|}
@@ -911,27 +914,27 @@ The logistic regression model built on the training data had a classification ac
  \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.6]{LR-roc}
-	\caption{ROC curve for Logistic Regression on test data}
+	\caption{ROC curve for Logistic Regression on validation data}
 	\label{fig:lr_roc}
 \end{figure} 
 
-ROC curve for the LR model on test data was plotted and is as shown in Figure \ref{fig:lr_roc}. K-Fold cross validation with the K value of 10 was applied on the training data to get a cross validated AUC score of 0.88 which is similar to what we achieved on the test data. This clearly confirms that the model is actually learning from the training data and is in fact generalizing the test data well.
+ROC curve for the LR model on validation data was plotted and is as shown in figure \ref{fig:lr_roc}. K-Fold cross validation with the `K' value of 10 was applied on the training data to get a cross validated AUC score of 0.88 which is similar to what we achieved on the validation data. This clearly confirms that the model is actually learning from the training data and is in fact generalizing the validation data well.
 
-The trained LR model was used to perform predictions on the unseen dataset that was created from the original dataset. The predictions on unseen data define the generalizing power of the LR model at the individual student level as well as the cohort year level. The confusion matrix generated from predictions on unseen data is as shown in Figure \ref{fig:lr_unseen_confusion_matrix}.
+The trained LR model was used to perform predictions on the test dataset that was created from the original dataset. The predictions on test data define the generalizing power of the LR model at the individual student level, as well as the cohort year level. The confusion matrix generated from predictions on test data is as shown in figure \ref{fig:lr_unseen_confusion_matrix}.
 
   \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.6]{LR-unseen-Confusion_matrix}
-	\caption{Confusion Matrix of Logistic Regression on unseen data i.e. 2016 cohort year data}
+	\caption{Confusion Matrix of Logistic Regression on test data (i.e., 2016 cohort year data)}
 	\label{fig:lr_unseen_confusion_matrix}
 \end{figure} 
 
 
-The logistic regression model built on the training data had a classification accuracy of 0.843 on unseen data. The table \ref{table:lr-unseen_metrics_db} shows other metrics calculated from the confusion matrix in Figure \ref{fig:lr_unseen_confusion_matrix}.
+The logistic regression model built on the training data had a classification accuracy of 0.843 on test data. The table \ref{table:lr-unseen_metrics_db} shows other metrics calculated from the confusion matrix in figure \ref{fig:lr_unseen_confusion_matrix}.
 
 \begin{table}[!htb]
 	\renewcommand{\arraystretch}{1.3}
-	\caption{Computed metrics based on actual and predicted unseen data values using LR model}
+	\caption{Computed metrics based on actual and predicted test data values using LR model}
 	\label{table:lr-unseen_metrics_db}
 	\centering
 	\begin{tabular}{|c|c|c|c|c|c|c|}
@@ -943,7 +946,7 @@ The logistic regression model built on the training data had a classification ac
 \end{table}
 
 \subsection {Decision Trees}
-A Decision tree (DTree) model was created using the sklearn package in python and it was fitted on the training data. The trained model was used to perform predictions on the test data. The confusion matrix generated from predictions on test data is as shown in Figure \ref{fig:Dtree_confusion_matrix}
+A Decision tree (DTree) model was created using the sklearn package in python and it was fitted on the training data. The trained model was used to perform predictions on the validation data. The confusion matrix generated from predictions on validation data is as shown in Figure \ref{fig:Dtree_confusion_matrix}.
 
   \begin{figure}[!htb]
 	\centering
@@ -952,44 +955,45 @@ A Decision tree (DTree) model was created using the sklearn package in python an
 	\label{fig:Dtree_confusion_matrix}
 \end{figure} 
 
-The decision tree model built on the training data had a classification accuracy of 0.871. The Table \ref{table:Dtree_confusion_matrix} shows other metrics calculated from the confusion matrix in Figure \ref{fig:Dtree_confusion_matrix}. 
+The decision tree model built on the training data had a classification accuracy of 0.871 on the validation data. Table \ref{table:Dtree_confusion_matrix} shows other metrics calculated from the confusion matrix in figure \ref{fig:Dtree_confusion_matrix}. 
+
 \begin{table} [!htb]
 	\renewcommand{\arraystretch}{1.3}
-	\caption{Computed metrics based on actual and predicted test data values using DTree model}
+	\caption{Computed metrics based on actual and predicted validation data values using DTree model}
 	\label{table:Dtree_confusion_matrix}
 	\centering
 	\begin{tabular}{|c|c|c|c|c|c|c|}
     \hline
   	 & \bfseries Accuracy & \bfseries Sensitivity & \bfseries Specificity & \bfseries Precision & \bfseries F\textsubscript{1} Score  & \bfseries AUC\\  
     \hline
-	DTree model & 0.871 & 0.699 & 0.924 & 0738 & 0.72 & 0.860 \\ \hline
+	DTree model & 0.871 & 0.699 & 0.924 & 0.738 & 0.72 & 0.860 \\ \hline
 	\end{tabular} 
 \end{table}
 
  \begin{figure}[!htbp]
 	\centering
 	\includegraphics[scale=0.6]{DTree-roc}
-	\caption{ROC curve for Decision Tree on test data}
+	\caption{ROC curve for Decision Tree on validation data}
 	\label{fig:DTree_roc}
 \end{figure} 
 
-ROC curve for the DTree model on test data was plotted and is as shown in the figure \ref{fig:DTree_roc} . K-Fold cross validation with the K value of 10 was applied on the training data to get a cross validated AUC score of 0.86 which is similar to what we achieved on the test data. This clearly confirms that the model is actually learning from the training data and is in fact generalizing the test data well.
+ROC curve for the DTree model on test data was plotted and is as shown in the figure \ref{fig:DTree_roc} . K-Fold cross validation with the `K' value of 10 was applied on the training data to get a cross validated AUC score of 0.86 which is similar to what we achieved on the validation data. This clearly confirms that the model is actually learning from the training data and is in fact generalizing the validation data well.
 
-The trained DTree model was used to perform predictions on unseen dataset that was created from the original dataset. The predictions on the unseen data define the generalizing power of the Dtree model at the individual student level as well as the cohort year level. The confusion matrix generated from predictions on unseen data is shown in Figure \ref{fig:DTree_unseen_confusion_matrix}.
+The trained DTree model was used to perform predictions on test dataset that was created from the original dataset. The predictions on the test data define the generalizing power of the Dtree model at the individual student level, as well as the cohort year level. The confusion matrix generated from predictions on test data is shown in figure \ref{fig:DTree_unseen_confusion_matrix}.
 
   \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.6]{DTree-unseen-Confusion_matrix}
-	\caption{Confusion Matrix of Decision Tree on unseen data i.e. 2016 cohort year data}
+	\caption{Confusion Matrix of Decision Tree on test data (i.e., 2016 cohort year data)}
 	\label{fig:DTree_unseen_confusion_matrix}
 \end{figure} 
 
 
-The decision tree model built on the training data had a classification accuracy of 0.867 on the unseen data. The Table \ref{table:DTree-unseen_metrics_db} shows other metrics calculated from the confusion matrix in Figure \ref{fig:DTree_unseen_confusion_matrix}.
+The decision tree model built on the training data had a classification accuracy of 0.867 on the test data. Table \ref{table:DTree-unseen_metrics_db} shows other metrics calculated from the confusion matrix in figure \ref{fig:DTree_unseen_confusion_matrix}.
 
 \begin{table}[!htb]
 	\renewcommand{\arraystretch}{1.3}
-	\caption{Computed metrics based on actual and predicted unseen data values using DTree model}
+	\caption{Computed metrics based on actual and predicted test data values using DTree model}
 	\label{table:DTree-unseen_metrics_db}
 	\centering
 	\begin{tabular}{|c|c|c|c|c|c|c|}
@@ -1002,53 +1006,52 @@ The decision tree model built on the training data had a classification accuracy
 
 
 \subsection {Random Forest Classifier}
-A Random Forest classifier (RF) model was created using the sklearn package in python and it was fitted on the training data. The trained model was used to perform predictions on the test data. The confusion matrix generated from predictions on test data is as shown in Figure \ref{fig:RF_confusion_matrix}
+A Random Forest classifier (RF) model was created using the sklearn package in python and it was fitted on the training data. The trained model was used to perform predictions on the validation data. The confusion matrix generated from predictions on validation data is as shown in Figure \ref{fig:RF_confusion_matrix}.
 
   \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.6]{RF-Confusion_matrix}
-	\caption{Confusion Matrix of Random Forest on test data}
+	\caption{Confusion Matrix of Random Forest on validation data}
 	\label{fig:RF_confusion_matrix}
 \end{figure} 
 
-The Random Forest model built on the training data had a classification accuracy of 0.861. The Table \ref{table:RF_confusion_matrix} shows other metrics calculated from the confusion matrix in Figure \ref{fig:RF_confusion_matrix}. 
+The Random Forest model built on the training data had a classification accuracy of 0.861 when applied on validation data. Table \ref{table:RF_confusion_matrix} shows other metrics calculated from the confusion matrix in figure \ref{fig:RF_confusion_matrix}. 
 \begin{table}[!htb]
 	\renewcommand{\arraystretch}{1.3}
-	\caption{Computed metrics based on actual and predicted test data values using RF model}
+	\caption{Computed metrics based on actual and predicted validation data values using RF model}
 	\label{table:RF_confusion_matrix}
 	\centering
 	\begin{tabular}{|c|c|c|c|c|c|c|}
     \hline
   	 & \bfseries Accuracy & \bfseries Sensitivity & \bfseries Specificity & \bfseries Precision & \bfseries F\textsubscript{1} Score  & \bfseries AUC\\  
     \hline
-	RF model & 0.861 & 0.723 & 0.903 & 695 & 0.71 & 0.876 \\ \hline
+	RF model & 0.861 & 0.723 & 0.903 & 0.695 & 0.71 & 0.876 \\ \hline
 	\end{tabular} 
 \end{table}
 
  \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.6]{RF-roc}
-	\caption{ROC curve for Random Forest on test data}
+	\caption{ROC curve for Random Forest on validation data}
 	\label{fig:RF_roc}
 \end{figure} 
 
-ROC curve for the RF model on test data was plotted and is as shown in the figure \ref{fig:RF_roc} . K-Fold cross validation with the K value of 10 was applied on the training data to get a cross validated AUC score of 0.876 which is similar to what we achieved on the test data. This clearly confirms that the model is actually learning from the training data and is in fact generalizing the test data well.
+ROC curve for the RF model on the validation data was plotted and is as shown in the figure \ref{fig:RF_roc}. K-Fold cross validation with the `K' value of 10 was applied on the training data to get a cross validated AUC score of 0.876 which is similar to what we achieved on the validation data. This clearly confirms that the model is actually learning from the training data and is in fact generalizing the validation data well.
 
   \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.6]{RF-unseen-Confusion_matrix}
-	\caption{Confusion Matrix of Random Forest on unseen data i.e. 2016 cohort year data}
+	\caption{Confusion Matrix of Random Forest on test data (i.e., 2016 cohort year data)}
 	\label{fig:RF_unseen_confusion_matrix}
 \end{figure} 
 
+The trained RF model was used to perform predictions on test dataset that was created from the original dataset. The predictions on the test data define the generalizing power of the RF model at the individual student level, as well as the cohort year level. The confusion matrix generated from predictions on the test data is shown in the figure \ref{fig:RF_unseen_confusion_matrix}.
 
-The trained RF model was used to perform predictions on unseen dataset that was created from the original dataset. The predictions on the unseen data define the generalizing power of the RF model at the individual student level as well as the cohort year level.. The confusion matrix generated from predictions on the unseen data is shown in the figure \ref{fig:RF_unseen_confusion_matrix}.
-
-The random forest model built on the training data had a classification accuracy of 0.867 on the unseen data. The Table \ref{table:RF-unseen_metrics_db} shows other metrics calculated from the confusion matrix in Figure \ref{fig:RF_unseen_confusion_matrix}.
+The random forest model built on the training data had a classification accuracy of 0.867 on the test data. Table \ref{table:RF-unseen_metrics_db} shows other metrics calculated from the confusion matrix in figure \ref{fig:RF_unseen_confusion_matrix}.
 
 \begin{table}[!htb]
 	\renewcommand{\arraystretch}{1.3}
-	\caption{Computed metrics based on actual and predicted unseen data values using RF model}
+	\caption{Computed metrics based on actual and predicted test data values using RF model}
 	\label{table:RF-unseen_metrics_db}
 	\centering
 	\begin{tabular}{|c|c|c|c|c|c|c|}
@@ -1061,53 +1064,52 @@ The random forest model built on the training data had a classification accuracy
 
 
 \subsection {Support Vector Machines}
-A Support Vector Machine (SVM) model was created using the sklearn package in python and it was fitted on the training data. The trained model was used to perform predictions on the test data. The confusion matrix generated from predictions of the test data is as shown in Figure \ref{fig:SVM_confusion_matrix}
+A Support Vector Machine (SVM) model was created using the sklearn package in python and it was fitted on the training data. The trained model was used to perform predictions on the validation data. The confusion matrix generated from predictions of the validation data is as shown in figure \ref{fig:SVM_confusion_matrix}.
 
   \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.6]{SVM-Confusion_matrix}
-	\caption{Confusion Matrix of Support Vector Machine model on test data}
+	\caption{Confusion Matrix of Support Vector Machine model on validation data}
 	\label{fig:SVM_confusion_matrix}
 \end{figure} 
 
-The decision tree model built on the training data had a classification accuracy of 0.885. The table \ref{table:SVM_confusion_matrix} shows other metrics calculated from the confusion matrix in Figure \ref{fig:SVM_confusion_matrix}. 
+The svm model built on the training data had a classification accuracy of 0.885 on validation data. Table \ref{table:SVM_confusion_matrix} shows other metrics calculated from the confusion matrix in figure \ref{fig:SVM_confusion_matrix}. 
 \begin{table} [!htb]
 	\renewcommand{\arraystretch}{1.3}
-	\caption{Computed metrics based on actual and predicted test data values using SVM model}
+	\caption{Computed metrics based on actual and predicted validation data values using SVM model}
 	\label{table:SVM_confusion_matrix}
 	\centering
 	\begin{tabular}{|c|c|c|c|c|c|c|}
     \hline
   	 & \bfseries Accuracy & \bfseries Sensitivity & \bfseries Specificity & \bfseries Precision & \bfseries F\textsubscript{1} Score  & \bfseries AUC\\  
     \hline
-	SVM model & 0.885 & 0.588 & 0.976 & 881 & 0.71 & 0.857 \\ \hline
+	SVM model & 0.885 & 0.588 & 0.976 & 0.881 & 0.71 & 0.857 \\ \hline
 	\end{tabular} 
 \end{table}
 
  \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.6]{SVM-roc}
-	\caption{ROC curve for Decision Tree on test data}
+	\caption{ROC curve for SVM on validation data}
 	\label{fig:SVM_roc}
 \end{figure} 
 
-ROC curve for the SVM model on test data was plotted and is as shown in Figure \ref{fig:SVM_roc} . K-Fold cross validation with the K value of 10 was applied on the training data to get a cross validated AUC score of 0.86 which is similar to what we achieved on test data. This clearly confirms that the model is actually learning from the training data and is in fact generalizing the unseen data well.
+ROC curve for the SVM model on validation data was plotted and is as shown in figure \ref{fig:SVM_roc}. K-Fold cross validation with the `K' value of 10 was applied on the training data to get a cross validated AUC score of 0.86 which is similar to what we achieved on validation data. This clearly confirms that the model is actually learning from the training data and is in fact generalizing the validation data well.
 
-The trained SVM model was used to perform predictions on unseen dataset that was created from the original dataset. The predictions on the unseen data define the generalizing power of the SVM model at the individual student level as well as the cohort year level. The confusion matrix generated from predictions on unseen data is shown in the figure \ref{fig:SVM_unseen_confusion_matrix}.
+The trained SVM model was used to perform predictions on test dataset that was created from the original dataset. The predictions on the test data define the generalizing power of the SVM model at the individual student level, as well as the cohort year level. The confusion matrix generated from predictions on test data is shown in the figure \ref{fig:SVM_unseen_confusion_matrix}.
 
   \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.6]{SVM-unseen-Confusion_matrix}
-	\caption{Confusion Matrix of SVM model on unseen data i.e. 2016 cohort year data}
+	\caption{Confusion Matrix of SVM model on test data (i.e., 2016 cohort year data)}
 	\label{fig:SVM_unseen_confusion_matrix}
 \end{figure} 
 
-
-The support vector machine model built on the training data had a classification accuracy of 0.872 on the unseen data. The Table \ref{table:SVM-unseen_metrics_db} shows other metrics calculated from the confusion matrix in Figure \ref{fig:SVM_unseen_confusion_matrix}.
+The support vector machine model built on the training data had a classification accuracy of 0.872 on the test data. Table \ref{table:SVM-unseen_metrics_db} shows other metrics calculated from the confusion matrix in figure \ref{fig:SVM_unseen_confusion_matrix}.
 
 \begin{table}[!htb]
 	\renewcommand{\arraystretch}{1.3}
-	\caption{Computed metrics based on actual and predicted unseen data values using SVM model}
+	\caption{Computed metrics based on actual and predicted test data values using SVM model}
 	\label{table:SVM-unseen_metrics_db}
 	\centering
 	\begin{tabular}{|c|c|c|c|c|c|c|}
@@ -1119,19 +1121,19 @@ The support vector machine model built on the training data had a classification
 \end{table}
 
 
-\subsection {Comparison of the models}
+\subsection {Comparison of the Models}
 
 The results from the experiments conducted in the previous subsection will be compared to find the best model that is suitable for the UNLV student data. 
 
 \subsubsection {Measures used to Compare Models}
 
-In our Experiments, we used the trained models to make predictions on the test data and unseen data. From the predictions, we calculated various metrics that explain the performance of the model. However, comparing the models performance by combining results of all the metrics is a difficult task. Moreover in classification problems using machine learning, it is important to identify the metrics that better represent the problem being modeled. In our case, we are more focused on identifying the students who will not be retained in their second year i.e. class `1' of the F2\_Not\_Retained variable which is the true positive case of our models' prediction. The metrics accuracy and specificity capture the effect of output class populations on learning i.e. the model will learn more about the output class that has higher population and since our data has more population of students who are retained, it is expected to get high classification accuracies and specificities as the model will predict more number of retained students correctly compared to the not retained students. On the other hand, sensitivity represents the true positive rate and precision represents the confidence of the model in identifying the true positives. F\textsubscript{1} score and AUC are metrics based on sensitivity and specificity and thus are also good representations of the model performance. Therefore sensitivity, precision, F\textsubscript{1} score and AUC were used to compare the models.
+In our Experiments, we used the trained models to make predictions on the validation data and test data. From the predictions, we calculated various metrics that explain the performance of the model. However, comparing models' performance by combining results of all the metrics is a difficult task. Moreover, in classification problems using machine learning, it is important to identify the metrics that better represent the problem being modeled. In our case, we were more focused on identifying the students who will not be retained in the next fall semester (i.e., class `1' of the F2\_Not\_Retained variable), which was the true positive case of our models' prediction. The metrics accuracy and specificity capture the effect of output class populations on learning (i.e., the model would learn more about the output class that has higher population and since our data has more population of students who are retained, it was expected to get high classification accuracies and specificities as the model will predict more number of retained students correctly compared to the not retained students. On the other hand, sensitivity represents the true positive rate and precision represents the confidence of the model in identifying the true positives. F\textsubscript{1} score and AUC are metrics based on sensitivity and specificity and thus are also good representations of the model performance. Therefore sensitivity, precision, F\textsubscript{1} score and AUC were used to compare the models.
 
-The metrics calculated from predictions on test data for different models are summarized in Table \ref{table:compare_models_db}. The Roc curve plots of all the models on the test data are as shown in Figure \ref{fig:comparison_roc}.
+The metrics calculated from predictions on validation data for different models are summarized in table \ref{table:compare_models_db}. The ROC curve plots of all the models on the validation data are as shown in figure \ref{fig:comparison_roc}.
 
 \begin{table}[!htb]
 	\renewcommand{\arraystretch}{1.3}
-	\caption{Comparison of metrics from different models on the testing data}
+	\caption{Comparison of metrics from different models on the validation data}
 	\label{table:compare_models_db}
 	\centering
 	\begin{tabular}{|c|c|c|c|c|c|c|}
@@ -1149,21 +1151,22 @@ The metrics calculated from predictions on test data for different models are su
  \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.7]{CompareML-roc}
-	\caption{ROC curve's of all models on test data}
+	\caption{ROC curve's of all models on validation data}
 	\label{fig:comparison_roc}
 \end{figure} 
 
-Logistic regression had the highest sensitivity rate and AUC scores compared to all the other models. It had a very low precision of 63.5\% which indicates that the model has falsely predicted more students as not retained who actually were retained. However our main focus is to identify at-risk students who will not be retained, so we can provide assistance to retain them. Hence, providing assistance to the few falsely identified not retained students is still a good thing as it may at the least help in increasing the academic performance of those students. 
+Logistic regression had the highest sensitivity rate and AUC scores compared to all the other models. It had a very low precision of 63.5\%, which indicates that the model had falsely predicted more students as not retained who actually were retained. However, our main focus is to identify at-risk students who will not be retained, so we can provide assistance to retain them. Therefore, providing assistance to the few falsely identified not retained students is still a positive approach as it may at the least help in increasing the academic performance of those students. 
  
-In the case of the Decision tree model, we observe good accuracy and specificity values. In fact it has the highest classification accuracy on the testing data compared to all the other models. Moreover, its sensitivity and AUC scores were lower compared to the logistic regression and random forest models which indicates that it is performing poorly in terms of identifying not retained students. The Random forests on the other hand have the second best sensitivity and AUC scores compared to all the other models. Moreover, it has a little better precision and F\textsubscript{1} score compared to logistic regression.
+In the case of the decision tree model, we observed good accuracy and specificity values. In fact it had the highest classification accuracy on the validation data compared to all the other models. Moreover, its sensitivity and AUC scores were lower compared to the logistic regression and random forest models, which indicates that it was performing poorly in terms of identifying not retained students. The random forests on the other hand had the second best sensitivity and AUC scores compared to all other models. Moreover, it had a little better precision and F\textsubscript{1} score compared to logistic regression.
 
-The SVM model had a very high classification accuracy and specificity compared to other models. However its sensitivity and AUC scores were the lowest which indicates that it is performing poorly in terms of identifying not retained students. 
+The SVM model had a very high classification accuracy and specificity compared to other models. However, its sensitivity and AUC scores were the lowest which indicates that it was performing poorly in terms of identifying not retained students. 
 
-The metrics calculated from predictions on unseen data for different models are summarized in Table \ref{table:compare_models_unseen_db}. The Roc curve plots of all the models on the test data are as shown in Figure \ref{fig:comparison_roc}.
+The metrics calculated from predictions on test data for different models are summarized in table \ref{table:compare_models_unseen_db}. The ROC curve plots of all the models on the test data are as shown in figure \ref{fig:comparison_test_roc}.
+
 
 \begin{table}[!htb]
 	\renewcommand{\arraystretch}{1.3}
-	\caption{Comparison of metrics from different models on the unseen data}
+	\caption{Comparison of metrics from different models on the test data}
 	\label{table:compare_models_unseen_db}
 	\centering
 	\begin{tabular}{|c|c|c|c|c|c|c|}
@@ -1181,22 +1184,22 @@ The metrics calculated from predictions on unseen data for different models are 
  \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.7]{CompareML-unseen-roc.png}
-	\caption{ROC curve's of all models on unseen data}
-	\label{fig:comparison_roc}
+	\caption{ROC curve's of all models on test data}
+	\label{fig:comparison_test_roc}
 \end{figure} 
 
-The models performance on unseen data show us that the metrics are close enough to the ones we achieved on test data. This gives us a hint of the reliability and uniformity of the model predictions on the combined cohort year data as well as individual student level data, which is our primary focus.
+The models performance on test data show us that the metrics are close enough to the ones we achieved on validation data. This gives us a hint of the reliability and uniformity of the model predictions on the combined cohort year data, as well as individual student level data, which is our primary focus.
 
-Based on the above observations, we conclude that the Logistic Regression and Random forest classifiers are good prediction models for the UNLV dataset.
+Based on the above observations, we conclude that the logistic regression and random forest classifiers are good prediction models for the UNLV dataset.
 
 
 
-\subsection{Feature importance calculation based on selected models} 
-After comparing the models, the two models that were selected were Logistic regression and Random forest classifier. These models were used to identify the most significant factors that contributed to the prediction of the not retained students. To calculate the important factors, the two models were retrained using the train and test data combined.
+\subsection{Feature Importance calculation based on Selected Models} 
+After comparing the models, the two models that were selected were Logistic regression and Random forest classifier. These models were used to identify the most significant factors that contributed to the prediction of the not retained students. To calculate the significant factors, the two models were retrained using the train and test data combined.
 
-\subsubsection{Top 15 Predictors for Logistic Regression Model}
+\subsubsection{Top Fifteen Predictors for Logistic Regression Model}
 
-As explained earlier in subsubsection \ref{sssec:lr}, the process of fitting a logistic regression model on data involves finding a linear combination of input factors along with coefficients that are calculated during the training. Once we have the coefficients, the input features of a record are linearly combined with the coefficients and the result is fed into a sigmoid function to obtain the predictions. Here, the coefficients actually represent the contribution of the feature towards the output prediction. The LR model which was fit on the train and test data was used to obtained the coefficients of each feature. The features were then ordered based on the magnitudes of their coefficients. The top 15 features from the ordered set were selected and plotted in the order of importance as shown in Figure \ref{fig:lr_predictors}.
+As explained earlier in section \ref{sssec:lr}, the process of fitting a logistic regression model on data involves finding a linear combination of input factors along with coefficients that are calculated during training. Once we have the coefficients, the input features of a record are linearly combined with the coefficients and the result is fed into a sigmoid function to obtain the probabilities. Here, the coefficients actually represent the contribution of the feature towards the output prediction. The LR model which was fit on the train and validation data was used to obtained the coefficients of each feature. The features were then ordered based on the magnitudes of their coefficients. The top fifteen features from the ordered set were selected and plotted in the order of significance as shown in figure \ref{fig:lr_predictors}.
  \begin{figure}[!ht]
 	\centering
 	\includegraphics[scale=0.7]{LR-FeatImportance-15}
@@ -1204,11 +1207,11 @@ As explained earlier in subsubsection \ref{sssec:lr}, the process of fitting a l
 	\label{fig:lr_predictors}
 \end{figure} 
 
-We notice that the students' academic performance during his high school and the spring semester of first year, as well as some factors that represent the students' background were contributing more towards the output prediction than the other factors used in the training.
+We noticed that the student's academic performance during their high school and the spring semester of first year, as well as some factors that represent a student's background were contributing more towards the output prediction than the other factors used in the training.
 
-\subsubsection{Top 15 Predictors for Random Forest Model}
+\subsubsection{Top Fifteen Predictors for Random Forest Model}
 
-As explained earlier in subsubsection \ref{sssec:rf}, the process of fitting a random forest model on data involves creating various trees using random splits on different features. Random forests can use Gini Impurity or Information Gain as the metrics to measure the goodness of each split. In most cases gini impurity is favored due its less computational complexity. During training, random splits are made in different trees by analyzing the decrease in the gini impurity due to the split by a certain feature. This decrease in the gini impurity for a split on each feature can be used to identify the feature importances. The Random forest model which was fit on the train and test data was used to identify and order the decrease in the mean gini impurity of the features. The top 15 features from the ordered set were selected and plotted in the order of importance as shown in Figure \ref{fig:rf_predictors}.
+As explained earlier in section \ref{sssec:rf}, the process of fitting a random forest model on data involves creating various trees using random splits on different features. Random forests can use gini impurity or information gain as the metrics to measure the goodness of each split. In most cases gini impurity is favored due its less computational complexity. During training, random splits are made in different trees by analyzing the decrease in the gini impurity due to the split by a certain feature. This decrease in the gini impurity for a split on each feature can be used to identify the feature importances. The random forest model, which was fit on the train and validation data was used to identify and order the decrease in the mean gini impurity of the features. The top fifteen features from the ordered set were selected and plotted in the order of significance as shown in figure \ref{fig:rf_predictors}.
 
  \begin{figure}
 	\centering
@@ -1217,17 +1220,16 @@ As explained earlier in subsubsection \ref{sssec:rf}, the process of fitting a r
 	\label{fig:rf_predictors}
 \end{figure} 
 
-We notice that the students' academic performance during high school and his first year at UNLV, as well as some factors that represent the students financial status were identified as contributing more towards the output prediction. This clearly explains that improving students academic performance can boost their retention.
-
+We noticed that a student's academic performance during high school and his first year at UNLV, as well as some factors that represent the students financial status were identified as contributing more towards the output prediction. This clearly points that improving a student's academic performance can boost their retention.
 
 \subsection{Ranking Students based on the Risk of Not Being Retained}
-As explained earlier in subsubsection \ref{sssec:lr}, the logistic regression model calculates the probability of getting the positive class of the output variable based on which it makes the final class predictions. If the probability is greater than or equal to 0.5 then it predicts the outcome to be the positive class and if the probability is less than 0.5 then it predicts the outcome to be the negative class. In our case, the logistic regression model calculates the probability of the student not being retained in the next fall semester. These probabilities can be interpreted as the student's risk of dropping out. We can then rank students based on their risk scores which can be used by the educators to identify students who need the most support as part of the intervention programs. 
+As explained earlier in section \ref{sssec:lr}, the logistic regression model calculates the probability of getting the positive class of the output variable based on which it makes the final class predictions. If the probability is greater than or equal to 0.5 then it predicts the outcome to be the positive class and if the probability is less than 0.5, then it predicts the outcome to be the negative class. In our case, the logistic regression model calculates the probability of the student not being retained in the next fall semester. These probabilities can be interpreted as a student's risk of dropping out. We can then rank students based on their risk scores, which can be used by the educators to identify students who need the most support as part of intervention programs. 
 
-We used the trained logistic regression model to obtain prediction probabilities on unseen data. We chose unseen data since we would like to find the students who are not retained for a cohort year which the model has not seen during training. These probabilities were then ordered to obtain the ranking of students based on their risk of dropping out. Figure \ref{fig:risk_rank} shows the top 10 students who are the risk of not being retained. The index in the figure represents the record id which identifies the student in the original dataset.
+We used the trained logistic regression model to obtain prediction probabilities on test data. We chose test data since we would like to find the students who are not retained for a cohort year that the model has not seen during training. These probabilities were then ordered to obtain the ranking of students based on their risk of dropping out. Figure \ref{fig:risk_rank} shows the top ten students who are at the risk of not being retained. The index in the figure represents the record id which identifies the student in the original dataset.
 
  \begin{figure}[!htb]
 	\centering
-	\includegraphics[scale=0.7]{riskscores}
+	\includegraphics[scale=0.65]{riskscores}
 	\caption{Top 10 Students at the risk of not being retained in F2 term}
 	\label{fig:risk_rank}
 \end{figure} 
@@ -1237,13 +1239,13 @@ Using this approach, we can rank the students of a newly available cohort year d
 
 \chapter{Conclusion And Future work} \label{chapter:conclusion}
 
-In this thesis, we used machine learning to predict the first-year student retention rates at UNLV. For this, we identified and collected important student data such as pre-college academics, financial information and academic performance of the student during his first-year from the data housed in UNLV data warehouse. We performed data pre-processing to clean the data and applied feature selection to select the most significant features for the analysis. 
+In this thesis, we used machine learning to predict the first-year student retention rates at UNLV. For this, we identified and collected important student data such as pre-college academics, financial information, and academic performance of students during their first-year, from the data housed in UNLV data warehouse. We performed data pre-processing to clean the data and applied feature selection to select the most significant features for the analysis. 
 
-The cleaned data was used to train the machine learning models Logistic regression, Decision trees, Random Forest classifiers and Support Vector machines. The trained models were evaluated and compared for performances using metrics of classification problems calculated from predictions on test data. An analysis of the results revealed that the Logistic Regression model and Random Forest model performed better on the UNLV student data. We used these two models to identify top 15 features that contributed the most towards student retention prediction. The top predictors from both the models showed us that the students' academic performance had a major influence on their retention. Hence, we can formulate retention programs that would improve the academic performance of at-risk students, thus improving their chances of retention. 
+The pre-processed data was used to train the machine learning models logistic regression, decision trees, random forest classifiers and support vector machines. The trained models were evaluated and compared for performances using metrics of classification problems calculated from predictions on test data. An analysis of the results revealed that the logistic regression model and random forest model performed better on the UNLV student data. We used these two models to identify top fifteen features that contributed the most towards student retention prediction. The top predictors from both the models showed us that the students' academic performance had a major influence on their retention. Therefore, we can formulate retention programs that would improve the academic performance of at-risk students, thus improving their chances of retention. 
 
-The operational performance of the models was also calculated and evaluated at the cohort level using unseen data (in this case 2016 cohort year data) which gives us a brief understanding of the models' generalization capacity on new data. In the future, the models can be used to make predictions on the the latest available census by replacing the unseen data with the newly available cohort year data of UNLV. Additionally, we proposed the approach of ranking students of the latest census based on their risk scores, which can be used by the educators to concentrate their intervention resources effectively.
+The operational performance of the models was also calculated and evaluated at the cohort level using test data (in this case 2016 cohort year data) which gives us a brief understanding of the models' generalization capacity on new data. In the future, the models can be used to make predictions on the the latest available census by replacing the test data with the newly available cohort year data. Additionally, we proposed the approach of ranking students of the latest census based on their risk scores, which can be used by the educators to concentrate their intervention resources effectively.
 
-The above research, helped us identify some important patterns in first-year student retention at UNLV. For future work, we would like to apply more advanced machine learning algorithms for predictions by including more financial information of the student as well as perform the identification of the not retained students at an early time that would give the educators more time to intervene and improve the at-risk students' retention chances.
+This research, helped us identify some important patterns in first-year student retention data at UNLV. For future work, we would like to apply more advanced machine learning algorithms for predictions by including more financial information of the student, as well as to perform the identification of the not retained students at an earlier time that would give the educators more time to intervene and improve the at-risk students' retention chances.
 
 
 %%%
@@ -1265,15 +1267,15 @@ Aditya Rajuladevi\\[1cm]
 \end{center}
 
 \noindent Degrees:\\
-\indent Bachelor Degree in Computer Engineering 2014\\
+\indent Bachelor of Technology 2014\\
 \indent Jawaharlal Nehru Technological University, Hyderabad, India\\
 
 \noindent Thesis Title: A Machine Learning Approach to Predict First-Year Student Retention Rates at University of Nevada, Las Vegas\\
 
 \noindent Thesis Examination Committee:\\
 \indent Chairperson, Dr. Fatma Nasoz, Ph.D.\\
-\indent Committee Member, Dr. Laxmi Gewali, Ph.D.\\
 \indent Committee Member, Dr. Justin Zhan, Ph.D.\\
+\indent Committee Member, Dr. Yoohwan Kim, Ph.D.\\
 \indent Graduate Faculty Representative, Dr. Magdalena Martinez, Ph.D.\\
 
 \end{document}
