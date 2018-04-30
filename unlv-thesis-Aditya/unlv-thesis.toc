@@ -31,7 +31,7 @@
 \contentsline {subsection}{\numberline {3.2.1}Data Description}{21}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Feature Extraction}{23}{subsection.3.2.2}
 \contentsline {subsubsection}{\numberline {3.2.2.1}Computation of SAT\_ACT\_Score Feature}{23}{subsubsection.3.2.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2.2}Computation of F2\_Not\_Retained Feature}{24}{subsubsection.3.2.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.2}Computation of F2\_Not\_Retained Variable}{24}{subsubsection.3.2.2.2}
 \contentsline {section}{\numberline {3.3}Data Preprocessing}{24}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Handling Outliers in Data}{24}{subsection.3.3.1}
 \contentsline {subsubsection}{\numberline {3.3.1.1}UnwHSGPA scores}{24}{subsubsection.3.3.1.1}

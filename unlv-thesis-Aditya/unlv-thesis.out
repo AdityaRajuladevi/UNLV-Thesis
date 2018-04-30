@@ -31,7 +31,7 @@
 \BOOKMARK [2][-]{subsection.3.2.1}{Data Description}{section.3.2}% 31
 \BOOKMARK [2][-]{subsection.3.2.2}{Feature Extraction}{section.3.2}% 32
 \BOOKMARK [3][-]{subsubsection.3.2.2.1}{Computation of SAT\137ACT\137Score Feature}{subsection.3.2.2}% 33
-\BOOKMARK [3][-]{subsubsection.3.2.2.2}{Computation of F2\137Not\137Retained Feature}{subsection.3.2.2}% 34
+\BOOKMARK [3][-]{subsubsection.3.2.2.2}{Computation of F2\137Not\137Retained Variable}{subsection.3.2.2}% 34
 \BOOKMARK [1][-]{section.3.3}{Data Preprocessing}{chapter.3}% 35
 \BOOKMARK [2][-]{subsection.3.3.1}{Handling Outliers in Data}{section.3.3}% 36
 \BOOKMARK [3][-]{subsubsection.3.3.1.1}{UnwHSGPA scores}{subsection.3.3.1}% 37

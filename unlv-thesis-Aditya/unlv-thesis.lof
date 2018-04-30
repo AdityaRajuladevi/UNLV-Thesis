@@ -3,7 +3,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Machine Learning Approach\relax }}{8}{figure.caption.9}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Classification tree of passenger survival in Titanic\relax }}{11}{figure.caption.10}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Random forest trees\relax }}{12}{figure.caption.11}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Example Random Forest Model\relax }}{12}{figure.caption.11}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Example SVM Classifier\relax }}{14}{figure.caption.12}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Example Confusion Matrix\relax }}{15}{figure.caption.13}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Example ROC curve\relax }}{19}{figure.caption.14}
@@ -18,17 +18,17 @@
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Count plot of Dad\_Edu\_Level feature \relax }}{34}{figure.caption.27}
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Count plot of College1 feature\relax }}{36}{figure.caption.29}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Confusion Matrix of Logistic Regression on validation data\relax }}{39}{figure.caption.32}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces ROC curve for Logistic Regression on validation data\relax }}{40}{figure.caption.34}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Confusion Matrix of Logistic Regression on test data (i.e., 2016 cohort year data)\relax }}{40}{figure.caption.35}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Confusion Matrix of Decision Tree on test data\relax }}{41}{figure.caption.37}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces ROC curve for Decision Tree on validation data\relax }}{42}{figure.caption.39}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Confusion Matrix of Decision Tree on test data (i.e., 2016 cohort year data)\relax }}{42}{figure.caption.40}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Confusion Matrix of Random Forest on validation data\relax }}{43}{figure.caption.42}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces ROC curve for Random Forest on validation data\relax }}{44}{figure.caption.44}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Confusion Matrix of Random Forest on test data (i.e., 2016 cohort year data)\relax }}{45}{figure.caption.45}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Confusion Matrix of Support Vector Machine model on validation data\relax }}{46}{figure.caption.47}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces ROC curve for SVM on validation data\relax }}{46}{figure.caption.49}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Confusion Matrix of LR model on validation data\relax }}{39}{figure.caption.32}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces ROC curve for LR model on validation data\relax }}{40}{figure.caption.34}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Confusion Matrix of LR model on test data (i.e., 2016 cohort year data)\relax }}{40}{figure.caption.35}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Confusion Matrix of DTree model on validation data\relax }}{41}{figure.caption.37}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces ROC curve for DTree model on validation data\relax }}{42}{figure.caption.39}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Confusion Matrix of DTree model on test data (i.e., 2016 cohort year data)\relax }}{42}{figure.caption.40}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Confusion Matrix of RF model on validation data\relax }}{43}{figure.caption.42}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces ROC curve for RF model on validation data\relax }}{44}{figure.caption.44}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Confusion Matrix of RF model on test data (i.e., 2016 cohort year data)\relax }}{45}{figure.caption.45}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Confusion Matrix of SVM model on validation data\relax }}{46}{figure.caption.47}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces ROC curve for SVM model on validation data\relax }}{46}{figure.caption.49}
 \contentsline {figure}{\numberline {4.12}{\ignorespaces Confusion Matrix of SVM model on test data (i.e., 2016 cohort year data)\relax }}{47}{figure.caption.50}
 \contentsline {figure}{\numberline {4.13}{\ignorespaces ROC curve's of all models on validation data\relax }}{49}{figure.caption.53}
 \contentsline {figure}{\numberline {4.14}{\ignorespaces ROC curve's of all models on test data\relax }}{50}{figure.caption.55}
